@@ -14,3 +14,4 @@ INNER JOIN (
     HAVING COUNT(*) >= 1000 ) r
 ON b.city = r.city
 AND b.state = r.state
+ORDER BY r.NumberOfReviews DESC

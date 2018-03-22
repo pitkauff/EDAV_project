@@ -1,110 +1,110 @@
 city,state,NumberOfBusinesses,NumberOfReviews
-Ajax,ON,252,1725
-Aurora,ON,206,1502
-Avon,OH,200,1995
-"Avon Lake",OH,105,1048
+"Las Vegas",NV,26798,1082227
+Phoenix,AZ,17213,388576
+Toronto,ON,17210,290755
+Scottsdale,AZ,8227,207719
+Charlotte,NC,8554,160090
+Pittsburgh,PA,6354,121106
+Henderson,NV,4463,112525
+Tempe,AZ,4263,109499
+Mesa,AZ,5871,90259
+Montréal,QC,5972,86270
+Chandler,AZ,3993,82667
+Gilbert,AZ,3128,65565
+Cleveland,OH,3322,62423
+Madison,WI,3213,58444
+Glendale,AZ,3206,51485
+Edinburgh,EDH,3704,31816
+Mississauga,ON,2726,29139
+Peoria,AZ,1707,28713
+Markham,ON,1564,26380
+"North Las Vegas",NV,1391,25641
+Champaign,IL,1195,17805
+Surprise,AZ,1018,17343
+Stuttgart,BW,2000,17153
+Goodyear,AZ,772,14474
+"Richmond Hill",ON,888,12322
 Avondale,AZ,628,11246
-Beachwood,OH,265,2950
-Belmont,NC,139,1593
-Berea,OH,107,1271
-"Bethel Park",PA,174,1343
-"Boulder City",NV,269,5719
+"North York",ON,1094,11112
+Scarborough,ON,986,9927
+Lakewood,OH,487,9879
+Concord,NC,760,8228
+Vaughan,ON,768,8005
+Huntersville,NC,566,7918
+Matthews,NC,667,7839
+Etobicoke,ON,699,6842
+"Cave Creek",AZ,372,6685
 Brampton,ON,837,6348
+"Boulder City",NV,269,5719
+"Fort Mill",SC,558,5711
+Urbana,IL,384,5153
+Oakville,ON,661,4907
+"Cleveland Heights",OH,191,4691
+Cornelius,NC,428,4688
+Westlake,OH,346,4643
+Thornhill,ON,346,4610
+Middleton,WI,331,4590
+"Fountain Hills",AZ,320,3721
+"Rocky River",OH,238,3666
+Pineville,NC,313,3660
+Gastonia,NC,438,3637
+Strongsville,OH,338,3591
+"Litchfield Park",AZ,207,3573
+"North Olmsted",OH,351,3570
+Monroeville,PA,360,3519
+Mentor,OH,407,3487
+"Cuyahoga Falls",OH,310,3349
+Beachwood,OH,265,2950
+Parma,OH,244,2895
+"Paradise Valley",AZ,126,2829
+Kent,OH,256,2823
+Fitchburg,WI,195,2429
+Medina,OH,289,2379
+Wexford,PA,255,2316
+Independence,OH,126,2249
+"Sun Prairie",WI,222,2212
+Solon,OH,190,2203
+Newmarket,ON,294,2188
+Willoughby,OH,225,2172
+"Indian Trail",NC,255,2085
+Hudson,OH,178,2032
+Avon,OH,200,1995
+Homestead,PA,118,1993
+Pickering,ON,283,1941
+Stow,OH,204,1865
+Laval,QC,332,1839
+"Sun City",AZ,217,1784
+"Chagrin Falls",OH,170,1764
+Davidson,NC,86,1738
+Ajax,ON,252,1725
+Coraopolis,PA,162,1715
 Bridgeville,PA,169,1699
-Brunswick,OH,156,1050
+Woodmere,OH,58,1697
+Whitby,ON,291,1687
+Tolleson,AZ,132,1659
+Lyndhurst,OH,103,1644
+Belmont,NC,139,1593
+Laveen,AZ,122,1581
+Woodbridge,ON,206,1545
+Aurora,ON,206,1502
+Ludwigsburg,BW,191,1490
+Fairlawn,OH,144,1398
+Monona,WI,130,1361
+"Bethel Park",PA,174,1343
+"Mayfield Heights",OH,143,1317
+Waxhaw,NC,151,1314
+Berea,OH,107,1271
+Carnegie,PA,98,1230
 Canonsburg,PA,153,1223
 Carefree,AZ,83,1190
-Carnegie,PA,98,1230
-"Cave Creek",AZ,372,6685
-"Chagrin Falls",OH,170,1764
-Champaign,IL,1195,17805
-Chandler,AZ,3993,82667
-Charlotte,NC,8554,160090
-Cleveland,OH,3322,62423
-"Cleveland Heights",OH,191,4691
-Concord,NC,760,8228
-Coraopolis,PA,162,1715
-Cornelius,NC,428,4688
-"Cuyahoga Falls",OH,310,3349
-Davidson,NC,86,1738
-"East York",ON,141,1102
-Edinburgh,EDH,3704,31816
-Edinburgh,MLN,152,1076
-Etobicoke,ON,699,6842
-Fairlawn,OH,144,1398
 "Fairview Park",OH,89,1188
-Fitchburg,WI,195,2429
-"Fort Mill",SC,558,5711
-"Fountain Hills",AZ,320,3721
-Gastonia,NC,438,3637
-Gilbert,AZ,3128,65565
-Glendale,AZ,3206,51485
-Goodyear,AZ,772,14474
-Henderson,NV,4463,112525
-Homestead,PA,118,1993
-Hudson,OH,178,2032
-Huntersville,NC,566,7918
-Independence,OH,126,2249
-"Indian Trail",NC,255,2085
-Kent,OH,256,2823
-Lakewood,OH,487,9879
-"Las Vegas",NV,26798,1082227
-Laval,QC,332,1839
-Laveen,AZ,122,1581
-"Litchfield Park",AZ,207,3573
-Ludwigsburg,BW,191,1490
-Lyndhurst,OH,103,1644
-Madison,WI,3213,58444
-Markham,ON,1564,26380
-Matthews,NC,667,7839
-"Mayfield Heights",OH,143,1317
-Medina,OH,289,2379
-Mentor,OH,407,3487
-Mesa,AZ,5871,90259
-"Middleburg Heights",OH,108,1013
-Middleton,WI,331,4590
-Mississauga,ON,2726,29139
-Monona,WI,130,1361
-Monroeville,PA,360,3519
-Montréal,QC,5972,86270
-Newmarket,ON,294,2188
-"North Las Vegas",NV,1391,25641
-"North Olmsted",OH,351,3570
-"North York",ON,1094,11112
-Oakville,ON,661,4907
-"Paradise Valley",AZ,126,2829
-Parma,OH,244,2895
-Peoria,AZ,1707,28713
-Phoenix,AZ,17213,388576
-Pickering,ON,283,1941
-Pineville,NC,313,3660
-Pittsburgh,PA,6354,121106
-"Richmond Hill",ON,888,12322
-"Rocky River",OH,238,3666
-Scarborough,ON,986,9927
-Scottsdale,AZ,8227,207719
-Solon,OH,190,2203
-Stow,OH,204,1865
-Streetsboro,OH,128,1050
-Strongsville,OH,338,3591
-Stuttgart,BW,2000,17153
-"Sun City",AZ,217,1784
-"Sun Prairie",WI,222,2212
-Surprise,AZ,1018,17343
-Tempe,AZ,4263,109499
-Thornhill,ON,346,4610
-Tolleson,AZ,132,1659
-Toronto,ON,17210,290755
 Twinsburg,OH,119,1185
-Unionville,ON,41,1002
-Urbana,IL,384,5153
-Vaughan,ON,768,8005
-Verdun,QC,138,1032
 Verona,WI,129,1163
-Waxhaw,NC,151,1314
-Westlake,OH,346,4643
-Wexford,PA,255,2316
-Whitby,ON,291,1687
-Willoughby,OH,225,2172
-Woodbridge,ON,206,1545
-Woodmere,OH,58,1697
+"East York",ON,141,1102
+Edinburgh,MLN,152,1076
+Streetsboro,OH,128,1050
+Brunswick,OH,156,1050
+"Avon Lake",OH,105,1048
+Verdun,QC,138,1032
+"Middleburg Heights",OH,108,1013
+Unionville,ON,41,1002
