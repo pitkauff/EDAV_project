@@ -1,6 +1,9 @@
 city,state,category,NumberOfRestaurants
 Ahwatukee,AZ,Italian,2
+Ajax,ON,"American (New)",1
+Ajax,ON,"American (Traditional)",12
 Ajax,ON,Cajun/Creole,1
+Ajax,ON,"Canadian (New)",7
 Ajax,ON,Chinese,10
 Ajax,ON,Halal,5
 Ajax,ON,Indian,7
@@ -12,26 +15,43 @@ Ajax,ON,"Middle Eastern",4
 Ajax,ON,Pakistani,5
 Ajax,ON,Thai,4
 Ajax,ON,Vietnamese,6
+Alex,30,French,1
+"Allison Park",PA,"American (New)",6
+"Allison Park",PA,"American (Traditional)",6
 "Allison Park",PA,Chinese,1
 "Allison Park",PA,Italian,4
 "Allison Park",PA,Japanese,2
 "Allison Park",PA,Thai,1
+Ambridge,PA,"American (New)",2
+Ambridge,PA,"American (Traditional)",6
 Ambridge,PA,Greek,2
 Ambridge,PA,Italian,2
+Amherst,OH,"American (New)",4
+Amherst,OH,"American (Traditional)",9
 Amherst,OH,Chinese,3
 Amherst,OH,Greek,1
 Amherst,OH,Italian,3
 Amherst,OH,Japanese,1
 Amherst,OH,Mexican,4
+Anjou,QC,"American (Traditional)",1
+Anjou,QC,"Canadian (New)",1
+Anjou,QC,French,1
 Anjou,QC,Italian,2
+Anthem,AZ,"American (New)",2
+Anthem,AZ,"American (Traditional)",1
 Anthem,AZ,Chinese,1
+Anthem,AZ,French,1
 Anthem,AZ,Greek,1
 Anthem,AZ,Italian,2
 Anthem,AZ,Mexican,2
+Argos,IN,"American (Traditional)",1
 Arnold,PA,Chinese,1
 Arnold,PA,Italian,2
 Aspinwall,PA,Italian,1
 "Auburn Township",OH,Italian,1
+"Auburn Twp",OH,"American (New)",1
+Aurora,OH,"American (New)",9
+Aurora,OH,"American (Traditional)",8
 Aurora,OH,Chinese,3
 Aurora,OH,Greek,1
 Aurora,OH,Indian,2
@@ -39,8 +59,11 @@ Aurora,OH,Italian,4
 Aurora,OH,Japanese,1
 Aurora,OH,Mexican,2
 Aurora,OH,Pakistani,1
+Aurora,ON,"American (Traditional)",13
 Aurora,ON,Cajun/Creole,1
+Aurora,ON,"Canadian (New)",10
 Aurora,ON,Chinese,10
+Aurora,ON,French,1
 Aurora,ON,Greek,5
 Aurora,ON,Halal,1
 Aurora,ON,Indian,1
@@ -54,18 +77,25 @@ Aurora,ON,Singaporean,1
 Aurora,ON,Thai,4
 Aurora,ON,Vietnamese,1
 Avalon,PA,Italian,2
+Avon,OH,"American (New)",9
+Avon,OH,"American (Traditional)",14
 Avon,OH,Chinese,3
+Avon,OH,French,1
 Avon,OH,Halal,1
 Avon,OH,Italian,6
 Avon,OH,Japanese,1
 Avon,OH,Mexican,3
 Avon,OH,"Middle Eastern",1
 Avon,OH,Turkish,2
+"Avon Lake",OH,"American (New)",7
+"Avon Lake",OH,"American (Traditional)",11
 "Avon Lake",OH,Chinese,5
 "Avon Lake",OH,Greek,1
 "Avon Lake",OH,Italian,6
 "Avon Lake",OH,Mexican,5
 "Avon Lake",OH,Thai,1
+Avondale,AZ,"American (New)",8
+Avondale,AZ,"American (Traditional)",19
 Avondale,AZ,Cajun/Creole,1
 Avondale,AZ,Chinese,10
 Avondale,AZ,Greek,4
@@ -77,39 +107,60 @@ Avondale,AZ,Mexican,40
 Avondale,AZ,"Middle Eastern",2
 Avondale,AZ,Thai,2
 Baie-D'urfe,QC,Italian,1
+Bainbridge,OH,"American (Traditional)",2
 Bainbridge,OH,Greek,1
 Bath,OH,Italian,1
+"Bay Village",OH,"American (New)",2
+"Bay Village",OH,"American (Traditional)",2
 "Bay Village",OH,Cantonese,1
 "Bay Village",OH,Chinese,1
 "Bay Village",OH,Greek,1
 "Bay Village",OH,Italian,4
 "Bay Village",OH,Turkish,1
+Beachwood,OH,"American (New)",13
+Beachwood,OH,"American (Traditional)",8
 Beachwood,OH,Chinese,3
+Beachwood,OH,French,1
 Beachwood,OH,Indian,2
 Beachwood,OH,Italian,9
 Beachwood,OH,Japanese,4
 Beachwood,OH,Mexican,1
 Beachwood,OH,"Middle Eastern",1
+Beaconsfield,QC,French,1
 Beaconsfield,QC,Italian,1
+Bedford,OH,"American (New)",3
+Bedford,OH,"American (Traditional)",8
 Bedford,OH,Chinese,3
 Bedford,OH,Greek,1
 Bedford,OH,Italian,1
 Bedford,OH,Mexican,2
 Bedford,OH,Peruvian,1
+"Bedford Heights",OH,"American (New)",1
+"Bedford Heights",OH,"American (Traditional)",3
 "Bedford Heights",OH,Italian,1
 Beeton,ON,Italian,1
+Belleville,WI,"American (New)",1
+Belleville,WI,"American (Traditional)",2
 Belleville,WI,Italian,1
+Bellevue,PA,"American (New)",1
+Bellevue,PA,"American (Traditional)",2
 Bellevue,PA,Chinese,3
 Bellevue,PA,Italian,1
 Bellevue,PA,Thai,3
 Bellevue,PA,Turkish,1
+Belmont,NC,"American (New)",6
+Belmont,NC,"American (Traditional)",8
 Belmont,NC,Cantonese,1
 Belmont,NC,Chinese,2
 Belmont,NC,Italian,5
 Belmont,NC,Japanese,1
 Belmont,NC,Mexican,2
+Beloeil,QC,"Canadian (New)",2
+Beloeil,QC,French,2
 Beloeil,QC,Italian,1
 Beloeil,QC,Thai,1
+Berea,OH,"American (New)",10
+Berea,OH,"American (Traditional)",8
 Berea,OH,Chinese,2
 Berea,OH,Greek,1
 Berea,OH,Italian,1
@@ -117,15 +168,19 @@ Berea,OH,Mexican,4
 Berea,OH,Thai,1
 Berea,OH,Vietnamese,1
 Berg,BW,Italian,1
+"Bethel Park",PA,"American (New)",5
+"Bethel Park",PA,"American (Traditional)",7
 "Bethel Park",PA,Chinese,3
 "Bethel Park",PA,Italian,7
 "Bethel Park",PA,Japanese,1
 "Bethel Park",PA,Mexican,2
 "Bethel Park",PA,Thai,1
+"Black Earth",WI,"American (Traditional)",2
 Blainville,QC,Italian,1
 Blainville,QC,Thai,1
 Blawnox,PA,Thai,1
 Bloomfield,PA,Italian,1
+Böblingen,BW,"American (Traditional)",3
 Böblingen,BW,Chinese,4
 Böblingen,BW,Greek,2
 Böblingen,BW,Indian,1
@@ -135,26 +190,39 @@ Böblingen,BW,Mexican,1
 Böblingen,BW,Thai,4
 Böblingen,BW,Turkish,2
 Böblingen,BW,Vietnamese,2
+Boisbriand,QC,"American (Traditional)",2
+Boisbriand,QC,"Canadian (New)",1
 Boisbriand,QC,Italian,5
 Boisbriand,QC,Mexican,1
+Bolton,ON,"American (Traditional)",2
 Bolton,ON,Cajun/Creole,1
+Bolton,ON,"Canadian (New)",1
 Bolton,ON,Chinese,1
 Bolton,ON,Italian,3
 Bolton,ON,Japanese,2
 Bolton,ON,"Middle Eastern",1
 Bolton,ON,Vietnamese,1
 "Bonnyrigg and Lasswade",MLN,Italian,1
+Boucherville,QC,"American (Traditional)",1
+Boucherville,QC,"Canadian (New)",4
+Boucherville,QC,French,4
 Boucherville,QC,Italian,2
 Boucherville,QC,Japanese,1
 Boucherville,QC,"Middle Eastern",1
+"Boulder City",NV,"American (New)",7
+"Boulder City",NV,"American (Traditional)",12
 "Boulder City",NV,Chinese,4
 "Boulder City",NV,Greek,1
 "Boulder City",NV,Italian,5
 "Boulder City",NV,Japanese,2
 "Boulder City",NV,Mexican,5
 "Boulder City",NV,Thai,2
+Braddock,PA,"American (New)",2
+Braddock,PA,"American (Traditional)",2
 Braddock,PA,Italian,1
+Bradford,ON,"American (Traditional)",4
 Bradford,ON,Cajun/Creole,1
+Bradford,ON,"Canadian (New)",4
 Bradford,ON,Chinese,1
 Bradford,ON,Indian,1
 Bradford,ON,Italian,2
@@ -163,14 +231,20 @@ Bradford,ON,Mexican,1
 Bradford,ON,"Middle Eastern",1
 Bradford,ON,Thai,1
 Bradford,ON,Vietnamese,1
+"Bradford West Gwillimbury",ON,"American (Traditional)",1
+"Bradford West Gwillimbury",ON,"Canadian (New)",1
 "Bradford West Gwillimbury",ON,Chinese,1
 "Bradford West Gwillimbury",ON,Greek,1
 "Bradford West Gwillimbury",ON,Indian,1
 "Bradford West Gwillimbury",ON,Italian,1
 "Bradford West Gwillimbury",ON,Mexican,2
 "Bradford West Gwillimbury",ON,Thai,1
+Brampton,ON,"American (New)",5
+Brampton,ON,"American (Traditional)",39
 Brampton,ON,Cajun/Creole,2
+Brampton,ON,"Canadian (New)",33
 Brampton,ON,Chinese,41
+Brampton,ON,French,5
 Brampton,ON,Greek,7
 Brampton,ON,Halal,13
 Brampton,ON,Indian,87
@@ -181,39 +255,62 @@ Brampton,ON,"Middle Eastern",25
 Brampton,ON,Pakistani,18
 Brampton,ON,Thai,13
 Brampton,ON,Vietnamese,12
+Bratenahl,OH,"American (New)",2
+Bratenahl,OH,"American (Traditional)",1
 Bratenahl,OH,Italian,1
+Brecksville,OH,"American (New)",7
+Brecksville,OH,"American (Traditional)",7
 Brecksville,OH,Chinese,2
+Brecksville,OH,French,1
 Brecksville,OH,Italian,1
 Brecksville,OH,Japanese,1
 Brecksville,OH,Mexican,2
 Brecksville,OH,Thai,1
+Brentwood,PA,"American (New)",1
+Brentwood,PA,"American (Traditional)",1
 Brentwood,PA,Chinese,1
+Bridgeville,PA,"American (New)",7
+Bridgeville,PA,"American (Traditional)",16
 Bridgeville,PA,Chinese,4
 Bridgeville,PA,Greek,1
 Bridgeville,PA,Italian,8
 Bridgeville,PA,Japanese,1
 Bridgeville,PA,Mexican,5
 Bridgeville,PA,"Middle Eastern",1
+"Broadview Heights",OH,"American (New)",4
+"Broadview Heights",OH,"American (Traditional)",8
 "Broadview Heights",OH,Chinese,2
 "Broadview Heights",OH,Greek,2
 "Broadview Heights",OH,Italian,6
 "Broadview Heights",OH,Japanese,1
 "Broadview Heights",OH,Mexican,2
+"Brook Park",OH,"American (New)",1
+"Brook Park",OH,"American (Traditional)",5
 "Brook Park",OH,Chinese,1
 "Brook Park",OH,Italian,4
 "Brook Park",OH,Mexican,2
+Brooklin,ON,"American (Traditional)",1
+Brooklin,ON,"Canadian (New)",1
 Brooklin,ON,Chinese,1
 Brookline,PA,Italian,1
+Brooklyn,OH,"American (New)",4
+Brooklyn,OH,"American (Traditional)",8
 Brooklyn,OH,Cajun/Creole,1
 Brooklyn,OH,Cantonese,1
 Brooklyn,OH,Chinese,2
 Brooklyn,OH,Italian,4
 Brooklyn,OH,Japanese,1
 Brooklyn,OH,Mexican,3
+Brooklyn,WI,"American (New)",1
+Brooklyn,WI,"American (Traditional)",1
 Brooklyn,WI,Italian,1
 Brookpark,OH,Mexican,1
+Brossard,QC,"American (New)",1
+Brossard,QC,"American (Traditional)",1
+Brossard,QC,"Canadian (New)",8
 Brossard,QC,Cantonese,1
 Brossard,QC,Chinese,13
+Brossard,QC,French,9
 Brossard,QC,Greek,2
 Brossard,QC,Indian,3
 Brossard,QC,Italian,9
@@ -224,15 +321,25 @@ Brossard,QC,"Middle Eastern",4
 Brossard,QC,Pakistani,1
 Brossard,QC,Thai,3
 Brossard,QC,Vietnamese,10
+Brunswick,OH,"American (New)",6
+Brunswick,OH,"American (Traditional)",12
 Brunswick,OH,Chinese,5
 Brunswick,OH,Greek,2
 Brunswick,OH,Italian,6
 Brunswick,OH,Mexican,7
 Brunswick,OH,Thai,2
+Burton,OH,"American (New)",3
+Burton,OH,"American (Traditional)",3
+Caledon,ON,"American (Traditional)",2
+Caledon,ON,"Canadian (New)",2
 Caledon,ON,Italian,5
 Caledon,ON,Japanese,1
 Caledon,ON,"Middle Eastern",1
 Caledon,ON,Thai,1
+Candiac,QC,"Canadian (New)",1
+Candiac,QC,French,1
+Canonsburg,PA,"American (New)",6
+Canonsburg,PA,"American (Traditional)",13
 Canonsburg,PA,Cajun/Creole,1
 Canonsburg,PA,Chinese,8
 Canonsburg,PA,Greek,1
@@ -241,33 +348,50 @@ Canonsburg,PA,Italian,7
 Canonsburg,PA,Japanese,4
 Canonsburg,PA,Mexican,5
 Canonsburg,PA,"Middle Eastern",1
+Carefree,AZ,"American (New)",10
+Carefree,AZ,"American (Traditional)",5
 Carefree,AZ,Chinese,1
+Carefree,AZ,French,1
 Carefree,AZ,Greek,2
 Carefree,AZ,Italian,4
 Carefree,AZ,Korean,1
 Carefree,AZ,Mexican,1
+Carnegie,PA,"American (New)",2
+Carnegie,PA,"American (Traditional)",6
 Carnegie,PA,Chinese,1
 Carnegie,PA,Indian,1
 Carnegie,PA,Italian,5
 Carnegie,PA,Japanese,1
+"Cave Creek",AZ,"American (New)",11
+"Cave Creek",AZ,"American (Traditional)",20
 "Cave Creek",AZ,Chinese,1
+"Cave Creek",AZ,French,1
 "Cave Creek",AZ,Greek,1
 "Cave Creek",AZ,Indian,1
 "Cave Creek",AZ,Italian,9
 "Cave Creek",AZ,Japanese,4
 "Cave Creek",AZ,Mexican,10
 "Cave Creek",AZ,Thai,2
+Cecil,PA,"American (New)",1
 Cecil,PA,Italian,1
 Cecil,PA,Korean,1
 Cecil,PA,Thai,1
+"Centre Island",ON,"American (Traditional)",1
+"Chagrin Falls",OH,"American (New)",15
+"Chagrin Falls",OH,"American (Traditional)",11
 "Chagrin Falls",OH,Chinese,2
+"Chagrin Falls",OH,French,1
 "Chagrin Falls",OH,Italian,6
 "Chagrin Falls",OH,Mexican,2
 "Chagrin Falls",OH,"Middle Eastern",1
 "Chagrin Falls",OH,Thai,2
+Chambly,QC,French,2
 Chambly,QC,Thai,1
+Champaign,IL,"American (New)",31
+Champaign,IL,"American (Traditional)",50
 Champaign,IL,Cajun/Creole,3
 Champaign,IL,Chinese,35
+Champaign,IL,French,2
 Champaign,IL,Greek,6
 Champaign,IL,Indian,12
 Champaign,IL,Italian,26
@@ -280,9 +404,12 @@ Champaign,IL,Pakistani,3
 Champaign,IL,Thai,12
 Champaign,IL,Turkish,2
 Champaign,IL,Vietnamese,2
+Chandler,AZ,"American (New)",80
+Chandler,AZ,"American (Traditional)",104
 Chandler,AZ,Cajun/Creole,5
 Chandler,AZ,Chinese,72
 Chandler,AZ,Cuban,1
+Chandler,AZ,French,6
 Chandler,AZ,Greek,17
 Chandler,AZ,Halal,9
 Chandler,AZ,Indian,28
@@ -296,14 +423,19 @@ Chandler,AZ,Peruvian,2
 Chandler,AZ,Thai,21
 Chandler,AZ,Turkish,3
 Chandler,AZ,Vietnamese,19
+Chardon,OH,"American (New)",4
+Chardon,OH,"American (Traditional)",6
 Chardon,OH,Chinese,2
 Chardon,OH,Italian,2
 Chardon,OH,Mexican,2
+Charlotte,NC,"American (New)",320
+Charlotte,NC,"American (Traditional)",400
 Charlotte,NC,Cajun/Creole,22
 Charlotte,NC,Cantonese,1
 Charlotte,NC,Chinese,152
 Charlotte,NC,Cuban,9
 Charlotte,NC,Ethiopian,7
+Charlotte,NC,French,20
 Charlotte,NC,Greek,56
 Charlotte,NC,Halal,17
 Charlotte,NC,Indian,45
@@ -319,6 +451,8 @@ Charlotte,NC,Thai,30
 Charlotte,NC,Turkish,4
 Charlotte,NC,Vietnamese,42
 Chatauguay,QC,Indian,1
+Châteauguay,QC,"American (Traditional)",1
+Chateauguay,QC,"Canadian (New)",1
 Chateauguay,QC,Chinese,1
 Chateauguay,QC,Greek,1
 Chateauguay,QC,Indian,1
@@ -327,6 +461,8 @@ Chateauguay,QC,Japanese,1
 Châteauguay,QC,Mexican,1
 Châteauguay,QC,Thai,3
 Chateauguay,QC,Vietnamese,1
+Chertsey,QC,"American (Traditional)",1
+Chester,CHE,"American (Traditional)",3
 Chester,CHE,Chinese,4
 Chester,CHE,Greek,3
 Chester,CHE,Indian,8
@@ -337,21 +473,30 @@ Chester,CHE,Thai,1
 "Chester Township",OH,Indian,1
 "Chester Township",OH,"Middle Eastern",1
 "Chester Township",OH,Pakistani,1
+Chesterland,OH,"American (Traditional)",4
 Chesterland,OH,Chinese,2
 Chesterland,OH,Indian,1
 Chesterland,OH,Italian,4
 Chesterland,OH,Mexican,2
 Chesterland,OH,Thai,2
 Chesterland,OH,Vietnamese,1
+Cheswick,PA,"American (New)",2
+Cheswick,PA,"American (Traditional)",2
 Cheswick,PA,Indian,1
 Cheswick,PA,Italian,1
+Clairton,PA,"American (New)",1
+Clairton,PA,"American (Traditional)",2
 Clairton,PA,Chinese,1
 Clairton,PA,Italian,3
+Clark,NV,"American (Traditional)",1
+Cleveland,OH,"American (New)",182
+Cleveland,OH,"American (Traditional)",226
 Cleveland,OH,Cajun/Creole,9
 Cleveland,OH,Cantonese,5
 Cleveland,OH,Chinese,94
 Cleveland,OH,Cuban,3
 Cleveland,OH,Ethiopian,1
+Cleveland,OH,French,11
 Cleveland,OH,Greek,14
 Cleveland,OH,Halal,9
 Cleveland,OH,Indian,14
@@ -364,6 +509,8 @@ Cleveland,OH,Pakistani,2
 Cleveland,OH,Thai,16
 Cleveland,OH,Turkish,3
 Cleveland,OH,Vietnamese,13
+"Cleveland Heights",OH,"American (New)",10
+"Cleveland Heights",OH,"American (Traditional)",12
 "Cleveland Heights",OH,Cajun/Creole,2
 "Cleveland Heights",OH,Chinese,3
 "Cleveland Heights",OH,Ethiopian,1
@@ -379,10 +526,16 @@ Cleveland,OH,Vietnamese,13
 "Cleveland Heights",OH,Thai,5
 "Cleveland Heights",OH,Turkish,1
 "Cleveland Heights",OH,Vietnamese,1
+clinton,PA,"American (New)",1
+"columbia station",OH,"American (New)",1
+"columbia station",OH,"American (Traditional)",1
 Communauté-Urbaine-de-Montréal,QC,Italian,1
+Concord,NC,"American (New)",28
+Concord,NC,"American (Traditional)",62
 Concord,NC,Cajun/Creole,1
 Concord,NC,Chinese,13
 Concord,NC,Cuban,2
+Concord,NC,French,1
 Concord,NC,Greek,6
 Concord,NC,Indian,3
 Concord,NC,Italian,20
@@ -391,6 +544,10 @@ Concord,NC,Mexican,23
 Concord,NC,Peruvian,1
 Concord,NC,Thai,8
 Concord,NC,Vietnamese,3
+Concord,OH,"American (New)",3
+Concord,OH,"American (Traditional)",2
+Concord,ON,"American (Traditional)",1
+Concord,ON,"Canadian (New)",2
 Concord,ON,Chinese,5
 Concord,ON,Greek,2
 Concord,ON,Indian,2
@@ -400,15 +557,24 @@ Concord,ON,"Middle Eastern",3
 Concord,ON,Thai,1
 Concord,ON,Turkish,1
 Concord,ON,Vietnamese,4
+"Concord Mills",NC,"American (New)",1
+"Concord Mills",NC,"American (Traditional)",2
+"Concord Twp",OH,"American (New)",1
+Copley,OH,"American (Traditional)",3
 Copley,OH,Italian,3
+Coraopolis,PA,"American (New)",5
+Coraopolis,PA,"American (Traditional)",21
 Coraopolis,PA,Chinese,3
 Coraopolis,PA,Halal,1
 Coraopolis,PA,Indian,3
 Coraopolis,PA,Italian,7
 Coraopolis,PA,Mexican,2
 Coraopolis,PA,"Middle Eastern",1
+Cornelius,NC,"American (New)",12
+Cornelius,NC,"American (Traditional)",19
 Cornelius,NC,Cajun/Creole,1
 Cornelius,NC,Chinese,7
+Cornelius,NC,French,1
 Cornelius,NC,Greek,3
 Cornelius,NC,Halal,1
 Cornelius,NC,Indian,2
@@ -418,15 +584,28 @@ Cornelius,NC,Mexican,8
 Cornelius,NC,Pakistani,1
 Cornelius,NC,Thai,2
 Cornelius,NC,Vietnamese,1
+"Cottage Grove",WI,"American (New)",1
+"Cottage Grove",WI,"American (Traditional)",2
 "Cottage Grove",WI,Chinese,1
 "Cottage Grove",WI,Italian,1
+Crafton,PA,"American (Traditional)",1
 Crafton,PA,Italian,1
+Cramerton,NC,"American (New)",2
+Cramerton,NC,"American (Traditional)",2
 Cramerton,NC,Chinese,1
 Cramerton,NC,Italian,1
 Cramerton,NC,Thai,1
+Creighton,PA,"American (New)",1
+Crescent,PA,"American (Traditional)",1
+"Cross Plains",WI,"American (New)",2
+"Cross Plains",WI,"American (Traditional)",5
 "Cross Plains",WI,Chinese,1
 "Cross Plains",WI,Italian,1
+Cuddy,PA,"American (Traditional)",1
+"Cuyahoga Falls",OH,"American (New)",20
+"Cuyahoga Falls",OH,"American (Traditional)",30
 "Cuyahoga Falls",OH,Chinese,4
+"Cuyahoga Falls",OH,French,1
 "Cuyahoga Falls",OH,Greek,1
 "Cuyahoga Falls",OH,Halal,1
 "Cuyahoga Falls",OH,Indian,2
@@ -436,24 +615,36 @@ Cramerton,NC,Thai,1
 "Cuyahoga Falls",OH,Mexican,11
 "Cuyahoga Falls",OH,"Middle Eastern",3
 "Cuyahoga Falls",OH,Thai,1
+"Cuyahoga Heights",OH,"American (Traditional)",1
 Dalkeith,MLN,Chinese,1
 Dalkeith,MLN,Indian,3
 Dalkeith,MLN,Italian,1
 Dalkeith,MLN,Pakistani,2
+Dallas,NC,"American (New)",1
+Dallas,NC,"American (Traditional)",1
 Dallas,NC,Chinese,1
 Dallas,NC,Greek,1
+Dane,WI,"American (Traditional)",3
+Davidson,NC,"American (New)",6
+Davidson,NC,"American (Traditional)",5
 Davidson,NC,Chinese,2
 Davidson,NC,Italian,3
 Davidson,NC,Japanese,1
 Davidson,NC,Mexican,3
+"De Forest",WI,"American (New)",3
+"De Forest",WI,"American (Traditional)",2
 "De Forest",WI,Chinese,1
 "De Forest",WI,Italian,1
 "De Forest",WI,Mexican,1
+DeForest,WI,"American (New)",1
+DeForest,WI,"American (Traditional)",2
 DeForest,WI,Chinese,1
 DeForest,WI,Mexican,1
+Delson,QC,"Canadian (New)",1
 Delson,QC,Indian,1
 Delson,QC,Japanese,1
 Denkendorf,BW,Italian,2
+Denkendorf,BY,French,1
 Ditzingen,BW,Chinese,1
 Ditzingen,BW,Greek,3
 Ditzingen,BW,Indian,1
@@ -461,8 +652,11 @@ Ditzingen,BW,Italian,5
 Ditzingen,BW,Vietnamese,1
 "Dollard-Des Ormeaux",QC,"Middle Eastern",1
 "Dollard-des Ormeaux",QC,Vietnamese,1
+Dollard-des-Ormeaux,QC,"American (Traditional)",5
 Dollard-des-Ormeaux,QC,Cajun/Creole,1
+Dollard-Des-Ormeaux,QC,"Canadian (New)",4
 Dollard-Des-Ormeaux,QC,Chinese,6
+Dollard-Des-Ormeaux,QC,French,2
 Dollard-des-Ormeaux,QC,Greek,5
 Dollard-des-Ormeaux,QC,Indian,3
 Dollard-Des-Ormeaux,QC,Italian,10
@@ -473,25 +667,37 @@ Dollard-des-Ormeaux,QC,"Middle Eastern",4
 Dollard-des-Ormeaux,QC,Pakistani,2
 Dollard-des-Ormeaux,QC,Thai,3
 Dollard-Des-Ormeaux,QC,Vietnamese,3
+Dorval,QC,"American (Traditional)",4
+Dorval,QC,"Canadian (New)",5
 Dorval,QC,Chinese,1
+Dorval,QC,French,2
 Dorval,QC,Indian,1
 Dorval,QC,Italian,6
 Dorval,QC,Japanese,1
 Dorval,QC,Korean,1
 Dorval,QC,"Middle Eastern",1
 Dorval,QC,Thai,2
+Downtown,PA,"American (New)",1
 Dunfermline,FIF,Indian,3
 Dunfermline,FIF,Italian,5
 Dunfermline,FIF,Pakistani,3
+"East Ajax",ON,"American (Traditional)",1
+"East Ajax",ON,"Canadian (New)",1
 "East Cleveland",OH,Italian,1
 "East Cleveland",OH,Mexican,1
+"East Gwillimbury",ON,"American (Traditional)",3
+"East Gwillimbury",ON,"Canadian (New)",4
 "East Gwillimbury",ON,Mexican,2
 "East Liberty",PA,Italian,1
 "East Liberty",PA,Mexican,1
+"East Mc Keesport",PA,"American (Traditional)",1
 "East Mc Keesport",PA,Italian,1
 "East Mc Keesport",PA,Mexican,1
 "East McKeesport",PA,Italian,1
+"East Pittsburgh",PA,"American (New)",1
 "East Pittsburgh",PA,Chinese,1
+"East York",ON,"American (Traditional)",5
+"East York",ON,"Canadian (New)",3
 "East York",ON,Chinese,6
 "East York",ON,Greek,3
 "East York",ON,Halal,2
@@ -500,14 +706,22 @@ Dunfermline,FIF,Pakistani,3
 "East York",ON,Japanese,1
 "East York",ON,"Middle Eastern",1
 "East York",ON,Thai,2
+Eastlake,OH,"American (New)",3
+Eastlake,OH,"American (Traditional)",4
 Eastlake,OH,Chinese,1
 Eastlake,OH,Italian,4
 Eastlake,OH,Mexican,3
 Eastlake,OH,Peruvian,1
+Edgewood,PA,"American (New)",1
+Edgewood,PA,"American (Traditional)",1
 Edimbourg,EDH,Chinese,1
+Edinburgh,EDH,"American (New)",16
+Edinburgh,EDH,"American (Traditional)",42
+Edinburgh,EDH,"Canadian (New)",1
 Edinburgh,EDH,Cantonese,4
 Edinburgh,EDH,Chinese,86
 Edinburgh,EDH,Ethiopian,1
+Edinburgh,EDH,French,53
 Edinburgh,EDH,Greek,10
 Edinburgh,EDH,Halal,8
 Edinburgh,EDH,Indian,107
@@ -521,8 +735,11 @@ Edinburgh,EDH,Pakistani,27
 Edinburgh,EDH,Thai,41
 Edinburgh,EDH,Turkish,25
 Edinburgh,EDH,Vietnamese,2
+Edinburgh,MLN,"American (New)",2
+Edinburgh,MLN,"American (Traditional)",1
 Edinburgh,MLN,Cantonese,1
 Edinburgh,MLN,Chinese,2
+Edinburgh,MLN,French,2
 Edinburgh,MLN,Halal,1
 Edinburgh,MLN,Indian,5
 Edinburgh,MLN,Italian,4
@@ -534,10 +751,15 @@ Edinburgh,MLN,Thai,4
 Edinburgh,MLN,Turkish,1
 Edinburgh,MLN,Vietnamese,1
 Edinburgh,PKN,Italian,1
+"El Mirage",AZ,"American (New)",2
 "El Mirage",AZ,Mexican,12
+Elizabeth,PA,"American (New)",2
+Elizabeth,PA,"American (Traditional)",7
 Elizabeth,PA,Chinese,1
 Elizabeth,PA,Greek,1
 Elizabeth,PA,Italian,2
+Elyria,OH,"American (New)",12
+Elyria,OH,"American (Traditional)",30
 Elyria,OH,Chinese,4
 Elyria,OH,Greek,4
 Elyria,OH,Italian,4
@@ -546,19 +768,30 @@ Elyria,OH,Mexican,6
 Elyria,OH,"Middle Eastern",1
 Elyria,OH,Thai,1
 Elyria,OH,Turkish,1
+Emsworth,PA,"American (New)",1
+Emsworth,PA,"American (Traditional)",1
 Emsworth,PA,Italian,1
 Enterprise,NV,Mexican,2
+Esslingen,BW,"American (Traditional)",3
 Esslingen,BW,Chinese,2
+Esslingen,BW,French,2
 Esslingen,BW,Greek,3
 Esslingen,BW,Indian,1
 Esslingen,BW,Italian,14
 Esslingen,BW,Mexican,1
 Esslingen,BW,Turkish,1
+"Esslingen am Neckar",BW,"American (Traditional)",1
 "Esslingen am Neckar",BW,Greek,2
 "Esslingen am Neckar",BW,Italian,3
+Estérel,QC,"Canadian (New)",1
+Etna,PA,"American (Traditional)",1
 Etna,PA,Italian,3
+Etobicoke,ON,"American (New)",5
+Etobicoke,ON,"American (Traditional)",18
 Etobicoke,ON,Cajun/Creole,1
+Etobicoke,ON,"Canadian (New)",20
 Etobicoke,ON,Chinese,22
+Etobicoke,ON,French,3
 Etobicoke,ON,Greek,10
 Etobicoke,ON,Halal,3
 Etobicoke,ON,Indian,17
@@ -570,10 +803,14 @@ Etobicoke,ON,"Middle Eastern",7
 Etobicoke,ON,Pakistani,3
 Etobicoke,ON,Thai,19
 Etobicoke,ON,Vietnamese,3
+Euclid,OH,"American (New)",7
+Euclid,OH,"American (Traditional)",4
 Euclid,OH,Chinese,3
 Euclid,OH,Greek,1
 Euclid,OH,Italian,3
 Euclid,OH,Mexican,1
+Fairlawn,OH,"American (New)",9
+Fairlawn,OH,"American (Traditional)",12
 Fairlawn,OH,Chinese,1
 Fairlawn,OH,Greek,1
 Fairlawn,OH,Indian,4
@@ -582,26 +819,40 @@ Fairlawn,OH,Japanese,2
 Fairlawn,OH,Mexican,1
 Fairlawn,OH,"Middle Eastern",1
 Fairlawn,OH,Thai,1
+"Fairport Harbor",OH,"American (Traditional)",2
 "Fairport Harbor",OH,Italian,1
+Fairview,NC,"American (Traditional)",1
 Fairview,NC,Cuban,1
 Fairview,NC,Italian,1
+"Fairview Park",OH,"American (New)",2
+"Fairview Park",OH,"American (Traditional)",5
 "Fairview Park",OH,Chinese,1
 "Fairview Park",OH,Italian,3
 "Fairview Park",OH,Japanese,1
 "Fairview Park",OH,Mexican,1
 "Fairview Park",OH,"Middle Eastern",1
+Farnham,QC,"Canadian (New)",1
+Farnham,QC,French,1
+Fellbach,BW,"American (Traditional)",1
 Fellbach,BW,Chinese,3
+Fellbach,BW,French,2
 Fellbach,BW,Greek,2
 Fellbach,BW,Indian,1
 Fellbach,BW,Italian,16
 Fellbach,BW,Mexican,1
 Fellbach,BW,"Middle Eastern",1
 Fellbach,BW,Thai,1
+Filderstadt,BW,"American (New)",1
 Filderstadt,BW,Chinese,4
 Filderstadt,BW,Greek,2
 Filderstadt,BW,Italian,6
 Filderstadt,BW,Thai,1
+Finleyville,PA,"American (New)",1
+Finleyville,PA,"American (Traditional)",2
 Finleyville,PA,Italian,1
+Fisher,IL,"American (Traditional)",1
+Fitchburg,WI,"American (New)",5
+Fitchburg,WI,"American (Traditional)",12
 Fitchburg,WI,Cajun/Creole,1
 Fitchburg,WI,Chinese,2
 Fitchburg,WI,Greek,1
@@ -613,29 +864,44 @@ Fitchburg,WI,Pakistani,1
 Fitchburg,WI,Thai,3
 "Forest Hills",PA,Italian,1
 "Forest Hills",PA,Mexican,1
+"Fort McDowell",AZ,"American (New)",2
+"Fort McDowell",AZ,"American (Traditional)",1
 "Fort McDowell",AZ,Japanese,1
+"Fort Mill",SC,"American (New)",23
+"Fort Mill",SC,"American (Traditional)",35
 "Fort Mill",SC,Cajun/Creole,1
 "Fort Mill",SC,Chinese,13
+"Fort Mill",SC,French,1
 "Fort Mill",SC,Greek,3
 "Fort Mill",SC,Italian,15
 "Fort Mill",SC,Japanese,6
 "Fort Mill",SC,Mexican,15
+"Fountain Hills",AZ,"American (New)",11
+"Fountain Hills",AZ,"American (Traditional)",11
 "Fountain Hills",AZ,Chinese,7
+"Fountain Hills",AZ,French,1
 "Fountain Hills",AZ,Greek,2
 "Fountain Hills",AZ,Italian,13
 "Fountain Hills",AZ,Japanese,2
 "Fountain Hills",AZ,Mexican,7
 "Fountain Hills",AZ,Peruvian,1
 "Fountain Hills",AZ,Thai,2
+Frazer,PA,"American (New)",3
+Frazer,PA,"American (Traditional)",3
 Frazer,PA,Indian,1
 Frazer,PA,Italian,1
 Frazer,PA,Mexican,1
 Frazer,PA,"Middle Eastern",1
 Frazer,PA,Vietnamese,1
 Freyburg,ST,Italian,1
+"Ft. Mill",SC,"American (Traditional)",1
+"Garfield Heights",OH,"American (New)",2
+"Garfield Heights",OH,"American (Traditional)",5
 "Garfield Heights",OH,Italian,1
 "Garfield Heights",OH,Mexican,2
 "Garfield Heights",OH,"Middle Eastern",1
+Gastonia,NC,"American (New)",13
+Gastonia,NC,"American (Traditional)",31
 Gastonia,NC,Chinese,17
 Gastonia,NC,Greek,3
 Gastonia,NC,Indian,1
@@ -645,6 +911,9 @@ Gastonia,NC,Mexican,24
 Gastonia,NC,Thai,1
 Gastonia,NC,Vietnamese,1
 "Gates Mills",OH,Italian,1
+Gelndale,AZ,"American (New)",1
+Georgetown,ON,"American (Traditional)",3
+Georgetown,ON,"Canadian (New)",5
 Georgetown,ON,Chinese,4
 Georgetown,ON,Indian,1
 Georgetown,ON,Italian,5
@@ -655,16 +924,23 @@ Gerlingen,BW,Greek,2
 Gerlingen,BW,Italian,6
 Gerlingen,BW,Mexican,1
 Gerlingen,BW,Vietnamese,1
+Gibsonia,PA,"American (New)",4
+Gibsonia,PA,"American (Traditional)",7
 Gibsonia,PA,Chinese,4
 Gibsonia,PA,Italian,3
 Gibsonia,PA,Japanese,1
 Gibsonia,PA,Mexican,2
 Gibsonia,PA,Thai,1
+Gifford,IL,"American (New)",1
+Gifford,IL,"American (Traditional)",1
+Gilbert,AZ,"American (New)",49
+Gilbert,AZ,"American (Traditional)",83
 Gilbert,AZ,Cajun/Creole,2
 Gilbert,AZ,Cantonese,3
 Gilbert,AZ,Chinese,24
 Gilbert,AZ,Cuban,1
 Gilbert,AZ,Ethiopian,1
+Gilbert,AZ,French,1
 Gilbert,AZ,Greek,8
 Gilbert,AZ,Halal,3
 Gilbert,AZ,Indian,5
@@ -679,8 +955,11 @@ Gilbert,AZ,Vietnamese,4
 Glasgow,EDH,Chinese,1
 Glassport,PA,Chinese,1
 Glassport,PA,Italian,2
+Glendale,AZ,"American (New)",47
+Glendale,AZ,"American (Traditional)",86
 Glendale,AZ,Cajun/Creole,5
 Glendale,AZ,Chinese,40
+Glendale,AZ,French,1
 Glendale,AZ,Greek,21
 Glendale,AZ,Halal,1
 Glendale,AZ,Indian,7
@@ -693,10 +972,15 @@ Glendale,AZ,Pakistani,1
 Glendale,AZ,Peruvian,1
 Glendale,AZ,Thai,9
 Glendale,AZ,Vietnamese,9
+Glenshaw,PA,"American (New)",5
+Glenshaw,PA,"American (Traditional)",3
 Glenshaw,PA,Chinese,1
 Glenshaw,PA,Greek,1
 Glenshaw,PA,Italian,5
 Glenshaw,PA,Thai,1
+Godmanchester,QC,"Canadian (New)",1
+Goodyear,AZ,"American (New)",11
+Goodyear,AZ,"American (Traditional)",31
 Goodyear,AZ,Cantonese,1
 Goodyear,AZ,Chinese,9
 Goodyear,AZ,Greek,2
@@ -707,295 +991,11 @@ Goodyear,AZ,Mexican,21
 Goodyear,AZ,Thai,3
 Goodyear,AZ,Vietnamese,3
 Gorebridge,MLN,Indian,1
+Grafton,OH,"American (New)",2
+Grafton,OH,"American (Traditional)",2
 Grafton,OH,Chinese,1
 Grafton,OH,Mexican,1
-"Greenfield Park",QC,Vietnamese,1
-Guadalupe,AZ,Mexican,5
-Haddington,ELN,Indian,1
-Haddington,ELN,Pakistani,1
-"Hampton Township",PA,Chinese,1
-Harrisburg,NC,Cajun/Creole,1
-Harrisburg,NC,Chinese,3
-Harrisburg,NC,Halal,1
-Harrisburg,NC,Indian,1
-Harrisburg,NC,Italian,7
-Harrisburg,NC,Japanese,2
-Harrisburg,NC,Mexican,3
-Harrisburg,NC,Pakistani,1
-"Harrison City",PA,Italian,2
-Heidelberg,PA,Italian,1
-Hemmingen,NI,Chinese,1
-Hemmingen,NI,Greek,1
-Hemmingen,NI,Italian,2
-Henderson,NV,Cajun/Creole,3
-Henderson,NV,Chinese,49
-Henderson,NV,Greek,11
-Henderson,NV,Halal,1
-Henderson,NV,Indian,1
-Henderson,NV,Italian,68
-Henderson,NV,Japanese,43
-Henderson,NV,Korean,6
-Henderson,NV,Mexican,84
-Henderson,NV,"Middle Eastern",12
-Henderson,NV,Pakistani,1
-Henderson,NV,Peruvian,1
-Henderson,NV,Thai,20
-Henderson,NV,Vietnamese,3
-"Highland Heights",OH,Italian,1
-"Highland Heights",OH,Japanese,1
-"Highland Heights",OH,Mexican,2
-Higley,AZ,Chinese,1
-Higley,AZ,Italian,2
-Higley,AZ,Japanese,1
-Hochdorf,BW,Italian,1
-Homer,IL,Italian,1
-Homestead,PA,Chinese,1
-Homestead,PA,Italian,2
-Homestead,PA,Japanese,1
-Homestead,PA,Mexican,1
-Homestead,PA,Thai,1
-Homestead,PA,Vietnamese,1
-Hudson,OH,Chinese,2
-Hudson,OH,Indian,1
-Hudson,OH,Italian,4
-Hudson,OH,Japanese,1
-Hudson,OH,Mexican,4
-Hudson,OH,"Middle Eastern",1
-Hudson,OH,Thai,1
-Hudson,QC,Italian,1
-Huntersville,NC,Cajun/Creole,1
-Huntersville,NC,Chinese,10
-Huntersville,NC,Greek,2
-Huntersville,NC,Italian,14
-Huntersville,NC,Japanese,7
-Huntersville,NC,Malaysian,1
-Huntersville,NC,Mexican,17
-Huntersville,NC,Peruvian,1
-Huntersville,NC,Thai,5
-Huntersville,NC,Vietnamese,1
-Imperial,PA,Italian,3
-Independence,OH,Cajun/Creole,1
-Independence,OH,Chinese,2
-Independence,OH,Indonesian,1
-Independence,OH,Japanese,3
-Independence,OH,Mexican,2
-Independence,OH,"Middle Eastern",2
-Independence,OH,Thai,1
-"Indian land",NC,Italian,1
-"Indian Land",SC,Chinese,1
-"Indian Land",SC,Italian,1
-"Indian Land",SC,"Middle Eastern",1
-"Indian Trail",NC,Cajun/Creole,2
-"Indian Trail",NC,Chinese,6
-"Indian Trail",NC,Greek,3
-"Indian Trail",NC,Italian,7
-"Indian Trail",NC,Japanese,3
-"Indian Trail",NC,Mexican,7
-"Indian Trail",NC,"Middle Eastern",1
-"Indian Trail",NC,Thai,2
-"Indian Trail",NC,Vietnamese,2
-Indianola,PA,Italian,1
-Inverness,HLD,Chinese,2
-Inverness,HLD,Indian,5
-Inverness,HLD,Italian,4
-Inverness,HLD,Pakistani,3
-Inverness,HLD,Thai,1
-Irwin,PA,Chinese,6
-Irwin,PA,Greek,1
-Irwin,PA,Italian,12
-Irwin,PA,Japanese,1
-Irwin,PA,Mexican,4
-Irwin,PA,Thai,1
-"Jefferson Hills",PA,Italian,1
-Joliette,QC,Thai,1
-Joliette,QC,Vietnamese,1
-"Juniper Green",EDH,Italian,1
-Kannapolis,NC,Chinese,7
-Kannapolis,NC,Italian,8
-Kannapolis,NC,Japanese,5
-Kannapolis,NC,Mexican,7
-Kannapolis,NC,Thai,2
-"Kennedy Township",PA,Italian,1
-Kent,OH,Cajun/Creole,1
-Kent,OH,Chinese,6
-Kent,OH,Greek,2
-Kent,OH,Indian,1
-Kent,OH,Italian,6
-Kent,OH,Japanese,2
-Kent,OH,Mexican,10
-Kent,OH,"Middle Eastern",1
-Kent,OH,Thai,1
-Kent,OH,Turkish,1
-Kent,OH,Vietnamese,1
-Kernen,BW,Chinese,1
-Kernen,BW,Greek,1
-Kernen,BW,Italian,2
-"Kernen im Remstal",BW,Greek,2
-"Kernen im Remstal",BW,Italian,1
-King,ON,Chinese,1
-King,ON,Italian,1
-"King City",ON,Italian,4
-"King City",ON,Japanese,1
-Kirkcaldy,FIF,Indian,2
-Kirkcaldy,FIF,Italian,3
-Kirkland,QC,Chinese,2
-Kirkland,QC,Greek,1
-Kirkland,QC,Italian,5
-Kirkland,QC,Japanese,2
-Kirkland,QC,Thai,1
-Kirkland,QC,Vietnamese,1
-Kirtland,OH,Italian,1
-Kleinburg,ON,Italian,2
-Korntal-Münchingen,BW,Chinese,1
-Korntal-Münchingen,BW,Greek,1
-Korntal-Münchingen,BW,Italian,2
-Kornwestheim,BW,Greek,5
-Kornwestheim,BW,Italian,5
-L'Île-Perrot,QC,Chinese,1
-L'Île-Perrôt,QC,Indian,1
-L'ile-Perrot,QC,Italian,1
-L'Île-Perrot,QC,Thai,1
-"La Prairie",QC,Indian,1
-"La Prairie",QC,Italian,1
-"La Salle",QC,Cuban,1
-"La Salle",QC,Italian,1
-Lachine,QC,Italian,7
-Lachine,QC,Mexican,1
-Lachine,QC,Thai,1
-"Lake Wylie",SC,Chinese,3
-"Lake Wylie",SC,Italian,1
-Lakewood,OH,Chinese,8
-Lakewood,OH,Greek,4
-Lakewood,OH,Indian,2
-Lakewood,OH,Italian,6
-Lakewood,OH,Japanese,4
-Lakewood,OH,Mexican,8
-Lakewood,OH,"Middle Eastern",5
-Lakewood,OH,Pakistani,1
-Lakewood,OH,Thai,4
-Lakewood,OH,Vietnamese,1
-"Las  Vegas",NV,Mexican,1
-"Las  Vegas",NV,Vietnamese,1
-"Las Vegas",NV,Cajun/Creole,38
-"Las Vegas",NV,Cantonese,26
-"Las Vegas",NV,Chinese,429
-"Las Vegas",NV,Cuban,19
-"Las Vegas",NV,Ethiopian,16
-"Las Vegas",NV,Greek,53
-"Las Vegas",NV,Halal,31
-"Las Vegas",NV,Indian,59
-"Las Vegas",NV,Italian,388
-"Las Vegas",NV,Japanese,340
-"Las Vegas",NV,Korean,116
-"Las Vegas",NV,Malaysian,5
-"Las Vegas",NV,Mexican,758
-"Las Vegas",NV,"Middle Eastern",50
-"Las Vegas",NV,Pakistani,20
-"Las Vegas",NV,Peruvian,10
-"Las Vegas",NV,Singaporean,3
-"Las Vegas",NV,Thai,148
-"Las Vegas",NV,Turkish,3
-"Las Vegas",NV,Vietnamese,92
-Lasalle,QC,Chinese,2
-Lasalle,QC,Greek,2
-Lasalle,QC,Indian,1
-Lasalle,QC,Italian,5
-Lasalle,QC,Japanese,2
-Lasalle,QC,"Middle Eastern",1
-LaSalle,QC,Thai,1
-Lasalle,QC,Vietnamese,2
-Laval,QC,Cajun/Creole,2
-Laval,QC,Chinese,14
-Laval,QC,Greek,17
-Laval,QC,Halal,4
-Laval,QC,Indian,3
-Laval,QC,Italian,33
-Laval,QC,Japanese,13
-Laval,QC,Mexican,5
-Laval,QC,"Middle Eastern",18
-Laval,QC,Pakistani,1
-Laval,QC,Thai,10
-Laval,QC,Vietnamese,9
-"Laval, Pont Viau",QC,Italian,1
-Laveen,AZ,Chinese,1
-Laveen,AZ,Indian,1
-Laveen,AZ,Italian,2
-Laveen,AZ,Mexican,7
-"Laveen Village",AZ,Indian,1
-"Laveen Village",AZ,Pakistani,1
-Lawrence,PA,Italian,1
-Leetsdale,PA,Chinese,1
-Leetsdale,PA,Italian,1
-Leetsdale,PA,Mexican,1
-Leinfelden-Echterdingen,BW,Chinese,2
-Leinfelden-Echterdingen,BW,Greek,1
-Leinfelden-Echterdingen,BW,Indian,1
-Leinfelden-Echterdingen,BW,Italian,12
-Leinfelden-Echterdingen,BW,Thai,2
-Leinfelden-Echterdingen,BW,Turkish,1
-Leinfelden-Echterdingen,BW,Vietnamese,1
-Leonberg,BW,Chinese,3
-Leonberg,BW,Greek,2
-Leonberg,BW,Indian,1
-Leonberg,BW,Italian,4
-Leven,FIF,Chinese,1
-"Litchfield Park",AZ,Chinese,5
-"Litchfield Park",AZ,Italian,5
-"Litchfield Park",AZ,Japanese,1
-"Litchfield Park",AZ,Mexican,5
-"Litchfield Park",AZ,"Middle Eastern",1
-Livingston,WLN,Chinese,2
-Livingston,WLN,Indian,3
-Livingston,WLN,Italian,2
-Livingston,WLN,Japanese,1
-Livingston,WLN,Pakistani,1
-Loanhead,MLN,Italian,1
-Longstone,EDH,Chinese,1
-Longueuil,QC,Chinese,1
-Longueuil,QC,Indian,3
-Longueuil,QC,Italian,6
-Longueuil,QC,Japanese,1
-Longueuil,QC,"Middle Eastern",1
-Longueuil,QC,Peruvian,1
-Longueuil,QC,Thai,3
-Longueuil,QC,Vietnamese,4
-Lorain,OH,Chinese,4
-Lorain,OH,Italian,3
-Lorain,OH,Mexican,4
-"Lower Burrell",PA,Italian,2
-Ludwigsburg,BW,Chinese,7
-Ludwigsburg,BW,Ethiopian,1
-Ludwigsburg,BW,Greek,5
-Ludwigsburg,BW,Indian,3
-Ludwigsburg,BW,Italian,19
-Ludwigsburg,BW,Mexican,3
-Ludwigsburg,BW,Thai,1
-Ludwigsburg,BW,Turkish,2
-Ludwigsburg,BW,Vietnamese,1
-Lyndhurst,OH,Chinese,1
-Lyndhurst,OH,Italian,4
-Lyndhurst,OH,Mexican,2
-Lyndhurst,OH,Vietnamese,1
-Macedonia,OH,Cajun/Creole,1
-Macedonia,OH,Chinese,3
-Macedonia,OH,Italian,4
-Macedonia,OH,Japanese,2
-Macedonia,OH,Mexican,4
-Madison,WI,Cajun/Creole,8
-Madison,WI,Cantonese,4
-Madison,WI,Chinese,67
-Madison,WI,Cuban,2
-Madison,WI,Ethiopian,2
-Madison,WI,Greek,14
-Madison,WI,Halal,5
-Madison,WI,Indian,21
-Madison,WI,Indonesian,4
-Madison,WI,Italian,69
-Madison,WI,Japanese,34
-Madison,WI,Korean,6
-Madison,WI,Malaysian,2
-Madison,WI,Mexican,95
-Madison,WI,"Middle Eastern",12
-Madison,WI,Pakistani,11
-Madison,WI,Peruvian,8
-Madison,WI,Thai,26
+"Grand River",OH,"American (New)",1
+"Grand River",OH,"American (Traditional)",2
+"Green Valley",NV,"American (New)",1
+"Greenfield Park",QC,"American (Traditional)",1
