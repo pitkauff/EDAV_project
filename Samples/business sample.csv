@@ -1,0 +1,1001 @@
+id,name,neighborhood,address,city,state,postal_code,latitude,longitude,stars,review_count,is_open
+--9e1ONYQuAa-CB_Rrw7Tw,"Delmonico Steakhouse","The Strip","3355 Las Vegas Blvd S","Las Vegas",NV,89109,36.1232,-115.169,4,1451,1
+--DdmeR16TRb3LsjG0ejrQ,"World Food Championships","The Strip","3645 Las Vegas Blvd S","Las Vegas",NV,89109,36.1143,-115.171,3,5,1
+--e8PjCNhEz32pprnPhCwQ,"Lucky's Pet Grooming & Boutique",Downtown,"1460 E Charleston Blvd","Las Vegas",NV,89104,36.1589,-115.133,3.5,19,1
+--o5BoU7qYMALeVDK6mwVg,"Nightlife Tours",University,"1516 E Tropicana Ave, Ste 275","Las Vegas",NV,89109,36.1016,-115.132,3.5,6,1
+--q7kSBRb0vWC8lSkXFByA,"Double Play Sports Bar",Southeast,"9495 Las Vegas Blvd S","Las Vegas",NV,89123,36.0167,-115.173,4,7,0
+--WsruI0IGEoeRmkErU5Gg,"Dial Carpet Cleaning",Westside,"3111 S Valley Vw, #H-104","Las Vegas",NV,89102,36.1309,-115.191,5,14,1
+--Y7NhBKzLTbNliMUX_wfg,"Pinnacle Restoration","Spring Valley",,"Las Vegas",NV,89148,36.0612,-115.29,5,8,1
+--z7PM8AGaJP0aBmGMY7RA,"Nacho Mobile Auto Repair",,"2954 Westwood Dr","Las Vegas",NV,89109,36.1357,-115.176,4.5,18,1
+-0BxAGlIk5DJAGVkpqBXxg,"The Coffee Bean & Tea Leaf","The Strip","3355 Las Vegas Blvd S","Las Vegas",NV,89162,36.1221,-115.168,3,40,1
+-0d4L4U3vKnTT0MEgyX_WA,"Pick N Puff",,"6620 W Flamingo Rd, Ste 9","Las Vegas",NV,89103,36.115,-115.237,5,10,0
+-0KSt9tXv6C015vmAcSIcg,"Leisure Lawn",Southwest,,"Las Vegas",NV,89139,36.0402,-115.224,5,3,1
+-0qht1roIqleKiQkBLDkbw,"Cancun Resort Las Vegas by Diamond Resorts",Southeast,"8335 Las Vegas Blvd S","Las Vegas",NV,89123,36.038,-115.173,3,322,1
+-0qqsy04kcYdXH3DOciaZw,"Eagle Crest Golf Course",Summerlin,"2203 Thomas W Ryan Blvd","Las Vegas",NV,89134,36.2008,-115.334,3.5,28,1
+-0VImVWDeqewaA3th8fzIg,"Bachelor Vegas",,"4290 Cameron St, Ste 3A","Las Vegas",NV,89103,36.1119,-115.203,5,13,1
+-153AjTW5luZPK4omEujWA,"Jody Maroni's Sausage Kingdom","The Strip","New York New York Hotel & Casino, 3790 Las Vegas Blvd S","Las Vegas",NV,89109,36.103,-115.174,3,5,0
+-17RjDnOY9c7IsCcYUjx5Q,"Catholic Charities",Westside,"915 S Rainbow Blvd","Las Vegas",NV,89145,36.1611,-115.245,3,12,0
+-1dMU2kz5AhTC6N1W9xwuQ,"Ted Wiens Tire & Auto",Chinatown,"3810 Spring Mountain Rd","Las Vegas",NV,89102,36.1271,-115.191,3.5,25,1
+-1Jq9x77Es6Ce1EJM4WhwQ,"Bruce Trent Park",Summerlin,"8851 Vegas Dr","Las Vegas",NV,89128,36.1866,-115.286,4,16,1
+-1m9o3vGRA8IBPNvNqKLmA,"Bavette's Steakhouse & Bar","The Strip","3770 Las Vegas Blvd S","Las Vegas",NV,89109,36.1043,-115.176,4.5,38,1
+-1MVd6ljY2JT6gCKnrc-uw,"U-Haul Neighborhood Dealer",Summerlin,"1650 Crestdale Ln","Las Vegas",NV,89144,36.1905,-115.317,4,4,1
+-1uVyyy3UXNA9WoPucNniA,"La Tapatia Market",,"8826 S Eastern Ave, Ste 100","Las Vegas",NV,89123,36.0291,-115.117,5,15,1
+-1vfRrlnNnNJ5boOVghMPA,"Red Ginseng Narita Sushi & BBQ",Centennial,"6630 N Durango Dr, Ste 180","Las Vegas",NV,89149,36.2813,-115.287,3,75,0
+-20PsGUoi0cK3hKwtFoh2w,"Graceland Presents Elvis",Eastside,,"Las Vegas",NV,89109,36.1363,-115.151,4,4,0
+-28hEE6AcAUbJctGwvC9kw,"Culinary Pharmacy","The Strip","1945 Las Vegas Blvd S","Las Vegas",NV,89104,36.149,-115.154,5,6,1
+-2hDBMaza_ldqnZdiU06LQ,"South Cove Apartments",Downtown,"1525 Fremont St","Las Vegas",NV,89101,36.1643,-115.128,3,5,1
+-2L-SXb6OTKdmUkmEb1JAA,"Sorrento Villas",,"3580 E Alexander Rd","Las Vegas",NV,89115,36.2335,-115.097,2.5,3,1
+-2P-_PVX-FtTKT2h1y5WMQ,"Eric Andrew Collection At Town Square",Southeast,"6623 Las Vegas Blvd S","Las Vegas",NV,89119,36.0669,-115.177,5,4,1
+-2QGc6Lb0R027lz0DpWN1A,"Davis Glass and Mirror",,"5135 S Valley View Blvd","Las Vegas",NV,89118,36.0966,-115.19,4,48,1
+-2S3tYZEy-JbQonqdIsfqg,"Epic Thrift",,"4001 S Decatur Blvd","Las Vegas",NV,89102,36.1183,-115.21,3.5,17,0
+-2ToCaDFpTNmmg3QFzxcWg,"Showtime Tours",Downtown,"1550 S Industrial Rd","Las Vegas",NV,89102,36.1547,-115.159,1.5,445,1
+-2UBRY9opzc4GmCX3DBDdw,"Red Rooster Antique Mall",Downtown,"1109 Western Ave","Las Vegas",NV,89102,36.1584,-115.159,3,6,0
+-2ym8gLGnYV5uEgyMXnL7A,"Amazing Las Vegas Comic Con",Eastside,"3150 Paradise Rd","Las Vegas",NV,89109,36.1325,-115.155,4,21,1
+-2_l2p8bdI91G3-EIjSikg,"Adore Organic Innovation","The Strip","3200 S Las Vegas Blvd","Las Vegas",NV,89109,36.1275,-115.172,1.5,17,1
+-33vxPJAFP4wWiNdMqzz0w,"Vapor II","Spring Valley","5455 S Fort Apache Rd","Las Vegas",NV,89148,36.0899,-115.298,3.5,3,0
+-38Kck4mGlkBwd6OXayZRg,"Now and Zen Massage Therapy","Spring Valley","4235 S Fort Apache Rd, Ste 100","Las Vegas",NV,89147,36.1122,-115.298,5,34,1
+-3bL-QmK7-qBYLmQuSekBw,"Impressions Tile & Marble",Southwest,"9821 White Lilac St","Las Vegas",NV,89178,36.0101,-115.293,5,4,1
+-3H_6UZGWrfl8XQsm1fBmw,"AL's Donuts",Eastside,"860 East Twain, Ste 102","Las Vegas",NV,89169,36.1193,-115.146,2.5,7,1
+-3wWjEQfVxRaCQG-PuKRMw,"Angels Carpet Care",Eastside,,"Las Vegas",NV,89112,36.1,-115.07,5,5,1
+-3zffZUHoY8bQjGfPSoBKQ,"Michael Mina","The Strip","3600 S Las Vegas Blvd","Las Vegas",NV,89109,36.112,-115.177,4,590,1
+-46pFijv3f2jZH-_Ze6CQA,"Vegas Uncork'd: The Grand Tasting","The Strip","Caesars Palace","Las Vegas",NV,89108,36.1154,-115.178,4,20,1
+-47QfLVm0YvbXXz8g3RAQA,"Premier Baseball Academy","Spring Valley","5752 S Fort Apache, Ste 125","Las Vegas",NV,89148,36.0845,-115.297,4,7,0
+-4awmS8e1IYuVbv60Ebh7Q,"Carquest Auto Parts",Westside,"2111 S Rainbow Blvd","Las Vegas",NV,89146,36.1481,-115.244,4.5,3,1
+-4gwgdvSq_PqOmHb70au8Q,"Christian Audigier The Nightclub","The Strip","3300 S Las Vegas Blvd","Las Vegas",NV,89109,36.1245,-115.172,3,80,0
+-4QqBR3QGhnjPBXV471EUg,"Xpand Realty & Property Management","Spring Valley","5920 S Rainbow Blvd","Las Vegas",NV,89118,36.081,-115.242,5,27,1
+-4QZ2rjJMD6tenizjprC1Q,"Pro-Tech Transmission and Complete Auto Repair",,"5370 S Decatur Blvd","Las Vegas",NV,89118,36.0921,-115.207,4.5,8,1
+-56ZkB6BOOQLf_sU0DCzbQ,"Summit Consultancy Group, CPA","Spring Valley","4730 S Fort Apache Rd, Ste 220","Las Vegas",NV,89147,36.1032,-115.297,5,3,0
+-5gSPcauy5_JCQeHiJgFmw,"Sam's Club Optical","Spring Valley","7175 Spring Mountain Rd","Las Vegas",NV,89117,36.1242,-115.248,2,3,1
+-5x1wc0KdABF2kfnqw-ZxA,"Xelement Music & Dance",Westside,"9440 W Sahara Ave, Ste 150","Las Vegas",NV,89117,36.1455,-115.301,5,4,0
+-6AFQalhxzBHv6flajuo_w,"Best Beauty Salon",Westside,"3620 W Sahara Ave","Las Vegas",NV,89102,36.1457,-115.19,3.5,19,1
+-6g2TeogX9CCeJfU7nNKWQ,"Estilo 5",,"4585 W, Fl amingo","Las Vegas",NV,89147,36.1154,-115.217,5,6,1
+-6gD8mJAEFI-YbUBygjO8A,T-Mobile,Chinatown,"3993 Spring Mountain Rd","Las Vegas",NV,89102,36.126,-115.193,3,4,1
+-6SFHn0zEW06XgNCKVgQjg,"Sun Shade Window Tinting",Westside,"2535 S Torreypines Dr","Las Vegas",NV,89146,36.1432,-115.234,4,16,1
+-74zTQjLpOTzgvPTsN2Z8A,"WellHealth Women's Specialty Care",Centennial,"6850 N Durango Dr, Ste 310","Las Vegas",NV,89149,36.2858,-115.285,3,21,1
+-8aBkRmrbxnBwXEYLXwzOQ,"Star Locksmith - Las Vegas",Westside,,"Las Vegas",NV,89117,36.1453,-115.278,1,3,1
+-8O4kt8AIRhM3OUxt-pWLg,"Warrior Wraps",,"5725 S Valley View Blvd, Ste 5","Las Vegas",NV,89118,36.0858,-115.19,4.5,34,1
+-8oefCbONloutvAy9uTa-A,"Malik Edward J, OD",Westside,"2261 S Rainbow Blvd","Las Vegas",NV,89146,36.1463,-115.243,5,3,1
+-8R_-EkGpUhBk55K9Dd4mg,"Sin City Thai Restaurant",,"4850 W Sunset Rd, Ste 115","Las Vegas",NV,89118,36.0725,-115.207,3.5,105,1
+-8ZiMXZReeTD3kwEvS0Lww,"The Butcher Block",Centennial,"6440 N Durango Dr","Las Vegas",NV,89149,36.2778,-115.287,4.5,114,1
+-90qod_jZOmv7YR2lTklGA,"StorageOne Durango & US 95",Centennial,"7580 Oso Blanca Rd","Las Vegas",NV,89149,36.2973,-115.289,5,6,1
+-91Z36AdTmzIzgtMWstj8Q,"Ticor Title At Tivoli Village",Westside,"410 S Rampart Blvd, Ste 330","Las Vegas",NV,89145,36.1672,-115.286,3.5,7,1
+-95mbLJsa0CxXhpaNL4LvA,"The Perfect Scoop & Boba Tea",Southwest,"7377 S Jones Blvd, Ste 115","Las Vegas",NV,89139,36.0553,-115.226,3.5,609,1
+-9Ir5OiFiOszIgeFgalXcw,Starbucks,,"3700 W Flamingo Rd","Las Vegas",NV,89103,36.1179,-115.187,3,37,1
+-9jY8blpTgfqDIkVWlE0NA,"Huntridge Circle Park",Downtown,"1251 S Maryland Pkwy","Las Vegas",NV,89104,36.1563,-115.137,2.5,3,1
+-9k9fJp0g777juhHYyrMPA,"Chinatown Foot Reflexology",Chinatown,"4255 Spring Mountain Rd","Las Vegas",NV,89102,36.1273,-115.198,3,26,1
+-9oV083HMbCnMVmFtPgFMw,"Hand In Hand Preschool and Early Development Center",Southwest,"10760 S Buffalo Dr","Las Vegas",NV,89179,35.9937,-115.261,4,10,1
+-9y2L9qSbqukVl8LzEOGdg,"Wooly Wonders",Southeast,"3421 E Tropicana Ave, Ste I","Las Vegas",NV,89121,36.0994,-115.1,3.5,11,0
+-9yq6bVqOn6Uywl9KhRToA,"Plumbing Kings",Southwest,,"Las Vegas",NV,89141,35.9706,-115.307,5,104,1
+-9YyInW1wapzdNZrhQJ9dg,"Fresh Buffet",Eastside,"3000 Paradise Rd","Las Vegas",NV,89109,36.1363,-115.151,2.5,171,1
+-A5jntJgFglQ6zwAmOiOMw,"Baymont Inn And Suites Las Vegas",Eastside,"4055 Palos Verdes St.","Las Vegas",NV,89119,36.1156,-115.151,3,55,0
+-a857YYdjzgOdOjFFRsRXQ,"Beer Park","The Strip","3655 S Las Vegas Blvd","Las Vegas",NV,89109,36.112,-115.172,3.5,334,1
+-AD5PiuJHgdUcAK-Vxao2A,Smashburger,University,"4725 S Maryland Pkwy","Las Vegas",NV,89119,36.1037,-115.138,3.5,274,1
+-ADtl9bLp8wNqYX1k3KuxA,"Ichi Ramen House",Centennial,"7920 W Tropical Pkwy, Ste 170","Las Vegas",NV,89149,36.2716,-115.268,4,165,1
+-AETcObKttrnDvksrppnLA,"My Angels Touch",Westside,"4033 W Sahara Ave","Las Vegas",NV,89102,36.144,-115.196,1.5,8,0
+-Ag8JiHlShYxx0KBHZfXVw,"Harb Mouchir S MD","Spring Valley","5380 S Rainbow Blvd, Ste 200","Las Vegas",NV,89118,36.0911,-115.241,1,3,1
+-AGdGGCeTS-njB_8GkUmjQ,"Woo Chun Korean BBQ",Downtown,"953 E Sahara Ave","Las Vegas",NV,89109,36.1437,-115.142,4,8,0
+-Ao1BuPOWM-Eb6F_M27fNQ,"Advanced Medical Hair Institute","Spring Valley","8945 W Russell Rd, Ste 320","Las Vegas",NV,89148,36.0842,-115.287,5,3,1
+-aQJUU104Sc9vuAV_EtXrA,"Advanced Litigation Services",Downtown,"320 E Charleston Blvd, Ste 105","Las Vegas",NV,89104,36.1586,-115.15,4.5,6,1
+-AUh0iDyhLV6OfXloHPl0Q,"Krave Massive",Downtown,"450 Fremont St, Ste 370","Las Vegas",NV,89101,36.1701,-115.141,2,9,0
+-AxKgZHxyV-oBBHNyOESAg,"Las Vegas Collision Center",,"4705 W Post Rd","Las Vegas",NV,89118,36.0752,-115.205,5,147,1
+-B1PzLYsOSL9rda--Wr7tQ,"Flare Bar",Southwest,"3333 Blue Diamond Rd","Las Vegas",NV,89139,36.0419,-115.185,4,4,1
+-b6ANE1W9ZH0g3EdQl7Hsg,"Urgent Dental",Southeast,"500 E Windmill Ln, Ste 130","Las Vegas",NV,89123,36.0429,-115.152,3.5,34,1
+-B9eO9xH6yTU93_BEWUhmA,"LV Floor Restoration",Southwest,,"Las Vegas",NV,89178,36.0457,-115.313,5,5,1
+-BAOJ8aA5MCrYx_tQUyZHg,"The Neapolitan","The Strip","The Cosmopolitan, 3708 Las Vegas Blvd","Las Vegas",NV,89109,36.1101,-115.174,4.5,24,0
+-BddEiLOykIwvIafAVGFnQ,"Lash Dolls LV","Spring Valley","7355 S Buffalo Dr, Ste 5","Las Vegas",NV,88113,36.0559,-115.281,5,7,1
+-Bf8BQ3yMk8U2f45r2DRKw,"In-N-Out Burger",,"1960 Rock Springs Dr","Las Vegas",NV,89128,36.1957,-115.247,4,160,1
+-BFKA4HVeRoR1uObH0JpJw,"One Love Vapors",Northwest,"6814 W Cheyenne Ave","Las Vegas",NV,89108,36.2187,-115.243,4,22,1
+-blcoBWe_z8B2I9XVESvjQ,"The Nutty Boba",Eastside,"3528 S Maryland Pkwy","Las Vegas",NV,89109,36.1249,-115.135,3.5,3,0
+-BmqghX1sv7sgsxOIS2yAg,"Merkato Ethiopian Cafe",Eastside,"855 E Twain Ave, Ste 111","Las Vegas",NV,89169,36.1216,-115.145,4,186,0
+-boDId8zTvrgPwdlYYpWzg,"Ethan Allen","South Summerlin","1770 Festival Plaza Dr","Las Vegas",NV,89135,36.15,-115.333,2.5,10,1
+-boNHP3clSwzToiLWQrBUQ,Supercuts,Westside,"9811 W Charleston Blvd Ste 3, Hualapai Commons","Las Vegas",NV,89117,36.1579,-115.312,3.5,16,1
+-bPAFwn67UqH07aw7kLsQg,"Beatrice A Stark, DDS - Enhance Dental",Summerlin,"8551 W Lake Mead Blvd, Ste 260","Las Vegas",NV,89128,36.1981,-115.282,4.5,16,1
+-BS4aZAQm9u41YnB9MUASA,Argana,"The Lakes","8615 W Sahara Ave","Las Vegas",NV,89117,36.1429,-115.28,4.5,75,0
+-BS5c6tvU9gc3JAwopiXtA,"Beauty in Vegas",,,"Las Vegas",NV,89101,36.1697,-115.124,4,15,1
+-Bv-HHUs8aHzDrdWcZHn8w,Smashburger,"The Strip","3570 Las Vegas Blvd S","Las Vegas",NV,89019,36.1162,-115.175,3,70,1
+-byybpV9bP2k0aJ6-WhiBA,"Pressed Juicery","The Strip","3730 S Las Vegas Blvd","Las Vegas",NV,89158,36.1073,-115.177,4.5,46,1
+-C8sSrFqaCxp51pyo-fQLQ,"The Rice Shop","Spring Valley","3655 S Durango Dr, Ste 9","Las Vegas",NV,89147,36.1231,-115.28,4.5,128,1
+-CbDQXiuKzPQ0_jiUz03aw,"Taiga Modern Japanese & Thai Restaurant",Southeast,"3130 E Sunset Rd, Ste C","Las Vegas",NV,89120,36.0719,-115.107,4,50,0
+-Cc-TvbgYzD1rhNRSIuMfg,"Serenity Spinal Care","Spring Valley","9330 W Flamingo Rd, Ste 112A","Las Vegas",NV,89147,36.1161,-115.294,5,20,1
+-CC1wZQ19hO3ol2JDeGA3w,"Delectable Hair Designs by Marcella",Northwest,"3211 N Tenaya Way, Ste 110, Blend Salon And Spa","Las Vegas",NV,89129,36.2198,-115.252,5,19,1
+-CdstAUdEvci8GeJG8owpQ,"Motors & More",,"2950 S Highland Dr, Ste A","Las Vegas",NV,89109,36.1362,-115.173,5,7,1
+-ceHkPLJvaeNEPMQYIOQwA,"Victor E Cohen MD",Eastside,"4445 S Eastern Ave, Ste A","Las Vegas",NV,89119,36.1085,-115.12,4.5,11,1
+-cEm3lF3pLuVNJvT9mV4Dg,"Doggie Stylz Grooming",Centennial,"8400 Farm Rd, Ste 110","Las Vegas",NV,89131,36.2995,-115.279,4,58,1
+-CHzSNANra-TCIWYFfpR0Q,Macy's,"South Summerlin","2075 Festival Plaza Dr","Las Vegas",NV,89135,36.149,-115.333,3,72,1
+-cOVyWUJlasj-wpMAaWwvQ,"La Flor de Michoacan",Southeast,"9711 S Eastern Ave, Ste H-1","Las Vegas",NV,89183,36.0126,-115.12,4.5,34,1
+-CQokjildrY7UZezXCdEBw,"Toddy Shop",Westside,"238 S Rainbow Blvd","Las Vegas",NV,89145,36.1714,-115.245,5,41,1
+-CWrMIPVlrnKlX3iUFW_SA,"Spinal Care of Nevada",Summerlin,"1930 Village Center Cir","Las Vegas",NV,89134,36.1944,-115.305,3.5,22,1
+-cxD1NimFldATDUsN-oa3A,"Coasta Cantina",,"4500 W Tropicana Ave","Las Vegas",NV,89103,36.1027,-115.202,2,23,0
+-CXghG-nW759EIaMRVh_eg,"Scott's Half-Price PLumbing",Westside,,"Las Vegas",NV,89146,36.1356,-115.23,4,5,1
+-CZwX0Fy14DGCY_2aFkhKg,"K Jun Chicken",Chinatown,"6850 Spring Mountain Rd","Las Vegas",NV,89102,36.1269,-115.242,3.5,5,0
+-D6sOOfxh-3n0C8uQiN6Hw,"Postal Pros",Southeast,"9480 S Eastern Ave, Ste 105","Las Vegas",NV,89123,36.0161,-115.118,4,5,0
+-dGORHtjPRnQzTZ2-SYa_g,"Great Wraps","The Strip","3200 Las Vegas Blvd S","Las Vegas",NV,89109,36.127,-115.168,3,25,1
+-dKdgwCCnrg8KxX0W4JUbA,"Cassidy Arbeli - State Farm Insurance Agent",Southeast,"2948 E Russell Rd, Ste 4","Las Vegas",NV,89120,36.0868,-115.111,4.5,11,1
+-DLxOk2wZblIJ_8uLugQUQ,"Decatur & Craig Chiropractic",Northwest,"4925 W Craig Rd","Las Vegas",NV,89130,36.2376,-115.21,5,8,1
+-DQqRhwnSUB1hGHqaKk6wA,"Sun Country Heating and Cooling",Southeast,"6394 Montessouri St, Ste A","Las Vegas",NV,89113,36.0802,-115.153,4.5,46,1
+-dRVXZ4DI5rEpQNGLhVaxA,Adlava,Southeast,"2065 E Windmill Ln, Ste 134","Las Vegas",NV,89123,36.0417,-115.122,4.5,9,1
+-Dz-yOxJ8OQpbNdDGWym9A,"Dream Lawns",,,"Las Vegas",NV,89101,36.1697,-115.124,5,9,1
+-e02KD5YfxyQhghDYAmaoA,"Flip and Photos",Southwest,"6329 Carson Hills","Las Vegas",NV,89139,36.0367,-115.23,5,3,1
+-e218HfQvrFn6dk6zZyH3g,"Orleans Spa & Fitness Center",,"4500 W Tropicana Ave","Las Vegas",NV,89103,36.1022,-115.201,5,4,1
+-ecWOYxCL9GC80_aSqHBAw,SuperPawn,Westside,"2645 S Decatur Blvd","Las Vegas",NV,89102,36.1421,-115.209,3,3,1
+-ed0Yc9on37RoIoG2ZgxBA,"Le Thai",Downtown,"523 Fremont St","Las Vegas",NV,89101,36.1688,-115.14,4,1355,1
+-ElDqujEn1u64ynQr0bX7g,"McFarling Law Group",Westside,"6230 W Desert Inn Rd","Las Vegas",NV,89146,36.1299,-115.228,4,12,1
+-emIw7Lm6GLgsRNlGz3pog,"Hualapai Canyon Trailhead",Summerlin,"2-338 S Hualapai Way","Las Vegas",NV,89144,36.1735,-115.316,4,7,1
+-EohS3nXZGl6odE9Lx5BSw,"Panda Express",Eastside,"5516 Boulder Hwy","Las Vegas",NV,89122,36.1008,-115.054,2,8,1
+-ePLgQ_afOTW1STxD-2RIA,"Silver State Dental","Spring Valley","4555 S Fort Apache Rd, Ste 136","Las Vegas",NV,89147,36.1065,-115.298,4.5,38,1
+-ErwgUmZ1-jHW_rSu55jlg,"Menchie's Frozen Yogurt",,"7500 W Lake Mead Blvd, Ste 2","Las Vegas",NV,89128,36.1962,-115.258,4,32,0
+-eSyre8QQmcIj4wb0uIdmQ,"AG Jeans",,"32100 Las Vegas Blvd S","Las Vegas",NV,89019,35.6157,-115.387,4.5,3,1
+-et-7p5N-zUymdxsKKLnjA,"Dream Design",Westside,"5247 W Charleston Blvd","Las Vegas",NV,89146,36.1587,-115.213,3.5,7,1
+-eV1cihbyzpyEK9vtrxefA,"Law Offices of Jorge G Corral",Eastside,"2950 E Flamingo St, Ste I","Las Vegas",NV,89121,36.1154,-115.111,1.5,6,1
+-EWJNNVi_3xHjwPfgYDvGg,"Bijin Aesthetics",Westside,"2001 S Rainbow Blvd, Ste 100","Las Vegas",NV,89146,36.1492,-115.244,5,4,1
+-f951Cpt-bAHnURX5ev3BA,"Children's Urology Associates","Spring Valley","6670 S Tenaya Way, Ste 180","Las Vegas",NV,89113,36.067,-115.251,2,9,1
+-FcZY7a7qgxTUlTvwuyJnQ,"8 Noodle Bar","South Summerlin","11011 W Charleston Blvd","Las Vegas",NV,89135,36.1551,-115.335,3.5,208,1
+-fFd82efWwJRY0m3YV2Pig,"ClearChoice Dental Implant Center","Spring Valley","6460 Medical Center St, Ste 300","Las Vegas",NV,89148,36.0711,-115.291,2,5,1
+-fHresyUr7G05hV3CRJj8w,"Rising Star Preschool & Childcare",Southeast,"8889 S Eastern Ave, Ste 160","Las Vegas",NV,89123,36.028,-115.119,4.5,16,1
+-FlrlELIGmCqdt_JxbdFgg,"Panda Express",Summerlin,"1940 Village Center Cir","Las Vegas",NV,89134,36.1938,-115.305,3,9,0
+-fmWDGsNB-Ufa5wZfuNXOA,"Bruce Scher's Tires","Spring Valley","5567 S Rainbow Blvd","Las Vegas",NV,89118,36.0881,-115.243,2.5,7,1
+-FNquqGseSCVMWo7KbK-Tg,"Chipotle Mexican Grill",University,"4530 S Maryland Pkwy","Las Vegas",NV,89119,36.1071,-115.137,3.5,119,1
+-G0puEUvJJo1IxwIvYtXPg,"GoodFellas Collision Center",Westside,"3025 Sheridan St","Las Vegas",NV,89102,36.135,-115.189,5,45,1
+-G7MPSNBpxRJmtrJxdwt7A,"La Costa Del Sol",Sunrise,"2208 S Nellis Blvd","Las Vegas",NV,89104,36.1471,-115.064,3.5,37,1
+-g81bxMqgpfJQHUSDDljjg,"WorldMark Las Vegas - Spencer Street",University,"4225 Spencer St","Las Vegas",NV,89119,36.1125,-115.129,3.5,19,1
+-G9DFmuokdYk_H35ezRkAw,"Dolphin Bar","The Strip","3400 Las Vegas Blvd S","Las Vegas",NV,89109,36.1213,-115.172,4,8,1
+-GDmL5qxpwwoiM77SvNqxQ,"Spirals Hair & Nail Studio",Summerlin,"8544 Del Webb Blvd","Las Vegas",NV,89134,36.2106,-115.28,3,9,1
+-Gg1YBUAseVfNYb7d_9uDQ,"Sabra Motors","Spring Valley","6940 W Patrick Ln","Las Vegas",NV,89118,36.0782,-115.244,5,5,1
+-gNGk0SIbdBNSRBrzQAeSA,"Waggin Wheels Mobile Clinic",,,"Las Vegas",NV,88901,36.18,-115.14,4.5,28,1
+-gx4-wJT_n7ufN1RsrDG2w,"Vegas Towers Apartments",University,"1061 E Flamingo Rd","Las Vegas",NV,89119,36.1136,-115.141,2.5,30,1
+-gXDD2oSHBDA3zgjX6g9pQ,"The Plate Bar & Grill",Sunrise,"2396 S Lamb Blvd","Las Vegas",NV,89104,36.1452,-115.082,4,10,1
+-g_3XHnCdchIchtC-le2tQ,"Planet Hollywood Diamond Lounge","The Strip","3663 S Las Vegas Blvd","Las Vegas",NV,89109,36.1098,-115.172,4.5,19,1
+-H49o1OyiCgTsLjsiDNISA,"Dollar General",Sunrise,"5155 E Lake Mead Blvd","Las Vegas",NV,89156,36.1962,-115.061,1.5,6,1
+-h6bVDP9YrQ0Pa22CpEQDQ,"Master Craftsmen",,"5240 S Decatur Blvd, Ste 2","Las Vegas",NV,89118,36.0947,-115.207,2.5,11,1
+-h6tY3fsqgi1NTpSLU9OWw,"So Good Arcade","Spring Valley","4545 Spring Mountain Rd, Ste 104","Las Vegas",NV,89102,36.1272,-115.28,4.5,19,0
+-H6_7u1-hr6wgPP-CZ7iVg,"24-7 Locksmith",Summerlin,"911 N Buffalo Dr","Las Vegas",NV,89128,36.1819,-115.261,1,34,1
+-h9-bhxjbOH9nuvzExRbag,"Star Auto Glass","Spring Valley",,"Las Vegas",NV,89118,36.081,-115.224,5,6,1
+-hcBecAaOJmfMi8oX6-CYA,"Big O Tires",Summerlin,"10127 W Charleston Blvd","Las Vegas",NV,89135,36.1586,-115.316,4,152,1
+-heiUEHVRPHo5xaAE8vwTg,cakelava,"Spring Valley","4555 S Fort Apache Rd, Ste 122","Las Vegas",NV,89147,36.1065,-115.298,5,18,1
+-Hfh0LdzkAPVfZUwRKNzJg,Cartier,"The Strip","3500 Las Vegas Blvd S, Space #B03","Las Vegas",NV,89109,36.119,-115.176,4,13,1
+-hFwTM7hZPWfk-7rBqHkWw,"Arthur Murray Dance Studio - Las Vegas West","Spring Valley","4440 S Durango Dr, Ste A","Las Vegas",NV,89147,36.1089,-115.278,4.5,17,1
+-hKfhVhsNkTPHKWEZHKDig,"Scoops Thrifty Ice Cream","Spring Valley","3655 S Durango Dr, Ste 19","Las Vegas",NV,89147,36.1239,-115.279,3.5,33,1
+-HqEWTmVz0Gv9xXxEt3dsg,"Enix Mechanical",,"5955 Hauck St, Ste 103","Las Vegas",NV,89118,36.0812,-115.211,5,3,1
+-HSe4xoW0fQADWUuMA6uSQ,"Christmas Goose Country Gifts & Quilt Shop",Westside,"2988 S Durango Dr","Las Vegas",NV,89117,36.135,-115.278,4.5,11,1
+-hsFN8VQvH26M0WZ3k1Wtg,"Jockey Club","The Strip","3700 Las Vegas Blvd S","Las Vegas",NV,89109,36.1103,-115.175,3,248,1
+-hu5mnjIjnTWyCQIGDL_Iw,"Master Lock & Security",Southeast,,"Las Vegas",NV,89123,36.0357,-115.153,4.5,164,1
+-hvteS1hY_u4mLl0Ldkp2A,"Cactus Air, LLC",,,"Las Vegas",NV,89101,36.1697,-115.124,5,3,1
+-HX9QwGulN-oKsXsbjqBMA,"Vegas Trike Adventures",,"5375 Cameron St","Las Vegas",NV,89118,36.0923,-115.204,4,12,1
+-HZ2VmNnnrH1tp-yKyhdNA,"Nectar Natural Infusions","The Strip","3377 S Las Vegas Blvd","Las Vegas",NV,89109,36.121,-115.172,5,11,0
+-hzQQ8tbXThpp0k5E_y1Dw,Blizz,"The Strip","3799 Las Vegas Blvd S","Las Vegas",NV,89109,36.1039,-115.169,3,65,1
+-I06hkMFrX0KBqu61ik1YA,"Andre Agassi College Preparatory Academy",,"1201 W Lake Mead Blvd","Las Vegas",NV,89106,36.1953,-115.158,5,4,1
+-I0sOY8Wh4-oeIZmCU0rlg,"Yellowstone Clubhouse",Southwest,"10175 Quarterhorse Ln","Las Vegas",NV,89178,36.0035,-115.294,3,12,1
+-iBk1_3M_efQtY6Bcygp5w,"Viva Salsa",,"4111 Boulder Hwy","Las Vegas",NV,89121,36.1337,-115.085,4.5,8,1
+-IcHkc7uWC8dHGlAOK4sJw,"Nevada Coin Mart - Jones and Flamingo",,"4065 South Jones","Las Vegas",NV,89103,36.1153,-115.225,4,60,1
+-IczP4cyoTyxL6hi8-Dj_A,"Dnm Lawnmower Repair",Sunrise,"1119 N Nellis Blvd","Las Vegas",NV,89110,36.1836,-115.063,5,5,1
+-IE1pvSbGYL1YVrk-ct8PQ,"Ladah Law Firm, PLLC",Downtown,"517 S 3rd St","Las Vegas",NV,89101,36.1648,-115.146,4,10,1
+-ifVnqwrgCE3Nc4svkJDMg,Starbucks,"The Strip","3667 S Las Vegas Blvd","Las Vegas",NV,89109,36.1097,-115.17,2,44,1
+-iFvYhgysvjkxckCr42NRw,"Rani's World Foods",Westside,"4505 W Sahara Ave","Las Vegas",NV,89102,36.1436,-115.201,4,170,1
+-IjrK6GWJKsYDjjDqOK34A,"The Flyer Distributor",Westside,"3401 Sirius Ave, Unit 5","Las Vegas",NV,89146,36.1428,-115.225,5,3,1
+-ilCufjKjeswCLyIrCtuqQ,"Tequila Bar and Grill","The Strip","Bally's Hotel and Casino, 3645 Las Vegas Blvd S","Las Vegas",NV,89136,36.116,-115.171,3.5,164,0
+-INdswGdyRyy72xXHalNbg,"99 Ranch Market",Chinatown,"4155 W Spring Mountain Rd","Las Vegas",NV,89102,36.1255,-115.195,3,144,1
+-ipc5f0XiXwH3hbNnro54Q,"Regal Cinemas Red Rock 16 & IMAX","South Summerlin","11011 West Charleston Blvd","Las Vegas",NV,89135,36.1551,-115.335,4,229,1
+-IWsoxH7mLJTTpU5MmWY4w,"Pho Kinh Do",Chinatown,"4300 Spring Mountain Rd, Ste 101","Las Vegas",NV,89102,36.1266,-115.198,4,742,1
+-j-59yXHCTNipMNPUqosug,"Gym and Fit",Southeast,"8850 S Maryland Pkwy, Ste 105","Las Vegas",NV,89123,36.029,-115.136,5,5,1
+-J3xA1l4Lj2dZ90Nrn-H_w,"James M Heltzel, DMD AIAOMT",Eastside,"4312 S Eastern Ave","Las Vegas",NV,89119,36.1108,-115.119,4.5,4,1
+-jaX1hGZuerfwcNltMF_fg,"Jackson Hewitt Tax Service","Spring Valley","7200 Arroyo Crossing Pkwy","Las Vegas",NV,89113,36.0645,-115.249,2.5,3,1
+-jbwk9eHpx-oecsOePTdqQ,"Rush Lounge",Downtown,"129 E Fremont St","Las Vegas",NV,89136,36.1703,-115.145,3.5,22,1
+-jEyZSptICvvaNhuur9rUg,"Barista Bagels","The Strip","2880 S Las Vegas Blvd","Las Vegas",NV,89109,36.1378,-115.165,2.5,11,1
+-JfncbVURtvuzBbof40o1w,"The Cafe at Monte Carlo","The Strip","Monte Carlo Hotel and Casino, 3770 Las Vegas Blvd S","Las Vegas",NV,89109,36.1048,-115.175,2.5,140,0
+-JFVxwdVQfX207554dx1nw,"Teriyaki Madness",Southeast,"9845 S Maryland Pkwy, Ste C","Las Vegas",NV,89183,36.0107,-115.137,3.5,122,1
+-jGA3ADqqv0PyB7Mbo-Zsw,"Mountain Springs Saloon",,"9350 Williams Ranch Rd","Las Vegas",NV,89161,36.0206,-115.509,4,51,1
+-jiwC8HupAjqlVOl2Xym8w,"KYE Village","Spring Valley","7885 W Rochelle Ave","Las Vegas",NV,89147,36.1103,-115.263,5,3,1
+-jkgt1MBpgquHNiZrjBtyw,"Sally Beauty Supply",,"5466 Boulder Hwy","Las Vegas",NV,89122,36.1022,-115.054,3,10,1
+-JnDA7yjwbB4FYB6pR5vkQ,"Von's Grocery Delivery Service",Summerlin,"1940 Village Ctr Cir","Las Vegas",NV,89134,36.1933,-115.306,4,11,0
+-Jo0rJr2mZxBVgaJqDs-TQ,"Chiamaka Food",Southeast,"5006 S Maryland Pkwy, Ste 11","Las Vegas",NV,89119,36.0987,-115.136,3,4,1
+-jOc24VHOIKk0BgxNVXWmg,"Super Lube, Tune & Brakes",Westside,"7185 West Sahara Ave","Las Vegas",NV,89117,36.1436,-115.249,1.5,7,1
+-jrkfyxGmjfBpqdOrLVTAQ,"Eyebrow Threading by Mickey",Summerlin,"10300 W Charleston Blvd, Ste N5","Las Vegas",NV,89145,36.1605,-115.321,5,3,0
+-JVDtKPtvYeL0lW5p5vU6w,"US Post Office",Southeast,"455 E Pebble Rd","Las Vegas",NV,89123,36.0271,-115.153,1.5,92,1
+-Jx2rd2rH7MlWfb9RMtCFQ,"Kraken Cafe",Downtown,"2025 E Sahara Ave","Las Vegas",NV,89104,36.1436,-115.125,3.5,26,1
+-jxAq6fuJBIv9hAp-jugQw,"Tatyana Boutique",Downtown,"1412 Main St","Las Vegas",NV,89104,36.1542,-115.154,5,10,1
+-K-yluljEQY_eN6sRYZu4Q,"Gonzalez Sewing Machine",,"2021 Industrial Rd","Las Vegas",NV,89102,36.148,-115.162,5,4,0
+-K82LBrI3H0FVuhTbNDpRA,"Shoku Ramen",Southeast,"470 E Windmill Ln, Ste 110","Las Vegas",NV,89123,36.0425,-115.153,3.5,238,1
+-kbPPBNsIPDfMfgUGO7QhA,"Kopper Keg South",Southeast,"2375 E Torino Ave","Las Vegas",NV,89123,36.029,-115.119,4,22,1
+-kFyzXRzOlyoL4NyzoVkMA,"Breakfast Buffet at Trump International Tower","The Strip","2000 Fashion Show Dr","Las Vegas",NV,89109,36.1295,-115.173,3,4,1
+-KjiHySwXNCreoD01z-irA,"Best Buy Scooters",Southeast,"2301 E Sunset Rd, Ste 9","Las Vegas",NV,89119,36.0709,-115.12,1,7,1
+-KO6zDZn1t3vLl0xY21aug,"Fantastic Sams",Southwest,"8020 S Rainbow Blvd, Ste 105","Las Vegas",NV,89139,36.0431,-115.242,4,52,1
+-kOjkFLJ_YcCos0LaGDaTw,"O'reilly Auto Parts",Downtown,"2755 E Sahara Ave","Las Vegas",NV,89121,36.1438,-115.113,3.5,6,1
+-kSEnfC6lz72p4_gh4FhgQ,"Vintage Pools",,"4000 W Ali Baba Ln, Ste E","Las Vegas",NV,89118,36.0966,-115.189,5,5,1
+-KSQaCB2D4mLIugRdUk1kw,Dotty's,,"840 N Decatur","Las Vegas",NV,89107,36.1803,-115.205,1,3,1
+-KUOQZxJqGjf4NfK3j43tQ,"Barney's Lounge",Southeast,"5757 Wayne Newton Blvd","Las Vegas",NV,89119,36.0831,-115.149,3,12,1
+-kZDhSkeep5fltrx1UA2Mg,Crabtree-Evelyn,Downtown,"775 Grand Central Pkwy","Las Vegas",NV,89106,36.1645,-115.158,4,3,1
+-La3NIJ2du3RE-Ld6G8SUQ,"A1 Office Solutions",Downtown,"1215 S Commerce St","Las Vegas",NV,89102,36.1569,-115.155,2.5,3,1
+-LALjqpjMrdq4GYEXXPrTg,"Amazing Smile Dentistry","Spring Valley","6252 S Rainbow Blvd, Ste 130","Las Vegas",NV,89118,36.0748,-115.242,4.5,23,1
+-Le6cwbZL4tDZwNHwipfKg,Marrakech,Eastside,"3900 Paradise Rd, Ste Y","Las Vegas",NV,89169,36.1177,-115.155,4.5,387,1
+-LeLsUam5SDgDK1Y7CPWsw,"A Little Off","Spring Valley","9340 W Tropicana Ave, Ste 18","Las Vegas",NV,89147,36.1015,-115.296,5,5,1
+-leM8v_oCbtzTthTln-YHg,"Carl's Jr And Green Burrito",Eastside,"1180 E Desert Inn Rd","Las Vegas",NV,89109,36.1302,-115.137,3,18,1
+-LeNW99PZFMYJSX5fJ9Fwg,"Champion Recycling",Westside,"3000 Meade Ave","Las Vegas",NV,89102,36.1365,-115.183,3.5,3,1
+-lICo3m4vCdCUK2wmEsjPA,"FedEx Office Print & Ship Center",University,"4440 S Maryland Pkwy","Las Vegas",NV,89119,36.1084,-115.137,2,3,0
+-lMeM9UD-T8p3jQPQX5z9Q,"Supreme Kutz",,"1201 N Decatur Blvd","Las Vegas",NV,89108,36.1842,-115.206,5,4,1
+-LmxQLtHixUTeQkk5G-gTw,"Cookie Zoo",Southeast,"1525 E Sunset Rd, Ste 10","Las Vegas",NV,89119,36.0712,-115.132,4.5,17,1
+-LMycE26AortJDsbc8oXOg,"Jack In the Box",Summerlin,"7510 W Lake Mead Blvd","Las Vegas",NV,89128,36.1965,-115.26,3,28,1
+-loXev0gFJd--EEneeIPgA,"Chazell Air Conditioning & Heating",,"4367 W Sunset Rd, Ste 6","Las Vegas",NV,89118,36.1739,-115.125,4.5,6,1
+-LTgv3sf1KVXJoBlyE76JQ,"A Granite MD",,"2146 Highland Ave","Las Vegas",NV,89102,36.1473,-115.167,4,7,1
+-LyGT6bztmvWd3_pa93YDg,"Flame Kabob","Spring Valley","8665 W Flamingo Rd, Ste 107","Las Vegas",NV,89147,36.1139,-115.28,3,6,0
+-LyQtaRXJNjyus5TxvN2bg,"Kenneth G Frizzell III",Downtown,"619 S 6th St","Las Vegas",NV,89101,36.162,-115.143,3,13,1
+-lZ9w5Hd5YlmqcTdnzztvA,"Sheffield Spice & Tea Co",Southeast,"9875 S Eastern Ave, Ste E-2","Las Vegas",NV,89183,36.0103,-115.121,5,88,1
+-LzUYsR54hd8cCiYXTquRA,"Medley Buffet",,"4500 W Tropicana Ave","Las Vegas",NV,89103,36.1027,-115.203,3,360,1
+-m3NzRyob88MzE5jZPnsUg,"Sew Little Time",Westside,"6360 W Sahara Ave","Las Vegas",NV,89146,36.1442,-115.232,4.5,12,1
+-m8hXQJQ29znUIy4NFlvHQ,Autozone,,"3690 E Cheyenne Ave","Las Vegas",NV,89115,36.2182,-115.095,2.5,5,1
+-M8Yt36x3RoC9YuD3NoMrQ,"Cima Medical",Eastside,"3115 E Eastern Ave","Las Vegas",NV,89169,36.1332,-115.119,1,6,1
+-MAbkFAoiVwuT6CbEJ3k4Q,GeckoWraps,,"6455 Dean Martin Dr, Ste E","Las Vegas",NV,89118,36.0721,-115.182,3,12,1
+-mCJVth58q_xMnob1vY2PA,"AAMCO Transmissions & Total Car Care",Southeast,"5710 Boulder Hwy","Las Vegas",NV,89122,36.0979,-115.048,3.5,12,1
+-mdfZf8vUyBeDamD8dZ5uQ,"Hot Topic",Southeast,"7400 Las Vegas Blvd South","Las Vegas",NV,89123,36.0524,-115.169,3,13,1
+-MeuB47l8juXTDwROY1vag,"Naylor Solar Specialist",Northwest,,"Las Vegas",NV,89117,36.233,-115.247,4.5,28,1
+-Mf0CFPTbRFg0Y-Kjd0MHw,"Villa Serena",,,"Las Vegas",NV,89101,36.1697,-115.124,2.5,3,1
+-MGXBW5WDtKeJZvfgYEVsw,"St. Croix Apartment Homes",,"6661 Silverstream Ave","Las Vegas",NV,89107,36.1772,-115.241,2,12,1
+-mhBbHbh5T_hxKZUYfdexw,"TSS Grill",Sunrise,,"Las Vegas",NV,89104,36.1497,-115.076,4,5,0
+-MhfebM0QIsKt87iDN-FNw,"Bellagio Gallery of Fine Art","The Strip","3600 S Las Vegas Blvd","Las Vegas",NV,89109,36.1129,-115.178,3.5,119,1
+-MJWwqjN3zI9letU3PRh0A,"The Body Shop",Eastside,"3522 S Maryland Pkwy","Las Vegas",NV,89169,36.1255,-115.137,4.5,4,0
+-mLGVF1rNoeMz6q0vnrpPQ,"Christina Cova Simmons - Berkshire Hathaway Home Services","Spring Valley","8850 W Sunset Rd, Ste 200","Las Vegas",NV,89148,36.0718,-115.285,5,6,1
+-MMEAIqtW-qa7roTxbhrVQ,"Hanger Clinic",,"4615 W Flamingo Rd","Las Vegas",NV,89103,36.115,-115.204,3.5,5,1
+-mN7z9oY01Mh_-dwTyzpqg,"Einstein Bros Bagels","Spring Valley","9540 W Flamingo Rd","Las Vegas",NV,89147,36.1157,-115.3,3,85,1
+-MnePAaYtfG7Ecc8sYbgVA,RadioShack,,"3119 N Rainbow Blvd","Las Vegas",NV,89108,36.2165,-115.243,2.5,3,0
+-MwAxDEDeWxN2Mj9U0Rzww,"VIP Unlimited","The Strip","3667 S Las Vegas Blvd","Las Vegas",NV,89169,36.1101,-115.173,4,14,1
+-mWeVzSDLaHyhTFaGoZtuQ,"The Venetian Poker Room","The Strip","3355 Las Vegas Blvd S","Las Vegas",NV,89109,36.1229,-115.169,4.5,86,1
+-mWzJI5FoqcUYAA-FV_cag,"Storage West Rhodes Ranch",Southwest,"7650 S Durango Dr","Las Vegas",NV,89113,36.0497,-115.279,4,29,1
+-mXOCQO2OHPP8pYn3j4wVw,"Palo Verde High School",Summerlin,"333 Pavillion Center Dr","Las Vegas",NV,89144,36.1704,-115.333,4,4,1
+-N2jm_HEtODDm0jHvHCS7g,"Balii Nails",Northwest,"3250 N Tenaya Way","Las Vegas",NV,89129,36.2199,-115.25,3.5,48,1
+-n3WzO44TqTq4ntzz_gbxQ,"Superior Pest Control",,,"Las Vegas",NV,89136,36.175,-115.136,4,3,1
+-n8PaipyFGNUJE4xlnrOAg,"Burger Dogs",Southeast,"Maryland Pkwy","Las Vegas",NV,89123,36.0319,-115.138,2.5,21,0
+-NbgLLCfhq8gMZkYrq5OTw,"Las Vegas Sober Coaches","Spring Valley",,"Las Vegas",NV,89147,36.1148,-115.278,1,4,1
+-NJlfv14ICeIxo-Jtz0u5w,"Skechers Factory Outlet",University,"1495 E Flamingo Rd","Las Vegas",NV,89119,36.1143,-115.134,3.5,50,1
+-NjZ5HZApXjRJaTVZeSO_w,"San Salvador Restaurant",,"6651 Smoke Ranch Rd","Las Vegas",NV,89108,36.203,-115.241,4,24,1
+-nKIDHXa5H23rq8d6KGT_Q,Rumjungle,"The Strip","Mandalay Bay Resort & Casino, 3950 Las Vegas Blvd S","Las Vegas",NV,89119,36.0908,-115.177,3.5,197,0
+-nMcM-E6I_pyxvdyqCRzhw,"StarAllison Makeup",Sunrise,,"Las Vegas",NV,89110,36.1679,-115.041,5,6,1
+-NqDorxXXGIvXGYfhMmBNg,"Advanced Gardens Hydroponics",Southwest,"7850 Dean Martin Dr, Ste 506","Las Vegas",NV,89139,36.047,-115.183,3.5,13,1
+-NR4KqS6lHseNvJ-GFzfMA,"Art of Flavors",Downtown,"1616 S Las Vegas Blvd, Ste 130","Las Vegas",NV,89104,36.1517,-115.153,4.5,131,0
+-NsIO9AUNEmbsxdUORtfAQ,"ESports Gaming Arena","Spring Valley","5775 S Rainbow Blvd, Ste 102","Las Vegas",NV,89118,36.086,-115.243,5,7,0
+-NVarOq5E4htuA3Q3OEUnw,"Royal Nails And Spa",Northwest,"3350 Novat St, St 105","Las Vegas",NV,89129,36.2211,-115.329,4,55,1
+-nYB-fMXn2i_hcyQ6lY9oA,"Great American Cookies",Southeast,"7400 Las Vegas Blvd S","Las Vegas",NV,89101,36.055,-115.169,4,4,0
+-N_agk8RUHvHk3GVDsyunQ,"Hitchin Post Saloon & Steakhouse",,"3650 Las Vegas Blvd N","Las Vegas",NV,89115,36.2232,-115.083,4,55,1
+-O1zA2zZQRp-Ct8c8Mns5Q,"Da Vi Nails",Eastside,"5198 Boulder Hwy","Las Vegas",NV,89122,36.1085,-115.063,4,9,1
+-O47e7AAXznef_xvF3RL3g,"Escape Chambers",Southeast,"1515 E Tropicana Ave, Ste 710","Las Vegas",NV,89119,36.1004,-115.132,4.5,28,1
+-Obx-qavwBCbJi_lKPbjVw,"Alpha Vein Clinic",,"3150 N Tenaya Way, Ste 400","Las Vegas",NV,89128,36.2168,-115.25,4,9,1
+-oeisdVp-AL4-gg7jJfS0Q,"Max Health Center of Chiropractic Las Vegas - Eastern",Southeast,"8475 S Eastern Ave, Ste 101","Las Vegas",NV,89123,36.0355,-115.119,5,51,1
+-OEIW0dO96-492qa_luxaw,"Aces & Ales",,"3740 S Nellis Blvd","Las Vegas",NV,89121,36.1214,-115.065,4,250,1
+-oHzyChCB65UtErig2nvhg,"Sparkle Nails Couture",Summerlin,"10300 W Charleston Blvd","Las Vegas",NV,89135,36.1606,-115.321,5,3,1
+-oUM2uISux96lMGeawHIOA,"Sugar Factory","The Strip","3200 S Las Vegas Blvd, Ste 1240","Las Vegas",NV,89109,36.1268,-115.169,3.5,383,1
+-oVh2k9RZJWOMgRKWNSm1A,"Cut Line Studio",Southwest,", 4270 Blue Diamond Rd","Las Vegas",NV,89147,36.0393,-115.198,4.5,9,0
+-OZX5XQZk7q4qQ3SMSXsPg,"Kim William MD","Spring Valley","5980 S Rainbow Blvd","Las Vegas",NV,89118,36.08,-115.242,1,3,1
+-p57JEpfu_b4UJOWCbwNyQ,"Family Courts and Services Center",,"601 N Pecos Rd","Las Vegas",NV,89101,36.1744,-115.099,2,11,1
+-P8dGzSVhJi-5oZ-8U2y0w,"Cannery Row Buffet",,"5255 Boulder Hwy","Las Vegas",NV,89122,36.1084,-115.057,2.5,62,0
+-P8XwS4eYAX0HpXey7ECeA,"Granite To Go",Southwest,"7650 Dean Martin Dr, Unit 104","Las Vegas",NV,89139,36.0508,-115.182,2.5,3,0
+-PbM4ksxhGZVpgCpRakcgA,"Great Steak",Southeast,"5757 Wayne Newton Blvd","Las Vegas",NV,89119,36.0829,-115.153,2,69,0
+-pFdRt5rfqUtlmwjD_D3TQ,"Rainbow International of Centennial",Northwest,,"Las Vegas",NV,89129,36.2415,-115.26,5,3,1
+-PFFaOrqO5P2oSx_sNC6yA,"Ted Baker London",Downtown,"875 S Grand Central Pkwy, Ste 2149","Las Vegas",NV,89106,36.1634,-115.159,4.5,22,1
+-pG5srxtnRkd1bdIYn78xA,"Carlitos Cuban Food",,"115 N Decatur Blvd","Las Vegas",NV,89107,36.1753,-115.206,4,10,1
+-pGO9M4JLQJHiaCOrqCgbQ,"Port of Subs",Summerlin,"10260 West Charleston Blvd, Ste 2","Las Vegas",NV,89135,36.1596,-115.319,3,39,1
+-PGsEXB6DFTVKa1eDOlzWA,"Black Bear Diner",Westside,"8565 W Sahara Ave","Las Vegas",NV,89117,36.1427,-115.278,3.5,155,1
+-PL_zYYNagqNZe2qA-4xCA,"Euphoria Institute of Beauty Arts and Sciences",Westside,"9340 W Sahara Ave, Ste 205","Las Vegas",NV,89117,36.1475,-115.299,3,33,1
+-pN44P-_PjRpcj4Rk2wMOg,Cupcakery,"The Strip","Monte Carlo Hotel and Casino, 3770 Las Vegas Blvd S","Las Vegas",NV,89109,36.1045,-115.177,3,90,0
+-poHrga1My4zwhj-nh2WEQ,"Empire Records",Southwest,,"Las Vegas",NV,89139,36.0402,-115.224,5,4,1
+-PRTv5z2N687DEyW0Fkcww,"Juice Express",Southeast,"5757 Wayne Newton Blvd","Las Vegas",NV,89119,36.084,-115.154,3,13,1
+-psqnDV1QpfKnodtEgCbTg,"American Nightmare Tattoo",,"2123 Western Ave","Las Vegas",NV,89102,36.1472,-115.165,3,6,1
+-pTS05zqk2UdvhZb7bRhlg,"A+ Tinters","Spring Valley","4160 S Durango, Ste 160","Las Vegas",NV,89147,36.1139,-115.278,5,3,1
+-PV57915I3BXUnNoWPT37g,"Sola Salon",Westside,"8975 W Charleston Blvd, Ste 130","Las Vegas",NV,89117,36.1587,-115.31,4.5,13,1
+-q8Se--EG27Wpsa6huwnrw,"Psychic Spa",Southeast,"5645 S Eastern Ave","Las Vegas",NV,89119,36.087,-115.119,3,24,1
+-q95qrXdiN_fX_iPXvKrog,"Southern Nevada Regional Housing Authority",Downtown,"340 N 11th St","Las Vegas",NV,89101,36.1703,-115.131,1,3,1
+-Qamd1hK7jczDkdUrm8lxg,"Mom and Pops Smoke Shop",Downtown,"557 E Sahara Ave","Las Vegas",NV,89104,36.1433,-115.149,5,4,1
+-qAQCoYpa5naEqPL8Chuig,"Best Way Auto & Truck Rentals",Southeast,"5030 Paradise Rd, Ste A 106","Las Vegas",NV,89119,36.0985,-115.148,3.5,6,1
+-qBMnNOygrIgQ0yuMnBB0Q,"Hye Taylor","Spring Valley","8665 W Flamingo Rd","Las Vegas",NV,89147,36.1133,-115.283,4.5,11,1
+-QD-gLkW81l7LDEhwQTkRw,"Busy Bee Art Studio",Westside,"1003 S Cimarron Rd","Las Vegas",NV,89145,36.1608,-115.271,5,3,1
+-QG1CZaZnpH0M-KCXyGaow,"Swarovski Outlet",Downtown,"875 South Grand Central Pkwy","Las Vegas",NV,89106,36.1634,-115.159,3.5,10,1
+-qJZB0F9Y4uL_DovRBsW4Q,"Norton Jr Alexander, MD","Spring Valley","6140 S Fort Apache Rd, Ste 110","Las Vegas",NV,89148,36.0769,-115.297,3,8,1
+-QK041S1Clr0N4m3adwRpA,"Hottie Hair Salon & Extensions Store",Westside,"7871 W Charleston Blvd, Ste 130","Las Vegas",NV,89117,36.1586,-115.263,4,122,1
+-Qkx7W0itbAApcG5lJuMFQ,Jaburritos,"The Strip","3535 S Las Vegas Blvd","Las Vegas",NV,89109,36.1176,-115.17,4.5,189,1
+-QNQ4R1VgRoL4b6lC8Anrg,Mizuya,"The Strip","3950 S Las Vegas Blvd","Las Vegas",NV,89109,36.0919,-115.175,3,121,1
+-qoR0_dXmX00YkZ0PaJxQA,"Las Vegas Hair & Nails",Westside,"7865 W Sahara Ave, Ste 101","Las Vegas",NV,89117,36.1433,-115.262,5,7,0
+-QpFgn3zfjev51sh0r1Tzw,"Law Office of Philip A. Kantor",Summerlin,"1781 Village Ctr Cir, Ste 120","Las Vegas",NV,89134,36.1929,-115.3,3.5,3,1
+-QYqayrG88sfqaByFGIWPw,"Lakes Cleaners and Dry Cleaning","The Lakes","8657 W Sahara Ave","Las Vegas",NV,89117,36.144,-115.28,3.5,11,1
+-R0Z2Lw0DfK8jSLYn6tazQ,"Fantasy Car Rentals",Southeast,"5021 Swenson St","Las Vegas",NV,89119,36.0984,-115.146,4,4,1
+-r73AKwASZ0dk-XMrozixA,"Baja Auto Sales West",Westside,"824 S Decatur Blv","Las Vegas",NV,89107,36.1614,-115.206,2.5,15,1
+-RaqC6MyDr-XutvwSh4aRQ,"AM Realty","Spring Valley","5940 S Rainbow Blvd","Las Vegas",NV,89118,36.081,-115.243,4.5,13,1
+-rbiF70dWzj4ZTCJtKOOSA,"Torrey Pines Rehabilitation Hospital",Westside,"1701 S Torrey Pines Dr","Las Vegas",NV,89146,36.1509,-115.234,2.5,3,1
+-rb_VxVYM-y0-jsiOMtKJQ,"Zeba Beauty Salon","The Strip","2901 S Las Vegas Blvd","Las Vegas",NV,89109,36.1354,-115.16,3,9,1
+-RdenSl5COgnPqaANI3kCQ,"The Coffee Bean & Tea Leaf","The Strip","3200 S. Las Vegas Blvd, Fashion Show Mall #5533","Las Vegas",NV,89109,36.1272,-115.171,3,18,1
+-RiMCNsD7rsPPnNcv0Ls0A,"AAA One Stop Appliance Service",Sunrise,"4488 Sunny Dunes Dr","Las Vegas",NV,89121,36.1606,-115.052,2.5,3,1
+-RJ216TTIghZshCkUlD1WQ,"Sushi Takashi",Chinatown,"5300 W Spring Mountain Rd","Las Vegas",NV,89146,36.1262,-115.214,4.5,241,1
+-rmCrdHqYInel6K4RqeR5g,"U-Haul Moving & Storage at E Fremont St",Downtown,"2030 E Fremont St","Las Vegas",NV,89101,36.1602,-115.121,5,8,1
+-roJzfHhFwMjgeiYF8g6sA,"Lids Corporation",Eastside,"3528 S Maryland Pkwy","Las Vegas",NV,89169,36.1249,-115.135,2,3,1
+-RwnEdrn3ZdW1yug_CBmLg,"Shaunz Clothing","The Strip","3663 Las Vegas Blvd, Ste 425","Las Vegas",NV,89109,36.1098,-115.172,5,3,1
+-S-CUPzk98Y4V278HgVG0Q,"Best Mattress",,"9550 S Eastern Ave","Las Vegas",NV,89123,36.0147,-115.117,2.5,3,0
+-s2MwO-16IbHde_sBZ0cRA,"Super 8 Las Vegas Nellis AFB Area",,"Across from Nellis AFB, 4435 Las Vegas Blvd North","Las Vegas",NV,89115,36.2413,-115.054,2,29,1
+-sEbDB_5jI_yIlklu1o1VQ,"Haifa Restaurant",Eastside,"900 E Karen Ave, Ste H102","Las Vegas",NV,89109,36.1405,-115.143,3.5,12,1
+-sGIBo2YdLRu26jwjeQKrA,"Elite Investigations",Southeast,"7435 S Eastern Ave","Las Vegas",NV,89123,36.0558,-115.12,5,3,1
+-SGZcGqnsp_uRIjKP2RGZg,"Ranch House Grille",Southwest,"20 East Rhodes Ranch Pkwy","Las Vegas",NV,89148,36.043,-115.289,3.5,6,1
+-SLLTv3PZfxj6c-J2W4kjg,"Hot Topic","The Strip","3200 Las Vegas Blvd South","Las Vegas",NV,89109,36.1278,-115.173,3,13,1
+-SNWziCPz0umyjKqXqEHww,"International Beauty Show Las Vegas",Eastside,"Las Vegas Convention Ctr","Las Vegas",NV,89109,36.1311,-115.151,2.5,6,1
+-sN_og_84rLW22CaE3cjVw,"Full House BBQ",Southeast,"9890 S Maryland Pkwy, Ste 19","Las Vegas",NV,89183,36.0102,-115.135,4,286,1
+-SpT8Tyz2R45zSw1AIUimQ,"Gigi's Cupcakes",Eastside,"1150 E Flamingo Rd","Las Vegas",NV,89119,36.1157,-115.139,3,145,0
+-SVULRjUf1s2BCDD1Hqhhg,"True Religion",Downtown,"605 S Grand Central Pkwy, Ste 1274","Las Vegas",NV,89106,36.165,-115.156,4.5,13,1
+-SWWUof5TuWDVL5SEAml8Q,Wildburger,,"1901 N Rancho Dr","Las Vegas",NV,89106,36.1939,-115.192,4,3,1
+-SZQrRrIzvy764ARsOF3iA,Moneytree,Southeast,"2615 E Tropicana Ave","Las Vegas",NV,89121,36.0996,-115.114,2.5,3,1
+-tBrUQj5L8Bmm3NNGs-cHQ,"Parkdale Community Center & Water Park",,"3200 Ferndale St","Las Vegas",NV,89121,36.1319,-115.077,3.5,3,1
+-Tb_eUD3LALhoYYUSXQveQ,Marshalls,Summerlin,"10950 W Charleston Blvd","Las Vegas",NV,89144,36.1606,-115.335,3.5,35,1
+-Tk5PaJqMvXD0THnf_XI7w,"Chase Bank",Westside,"9911 W Charleston Blvd, Ste 1","Las Vegas",NV,89117,36.1578,-115.313,4,8,1
+-tm90oXIcaFlgqSX3DStUg,"Yves Saint Laurent",Eastside,"Bellagio Hotel, 3600 Las Vegas Blvd S","Las Vegas",NV,89109,36.1244,-115.146,4.5,8,0
+-TmYzR6qVxeQnQgzAU-3ew,"Frank's European Service",,"1931 N Rainbow Blvd","Las Vegas",NV,89108,36.1938,-115.243,3,41,1
+-torunTpyreJpoB0IKD4vg,"Elite Eye Care",Southwest,"7775 S Rainbow Blvd, Ste 110","Las Vegas",NV,89139,36.0469,-115.244,4,43,1
+-tseCGdDvepLP8IIWtZikQ,"Polish Deli",Westside,"5900 W Charleston Blvd","Las Vegas",NV,89146,36.1599,-115.222,4.5,30,1
+-TsQI7YXiSUQKVQFyOa1Xw,"Majestic Flooring",Sunrise,"2875 N Lamb Blvd","Las Vegas",NV,89115,36.2119,-115.082,3.5,5,1
+-Tv0fTMRhbD0BuMiw-YH6g,"My Left Foot Children's Therapy",Westside,"3030 S Jones Blvd, Ste 105","Las Vegas",NV,89146,36.1344,-115.224,3,16,0
+-Tv5UZeFHdKz3RM9vOYpaw,"Milano's Pizzeria",Eastside,"4640 Paradise Rd, Ste 8","Las Vegas",NV,89169,36.1054,-115.151,2.5,5,1
+-twxHwbgN9eWlWaLq7_W3A,"Ninja Sketch",Southwest,,"Las Vegas",NV,89139,36.0402,-115.224,5,11,1
+-TZi1v_qX1-cPWHR7pRJ-w,"Choice LV Specialty Pharmacy",Westside,"7915 W Sahara Ave, Ste 103","Las Vegas",NV,89117,36.1427,-115.264,5,13,1
+-U7tvCtaraTQ9b0zBhpBMA,"MGM Grand Buffet","The Strip","3799 Las Vegas Blvd S","Las Vegas",NV,89109,36.1021,-115.172,2.5,1005,1
+-ubMHUCK8TQgGI4hWZgWpA,"Riverbend Village Apartments",Southeast,"3937 Spencer St","Las Vegas",NV,89119,36.0867,-115.138,1.5,10,1
+-ucQnELMVRIUOi3-Kv5r0Q,"Euro Cycle Las Vegas",,"5031 Wagon Trail Ave, Ste 105","Las Vegas",NV,89118,36.0692,-115.209,4,62,1
+-Ud5PK1dNQUMf2wfFeMdSw,"EZ Travel Las Vegas",Southeast,"105 E Reno, Ste 8","Las Vegas",NV,89119,36.0968,-115.168,1,10,1
+-UhDTcYIJfah0ZtnYLkcCA,"Ryland Homes","Spring Valley","8925 W Russell Rd, Ste 200","Las Vegas",NV,89148,36.0838,-115.286,2.5,13,1
+-UHf5wUtcLKr90GgroWuqQ,"Shadow Rock Park",Sunrise,"2650 Los Feliz St","Las Vegas",NV,89156,36.2085,-115.015,3.5,8,1
+-Uix-n4Jqo4W7ERagC5qAA,"Wok & Roll "TAPSILOGAN"",Chinatown,"3540 Wynn Rd","Las Vegas",NV,89103,36.1254,-115.194,4,80,0
+-uRn5Hf1uo4vf3UTtOvIfA,"Don Tortaco Mexican Grill",,"3085 N Rainbow Blvd","Las Vegas",NV,89108,36.216,-115.243,3.5,32,1
+-Utuok2oxw0z193nkuwXiQ,"Adelson Educational Campus",Summerlin,"9700 Hillpointe Rd","Las Vegas",NV,89134,36.2008,-115.306,4,11,1
+-UtYWvCnUppcSaC_u1pTYQ,"Kopper Keg Restaurant & Lounge",Southeast,"4550 E Tropicana Ave","Las Vegas",NV,89121,36.1004,-115.075,4,4,1
+-UWw90jUbIL1RlL3EqWvnw,"Crown Electric Tattoo Company",Downtown,"911 E Charleston Blvd","Las Vegas",NV,89104,36.1591,-115.141,2.5,47,1
+-UZwW6dbda9tG-DBL73Xcw,"Discount Rental Car",Southeast,"5050 Paradise Rd","Las Vegas",NV,89119,36.0989,-115.149,3,13,1
+-v5rd-w2k6pyprnvMbMx8g,Koto,"The Strip","3545 Las Vegas Blvd S, Ste 3","Las Vegas",NV,89109,36.1174,-115.172,3,7,0
+-vb_yx5QnIhpXUIdPVD2og,"Fair View Chinese Cuisine",,"1930 N Decatur Blvd, Ste 1","Las Vegas",NV,89108,36.1949,-115.205,3.5,6,0
+-vcgz2o6PTQAtr7e4w8Gfg,"First Person Care Clinics",Downtown,"1200 S 4th St, Ste 111","Las Vegas",NV,89104,36.1576,-115.15,4.5,9,1
+-VNPQ4YrtMZeIA0oIquTrA,"Kellogg Pest Control",Westside,"8305 Monarch Birch Ave","Las Vegas",NV,89117,36.147,-115.273,4,3,1
+-vSNL-OjHKxUpLU6J0epGQ,"The Vistas Park",Summerlin,"11311 Alta Dr","Las Vegas",NV,89135,36.17,-115.345,5,24,1
+-wabMTvmllPuVDN0hXa1LA,AT&T,,"7531 West Lake Mead Blvd, Ste 101","Las Vegas",NV,89128,36.1956,-115.258,3.5,27,1
+-wby-wyqaq1ZDTFDTdKxQA,"trendy wall designs",,,"Las Vegas",NV,89137,36.175,-115.136,3,18,1
+-wc2xBQ0qVouQnHloAn_ww,"Agua Water Store",Southeast,"2435 E Tropicana Ave","Las Vegas",NV,89121,36.0989,-115.118,4,8,1
+-wCtRhzWJ40Z4F8mmg7kWg,Herringbone,"The Strip","3730 Las Vegas Blvd S","Las Vegas",NV,89109,36.1073,-115.177,4,354,1
+-WDGsZxIO27znIaAlwON4Q,"Wells Fargo Bank",Westside,"8190 W Sahara Ave","Las Vegas",NV,89117,36.1445,-115.27,2.5,16,1
+-wDNRL4lm1UgeFLG9KcrjQ,"Yummy Grill & Sushi",Southeast,"9711 S Eastern Ave","Las Vegas",NV,89183,36.0127,-115.119,3.5,144,1
+-WEGtQenCuzICnK_tAI1yQ,"Jeffs Personal Touch Moving Service",,,"Las Vegas",NV,89108,36.2031,-115.224,4,15,1
+-WfV03-dVE3HSMUmg0tnvQ,Albertsons,Summerlin,"11720 W Charleston Blvd","Las Vegas",NV,89135,36.1606,-115.351,3.5,41,1
+-wHE0OZ-d1Kq9RZIXZ3ILQ,"David Bakhshi",Southeast,,"Las Vegas",NV,89169,36.0521,-115.172,4.5,6,1
+-WKLpnR0ZD2f_2t-sIcfSA,"Jennifer K Wolf - Guild Mortgage","The Lakes","2760 Lake Sahara Dr, Ste 100","Las Vegas",NV,89117,36.1401,-115.284,5,6,1
+-WLrZPzjKfrftLWaCi1QZQ,"Blueberry Hill Family Restaurant",University,"1505 E Flamingo Rd","Las Vegas",NV,89119,36.1142,-115.133,4,672,1
+-WQhVJnBmyapFn0digQJwg,"FruitLand Las Vegas",Southeast,"7400 Las Vegas Blvd S","Las Vegas",NV,89123,36.0526,-115.169,4.5,14,1
+-WRkhzI9K7JeWhjBr1zwkw,"Smog Depot",,"3153 N Rancho Dr","Las Vegas",NV,89130,36.2166,-115.214,3.5,3,1
+-Wrl5N0H8aHC_Dr3zc8vqQ,"Steve Miller Insurance",Centennial,,"Las Vegas",NV,89130,36.2736,-115.252,5,6,1
+-wuqvqzPR0pHkxCT3SMtIA,Rain,,"Palms Casino Resort, 4321 W Flamingo Rd","Las Vegas",NV,89103,36.1115,-115.209,3.5,316,0
+-Wz4zGE6zIbhAg3CkLlTuQ,"The Paul Lynde Show","The Strip","3645 S Las Vegas Blvd","Las Vegas",NV,89109,36.1143,-115.171,4.5,3,1
+-x9ugbUmn7Znhbcmfp1Efw,"Crystal Miller","Spring Valley","8395 W Sunset Rd, Ste 190","Las Vegas",NV,89113,36.0694,-115.274,5,4,1
+-xbQQR_ydEJGqYzHSF4DnQ,"Maciano's Pizza & Pastaria","Spring Valley","5651 S Grand Canyon, Ste 100","Las Vegas",NV,89148,36.086,-115.307,3,93,0
+-xcC0E5O5xHflKgXwAWlgQ,"Richard E Kohlmeyer, DDS",,"5680 W Flamingo Rd, Ste B","Las Vegas",NV,89103,36.1151,-115.219,5,4,1
+-XKG6GamlSBwy5AcXQGAfA,"Rickenbackers Cafe",,"5941 Fitzgerald Blvd","Las Vegas",NV,89191,36.242,-115.045,3,6,1
+-xKkIi0vKeB2BBu7PYM9ww,"Island Pet Hospital",Northwest,"7025 W Ann Rd","Las Vegas",NV,89130,36.2629,-115.248,4,34,1
+-xLK4hXYZeccHOvKZsIozQ,"Ann M Wierman, MD",,"3150 N Tenaya Way, Ste 200","Las Vegas",NV,89128,36.2167,-115.249,3.5,3,1
+-xPA_UkM_Zytcbz-MNMaTw,"Rotech Granite",Westside,"3070 Sirius Ave","Las Vegas",NV,89148,36.1337,-115.183,4.5,6,1
+-XRqGElwBAEYcyOjmvUjvg,"This is Crossfit",Southwest,"5840 La Costa Canyon Ct, Ste 200","Las Vegas",NV,89139,36.0269,-115.234,5,13,1
+-xUJWihx4gzQ0_wGaK29Hw,"Tax Crisis Institute","Spring Valley","5940 S Rainbow Blvd","Las Vegas",NV,89169,36.081,-115.241,3,6,1
+-xX-Vjol_fwWaN2mn1F1wg,"Voodoo Pizza","The Strip","3755 S Las Vegas Blvd","Las Vegas",NV,89109,36.1056,-115.172,4.5,11,1
+-xYd6yxrbgD23lG5FvZr_A,"Solis at Flamingo",Eastside,"3275 E Flamingo Rd","Las Vegas",NV,89121,36.1121,-115.104,2,30,1
+-yApKLEFAvvNyifvpNKWCA,"Luv It Frozen Custard",Downtown,"505 E Oakey Blvd","Las Vegas",NV,89104,36.1515,-115.152,4,656,1
+-YCd2_DdJUeZx3RRcmIZ_g,"Taco Bell","Spring Valley","3595 S Durango Dr","Las Vegas",NV,89147,36.1245,-115.279,2.5,21,1
+-YfSTrUqnkITBBb9J6e86Q,"Ken's Pharmacy",Downtown,"2202 W Charleston Blvd","Las Vegas",NV,89102,36.1598,-115.172,3.5,6,1
+-YkWNvjGRPGjtkPeTQGUhg,"Furniture In Paradise","Spring Valley",,"Las Vegas",NV,89148,36.0716,-115.295,4,4,0
+-Ylpy3VyRWwubf9dysuwjQ,"The Cheesecake Factory","The Strip","3500 S Las Vegas Blvd","Las Vegas",NV,89109,36.1173,-115.176,4,584,1
+-yN0LjjgHm8I4QyGLvaiVQ,"Public Storage",,"5925 W Flamingo Rd","Las Vegas",NV,89103,36.1142,-115.223,2,16,1
+-YWr1wm_NaAlgEf9TZzsMQ,"Jumbo Super Buffet",Westside,"1617 S Decatur Blvd","Las Vegas",NV,89102,36.1526,-115.208,2,96,1
+-yYfvVc9Dk5xZduj64WiIQ,"Silver State Landscaping",,"7500 W Lake Mead Blvd","Las Vegas",NV,89128,36.175,-115.136,4,4,1
+-zbcosKSMGDhaZYN-CrcVA,Target,"Spring Valley","4155 S Grand Canyon Dr","Las Vegas",NV,89147,36.1142,-115.312,3.5,100,1
+-zbJp3NGEhvmNOiFziN8Lg,"Lopez Restaurant",Downtown,"1720 E Charleston Blvd, Ste 13","Las Vegas",NV,89104,36.1588,-115.126,4.5,3,1
+-zcMZklz3X7GZatfYJCk_A,"TS PHOTO",Southeast,,"Las Vegas",NV,89123,36.0357,-115.153,5,7,1
+-ZDGeh6J8jIuo4AhPzXvzg,"Desert Customs Window Tinting",Chinatown,"3855 S Valley View Blvd","Las Vegas",NV,89103,36.1216,-115.191,5,86,1
+-zkn2p1mu9g-kbGNdM1lUA,"Chinos Locos",Downtown,"321 S Casino Center Blvd, Ste 130","Las Vegas",NV,89101,36.1674,-115.146,3.5,7,1
+-zMYY7pxz7ur7Ag38o0xzw,"Paint Party Night",Westside,"450 S Buffalo Dr, Ste 109","Las Vegas",NV,89145,36.1672,-115.259,5,22,1
+-ZNTxbUVRg25LhOxEuW4rQ,"My Pedi Nails & Spa","Spring Valley","5060 S Fort Apache Rd, Ste 160","Las Vegas",NV,89148,36.0967,-115.297,4,289,1
+-zqi1B7UwCtpoZh_qZIqHw,"107.9 The Alternative",Eastside,"2725 E Desert Inn Rd, Ste 180","Las Vegas",NV,89121,36.1292,-115.113,3.5,7,1
+-zR_UC4wsDc4MgKRJZ8XSg,DownEast,Westside,"750 S Rampart Blvd, Ste 12","Las Vegas",NV,89145,36.1646,-115.289,3.5,3,1
+-zsZLjeVBh0SpWlOXAbQaw,"Leslie's Pool Supplies, Service & Repair",Centennial,"6525 N Buffalo Dr, Ste 110","Las Vegas",NV,89131,36.2815,-115.267,3,6,1
+-_5jDOVvqi73YO5qR5Y1cQ,"3d Mini Golf & Family Fun Center",Southeast,"3315 E Russell Rd, Ste 4K","Las Vegas",NV,89120,36.0858,-115.103,3.5,34,0
+-_TSaVr53qiEGqMkwyEMaQ,"Parsley Modern Mediterranean",,"4985 W Tropicana Ave","Las Vegas",NV,89103,36.1005,-115.209,4.5,333,1
+-_yEVC3_3M6YOsamYfNFEw,"Jason's Deli",Eastside,"3910 South Maryland Pkwy","Las Vegas",NV,89119,36.1179,-115.137,4,178,1
+0-2vdA0Eb-0pBQ3PIEOoeg,"Victor Gismondi - Award Realty",Westside,"3015 S Jones Blvd","Las Vegas",NV,89146,36.1345,-115.225,5,6,1
+0-oGPNZghr9kz4aMZOo2RQ,VegasView,Eastside,"3200 Las Vegas Blvd S, Ste 2640","Las Vegas",NV,89109,36.1244,-115.146,1,3,1
+003b6f4PdppnakGqwo0fUQ,"Sola Salon",Southwest,"7355 S Buffalo, Ste D","Las Vegas",NV,89113,36.0542,-115.262,5,21,1
+005XmZKuJZuNbl5tGXc5SA,"Tony Roma's",Downtown,"620 E Sahara Ave","Las Vegas",NV,89104,36.1443,-115.146,3,21,0
+00XfKQ16CTyzHSqYKNtpMw,"Gela Style LV",Westside,"1225 S Ft Apache Rd","Las Vegas",NV,89117,36.1569,-115.292,5,4,1
+011ayCokCnktQPSx-uL_SA,McDonald's,Westside,"4300 Meadows Ln","Las Vegas",NV,89107,36.1723,-115.196,2,4,1
+018BsTDbjFjZyWgR0rW_1w,"Healthcare Preparatory Institute",Northwest,"5831 W Craig Rd, Ste 102","Las Vegas",NV,89130,36.2375,-115.224,2,4,1
+01HOpf3J_zCNTMGzMvnOGA,"ABC Foot Spa",Chinatown,"3650 S Jones Blvd, Ste 1","Las Vegas",NV,89103,36.123,-115.224,3,25,0
+01Ov9eDxKRY5k6ImMdiWLQ,"Hong Kong Garden Seafood & BBQ Cafe",Chinatown,"3407 S Jones Blvd","Las Vegas",NV,89146,36.1272,-115.225,3,166,1
+01SiPgdiOskMC5bUJoyy_g,"Winchell's Pub & Grill",Southeast,"199 E Warm Springs Rd","Las Vegas",NV,89119,36.0566,-115.164,4,128,1
+01VPJkcU0m8WzlA7dCEpVQ,"Tea Space",Chinatown,"3466 S Decatur Blvd, Ste E","Las Vegas",NV,89102,36.1268,-115.208,4.5,220,1
+01y2nhcyDbPpNEoPiuRWMw,"Desert Palm Tennis Club",Westside,"3090 S Jones Blvd","Las Vegas",NV,89146,36.1326,-115.224,5,3,1
+02eH78Tc5Cxxy-CIqhzx-A,"Vanity Nails & Spa",Southeast,"7620 S Las Vegas Blvd, Ste 120","Las Vegas",NV,89123,36.0512,-115.171,3.5,155,1
+02gcdoVJrnxrdzhffs_3dQ,"CareNow Urgent care",Southeast,"9785 S Maryland Pkwy, Ste A-2","Las Vegas",NV,89183,36.0116,-115.137,3,51,1
+02giJIMo2sfua2wHfCbG-A,"Tea Space Sunset Park",Southeast,"7425 S Eastern Ave, Ste 102","Las Vegas",NV,89123,36.0557,-115.119,4.5,43,1
+02pL_Xj3sTO_lHcWqUcwKA,"Rollin' Smoke BBQ","Spring Valley","4115 S Grand Canyon Dr, Ste 100","Las Vegas",NV,89147,36.1147,-115.31,4,203,1
+02P_M7H7N5Wqhj6Dk379uw,"Vince Neil's Girls Girls Girls",,"4740 S Arville St","Las Vegas",NV,89103,36.1038,-115.199,3.5,7,0
+02wo3mCCkdED47sNPwuu6Q,"Baby Lou's Delights",Southeast,"6605 S Las Vegas Blvd","Las Vegas",NV,89119,36.0672,-115.176,3.5,26,1
+02z6N1lpQqABBrKs7hG-WQ,"Wynn Realty Group",Centennial,"7495 Azure, Ste 440","Las Vegas",NV,89130,36.2742,-115.26,2.5,3,1
+039QG6ks4UYNkMA3mcII2A,"Episage Wellness Center",University,"1601 E Flamingo Rd, Ste 20","Las Vegas",NV,89119,36.1136,-115.13,4.5,38,0
+03A87_FA1-J2D43G0pCZhA,"Earl Scheib Paint and Body Las Vegas",Westside,"3070 S Valley View Blvd","Las Vegas",NV,89102,36.1341,-115.19,1.5,14,1
+03CPJNrFQsVPjSjoKEM-yQ,"Nevada Benefits",Summerlin,"9505 Hillwood Dr","Las Vegas",NV,89134,36.1873,-115.304,4.5,6,1
+03e_aZlpTBiIva4SlBE1nw,"Relax, Just Vaping",Northwest,"5590 Painted Mirage Rd, Ste 100","Las Vegas",NV,89149,36.2626,-115.256,4,34,1
+03hgFWEcDg205hOCnswwiQ,"RE Tapas",Southeast,"467 E Silverado Ranch Blvd","Las Vegas",NV,89123,36.0121,-115.153,3.5,25,0
+03hmuxN-jpGWjdtBnhV2AQ,"Flex Cocktail Lounge",Westside,"4371 W Charleston Blvd","Las Vegas",NV,89102,36.1588,-115.2,4,31,1
+03icrim6SfEQJlejDMbzsA,"Pho Saigon",Chinatown,"6820 Spring Mountain Rd, Ste C111","Las Vegas",NV,89146,36.1268,-115.241,4,110,0
+03Yt7kMeYihN_y6ptiXxyQ,"Del Taco",Centennial,"6311 Centennial Center Blvd","Las Vegas",NV,89149,36.2738,-115.268,3,21,1
+041JPDI1PBSuNSTcvtYomQ,"Cabinets & Co",Westside,"6145 W Sahara Ave, Ste 5","Las Vegas",NV,89146,36.1429,-115.227,5,6,1
+042AqS-UB74g841zmoCEEA,"Paradise Bay Pet Resort",Southeast,"6360 S Pecos Rd, Ste 14","Las Vegas",NV,89120,36.0728,-115.1,2,4,1
+04alYZB3N4gBnzKKOYkFhQ,"Air Done Right",,,"Las Vegas",NV,89103,36.1104,-115.207,5,41,1
+04Ap824N__YXYNvaVmDYeQ,"Under Armour",Downtown,"525 S Grand Central Pkwy, Ste 3373","Las Vegas",NV,89106,36.1649,-115.156,4,8,1
+04uElIqdb2yPddrHbnAQjg,"Christian Louboutin","The Strip","Las Vegas Crystals, 3720 Las Vegas Blvd S, Ste 255","Las Vegas",NV,89158,36.1188,-115.177,3.5,20,1
+04_Ci1SQ3lYVRUqKQyqBTw,"Las Vegas Country Club",Eastside,"3000 Joe W Brown Dr","Las Vegas",NV,89109,36.1344,-115.147,4.5,28,1
+054_-sJ-nYq_DsuWYgqNdg,"Jimmy Pettyjohn Jr. Park",Southwest,"11322 Southern Highlands Pkwy","Las Vegas",NV,89141,35.9841,-115.192,4,5,1
+05OUuoInL-o8Ed-7z_cIUg,"Yaya Life",University,"4632 S Maryland Pkwy, Ste 16","Las Vegas",NV,89119,36.105,-115.136,4.5,20,1
+05qUHkx1cOv9i8GFLhZqoQ,"Paris Laser and Cosmetic Tattoo","Spring Valley","5135 S Durango Dr, Ste 104","Las Vegas",NV,89113,36.0958,-115.28,4.5,17,1
+05Solp0aY1YTZqoORMjUTg,"La Pupusa Loca",Sunrise,"1000 N Nellis Blvd, Ste M","Las Vegas",NV,89110,36.1782,-115.062,2.5,9,1
+05TuVKl9KEYQjROpQuTKhw,"Fletcher Jones Toyota Scion",Downtown,"3255 E Sahara Ave","Las Vegas",NV,89104,36.1443,-115.105,3,42,0
+05USFUs4dX8LG6DCY2GNAA,SPEEDVEGAS,,"14200 S Las Vegas Blvd","Las Vegas",NV,89054,35.9365,-115.187,5,142,1
+05z-5Mv0KLpO9qIVI6ab2g,"Kapture Photography","Spring Valley",,"Las Vegas",NV,89113,36.0564,-115.266,2,4,0
+05zCjJtH2dcHwesOW4cCQw,"Poker Room",Summerlin,"11029 W Charleston Blvd","Las Vegas",NV,89153,36.1589,-115.338,3,9,1
+065c76tt1dXBNmoGBymUgQ,"Cheffini's Hot Dogs",Downtown,"707 Fremont St, Ste 1050","Las Vegas",NV,89101,36.1678,-115.138,4,159,1
+069TWjwxctY-3X_TitxJKQ,"Starbuzz Vegas Hookah Lounge",Eastside,"384 E Tropicana Ave, Ste 120","Las Vegas",NV,89169,36.1029,-115.156,4,101,1
+06fXKnwFnFFKpWCmIHfQCg,"Meridian Luxury Resorts",Eastside,"250 E Flamingo Rd","Las Vegas",NV,89169,36.1147,-115.161,5,5,0
+06J2JnXiNOS1GBuqw7pGLQ,"Hollywood Smile Dental",Southeast,"2425 E Tropicana Ave","Las Vegas",NV,89121,36.0988,-115.117,4.5,19,1
+06MlxbtB4ZYeg_ri02RIAQ,"El Pollo Loco",Westside,"2401 S Decatur Blvd","Las Vegas",NV,89102,36.145,-115.208,2.5,53,1
+06Vts51gZrtBnFMs6sBPbA,"Centennial Ob/Gyn",Centennial,"6850 N Durango Dr, Ste 420","Las Vegas",NV,89149,36.2854,-115.288,4.5,89,1
+06_bDWrsZkj5l1u1OUZ4Vg,Cupz,Southwest,"8520 Blue Diamond Rd","Las Vegas",NV,89178,36.0208,-115.277,3.5,37,0
+070x611bvBrBqG3ODqe3dg,"Bags Belts & Baubles","The Strip","3131 Las Vegas Blvd S","Las Vegas",NV,89109,36.1266,-115.165,4.5,3,1
+07AZL5XenCQ_-op_onKLdw,"BLT Steak","The Strip","3645 Las Vegas Blvd S","Las Vegas",NV,89109,36.1137,-115.169,4,482,1
+07bwsGzhb3EncDL1HUFUpQ,"Vision Source","The Lakes","8937 W Sahara Ave","Las Vegas",NV,89117,36.1437,-115.292,4.5,76,1
+07F0eE_JHkH4Op0vpR_v4A,"Paradise Park",Eastside,"4775 McLeod Dr","Las Vegas",NV,89121,36.1023,-115.11,3,15,1
+07gh-AImcEcWQ2bew-jprg,"Woo Che",Chinatown,"4711 Spring Mountain Rd","Las Vegas",NV,89102,36.1261,-115.205,3.5,103,0
+07Gig4RudlI1O3GREheTuA,"Lulu's Nails",Westside,"134 S Rainbow Blvd","Las Vegas",NV,89108,36.1725,-115.246,2,4,0
+07IlPDFwJWeogfc3Mm6SxQ,"Winchell's Donut House",Westside,"3313 W Sahara Ave","Las Vegas",NV,89102,36.144,-115.186,3.5,3,1
+07jQarxKd_8J_AJHD5YBqQ,"Muscle Maker Grill - Las Vegas",Northwest,"5765 Centennial Center Blvd, Ste 180","Las Vegas",NV,89149,36.265,-115.259,3.5,100,1
+07MpHT8TrGDI_UVktfKMPA,"The Salon At Red Rock","South Summerlin","11011 W Charleston Blvd","Las Vegas",NV,89135,36.1553,-115.332,3.5,3,1
+07nPF_eLxc_tYSto8Ag1mQ,"3D MicroworksLV","The Lakes","8645 W Sahara Ave","Las Vegas",NV,89117,36.143,-115.28,5,6,1
+07QLfpPDX2iKiVKuUsGxtg,"Round Em Up Coins",Westside,"5310 W Sahara, Ste C","Las Vegas",NV,89117,36.145,-115.214,3.5,4,0
+07r5PjnPxDXKI-Icp_NbpA,"St Anthony of Padua Roman Catholic Church",Centennial,"6350 N Fort Apache Rd","Las Vegas",NV,89149,36.275,-115.297,3.5,9,1
+07rmEqclimbv5e7vLiA55g,"A Cutting Edge Glass & Mirror",,"4200 W Russell Rd, Ste 106","Las Vegas",NV,89118,36.0869,-115.196,4.5,48,1
+08AcSSFNcba9HA_-RYljkQ,"EDGE Fitness 24/7 & Tanning",Chinatown,"3645 S Rainbow Blvd","Las Vegas",NV,89103,36.1232,-115.243,2.5,28,1
+08Fjqv0HxfKh5gr8OmnI2A,"Chancery Lane Salon","Spring Valley","8680 W Warm Springs Rd, Ste 15","Las Vegas",NV,89113,36.0564,-115.266,5,7,0
+08zoF6Mh22xNDLxAXXGg2g,"Mollys Bar","Spring Valley","4970 S Fort Apache","Las Vegas",NV,89148,36.0949,-115.297,3.5,5,1
+0953KSZ26LmJ7CDacVzpYg,"dd's DISCOUNTS",Eastside,"3430 E Tropicana Ave","Las Vegas",NV,89121,36.1009,-115.1,2.5,3,1
+096iGHoQ-UImxUExuyqlZA,"House of Aloha",Northwest,"4588 N Rancho Dr","Las Vegas",NV,89130,36.2433,-115.235,5,13,1
+09a8Mrd3STr4AxokKgbZHA,"Sushi Avenue 2",Northwest,"4949 N Rancho Dr","Las Vegas",NV,89130,36.2491,-115.243,4,8,0
+09bAk-309WnqhepFn9Mp4g,"Smog Busters",Southeast,"6495 S Pecos Rd","Las Vegas",NV,89120,36.0722,-115.101,1.5,3,1
+09vrTfe6Od9MorfsRorS6g,Emporium,"Spring Valley","5455 S Fort Apache Rd, Ste 104","Las Vegas",NV,89148,36.0896,-115.297,4,38,1
+0a98vplMh4US322JVKuNNg,"Pinnacle Electric",Sunrise,"4845 W Reno Ave","Las Vegas",NV,89118,36.1435,-115.078,3,4,1
+0aDaTYx780Rh5tzG1Sj2Iw,"City of Las Vegas Animal Control",Downtown,"416 N 7th St","Las Vegas",NV,89101,36.172,-115.136,3,10,1
+0aDCv4zPhzy7RklHDrnKQg,"Lucie's Lounge",Sunrise,"3935 E Charleston Blvd, Ste A","Las Vegas",NV,89104,36.1581,-115.09,4,11,0
+0ahghcpWQVkm4lEFwx-peA,"Habib's Persian Cuisine",Westside,"2575 S Decatur Blvd","Las Vegas",NV,89102,36.1431,-115.209,3.5,154,1
+0AKk_a4dCxlf8lgzeeYT3w,"CVS Minute Clinic",Southeast,"1825 E Warm Springs Rd","Las Vegas",NV,89119,36.0569,-115.127,3.5,3,1
+0aKsGxx7XP2TMs_fn_9xVw,"Sweet Ruby Jane Confections",Southeast,"8975 S Eastern Ave, Ste 3-B","Las Vegas",NV,89123,36.015,-115.118,4,30,0
+0APIz0O0c_XBDXQIWkJimA,"King Solomon's Table",,"4561 W Flamingo Rd","Las Vegas",NV,89103,36.1148,-115.203,4,5,1
+0AQnRQw34IQW9-1gJkYnMA,"Diablo's Cantina","The Strip","3770 Las Vegas Blvd S","Las Vegas",NV,89109,36.1041,-115.174,3,1134,0
+0aseOy1jMFOpcZLOjln4xA,"The Mike Ferry Organization","Spring Valley","7220 S Cimarron Rd, Ste 300","Las Vegas",NV,89113,36.057,-115.269,4,26,1
+0aw3HbxkZ4G7pkPYt10fhA,"Olive Garden Italian Restaurant",Sunrise,"80 N Nellis Blvd","Las Vegas",NV,89110,36.1605,-115.062,3,109,1
+0awPLJOjscpgf0HJxbYOLg,"Optic Gallery Aliante",,"6592 N Decatur Blvd, Ste 130","Las Vegas",NV,89131,36.2798,-115.205,4.5,49,1
+0AZCpDQpbi83NHh9uEpggQ,Ihop,,"8876 S Eastern Ave","Las Vegas",NV,89123,36.0281,-115.117,2,41,1
+0B0M_31_OiRO_799K6H99Q,"Big 5 Sporting Goods",,"9540 S Eastern Ave","Las Vegas",NV,89123,36.0153,-115.117,3,25,1
+0B2XK9dZJRBGeSVytHT6DQ,"Protech702 Textile & Floor care",Westside,"4650 W Oakey Blvd","Las Vegas",NV,89102,36.1527,-115.205,5,4,1
+0BA0Hf1dgC-h-qgPDYL4bA,"Liberty Heating",,"5075 Cameron St, Ste D","Las Vegas",NV,89118,36.0825,-115.188,5,3,1
+0BA9KyTOis61faFJrnmgZA,"The Alternative",,,"Las Vegas",NV,88901,36.18,-115.14,5,3,1
+0bdFgE-ixXo-2y9w_SO-yw,"MP K9 All Breed Dog Training",Southeast,,"Las Vegas",NV,89119,36.0832,-115.159,4.5,12,1
+0BDTi7loi3UYY0R1JEUl2w,"American Video and Security Ltd",Southeast,"1421 E Sunset Rd, Ste 2","Las Vegas",NV,89119,36.0714,-115.134,3.5,9,0
+0bfb9LtVdTxpD6NenU3Ljw,"Bella Mia Nails & Spa",Southwest,"7345 S Rainbow Blvd, Ste 100","Las Vegas",NV,89118,36.0551,-115.244,4.5,61,1
+0BJw3bfAzLSAzJWHpkCvSA,"K-9's and Kitty's",Summerlin,"8544 W Lake Mead Blvd","Las Vegas",NV,89128,36.2001,-115.279,4,42,1
+0BOdyChBbhGjQXRWZtDscQ,"The Art of Shaving","The Strip","3377 Las Vegas Blvd, Ste 2380","Las Vegas",NV,89109,36.1227,-115.169,4.5,33,0
+0BRKPCteBEDIDFFrUQ1NMQ,"Daisy Fresh",Southeast,"2510 E Sunset, Ste 5-130","Las Vegas",NV,89120,36.0728,-115.116,4,6,1
+0bSP8Md5Sz_NxByCsuoYCA,"O' Reilly Auto Parts",Southeast,"9721 S Eastern Ave","Las Vegas",NV,89183,36.0129,-115.121,4.5,20,1
+0BTHofva62CzNGfHImPuPQ,"R & R Auto Systems","Spring Valley","5735 S Rainbow Blvd","Las Vegas",NV,89118,36.0844,-115.243,5,37,1
+0buc34OWOPvbozqR1Hk1iw,"Cigar Box",,"1860 Western Ave","Las Vegas",NV,89102,36.1498,-115.164,4.5,3,0
+0BVHJrRS6Cz4Z66bASb4kw,"The Carriage House","The Strip","105 E Harmon Ave","Las Vegas",NV,89109,36.1074,-115.168,3.5,61,1
+0bWLkWeIcT-EnrE7SiGEBA,"Cafe 6",,"4381 W Flamingo Rd","Las Vegas",NV,89103,36.1139,-115.199,4,135,1
+0bwQWqTDtGL1O32Kbkyd3Q,"Green Orchid Events",Southeast,,"Las Vegas",NV,89119,36.0765,-115.153,5,13,1
+0C36stkEIwi9aBlWfi72Pg,"Expert Carpet Cleaning",Sunrise,,"Las Vegas",NV,89101,36.183,-115.091,4,4,1
+0C46YhAdmNrNiUAmAq6W0g,"Goat Post Tropical Grill","Spring Valley","4155 S Buffalo Dr, Ste 104","Las Vegas",NV,89147,36.1136,-115.261,3.5,3,0
+0c6PQILCLwRZ8FIB4AEsGw,"China One - West Charleston",Summerlin,"11710 W Charleston Blvd, Ste 140","Las Vegas",NV,89135,36.1594,-115.351,3.5,107,1
+0CB7YB1qRSWLQvMbHw3Fmw,"Easy Life Boba Tea",Westside,"8560 W Desert Inn Rd, Ste D2","Las Vegas",NV,89117,36.13,-115.278,4,329,1
+0CBcDXAf04jeGyK16AoV0g,"Pop's Hoppin Auto Repair",Downtown,"1115 S Main St","Las Vegas",NV,89104,36.1581,-115.153,4,4,1
+0ceFcbUkPTs4jC5CUicIkA,Pet-A-Palooza,Southeast,"2601 E Sunset Rd","Las Vegas",NV,89120,36.0682,-115.112,3.5,10,1
+0CEkswlj7y9ry1x3xyIg8A,"Psychic Eye Book Shops",Westside,"6848 W Charleston Blvd","Las Vegas",NV,89117,36.1592,-115.245,2.5,37,1
+0cfmNkEqgUoX1g4_MzEY3g,"Avery Park Apartments",,"2200 N Torrey Pines Dr","Las Vegas",NV,89108,36.2021,-115.233,2.5,17,1
+0cn4zw0_PFoivCFtvCx6jQ,"DB Mobile Notary Service","The Strip",,"Las Vegas",NV,,36.1147,-115.173,5,3,1
+0CUCac6yKkATDcB0fA-02Q,"Epic Storage",Southwest,"10270 S Decatur Blvd","Las Vegas",NV,89141,36.0031,-115.207,3.5,5,1
+0CwhlQzyXG_7RqEu-2pMSQ,"Margarita Grille",Eastside,"3000 Paradise Rd","Las Vegas",NV,89109,36.1364,-115.152,3,3,1
+0d0i0FaJq1GIeW1rS2D-5w,Bruxie,"The Strip","3782 S Las Vegas Blvd, South Tenant Block, Bldg D1","Las Vegas",NV,89109,36.1033,-115.174,4.5,907,1
+0DaxCcBQG9t1JEFD9mRvTQ,"Presidential Spas & Patio","Spring Valley","9350 W Tropicana Ave","Las Vegas",NV,89147,36.101,-115.296,4,10,0
+0DO_MfP9R3XgadkbavmhwQ,"Aaron Lelah Jewelers","Spring Valley","4175 S Grand Canyon Dr","Las Vegas",NV,89147,36.1137,-115.307,3.5,33,1
+0DQ31asd4IeOTI7dkZ3OXQ,"Sea Harbour Seafood Restaurant",Westside,"6600 W Charleston Blvd Ste 118","Las Vegas",NV,89146,36.1598,-115.241,3,3,0
+0dr1FgqQSEMbaTu9SDqiIg,"China A Go Go",,"2101 N Rainbow Blvd, Ste 101","Las Vegas",NV,89108,36.1994,-115.243,3.5,148,1
+0DVe7UAp3qWvHPqpzQroDQ,"Artistry Perfected by Andrea Miller",Southeast,"6539 Las Vegas Blvd S, Ste 110","Las Vegas",NV,89119,36.0676,-115.172,5,3,1
+0dvEpCy7Yh5hDQRDyW1VyA,"24 Hour Cleaners",Westside,"909 S Rainbow Blvd","Las Vegas",NV,89145,36.1615,-115.244,3,3,0
+0dVEWi9R3oHMCdzP_TaPNQ,"Family Music Centers",Westside,"8125 W Sahara Ave","Las Vegas",NV,89117,36.1425,-115.269,4.5,11,1
+0dwy8nucTiOB4sdFQ1aEUA,"Stein Mart","The Lakes","10000 W Sahara Ave, Ste 160","Las Vegas",NV,89117,36.1445,-115.313,3.5,9,1
+0dYiTboT1N7Sqji85Pt8wA,"305 Kustoms",,"5933 W Tropicana Ave","Las Vegas",NV,89103,36.0994,-115.223,5,26,0
+0D_UU5RMPmtIihgsvB1A1A,"Moulin Rouge",,"900 W Bonanza Rd","Las Vegas",NV,89106,36.1772,-115.153,4.5,3,0
+0E06UEanCHrJtiO44vyWkQ,"Zappos.com Shoe Outlet",Eastside,"3860 S Maryland Pkwy","Las Vegas",NV,89119,36.1189,-115.136,3,3,0
+0e2oJ82g4ZfvQzIc8SE9Xw,"All Western Mortgage","Spring Valley","8345 W Sunset Rd, Ste 380","Las Vegas",NV,89113,36.0674,-115.272,4.5,125,1
+0eaQLn6u8yhgts93_DlQ-A,"I am Mechanics",Westside,"2075 S Rainbow Blvd","Las Vegas",NV,89146,36.1488,-115.244,4,9,1
+0EgYXYjt2XJL4hlsKnzrcw,PublicUs,Downtown,"1126 Fremont St","Las Vegas",NV,89101,36.1658,-115.133,4.5,654,1
+0eI3NAlvfVt4YrWPVZ_HXg,"Floor Seasons, Inc.",Centennial,,"Las Vegas",NV,89149,36.2684,-115.296,3.5,3,1
+0eJG77JOkyMIBhc4Xbuqfw,"A Thyme For All Seasons",Southeast,"310 E Warm Springs Rd, Ste G","Las Vegas",NV,89119,36.0577,-115.158,4,52,0
+0EKYsM4Dbetb9OEFfeEJZQ,"Children's Hospital of Nevada at UMC",Downtown,"800 Hope Pl","Las Vegas",NV,89106,36.1613,-115.168,2,4,1
+0EpDJHM1Xl1mcTvuQ2qf7w,"Baja Performance Machine Shop",,"4710 W Dewey Dr","Las Vegas",NV,89118,36.0882,-115.205,5,4,1
+0EpnzIpeFvhISkxMTIv9WA,"Paradise Place Jamaican Cuisine",Westside,"7365 W Sahara Ave","Las Vegas",NV,89117,36.1433,-115.254,4,84,1
+0eqe6VK_yvHgclMjLeRnzw,Sapphire,"The Strip","3700 S Las Vegas Blvd","Las Vegas",NV,89109,36.1101,-115.175,1.5,31,1
+0EUohlWGBPnIgzCULyWl7g,"Rok Vegas","The Strip","3790 Las Vegas Blvd S","Las Vegas",NV,89109,36.103,-115.174,2.5,109,0
+0eZHVYDyACtVVOIgoBlV3g,"Da Sheng Chinese Cuisine",Chinatown,"Chinatown Mall, 4255 W Spring Mountain Rd","Las Vegas",NV,89102,36.1255,-115.197,3.5,46,0
+0f3nlMdNpVki1pyHPdV1fQ,"Flowers by Donka",,,"Las Vegas",NV,89108,36.2031,-115.224,4,5,1
+0FAifXkZzrTrAoNy2g9P6A,"Cal Pac Painting",Downtown,"900 S Commerce St","Las Vegas",NV,89106,36.1625,-115.153,4.5,3,1
+0FbFqMBLRGRRdZlGJeXjug,"Purple Penguin Snowcone Shack",Southwest,"10490 S Decatur Blvd","Las Vegas",NV,89141,35.9993,-115.207,4.5,26,1
+0fdi2Y8RLbnLP9Cvwq7utw,"Lucky 7s Buffet",,"Plaza Hotel & Casino, 1 Main St","Las Vegas",NV,89136,36.175,-115.136,2.5,6,0
+0FHfkDxKSeDuyAEeaY6X-Q,"Panera Bread",Eastside,"365 Hughes Center Dr","Las Vegas",NV,89169,36.115,-115.156,3.5,87,1
+0fHwjs4R6ZpWcX9G7cBqEQ,"M and L Creations",Westside,"6029 W Charleston, Ste 28","Las Vegas",NV,89146,36.1584,-115.223,1,3,1
+0FJ22K--OjiiQJZ8VJIpJw,"Exclusive Customs",,"4851 West Hacienda Ave, Ste 1","Las Vegas",NV,89118,36.093,-115.207,4.5,30,1
+0flcNe7SwXdypg4K13n-Rg,"Fiore Travel Lounge",Southeast,"6551 Las Vegas S Blvd, Ste C-154","Las Vegas",NV,89119,36.0694,-115.177,4.5,6,1
+0fnIjQK6GfMfVFITNFQDTA,"St Clair Apartments","Spring Valley","5450 S Fort Apache Rd","Las Vegas",NV,89148,36.0898,-115.296,4.5,29,1
+0FSV_rwCR7hWRVNwjv4bNg,"Hawkeye Appliance Repair",Northwest,,"Las Vegas",NV,89129,36.2331,-115.272,2,17,1
+0FtECrDXl6Xo2ZsJAlYr4g,"Giant Las Vegas",Southwest,"9345 S Cimarron Rd, Ste 100","Las Vegas",NV,89178,36.0185,-115.271,5,12,1
+0fuGTfu7afB9dW5UmtFTMA,"Gibson's Canine Classroom",Southeast,,"Las Vegas",NV,89119,36.0803,-115.159,4.5,12,1
+0FwTYXU8VvqQiQ174xz5EQ,"Gem Optical",Eastside,"3300 E Flamingo Rd","Las Vegas",NV,89121,36.1164,-115.103,3,10,1
+0G1y7uV7w1D2uziS4Lt_Dw,"Chapalas Mexican Restaurants",Southeast,"3331 E Tropicana Ave","Las Vegas",NV,89121,36.0996,-115.104,3.5,153,1
+0G83H_zoum-Q4bWU2olTqQ,"Bonjour Bakery & Deli",,"4012 S Rainbow Blvd, Ste J","Las Vegas",NV,89103,36.1162,-115.242,4,23,1
+0GF6e-ZqBxnXO-FCkDIJ-Q,"Happy Kid Entertainment","The Strip","1999 Fashion Dr, Ste 120","Las Vegas",NV,89109,36.1288,-115.173,1,4,0
+0giQuOv-hLFlVuwgw_VG9A,"Fresh & Easy",,"3053 N. Jones Blvd","Las Vegas",NV,89108,36.2156,-115.226,3.5,16,0
+0gIs2QMCIdz_hr0pBxl4pQ,"Blooming Dreams Floral Studio",Northwest,"6941 Megan Ave","Las Vegas",NV,89108,36.2283,-115.246,5,15,1
+0gKF7zEkwsi_SAlLw5z6WA,"CVS Pharmacy",Sunrise,"4391 E Washington Ave","Las Vegas",NV,89110,36.1802,-115.081,2.5,5,1
+0GP25wmLzoHxf_Et-0tcHw,"Vegas Discount Nutrition Superstore","The Strip","3200 S Las Vegas Blvd, Ste 2000","Las Vegas",NV,89109,36.1272,-115.172,5,5,1
+0GPX06NuF_jhBOu9lWuG7A,"V Florist",Southwest,"7345 S Rainbow Blvd","Las Vegas",NV,89139,36.0551,-115.243,5,6,1
+0gTTGuA6uEmMhLhfJi0hqA,"Sammy's Woodfired Pizza and Grill","Spring Valley","9516 W Flamingo Rd, Ste 100","Las Vegas",NV,89147,36.1158,-115.3,3.5,130,1
+0gvKUGQ4Y83oXUpFtKauUA,"Bliss Dance Statue","The Strip","6 Park Ave","Las Vegas",NV,89109,36.1037,-115.178,4.5,3,1
+0gWg-kqRLEQbhui8b_v2Xw,"Hi Scores - Blue Diamond",Southwest,"4785 Blue Diamond Rd","Las Vegas",NV,89139,36.033,-115.206,4,121,1
+0GY8oQmkk46U6JOVLMbvhA,"S&S Salon & Barbershop",,"4360 S Decatur Blvd","Las Vegas",NV,89103,36.1106,-115.207,3,8,1
+0H0h7rCTPMItHS6t2yrskw,"LV Hot Tubs and Spas",,,"Las Vegas",NV,89044,35.9209,-115.165,5,9,1
+0Hcks5q-DgJbDlmEWolx4A,"Bonefish Grill",Westside,"8701 W Charleston Blvd","Las Vegas",NV,89117,36.1585,-115.285,3.5,234,1
+0HcMVnyiKg-wdd1VmEwQvQ,"Ace Pest Control","Spring Valley",", Ste 110","Las Vegas",NV,89147,36.1033,-115.28,4.5,7,1
+0HcUjN6DuipHkaUNfSPDgA,"Sprint Store",Southeast,"7291 S Eastern Ave","Las Vegas",NV,89119,36.0574,-115.12,5,5,1
+0HegKN321F0gfUcYqsLTxA,"Thai Spa",Westside,"7365 W Sahara Ave","Las Vegas",NV,89117,36.1431,-115.254,4.5,111,1
+0Hemgm6gwrO64fDEWEW4vg,"Best Buy",Centennial,"6455 N Decatur Blvd","Las Vegas",NV,89131,36.277,-115.209,2.5,104,1
+0hfyryPmC_z0bba-hTSksQ,"Little Hearts Child Care Center",,"5055 Duneville St","Las Vegas",NV,89118,36.0972,-115.221,4.5,10,1
+0HG02r8ri7GEFwuwmdHCyg,KFC,"Spring Valley","7017 S. Durango Dr.","Las Vegas",NV,89148,36.0605,-115.279,2,50,1
+0hpq5n0FYg4uF1r79TMfCA,"Welch Plastics",Westside,"4080 W Desert Inn Rd, Ste W110","Las Vegas",NV,89102,36.1306,-115.194,4,9,1
+0HrmyPHRtPwr3NHGQCP0HA,"Kainan Asian Market & Gift Shop",Southeast,"9620 Las Vegas Blvd S, Ste N2","Las Vegas",NV,89123,36.015,-115.172,4,21,1
+0HuLU0K_acbYDQishnEXNQ,"Magic Nails",Eastside,"4540 E Tropicana Ave","Las Vegas",NV,89121,36.1225,-115.097,4,13,1
+0hXf4uRaCo_HqbOYbpcGdQ,"Power Up Gaming",Southeast,"9890 S Maryland Pkwy, Ste 22","Las Vegas",NV,89138,36.0101,-115.136,5,14,1
+0i6GlR5YTCMlwthjqw6ZTQ,"Cinthya's Beauty Salon",Westside,"2101 S Decatur Blvd, Ste 11","Las Vegas",NV,89102,36.1487,-115.21,4.5,16,1
+0i9S0BejjRv0ZDwdO9XymA,"Thai Seafood Ginger",Westside,"1750 S Rainbow Blvd, Ste 8","Las Vegas",NV,89146,36.1526,-115.243,4.5,93,1
+0IbboCQAEQlROAv5PKKO_Q,"Aloha Island Grill",Summerlin,"2267 N Rampart Blvd","Las Vegas",NV,89128,36.2012,-115.281,4.5,17,0
+0If0W5y2M__8j0Xjlwuk0g,Woo,Westside,"The Palazzo, 3325 Las Vegas Blvd S","Las Vegas",NV,89109,36.1407,-115.182,3.5,58,0
+0ifI4JjTKcgfBSQiAnMmsQ,"The Mad Greek Cafe",Westside,"2330 S Rainbow Blvd","Las Vegas",NV,89146,36.1462,-115.242,3,19,0
+0ifvapuLuoQmClCLo5r15Q,"Sterling Court Apartments",Southeast,"5500 Mountain Vista St","Las Vegas",NV,89120,36.0885,-115.072,2,8,1
+0IjBFHFm8M-VPyym-Xrkhw,"Tower Pizzeria","The Strip","2000 S Las Vegas Blvd","Las Vegas",NV,89104,36.1477,-115.156,3.5,22,1
+0InA3Ffj8MxyQV9hgsyYcQ,"Novecento Pizzeria",Northwest,"5705 Centennial Center Blvd, Ste 170","Las Vegas",NV,89149,36.2648,-115.258,4,351,1
+0IpwKPDV25gub5CRxzC1FA,"Great Clips","Spring Valley","5625 S Rainbow Blvd","Las Vegas",NV,89118,36.0865,-115.244,3.5,4,1
+0IPYClNF6pQN3a2hRI_kJg,"ARCO ampm",Downtown,"3885 E Charleston Blvd","Las Vegas",NV,89110,36.1592,-115.094,3,3,1
+0IqXJZi_0c6wZQ9sNz5jpg,"Mattress Firm Boca West",Westside,"8950 W Charleston Blvd, Ste 9","Las Vegas",NV,89117,36.1596,-115.29,4,15,1
+0iRi1_TyI92VBmn3h-fSaQ,"24/7 Salon & Day Spa Studio",,"4965 W Tropicana Ave, Ste 105","Las Vegas",NV,89103,36.0994,-115.209,3.5,117,1
+0ISVzBIyAUvSCxLlh-1B1Q,"Phibrown Microblading  & Lashes Extension",Westside,"2360 S Rainbow Blvd, Ste 1","Las Vegas",NV,89178,36.1456,-115.241,5,5,1
+0IsYZXjAnggWVZh36MquIg,"Happy Paws Mobile Grooming",Northwest,,"Las Vegas",NV,89129,36.2331,-115.272,5,18,1
+0iTPEAfI4td0VmxqMLpX6A,"Downtown Details",,,"Las Vegas",NV,89103,36.1104,-115.207,5,13,1
+0IVmkPZN_0Gl9GYG8t5IZQ,"La Petite Academy of Las Vegas",Southeast,"680 E Warm Springs  ","Las Vegas",NV,89119,36.0576,-115.148,4,9,1
+0IZLOJeslJanoA3U3E8cPA,"Roach Matthew, MD",,"5650 W Flamingo Rd, Ste A","Las Vegas",NV,89103,36.1152,-115.219,2.5,3,1
+0J08AzWGquw1aYM_pScahw,"Nancy Kim - State Farm Insurance Agent",Downtown,"2213 Paradise Rd","Las Vegas",NV,89104,36.1447,-115.154,4,20,1
+0j7VWa5uGebj_94C1K2i2g,"Walmart Supercenter",Southeast,"2310 E Serene Ave","Las Vegas",NV,89123,36.023,-115.124,2.5,95,1
+0Ja-QPfQTdprDi0dX0p-Yw,"Jennifer Chamberlin Photography",Downtown,,"Las Vegas",NV,,36.1699,-115.14,3.5,3,1
+0jg8dKyShTzFYSEa-Wb-RA,PetSmart,Southeast,"5915 S Eastern Ave","Las Vegas",NV,89119,36.0816,-115.122,3,49,1
+0jJfQEWEe-6ODl62XSynDw,"Haggen Food & Pharmacy",,"7530 W Lake Mead Blvd","Las Vegas",NV,89128,36.1973,-115.259,2,19,0
+0JJlFunCGdTURUTSHZNmjQ,"Tenaya Salon",Northwest,"3950 N Tenaya Way","Las Vegas",NV,89129,36.2322,-115.251,4,4,1
+0JmCGyAqAK_yVEuZ0ts16w,"Bilbo's Bar & Grill",Westside,"8699 W Charleston Blvd","Las Vegas",NV,89117,36.1588,-115.284,2.5,14,0
+0JmqDFFmEiW_G5yuFs3K3g,"No Insurance Surgery","Spring Valley","9121 W Russell Rd, Ste 115","Las Vegas",NV,89148,36.0819,-115.29,4,5,1
+0jriM09IvPdCLgr509vbrQ,"See's Candies",Summerlin,"10300 W Charleston Blvd, Summerlin Center Pointe Plaza","Las Vegas",NV,89135,36.1606,-115.32,4.5,25,1
+0jtRI7hVMpQHpUVtUy4ITw,"Omelet House Summerlin",Summerlin,"2227 N Rampart Blvd","Las Vegas",NV,89128,36.202,-115.283,4,225,1
+0jTY4cIIt94bJLY0L2R7Jw,"Kimodontics Orthodontics","The Lakes","8981 W Sahara Ave, Ste 210","Las Vegas",NV,89117,36.1432,-115.292,5,40,1
+0JWGJCjbWEx3cSSfFRW7Ug,"Lora Boudreaux",,"7331 W Lake Mead Blvd, Ste 103, Canyon Falls Spa","Las Vegas",NV,89128,36.1948,-115.252,4.5,7,1
+0JXHn6sWl_c1UhMZhiBy3Q,"Hangover Bail",Downtown,"1600 Las Vegas Blvd S, Ste 140","Las Vegas",NV,89104,36.1519,-115.153,3,6,1
+0JZYzp5Z8tEbVr0N2MaLdw,Sephora,"The Strip","3377 Las Vegas Blvd S","Las Vegas",NV,89109,36.1219,-115.17,4,120,1
+0K2rKvqdBmiOAUTebcUohQ,"Red Rock Canyon Visitor Center",,"1000 Scenic Loop Dr","Las Vegas",NV,89161,36.1357,-115.428,4.5,33,1
+0K4tCSMV6BqFxOsgZFqfVw,"Rocky Mountain Chocolate Factory",,"4500 W Tropicana Ave","Las Vegas",NV,89103,36.1027,-115.202,3.5,21,1
+0kBrOlBPfUFEDDU7tIGCpQ,"Darque Tan",Southeast,"3460 E Sunset Rd, Ste A","Las Vegas",NV,89120,36.0723,-115.099,2.5,3,0
+0keht9nVTliinChbGWWkkg,"Tapas by Alex Stratta",Westside,"440 S Rampart Blvd, Ste 180","Las Vegas",NV,89145,36.167,-115.286,3,53,0
+0KFA2m39eZwq2F7WvMCoyw,"Heart Bar","The Strip","Planet Hollywood Las Vegas Resort & Casino, 3667 Las Vegas Boulevard South","Las Vegas",NV,89109,36.1097,-115.17,3,115,1
+0KJGTQD9UuuHfesSMdmMpw,"Lone Mountain Discovery Park",Northwest,"4445 North Jensen","Las Vegas",NV,89129,36.2409,-115.309,4.5,14,1
+0kMqHBv4LPaUAx6P-pIScg,"Bobbi Brown Cosmetics at Nordstrom","The Strip","3200 Las Vegas Blvd S","Las Vegas",NV,89109,36.1272,-115.172,4,4,1
+0kPm1zEpeXFRg8D2phqgCQ,"Dunkin' Donuts",Westside,"5905 W Sahara Ave","Las Vegas",NV,89146,36.1439,-115.222,2.5,70,1
+0ktWihvmKQiPrXFXhYotCA,"Rocky Mountain Chocolate Factory",Downtown,"200 E Fremont St","Las Vegas",NV,89101,36.1708,-115.144,4,18,1
+0KvfCT32KjhJh1JD1hh5Yg,"Down Syndrome Organization of Southern Nevada",,"5300 Vegas Dr","Las Vegas",NV,89108,36.1885,-115.214,3.5,3,1
+0l3Sm27mX6-JkKvYgcnX5w,"Hp Enterprises",Sunrise,"2665 Rimbey St","Las Vegas",NV,89115,36.208,-115.073,5,4,1
+0l4h-TaDXZzbR54Gau-JsQ,"Safeguard Mini Storage",,"4530 W Nevso Dr","Las Vegas",NV,89103,36.1141,-115.202,4,3,1
+0laIzUamNI0LAl2HBb70lw,"UNLV Performing Arts Center",University,"4505 Maryland Pkwy","Las Vegas",NV,89119,36.1101,-115.139,4.5,11,1
+0LD904DOPU3T_asJGOTZyg,"Fractured Prune Doughnuts","Spring Valley","9460 W Flamingo Rd, Ste 115","Las Vegas",NV,89147,36.1155,-115.298,4.5,184,1
+0lDCyIvAWyn-UZDUncDqHA,"Las Vegas Red Rock Tours","The Strip",,"Las Vegas",NV,89161,36.1146,-115.172,4,5,1
+0LDW1WT4mQ6r9GBf4G4kzA,"Money Plays",,"4755 W Flamingo Rd, Ste G","Las Vegas",NV,89103,36.115,-115.206,4,109,1
+0lETSsJdIy0qXG8D092VIQ,"A Happy Dog Wash",Westside,"1725 S Rainbow Blvd, Ste 12","Las Vegas",NV,89146,36.1527,-115.244,4,39,0
+0lfRx2ChaBsUHeYY2-799w,iLoveKickboxing.com,"Spring Valley","4205 Grand Canyon, Ste 17","Las Vegas",NV,89147,36.1131,-115.306,4.5,87,1
+0LGnU7V3nepi8NUNzyQOXw,"Einstein Bros Bagels",Centennial,"6770 N Durango Dr, Ste 140","Las Vegas",NV,89149,36.2838,-115.287,3.5,99,1
+0lI3ACeMSb3-02lsjo2VqQ,"Transmission Wholesale",Downtown,"3430 E Sahara Ave","Las Vegas",NV,89104,36.1467,-115.1,2,4,1
+0lKsDdM1ewhGtCRXYvSFMw,"T.H.E Salon",Westside,"2975 S Rainbow Blvd","Las Vegas",NV,89146,36.1357,-115.244,3.5,39,1
+0lLaPO8KMPCkCMDjsVX5JA,"Jury Commissioner - Eighth Judicial District Court",Downtown,"200 Lewis St","Las Vegas",NV,89155,36.1664,-115.146,2.5,6,1
+0Lq-MK2LwhntBCF7G2t71w,"The Garage Door Guy",,,"Las Vegas",NV,89031,36.2608,-115.171,4,37,1
+0LqYWNpyOoSYMBcTv9VmiA,"The Car Doctor",Westside,"321 S Decatur Blvd","Las Vegas",NV,89107,36.1686,-115.205,4.5,16,1
+0lxyY2bwmpde2QHcnh8fZQ,"Sahara Buffet","The Strip","2535 Las Vegas Blvd S","Las Vegas",NV,89136,36.1423,-115.156,2,46,0
+0l_HQpZ4gsR5T6Ejqcgi2Q,"The Eddie Griffin Experience",,"3700 W Flamingo Rd","Las Vegas",NV,89103,36.117,-115.186,3,27,1
+0M4fn7ib4zJF6CF0XPLSfg,"Allstate Insurance Agent: Regan Wood",,"6020 W Flamingo Rd, Ste 12","Las Vegas",NV,89103,36.1154,-115.223,4.5,4,1
+0m5Gf6ZTxwtXiCaHyzsCtg,"Harrah's/Paris/Rio Free Shuttle","The Strip","3475 Las Vegas Blvd S","Las Vegas",NV,89109,36.1193,-115.172,4.5,3,1
+0M7rIhQLKD-j2XSnKgt2ng,Sbarro,Southeast,"McCarran International Airport","Las Vegas",NV,89111,36.0804,-115.147,2,27,0
+0MClc59pEqhTht6iB1hwzA,"Shannon Smith",Southeast,"9550 S Eastern Ave","Las Vegas",NV,89123,36.0153,-115.119,5,9,1
+0meL9lBFHx8niD5H-Lw6Gw,"Ridenow Powersports On Boulder",Southeast,"6350 Boulder Hwy","Las Vegas",NV,89122,36.0863,-115.036,4,100,1
+0mK7-2fQt684NLJt-ZBalg,"The Makeup Shack",Westside,"4760 W Sahara Ave, Ste 8","Las Vegas",NV,89102,36.1463,-115.207,4.5,6,1
+0mnnlFCploePlnEaddw63g,"Aurelio's Pizza",Northwest,"6010 W Craig Rd, Ste 150","Las Vegas",NV,89130,36.2397,-115.226,4,22,1
+0mq2uhooR7IbC6q4uUaQ3g,"Hair Now Salon",Southeast,"9850 South Maryland Pkwy, Ste 101","Las Vegas",NV,89183,36.0108,-115.134,5,3,1
+0MV_T5y-UjGaYg_xlOq0lQ,"Seven Brothers Moving",Northwest,"4894 W Lone Mountain Rd, Ste 297","Las Vegas",NV,89130,36.2482,-115.209,5,17,1
+0mY9YLamWBOwRmMhI4LP6Q,"Sugaring LV",Centennial,"6461 N Durango Dr","Las Vegas",NV,89149,36.2781,-115.288,5,14,1
+0Myf2fOlXXNHgIuPZoOlsA,"Las Vegas National Golf Club",Eastside,"1911 E Desert Inn Rd","Las Vegas",NV,89169,36.1286,-115.125,3.5,58,1
+0MYTwljm4N-3hwhjy2ZsRA,"Buffalo Highland Apartments",Westside,"8155 W Charleston Blvd","Las Vegas",NV,89117,36.1589,-115.27,1,4,1
+0n-Bu-SpcWlMS5Ja4fU7XA,"Pain clinic",Westside,"5445 W Sahara Ave","Las Vegas",NV,89146,36.1437,-115.216,5,3,1
+0n3vcq00Z4ijqwwn-INfkg,"Can't Dutch This",,,"Las Vegas",NV,,36.175,-115.136,4.5,3,1
+0N53m33GANYeHHl-s22d4Q,"Port of Subs",Eastside,"190 E Flamingo Rd","Las Vegas",NV,89109,36.115,-115.165,4,14,1
+0N7ME2xu2Y_rYn5ID7SWcQ,"Dollar General Market",,"5991 W Cheyenne Ave","Las Vegas",NV,89108,36.2163,-115.225,3,5,1
+0nasWPLtVyIrDi5e0o4Zfg,"Magic of Jason Bird","The Strip",,"Las Vegas",NV,89109,36.1286,-115.171,3.5,3,1
+0Nb4piKDUVbedlrakwEUuw,"Del Taco",Centennial,"7757 N El Capitan Way","Las Vegas",NV,89143,36.3026,-115.285,3,35,1
+0NBsEzgEQ5E-CycaFekA3w,"Accelerated Dental","Spring Valley","6115 S Rainbow Blvd, Ste 102","Las Vegas",NV,89118,36.0773,-115.243,5,4,1
+0nDaFKH_qTWz7r_Wf5e77g,Aaron's,Sunrise,"2513 S Nellis Blvd","Las Vegas",NV,89121,36.1438,-115.066,2.5,10,1
+0nLndWejyCMeNRyumHRUEA,"Zuffa, LLC",Westside,"2800 W Sahara Ave, Ste 5C","Las Vegas",NV,89102,36.1452,-115.18,3.5,3,1
+0nlocywsFHQmEt8_xbHNiw,"Long Jin Chinese Cuisine","Spring Valley","4825 S Rainbow Blvd, Ste 204-205","Las Vegas",NV,89103,36.1009,-115.245,3.5,85,0
+0NmTwqYEQiKErDv4a55obg,Scarpetta,"The Strip","3708 Las Vegas Blvd S","Las Vegas",NV,89109,36.1102,-115.174,4,1171,1
+0nqtCtYUfwXjJVujzU79dg,"Ecktor Romero - ERmakeovers at My Salon Suite",Southeast,"9850 S Maryland Pkwy, Ste 14","Las Vegas",NV,89183,36.0108,-115.134,5,6,1
+0o-rp81ttLk1NINx01Sl9g,"Rancho Security Services",,"333 N Rancho Dr","Las Vegas",NV,89106,36.1761,-115.176,2.5,3,1
+0O3W4Pe0_Jfuq2AlR2nh6w,"New Bahay Kubo",Southeast,"750 E Pyle Ave","Las Vegas",NV,89183,36.0069,-115.147,3.5,3,0
+0OArxu3FtUGUj6Jbkmerbg,"Fones Gone Wild",Westside,"9110 W Sahara","Las Vegas",NV,89117,36.1445,-115.296,4.5,25,1
+0odAupWjDV8gwhaLqyh1-A,"Chipotle Mexican Grill",Downtown,"875 Grand Central Pkwy","Las Vegas",NV,89106,36.1634,-115.159,2.5,24,1
+0OdZXIKQypu6vplpxFilsA,"Kneaders Bakery & Cafe",Northwest,"7100 W Craig Rd","Las Vegas",NV,89129,36.241,-115.249,3.5,202,1
+0OeQxzGAj96ADVQ8id-qSw,"Mohave Dermatology",Sunrise,"1875 Nellis Blvd","Las Vegas",NV,89104,36.1507,-115.066,4,8,1
+0oIGaUJHHBqNvaLYLWdTcA,"Auto RX",,"1721 N Decatur Blvd","Las Vegas",NV,89108,36.1895,-115.206,4.5,54,1
+0oMs2QdhuLW3wYIJIi0wcw,Starbucks,Southeast,"9770 S Maryland Pkwy 10","Las Vegas",NV,89183,36.011,-115.136,3,79,1
+0onIwbCKK8HRw1itKvbWng,"Tire Works Total Car Care",Southwest,"8532 Blue Diamond Road","Las Vegas",NV,89113,36.0214,-115.277,2,131,1
+0OOmvIS1Tb5ccYOCvq4Yeg,"Vein Clinic of Las Vegas","Spring Valley","9060 W Post Rd, Ste 200","Las Vegas",NV,89148,36.0752,-115.29,4.5,37,1
+0Otx78_JJ4fWjTYOYxnxcA,"Feng Shui Gallery",Chinatown,"3548 Wynn Rd","Las Vegas",NV,89103,36.125,-115.194,4.5,3,1
+0ox0u3k-I0XEqU_P6wJB3w,"Mixt Urban Beauty Bar & Boutique",Westside,"750 S Rampart Blvd, Ste 6","Las Vegas",NV,89145,36.1646,-115.289,4,18,0
+0ozw5IiiQ79WK847QvJ5bg,"Summit Restoration",,"5032 W Post Rd","Las Vegas",NV,89118,36.0762,-115.209,5,3,1
+0P-8u5PJao-MddpiwDCLZQ,"J & D Fitness","Spring Valley","4180 S Fort Apache Rd, Ste E","Las Vegas",NV,89147,36.1135,-115.297,5,4,1
+0p0PqX7Zsm_0lvXzEWpwWA,"Las Vegas-Clark County Library System - Sahara West Library",Westside,"9600 W Sahara Ave","Las Vegas",NV,89117,36.1451,-115.305,4.5,102,1
+0p27EjcNwTI7Ey4K_MNPww,Fatburger,"South Summerlin","11011 W Charleston Blvd","Las Vegas",NV,89135,36.1564,-115.334,3,70,1
+0p405x2TRJCPYfHHt1sgTA,"Flawlace Salon",Westside,"4418 W Charleston Blvd","Las Vegas",NV,89102,36.1593,-115.201,2,24,0
+0pA7gxi3K6_OrDsGrpMb2Q,"Less Stress Movers",,,"Las Vegas",NV,89108,36.2031,-115.224,4.5,35,1
+0pdsgDS9CvFnZI6n-tl93A,"Extra Space Storage",,"2025 N Rancho Dr","Las Vegas",NV,89106,36.1971,-115.195,2.5,3,1
+0pDX7qEqyQc5JOLRtTiA2A,"Alpaca Imports at Miracle Mile Shops",Downtown,,"Las Vegas",NV,,36.1699,-115.14,2.5,3,1
+0PenhUhRbw2xd_suA68IjA,"Soul2Soul Tim McGraw & Faith Hill",Eastside,"3355 Las Vegas Blvd S","Las Vegas",NV,89109,36.1244,-115.146,2,51,1
+0pHLI4OULzwxxuayK0GG9g,"Christopher Giddings - Realty ONE Group",Summerlin,"10750 W Charleston Blvd","Las Vegas",NV,89135,36.1597,-115.33,5,6,1
+0pIhgokp0NeM9h8oQQULOg,"Trader Joe's",,"7575 W Washington","Las Vegas",NV,89128,36.1805,-115.258,4.5,169,1
+0Pn3Ao3bmF9blFCBu5B0SQ,"Gary's Mobile Brakes",Northwest,,"Las Vegas",NV,89130,36.2577,-115.23,4.5,6,1
+0Pnr8uYKVIV3ri3ngXbe5w,Goodwill,Eastside,"3345 E Tropicana Ave","Las Vegas",NV,89121,36.0999,-115.102,3,24,1
+0pNrC_WIwIovObNfq5JOPQ,"Carlos Munoz - State Farm Insurance Agent","Spring Valley","4045 S Buffalo Dr, Ste A106","Las Vegas",NV,89147,36.1154,-115.263,5,5,1
+0ps5B5C6oNaRsGyUJzFCuw,Subway,Downtown,"600 Fremont St","Las Vegas",NV,89101,36.1691,-115.139,4,7,1
+0PscU5MdM6kZkd3KQ-3HmQ,"El Pedregal Sàlon de Fiestas",Sunrise,"348 N Nellis Blvd, Ste B","Las Vegas",NV,89110,36.1662,-115.062,1,5,1
+0pvEQRFVBjxz1W7dNpNZFg,"Diamond Nails & Spa",Southwest,"7775 S Rainbow Blvd, Ste 125, Rainbow Robindale Plaza","Las Vegas",NV,89139,36.0471,-115.244,4,622,1
+0Px4uq3Za8Spr_AWj7Jogg,"Internal Medicine Specialists of Southern Nevada",Westside,"201 N Buffalo Dr","Las Vegas",NV,89145,36.1751,-115.26,3.5,61,1
+0q3PLf-a_5hCUIsgjkWMiw,"SYNLawn Nevada","Spring Valley","6975 S Decatur, Ste 160","Las Vegas",NV,89118,36.063,-115.21,4.5,17,1
+0Q8qkmzeiYCTs7taERNHMw,"Mountain Dental Group",Southwest,"9285 S Cimarron Rd, Ste 125","Las Vegas",NV,89178,36.0198,-115.271,4,97,1
+0QErq5iZb-kYegtwaQ39Hg,"Alex Presley's Unique Boutique",Downtown,"1304 Las Vegas Blvd S","Las Vegas",NV,89104,36.1551,-115.15,5,4,0
+0qet57CmMA5qUm6gPFUTpg,"Di Fara Pizza","The Strip","3570 Las Vegas Blvd S","Las Vegas",NV,89109,36.1153,-115.173,2.5,114,1
+0QHMAUi6NdOUZ1ckXq0-sA,"Rainforest Café","The Strip","3799 Las Vegas Blvd","Las Vegas",NV,89109,36.1087,-115.172,2.5,449,0
+0QHOkwMc74T35Br83SDizA,Sugar's,"South Summerlin","3700 S Hualapai Way","Las Vegas",NV,89147,36.1218,-115.314,3.5,30,0
+0QjIVTxHfbWAdWYD7eWlpQ,"Guitar Center",Westside,"8621 W Charleston Blvd, Ste 110","Las Vegas",NV,89117,36.1578,-115.281,3,60,1
+0QM26S4PU61g2amiL0Wweg,"Dembois Landscape",,,"Las Vegas",NV,89103,36.1104,-115.207,3,6,1
+0qOA8z_BHgzaPr1ypOy8rw,"Mojito's Resort Wear","The Strip","3131 Las Vegas Blvd S","Las Vegas",NV,89109,36.1268,-115.165,4.5,4,0
+0QouG5U1r4bgq5DLxEYCww,"Vans Outlet",Downtown,"875 S Grand Central Pkwy, Ste 202B","Las Vegas",NV,89106,36.1652,-115.156,3,6,1
+0qPNeqLuKE88rKbIbSZDpg,"Killer Shrimp",Southeast,"6605 S Las Vegas Blvd, Ste 145A","Las Vegas",NV,89119,36.0693,-115.178,3.5,268,0
+0Qs4ud_b94iHl8Ab5AbnJg,"Wireless Phone Medics - South West",Southwest,"7835 S Rainbow Blvd, Ste 16","Las Vegas",NV,89139,36.0458,-115.244,4,41,0
+0QSnurP5Ibor2zepJmEIlw,"Tacos La Mexicana","Spring Valley","3555 S Durango Dr, Ste B101","Las Vegas",NV,89147,36.1249,-115.279,4,141,1
+0QyfiIrwsCf3scxy02NPqw,"Ron Miller Photography",,,"Las Vegas",NV,89136,36.175,-115.136,4,6,0
+0qYigmDCp5moxqNSiWwviQ,"Quality Stitch Custom Embroidery",Southeast,,"Las Vegas",NV,89183,35.9987,-115.159,5,12,1
+0q_BHpxbikVtPRRLRu-U0g,Picasso,"The Strip","3600 S Las Vegas Blvd","Las Vegas",NV,89109,36.1138,-115.174,4.5,789,1
+0R-6OcfG57Kg_uDro3ImPA,"India Market",Southeast,"5006 S Maryland Pkwy, Ste 7","Las Vegas",NV,89119,36.0987,-115.136,4,20,1
+0R4QFh47DR6M9M0tdyGRyg,"Terrible Herbst","Spring Valley","6885 W Tropicana Ave","Las Vegas",NV,89103,36.0993,-115.243,3,4,1
+0r6SBayE-bMy9w6MgaIaig,"Domestic Landscape",Northwest,,"Las Vegas",NV,89130,36.2577,-115.23,4.5,54,1
+0RcCxVaPVWZQWAWeP3Ym_w,"Matrix Wireless",Westside,"3003 S Valley View Blvd, Ste 100","Las Vegas",NV,89102,36.1367,-115.191,3.5,3,1
+0Rdcyd6dg9THxctHTZcA2A,"Bekins A-1 Movers",,"4210 Sobb Ave","Las Vegas",NV,89118,36.0776,-115.196,2.5,3,1
+0Rk-wEBuN7LohaP1y6VHfQ,"Dunkin' Donuts",Southeast,"7400 S Las Vegas Blvd","Las Vegas",NV,89123,36.0545,-115.172,2.5,25,1
+0rk2_lmbfpiYXGBFmyxx9Q,"Centro America Restaurant",Westside,"6135 W Sahara Ave","Las Vegas",NV,89146,36.1431,-115.227,3.5,33,1
+0RkXaQQQ3GW7g9NOFclmvQ,"Polo Cleaners","South Summerlin","10247 W Charleston Blvd","Las Vegas",NV,89135,36.1581,-115.317,4,11,1
+0rQbXoU_f2WQJiWHWFpgkQ,"Haven Craft",Downtown,"1406 South Third St","Las Vegas",NV,89104,36.1544,-115.152,4,8,1
+0rTKqrcikxRKbJcukNjrLA,"Siena Foods Italian Market",,"6125 S Valley View Blvd, Ste D","Las Vegas",NV,89118,36.0782,-115.191,4,4,1
+0RTYIoUN7rtnNSCo7uEdSg,"Dawn L Green, DDS",Eastside,"3900 Paradise Rd","Las Vegas",NV,89169,36.1188,-115.154,5,12,1
+0RYRAcN2q98i9mYmPFISrg,"Tri State Dental",Southeast,"450 E Silverado Ranch Blvd, Ste 105","Las Vegas",NV,89183,36.0133,-115.154,2.5,13,1
+0s-U-GWy1EkDv5n_oj28dQ,"24/7 Carpet & Floor Care","Spring Valley","9505 Teton Vista Ave","Las Vegas",NV,89117,36.1271,-115.3,5,53,1
+0S2fiheNzQLDSCs89Kmgnw,"Bowl of Heaven","South Summerlin","3400 S Hualapai Way","Las Vegas",NV,89117,36.1279,-115.315,4,21,0
+0S4WFZJZhVeM3aAqKjLz1w,"VooDoo Steakhouse",,"3700 W Flamingo Road","Las Vegas",NV,89103,36.1162,-115.187,3.5,259,1
+0s6zVxOeApNbEwcs-JLjNw,"Choice Center","Spring Valley","9145 W Russell Rd","Las Vegas",NV,89148,36.0837,-115.291,4,48,1
+0S7UQppBEa-orSd_-YHXGA,"Secretos Beauty Salon",Sunrise,"1499 N Lamb Blvd","Las Vegas",NV,89110,36.1863,-115.08,4.5,3,1
+0sBEU_RdKQx1kmjl5jqWjw,"Hard Knocks Muay Thai","Spring Valley","9660 W Tropicana Rd, Ste 300","Las Vegas",NV,89147,36.1004,-115.303,4.5,20,1
+0Scr2QXX9_yg2tgVKNxYlg,"Flamingo Pecos Texaco",Eastside,"3380 E Flamingo Road","Las Vegas",NV,89121,36.1157,-115.101,2.5,4,0
+0SEPncFbs68axiz61pWkAA,T-Mobile,Eastside,"3528 S Maryland Pkwy","Las Vegas",NV,89169,36.1233,-115.136,1.5,6,1
+0sgK7EAFlb-x7voiBO-Y_A,"Main Event Home Furnishings",Southwest,"7770 S Dean Martin Dr, Ste 306","Las Vegas",NV,89139,36.0483,-115.182,4.5,7,1
+0sIppXHcTTOze6cH5e1ihw,"Oasis Hand Car Wash",Eastside,"3425 E Flamingo Rd","Las Vegas",NV,89121,36.1147,-115.102,3.5,110,1
+0SluIEUhvhABDvRurC-Q6A,"Superior Moulding of Nevada",,"5190 W Patrick Ln","Las Vegas",NV,89118,36.0794,-115.212,4.5,8,1
+0SodPiLSWvNaOqRgjVq6Bw,"Makeup By Rebecca",Westside,"5722 W Charleston Blvd","Las Vegas",NV,89146,36.1593,-115.22,5,5,1
+0sOwP5b_178FkbT_fat8lQ,"Vue at Centennial",Centennial,"7350 W Centennial Pkwy","Las Vegas",NV,89131,36.2771,-115.254,3.5,9,1
+0syBj8oI7vX9K7gQISS9kg,"Kidz Kidz Kidz Preschool",Sunrise,"1567 N Nellis Blvd","Las Vegas",NV,89110,36.1882,-115.063,5,4,1
+0SYfS38_-7Mt20x9jNph_Q,"Light My Fire Hot Sauce","The Strip","3601-3609 S Las Vegas Blvd","Las Vegas",NV,89109,36.1142,-115.173,4.5,5,1
+0szM7Dw_VjhaCl6GH7E8Pg,"EZ Smokez 2",University,"4741 S Maryland Pkwy","Las Vegas",NV,89119,36.1042,-115.137,4.5,40,1
+0sZTsV68rGcuGEALOW0Oiw,"Mint Locker","Spring Valley","7060 South Durango Dr, Ste 103","Las Vegas",NV,89113,36.0602,-115.277,5,17,1
+0s_h9xlVAXkDB0uz40Xq0w,"Glam Factory Vintage",Downtown,"211 E Colorado S","Las Vegas",NV,89104,36.1558,-115.152,5,39,1
+0t2KfeVO8Xtne537eq5-3g,"Le Cabaret","The Strip","3655 Las Vegas Blvd S","Las Vegas",NV,89109,36.1286,-115.171,5,8,1
+0T9Bp_vXjCnPria4SWv8mA,"Sassy Nails",Centennial,"6454 Sky Pointe Dr","Las Vegas",NV,89131,36.2812,-115.262,3.5,49,1
+0TelH5_KGLdsNmk1eMlZdA,"Desert Realty",Westside,"3160 W Sahara Ave, Ste A22","Las Vegas",NV,89102,36.1446,-115.184,2,22,1
+0tiY7CGSK-AY4zecIhCRcQ,"A & M Chiropractic & Wellness Center",Downtown,"830 E Charleston Blvd","Las Vegas",NV,89104,36.1585,-115.142,4.5,3,1
+0TljdWRIDQzlp4siHQ_BAQ,Denny's,,"5585 Simmons St","Las Vegas",NV,89031,36.261,-115.18,2,68,1
+0tM-2PQoC622WJK-dX-gUA,"Garehime Heights Park",Northwest,"Campbell Dr And Alexander Rd","Las Vegas",NV,89129,36.2337,-115.293,3.5,3,1
+0tnxiYygkOqfn-c1ih7dkw,Rekloset,"Spring Valley","3655 S Durango Dr, Ste 8","Las Vegas",NV,89147,36.1239,-115.279,4,4,1
+0tnZj3GkhKxPd9hT3HXt5A,"Huntridge Pharmacy",Downtown,"1144 E Charleston Blvd","Las Vegas",NV,89104,36.1589,-115.138,4,48,1
+0TTja3wy7WUT32DZDCfg4g,"Dog Lover For Hire",Southeast,,"Las Vegas",NV,89120,36.0833,-115.1,5,14,1
+0TUqA5zzBpj8izS96M_50A,"Americas Best Value Inn",Southeast,"167 E Tropicana Ave","Las Vegas",NV,89119,36.0995,-115.165,2,110,1
+0Tutx9JhCi_HE6MUnbh5vw,"Sexy Lexy Kitchen",,"500 N Rainbow, Ste 300","Las Vegas",NV,89107,36.1781,-115.241,3.5,3,0
+0tWXOKgrO1tAuZhu5X8HNw,"Red Mango",Southeast,"5757 Wayne Newton Blvd","Las Vegas",NV,89119,36.0808,-115.139,4,13,1
+0u7aKx5XsGr7ugRlaCT40A,Smith's,,"4001 S Decatur Blvd","Las Vegas",NV,89103,36.1173,-115.209,3,17,1
+0uasL7MepHHQrVNgIhdG3g,"Smoke 4 U",Southeast,"467 E Silverado Ranch Blvd, Ste 180","Las Vegas",NV,89183,36.0121,-115.153,2.5,7,1
+0uBxMuP3lW1YbzscGyPYkQ,"D&M Salon Spa","Spring Valley","3545 S Fort Apache Rd, Ste 120","Las Vegas",NV,89147,36.1252,-115.297,4,4,1
+0ueq5zB3NqLbh93KYYNIHQ,"Thai Grill",,"1901 N Decatur Blvd","Las Vegas",NV,89108,36.1941,-115.206,3.5,79,0
+0UESjBq6_kPjCs4zPh4oEQ,"Chicke Now","The Strip","3700-3734 Koval Ln","Las Vegas",NV,89169,36.122,-115.166,3.5,9,1
+0ULO28w_6K9jCCskm0zOjw,Easyhome,Westside,"4463 W Charleston Blvd, Ste AOR","Las Vegas",NV,89102,36.158,-115.201,1,3,1
+0uMu8Suh41Qt8jM7ePZa3Q,"Stella McCartney","The Strip","3720 Las Vegas Blvd S","Las Vegas",NV,89158,36.1088,-115.174,4,4,1
+0uppzlwoKLiX5f-3Qrm4sQ,"Ted Wiens Tire & Auto",,"2750 N Decatur Blvd","Las Vegas",NV,89108,36.2087,-115.205,3,32,1
+0uR48n5SYcLE_DLcjONZPg,"Jimmy John's",University,"4800 S Maryland Pkwy","Las Vegas",NV,89119,36.1027,-115.136,4,105,1
+0UudtaBnbq-hgzFx5-nfIQ,"FiveSix Productions",Southeast,"One Harrahs Ct, Ste 105","Las Vegas",NV,89119,36.0604,-115.153,5,3,1
+0uuxV1jprPWpeccZGJZLgQ,"Haute Chix Boutique","Spring Valley","6870 S Rainbow, Ste 120","Las Vegas",NV,89118,36.0645,-115.242,3.5,5,0
+0UvhhpDm26cZwyitX7xJfA,"Nail Creations",Westside,"8125 W Sahara Ave, Ste 150","Las Vegas",NV,89117,36.1425,-115.269,4.5,20,1
+0uWMZCtriAsGz8oIiw3Aqw,"Infinity Epoxy",Chinatown,"3651 Lindell Rd, Ste D109","Las Vegas",NV,89103,36.1234,-115.217,5,4,1
+0uzQymPVW2l24rpjX9KIBA,KFC,Westside,"4420 W Sahara Ave","Las Vegas",NV,89102,36.1448,-115.201,2,22,1
+0v4mQ5ECGJsmg4xJiTSydA,"Laundromat Express",,"5485 W Flamingo Rd, Ste B","Las Vegas",NV,89103,36.1147,-115.216,3,4,1
+0v55V13hPb3sSF03widnKg,Subway,University,"4505 S Maryland Pkwy","Las Vegas",NV,89154,36.1095,-115.142,2.5,10,1
+0v8SX_5BApZSzM4kyZMffA,"Wine Amplified","The Strip","3901 Las Vegas Blvd","Las Vegas",NV,89115,36.0949,-115.172,2.5,13,1
+0vdBpT1LBwQUvXyVhOtXwQ,"Clean Sweep Landscape",Southeast,"5787 Palm St","Las Vegas",NV,89120,36.0839,-115.078,3.5,9,1
+0vIcSNvMKxpGnEDv2LHq3w,"Advanced Home Inspections","Spring Valley",,"Las Vegas",NV,89113,36.0564,-115.266,4.5,11,1
+0VjHFdczi6Nln_nn8bucJQ,"Pho Bistro",Eastside,"4130 S Sandhill Rd, Ste A4","Las Vegas",NV,89121,36.114,-115.091,4,119,1
+0VR7qNhOKCPI0W__-NccEg,"JJ Lehr",Westside,"3080 S Durango Dr, Ste 103","Las Vegas",NV,89117,36.1334,-115.277,5,3,1
+0VSvmZTcX_L6fHOflagfag,"The Industrial Event Space",,"2330 S Industrial Rd","Las Vegas",NV,89102,36.1455,-115.164,5,3,1
+0vZ3AyWq55o2c5org4Ld_A,"Best Eye Brows Threading",Southeast,"9890 S Maryland Pkwy, Ste 5","Las Vegas",NV,89183,36.0102,-115.135,4.5,20,1
+0VzICXStfUAG3QCEgLPeAA,"The Joe Show","The Strip","Tuscany Hotel & Casino, 255 E Flamingo","Las Vegas",NV,89109,36.1286,-115.171,3.5,5,1
+0w083-AQWtueIDo-Zgi8TQ,"Wag-n-Tails Doggy Wash",Southeast,"3720 E Sunset Rd, Ste 105","Las Vegas",NV,89120,36.0721,-115.094,4,4,0
+0w3BdEOxvwKTpypwbN5kiQ,"Tofu Hut",Chinatown,"3920 Spring Mountain Rd","Las Vegas",NV,89102,36.1268,-115.193,3.5,641,1
+0w7vOlSD9tBS7piUA6lawA,"Budget Suites of America",,"4855 Boulder Hwy","Las Vegas",NV,89121,36.1168,-115.068,2,4,1
+0WBhJ8HBvxzNz6-mwL4k4A,"Golpa Mike, DDS",Westside,"2625 S Rainbow Blvd","Las Vegas",NV,89146,36.1422,-115.243,4.5,8,1
+0wCs3zbATXLMDcja3bgXig,Lush,"The Strip","3500 Las Vegas Blvd","Las Vegas",NV,89109,36.1186,-115.175,4.5,24,1
+0wIwfs8YqFFImsmExooM1A,"Master Automotive Centers",,"4275 Boulder Hwy","Las Vegas",NV,89121,36.1279,-115.081,4,6,1
+0wkb5qqHP6PQlNhgwg2UmQ,"Beauty Lounge",Southeast,"6659 Las Vegas Blvd S, Bldg B, Ste 110","Las Vegas",NV,89119,36.0682,-115.175,3,6,1
+0WoQQlMXVIDEgI0xNdENKA,"Feast Buffet","South Summerlin","11011 W Charleston Blvd","Las Vegas",NV,89135,36.1566,-115.333,3.5,568,1
+0WPXDs4ini3D7jpiy1Daqw,"The Market",Downtown,"611 Fremont St","Las Vegas",NV,89101,36.1682,-115.139,3.5,104,1
+0WQVG1oZOkdUvi7XoGp5OA,"Johnny Fontane's Bar & Grill",Westside,"5310 W Sahara Ave","Las Vegas",NV,89146,36.1448,-115.214,3.5,43,1
+0wW9PasC8pw8SY7rlY3ZKw,"Fish King Grill",Southeast,"500 East Windmill Ln, Ste 145","Las Vegas",NV,89123,36.0429,-115.152,4.5,102,1
+0Wx1bhgPTWHgrDo5puDpHw,"The Naughty Show","The Strip","3667 South Las Vegas Blvd","Las Vegas",NV,89109,36.1097,-115.17,3.5,4,1
+0WYE8-GV63AVxoIeu2337w,"Emerald Suites Tropicana",,"3890 Graphic Center Dr","Las Vegas",NV,89136,36.1007,-115.193,3.5,3,1
+0X-iSvSMcrn2oGrRfTCOpA,"Bow Wow Meow Pet Grooming",Northwest,"7121 W Craig Rd, Ste 104","Las Vegas",NV,89129,36.2392,-115.249,4.5,25,1
+0x-mYPoatVE0DNlZhha0_w,"Budget Truck Rental","Spring Valley","3375 S Fort Apache Rd","Las Vegas",NV,89117,36.1282,-115.298,3,5,1
+0x4iLiDBJfWJYNU8Y4tWqA,"Auto Tech","Spring Valley","3665 S Durango Dr","Las Vegas",NV,89147,36.123,-115.279,4,34,0
+0X620JR8m7BSPt5xarUnqw,"Weddings at Flamingo Las Vegas","The Strip","3555 Las Vegas Blvd S","Las Vegas",NV,89109,36.1283,-115.172,4.5,18,1
+0xAgZvViupzyq85Qj-s2jA,"Hair Salon With Eli Sabat","The Lakes","2521 S Fort Apache, Ste 104","Las Vegas",NV,89117,36.1434,-115.298,3,11,0
+0xAjSfNvZ4zluHpCeBX9Pg,"Hugh Hefner Sky Villa",,"4321 W Flamingo Rd","Las Vegas",NV,89103,36.1145,-115.196,5,5,1
+0XdF70ljQMAwNd_Xe-s0CA,"Samsung Galaxy Studio","The Strip","3570 S Las Vegas Blvd","Las Vegas",NV,89109,36.1162,-115.175,4,3,1
+0xdpv5CPpbUUch7JKBG98Q,"Sirio Ristorante","The Strip","Aria Resort and Casino, 3745 Las Vegas Blvd S","Las Vegas",NV,89109,36.1069,-115.174,3.5,163,0
+0XEqyl_lVaJNHRKxNcjJZg,"Coffee Pub",Westside,"2800 W Sahara Ave, Ste 2A","Las Vegas",NV,89102,36.1473,-115.182,4.5,409,1
+0xFLDdWPrMdRkNIoECxtvg,"Thistle DKI",,"2710 S Highland Dr","Las Vegas",NV,89109,36.1404,-115.17,4.5,28,1
+0xh6I1QsDgqYwLIQeuniPg,"Brown's Gymnastics",,"4544 W Russell Rd","Las Vegas",NV,89118,36.0867,-115.202,3.5,3,1
+0xiw2v8IpF9Zp0UKoEVWZw,"Creative Carpet Repair","Spring Valley",,"Las Vegas",NV,89148,36.0746,-115.284,3.5,3,1
+0XLKzjJNmtBkZvSgUyvfPw,"WorldMark by Wyndham","Spring Valley","6795 Edmond Str, Fl 3","Las Vegas",NV,89118,36.0666,-115.214,1,3,1
+0XoTT540HMB_5q4Exj8yGA,"Four Seasons Hotel Las Vegas","The Strip","3960 S Las Vegas Blvd","Las Vegas",NV,89119,36.0904,-115.174,4.5,395,1
+0xPUAqWb38y8P8UvUBHCOw,"Wondrous Hair by Maurees","Spring Valley","4001 South Buffalo Dr, Ste 129","Las Vegas",NV,89147,36.1164,-115.261,5,12,1
+0xQp-EkyyNpFLrh_h64_xA,"The Auto Clinic","Spring Valley","5390 S Decatur Blvd","Las Vegas",NV,89118,36.0925,-115.208,1,3,1
+0XqSq-YSqMHOrZlZJDoQKA,"Adventure Smiles, Dentistry for Children","Spring Valley","8995 W Flamingo Rd","Las Vegas",NV,89147,36.1145,-115.288,5,53,1
+0XRJp2rZmBLM9sxkXzBGnQ,"Neiman Marcus","The Strip","3200 Las Vegas Blvd S","Las Vegas",NV,89109,36.1272,-115.172,4,86,1
+0xtBEP5zCu1153SoqqemLw,"Tacos Y Tortas El Panzon",Southeast,"3720 E Sunset Rd, Ste 110","Las Vegas",NV,89120,36.0719,-115.094,4.5,132,1
+0xvdC8F0HmFpAFkJk6nXLg,"Yojié Japanese Fondue",Westside,"9440 W Sahara Ave, Ste 175","Las Vegas",NV,89117,36.1456,-115.301,4.5,348,1
+0xz-V_m2-D8c5HBL5vzp8g,"Sprint Store By Wireless Experts",Southeast,"7390 Las Vegas Blvd S, Ste 120","Las Vegas",NV,89123,36.0553,-115.172,3.5,64,1
+0xzmIBsJQc5eUNLucFrZ0Q,Stratta,"The Strip","Wynn Las Vegas, 3131 Las Vegas Blvd S","Las Vegas",NV,89109,36.1261,-115.172,3.5,186,0
+0xZtf1_LM3oAj_qJrMy3BA,"Chiropractic Nevada",Downtown,"1928 E Sahara Ave","Las Vegas",NV,89104,36.1446,-115.122,5,3,1
+0Y18bIw9XLPs5QjeNWEoWQ,"Onello Law Group",Westside,"3017 W Charleston Blvd, Ste 54","Las Vegas",NV,89102,36.1584,-115.183,5,6,1
+0yCm3iMvH5q5H3o0Wdi0yA,"Jacinto Insurance",Downtown,"2206 E Charleston Blvd","Las Vegas",NV,89104,36.1585,-115.118,1.5,7,1
+0YctfylXsdutJo8qFYnZJA,"Westcliff Station",Westside,"7614 Westcliff Dr","Las Vegas",NV,89145,36.1746,-115.261,3.5,21,1
+0ydy2fdDg6kpGy1dbnHYsQ,"Tequila Restaurante",Eastside,"360 E Tropicana Ave","Las Vegas",NV,89169,36.1022,-115.157,3.5,57,0
+0Yeb_P24sj6MwG2qmuehkA,"Till's Bar",,"344 E Desert Inn Rd","Las Vegas",NV,89109,36.1299,-115.161,4.5,42,1
+0YG_kM5caZhtwd6nbnei6A,"The Charcoal Room",,"2411 W Sahara Ave","Las Vegas",NV,89102,36.1432,-115.175,4,120,1
+0YhT9HCBkU394IG6tQVtNQ,"Hollywood Kids Academy",Northwest,"4161 N Rancho Dr","Las Vegas",NV,89130,36.2356,-115.23,3.5,9,1
+0yjLZZx708uJbierAonqQg,"Church's Chicken",Chinatown,"4880 Spring Mountain Rd","Las Vegas",NV,89102,36.1265,-115.208,3.5,45,1
+0yk5GI36jZvPxUcEDJ00PA,"Photo Booth by Chandler",,,"Las Vegas",NV,88901,36.175,-115.136,5,4,1
+0yKHG1JCthRR6naXwe2-Lg,"Farmers Insurance - Gary Orchard",Westside,"6180 W Charleston Blvd","Las Vegas",NV,89146,36.1594,-115.228,4,4,1
+0YSLiXH1zKqkxM1lKJOPlA,"Pro-Tech IT",Westside,"3311 S Rainbow Blvd, Ste 145","Las Vegas",NV,89146,36.1291,-115.243,5,3,1
+0Ytj9jaJJuN61s9GuFppjg,"A Body In Balance Pilates Studio",Westside,"2595 S Cimarron Rd, Ste 106","Las Vegas",NV,89117,36.1424,-115.271,4.5,17,1
+0YXs5nRl7EKaBAVWCe7Ceg,"Family Night at GlowZone","Spring Valley","6630 Arroyo Springs St","Las Vegas",NV,89113,36.0682,-115.254,5,16,1
+0Z4kxalPa_aGEk1qwoLwPQ,"West Wing Cigar Lounge","Spring Valley","4255 S Durango Dr","Las Vegas",NV,89147,36.1121,-115.279,4.5,14,0
+0zb1wdN4YN_ti87B_JIseg,"Wa Da Pho",Westside,,"Las Vegas",NV,89118,36.1469,-115.21,4.5,29,0
+0zeQRzpO06evIZfcR_aZ5w,"Insert Coins",Downtown,"512 Fremont St","Las Vegas",NV,89101,36.1692,-115.14,3.5,389,0
+0zGeYN8ReYwVj27U7EHOJA,"American Cafe","The Strip","3049 Las Vegas Blvd S","Las Vegas",NV,89109,36.1317,-115.164,2.5,6,1
+0zgu-ktM767MGgo8DN20-w,"Kids Kingdom","Spring Valley","4975 S Fort Apache, Ste 101","Las Vegas",NV,89148,36.0983,-115.299,4,54,1
+0ZGUaDnBYp9E7GT5qB8GTQ,"Free People","The Strip","3200 Las Vegas Blvd S, Ste 1160","Las Vegas",NV,89109,36.1273,-115.17,3,9,1
+0ZLbgZdAga2tf74aGHWWkA,"Rapport Leadership International",Southeast,"5735 S Sandhill Rd, Ste A","Las Vegas",NV,89120,36.0851,-115.092,5,10,1
+0zLlBHXNuCZYTekmAXSRkQ,"SKECHERS Factory Outlet",Westside,"1191 S Decatur Ave","Las Vegas",NV,89102,36.1576,-115.205,4,8,1
+0ZnQzj5ngnoC3eoAJaz3fA,"Bonds House of Cutlery / Knives & More",Northwest,"7145 W Ann Rd, Ste 130","Las Vegas",NV,89130,36.2617,-115.249,2.5,11,1
+0zoXYHq82haayMaV952jEQ,"Greens and Proteins","Spring Valley","9809 W Flamingo Rd","Las Vegas",NV,89147,36.1148,-115.306,4,355,1
+0zTvjFAU7LwHT98QL-q_5Q,"Comfort Home Appliance",,"1930 Village Center Cir, Ste 302","Las Vegas",NV,89134,36.2594,-115.18,2.5,3,1
+0zXptwKTH-BqtwQ-BFRAHA,Lenscrafters,,"Fashion Show Mall","Las Vegas",NV,89101,36.1697,-115.124,2.5,4,1
+0_7nMBuDAhs_J_DMuqdsyw,"Hot Dog Heaven",Southwest,"10690 Southern Highlands Pkwy, Ste 103","Las Vegas",NV,89141,35.9953,-115.207,2.5,4,0
+0_aeYE2-VbsZts_UpILgDw,"Lazy Dog Restaurant & Bar","South Summerlin","1725 Festival Plz Dr, Ste A2","Las Vegas",NV,89135,36.1528,-115.334,4,893,1
+0_JGkStI9fbpUc2llR0ilA,"Enterprise Rent-A-Car",Eastside,"3000 Paradise Rd","Las Vegas",NV,89109,36.1371,-115.153,2.5,3,1
+0_mJttUgHIzC-NO18gcgBA,"La Mojarra Loca Grill",Eastside,"2797 S Maryland Pkwy","Las Vegas",NV,89109,36.1378,-115.137,4,187,1
+0_rWCynqnCcmHKrEt6qi8Q,"StreetSaw Hoverboards",,"3867 S Valley View Blvd, Ste 5","Las Vegas",NV,89103,36.1203,-115.191,4.5,29,1
+0_VT3sTwi7gorIlU36ASmg,"LOL Kids Club",Southwest,"7460 S Rainbow Blvd, Unit 130","Las Vegas",NV,89139,36.0535,-115.243,4,146,1
+0__0ivS_ciF8q-57Z9PRow,"Las Vegas Nail Salon & Day Spa","The Strip","3049 S Las Vegas Blvd, Ste  8N","Las Vegas",NV,89109,36.1315,-115.165,1.5,23,0
+1-E5uJVtvi5TnZ2zuFhAtg,"Super Cleaners III",Downtown,"800 S Las Vegas Blvd","Las Vegas",NV,89101,36.1611,-115.146,3,10,1
+1-Jdq5Up9SgKoqptGvkXHA,"MVR Auto Services",Southwest,"6000 W Windmill Ln","Las Vegas",NV,89139,36.0424,-115.224,4.5,74,1
+104riqnE_J2Rz7VV4K2NCQ,"Rock Solid Home Repair","Spring Valley",,"Las Vegas",NV,89148,36.0612,-115.29,3.5,3,1
+10hfmhdCn0iMHen-TEY2kA,"Darzev Biliana MD",Summerlin,,"Las Vegas",NV,89144,36.178,-115.313,3,12,1
+10icc-6htIpVJmwGz7wnZw,"Canyon Vista Post-Acute","Spring Valley","6352 Medical Center St","Las Vegas",NV,89148,36.074,-115.292,2,17,1
+10y_oKGIV9ZWLqncnVHLYg,"Tan Factory","Spring Valley","9809 W Flamingo Rd, Ste 2","Las Vegas",NV,89147,36.1147,-115.306,3.5,7,0
+10_xgsQn_RZ0L9XvdDzMIw,"The Body Shop",Westside,"4300 Meadows Ln","Las Vegas",NV,89107,36.1723,-115.196,5,4,0
+110Yuz4k4AFsuKYlbBT6FA,"The Marq at 1600",University,"1600 East University Ave","Las Vegas",NV,89119,36.1096,-115.132,4,3,1
+114mOuMrfBPNiADyfVag2Q,"St Tropez Convenience Mart",Eastside,"4501 Paradise Rd","Las Vegas",NV,89169,36.1076,-115.152,4.5,8,0
+11FeP2hfOQYfQZCtsUjhDQ,"The Creations Photo","Spring Valley",,"Las Vegas",NV,89148,36.0612,-115.29,5,3,1
+11pHOr7cEX80JN-76acoiA,"U Save Car Rentals",Southeast,"5050 Paradise Rd","Las Vegas",NV,89119,36.0989,-115.149,1.5,7,1
+11qkCpHki5hlvYjJHUFPGw,"Diana Rainbow Nails",,"6620 W Flamingo Rd, Ste 11","Las Vegas",NV,89103,36.1149,-115.237,4,23,1
+11ScwtUbfwwHmz-Qa3VeZA,"Homes By Claudia Marion",Summerlin,"10000 W Charleston Blvd, Ste 130","Las Vegas",NV,89135,36.1595,-115.315,5,8,1
+11y02mqvQyJf0R8LImw3xA,"Tacos El Guero Nayarit",Downtown,"2219 Fremont St","Las Vegas",NV,89101,36.1601,-115.119,4.5,3,0
+127i5uC5PTjWdvBMXEn9Ww,"Bikini Bar",Chinatown,"3355 Spring Mountain Rd","Las Vegas",NV,89103,36.126,-115.185,3.5,12,1
+12EDcm_yr8IgpscPYcpJUQ,"Artistry Hair Design",Southeast,"7700 Las Vegas Blvd S, Ste 7","Las Vegas",NV,89123,36.0491,-115.171,5,8,1
+12f7GOkkC0GZRMif-fidhQ,"NASCAR Cafe","The Strip","2535 Las Vegas Blvd S","Las Vegas",NV,89109,36.1423,-115.156,2,52,0
+12M1imuxjNJAeDO2QLs9sw,"Sally Beauty Supply",Chinatown,"3625 S Rainbow Blvd","Las Vegas",NV,89103,36.1231,-115.246,2,19,1
+12NZUrl-McNuUPhfpjboHQ,"Animal Kingdom Veterinary Hospital",Eastside,"1325 Vegas Valley Dr","Las Vegas",NV,89169,36.137,-115.135,3.5,21,1
+12oFlFXqMNEYhrpCRPE6uw,"Disaster Rescue",,"1964 Sycamore Trl, Ste 4","Las Vegas",NV,89108,36.1949,-115.194,5,5,1
+12P7GjIoq6oj7qCyJ_c0Ag,"Little Caesars Pizza",Northwest,"4898 W Lone Mountain Rd","Las Vegas",NV,89130,36.2468,-115.209,2,26,1
+12vAPaYQ2AmHsuV5eDzVfg,"The Roasted Bean","The Strip","ARIA Resort & Casino, 3742 Las Vegas Blvd S","Las Vegas",NV,89109,36.1072,-115.173,3,40,0
+132qHgL9fAK8F9QOogZc0A,"Carvel Ice Cream",Southeast,"5715 S Eastern Ave","Las Vegas",NV,89119,36.0853,-115.119,2,5,0
+13bznRmH3gJk3gZlz_-OMA,"Majestic Memories",,"2410 N Decatur #150","Las Vegas",NV,89108,36.2032,-115.206,2,3,0
+13fTEZcL7ayGnkDdzaBSNQ,"Durango Outpatient Surgery Center","Spring Valley","8530 W Sunset Rd, Ste 100","Las Vegas",NV,89113,36.0714,-115.278,4.5,21,1
+13hG77hHAQOU-dTXOZMoTQ,"Arthritis & Rheumatism Institute",Southeast,"8420 S Eastern Ave, Ste 101","Las Vegas",NV,89123,36.0364,-115.118,3,10,1
+13RpfoJXpRseXTW_RyEyPQ,"Essence Cannabis Dispensary","The Strip","2307 S Las Vegas Blvd","Las Vegas",NV,89104,36.1447,-115.156,4.5,79,1
+148d7J-cFejkhYV89y3Jsg,"Gondola Ride at the Venetian","The Strip","3355 S Las Vegas Blvd","Las Vegas",NV,89109,36.1215,-115.17,3.5,257,1
+14epv49S1PLVkaMGkx1znA,"Noir Bar",,"3900 Las Vegas Blvd S, Luxor Hotel","Las Vegas",NV,89136,36.175,-115.136,4,20,0
+14Ibb_bJSUe2BGfhckOc1Q,"Shella Nails And Spa","Spring Valley","8680 W Warm Springs Rd, Ste 23, Sola Salon Studio","Las Vegas",NV,89148,36.0561,-115.281,4,11,1
+14k1VdNAkm5-G7_lpRHV1g,"Original Diva","The Strip","Planet Hollywood Resort Casino, 3663 Las Vegas Blvd S, Ste 440","Las Vegas",NV,89109,36.1097,-115.17,3,72,1
+14SAYfjvSU4LqFlfViwyuw,"Eleve Training Studios","Spring Valley","4845 S Fort Apache Rd, Ste D-1","Las Vegas",NV,89147,36.1018,-115.298,5,38,0
+14SsCI9wzlAvzZga80dBbA,"Ekada Photobooth","Spring Valley",,"Las Vegas",NV,89148,36.0612,-115.29,5,8,1
+14UPvbDf13zKWim68HsHdQ,"Creative Cooking School",Westside,"7385 W Sahara Ave","Las Vegas",NV,89117,36.1436,-115.254,1.5,10,0
+153QMny_1adtMtsf6MP95A,Starbucks,"The Strip","3960 S Las Vegas Blvd","Las Vegas",NV,89119,36.0911,-115.174,2,10,1
+15dYv2JncJypOSL9aKc0zg,"HotPoint Realty",Chinatown,"6292 W Spring Mountain Rd","Las Vegas",NV,89146,36.1255,-115.229,2,5,1
+15jmBXmNy9s6qVV8OepR1Q,"Club Rio",Sunrise,"821 N Lamb Blvd","Las Vegas",NV,89110,36.1782,-115.08,3.5,6,1
+15KIfPDU5IQ07l79Wn1Eew,"Panadería y Pastelería Latina",Westside,"6122 W Charleston Blvd","Las Vegas",NV,89146,36.1593,-115.225,4,14,1
+15_YllaQ7n_DOFTq1v0-lQ,"Sushi Hana","Spring Valley","5255 S Decatur Blvd","Las Vegas",NV,89118,36.0944,-115.208,3.5,8,0
+164DF7e2ndoyP-C3dMytqA,"Maman Photography",Southeast,,"Las Vegas",NV,89123,36.0357,-115.153,4,4,1
+16dpS7uW7FnyN1sO_EO2mQ,"Safe Direction Firearms Training",,,"Las Vegas",NV,89103,36.1104,-115.207,4.5,15,1
+16Fplxu-OwVmTEFxQAUP4g,"TENDER Steak & Seafood","The Strip","3900 Las Vegas Blvd S","Las Vegas",NV,89109,36.0954,-115.177,3.5,421,1
+16g0sZS0ab6cNQCdI8tr1w,"Westward Ho Hotel & Casino","The Strip","2900 Las Vegas Blvd S","Las Vegas",NV,89109,36.1361,-115.162,3.5,6,0
+16GzAU3eUAV3owbAGArmvQ,"Christian Dior","The Strip","3720 S Las Vegas Blvd","Las Vegas",NV,89109,36.1078,-115.174,4,9,1
+16mpmiRP-qZ3p7GLZkpfyQ,"Mint Locker",,"7501 W Lake Mead Blvd, Ste 118","Las Vegas",NV,89128,36.1952,-115.257,4.5,6,1
+16NS8EICI94IGdn-S0yxkw,McDonald's,Westside,"6360 W Charleston Blvd","Las Vegas",NV,89146,36.1596,-115.234,2,24,1
+16rem90T-j9G1W4hSYrvaA,"ChillSpot by SasaSweets",Westside,"430 S Rampart Blvd","Las Vegas",NV,89145,36.1667,-115.287,4,4,0
+16tWXenJ1wTqugXJU7yiZg,"808 Sushi",Southwest,"7435 S Durango Dr","Las Vegas",NV,89113,36.053,-115.28,3.5,451,1
+16yL0opCSkOJYqQT4x86UA,"Vegas Hypnotherapy",Westside,"3230 S Buffalo Dr, Ste 107","Las Vegas",NV,89117,36.1304,-115.26,5,6,1
+17hVooOxch5apryhBkBdZQ,Marshalls,"The Strip","3785 Las Vegas Blvd","Las Vegas",NV,89109,36.1037,-115.173,3.5,20,1
+17KjGxHTPCRwkPdEL95QPg,"Reflecting Hands Massage Therapy",Westside,"5450 W Sahara Ave, Ste 138","Las Vegas",NV,89146,36.1449,-115.216,4.5,63,1
+17p-KOyT-t6OGS90J18jzQ,"Glittering Lights",,"7000 Las Vegas Blvd N","Las Vegas",NV,89115,36.2715,-115.001,3.5,85,1
+17UkAXwrC8aNOAZMrMq7Cw,"VZ Dance Studios",Westside,"7207 W Sahara Ave, Ste 130","Las Vegas",NV,89117,36.1436,-115.25,4,6,1
+17V-PM_2t0QIAvU0euBovg,"VooDoo Beach",,"Rio All-suite Hotel Casino, 3700 W Flamingo Rd, Rio All-suite Hotel Casino","Las Vegas",NV,89103,36.1164,-115.185,3.5,31,1
+17z_a9bdUEEdPUizUnNOvw,"Paragon of Summerlin",Northwest,"7324 W Cheyenne Ave, Ste 7","Las Vegas",NV,89129,36.2189,-115.253,5,13,1
+18DHruGzDiG22s_bOhVX6A,"Work in Progress",Downtown,"317 S 6th St","Las Vegas",NV,89101,36.1656,-115.141,5,5,1
+18Eu-4xqcsoTsZwcfLVIIw,"Integrative Aesthetics",Southeast,"2055 E Windmill Ln, Ste 155","Las Vegas",NV,89123,36.0421,-115.123,5,3,1
+18ol4DIHGnqMMKfDblBLHA,"Entry Brite",Southwest,,"Las Vegas",NV,89139,36.0402,-115.224,5,6,1
+18TaVI6nC22bVKXkA7qIfQ,"American Properties",Westside,"7472 W Sahara, Ste 103","Las Vegas",NV,89117,36.1439,-115.255,1.5,3,1
+18x6UfcNMk4NMIdfqAMxpw,"Nadia's Little Rascalz",Southwest,,"Las Vegas",NV,89178,36.025,-115.243,5,3,1
+19KvRzLWA_1UI8cEf-qRGg,"Big Lots - Las Vegas: Whitney",Eastside,"4790 E Flamingo Rd","Las Vegas",NV,89121,36.1161,-115.07,2,7,1
+19lr9xcN3Ud0w0UX7bl6Qw,Subway,Centennial,"6770 N Durango Dr","Las Vegas",NV,89149,36.2838,-115.287,2.5,24,1
+19MbjvDqkPG6dGxr3kvK9w,"Foothills Lodge","Spring Valley","9435 W Tropicana Ave, Ste 108","Las Vegas",NV,89147,36.0997,-115.3,2.5,11,0
+19N9EJCJYLtUYvHFllO_8g,Cartier,"The Strip","3131 Las Vegas Blvd S, Ste 100","Las Vegas",NV,89109,36.1263,-115.166,4.5,16,1
+19S0gFtg5GTX6CkiApJiAQ,"Frijoles & Frescas Grilled Tacos",Westside,"7000 W Charleston Blvd","Las Vegas",NV,89117,36.1594,-115.252,4,419,1
+19TldDfVGCnJk0MO5DLOvg,"Discotech Nightlife Concierge",,"4471 Dean Martin Dr, Ste 2401","Las Vegas",NV,89103,36.1085,-115.182,5,47,1
+19u98NWikCviLTGK7_ARAQ,"Advanced Spine & Posture",Eastside,"3061 S Maryland Pkwy, Ste 201","Las Vegas",NV,89109,36.1342,-115.137,4,4,1
+19umlhmVB9O3njIBfRAe8g,"Fiesta Rancho",,"2400 N Rancho Dr","Las Vegas",NV,89130,36.2016,-115.195,2.5,89,1
+19wIOjBlI_2EKGM8E4O6Mg,Quiznos,Centennial,"6441 N Durango Dr, Ste 140","Las Vegas",NV,89149,36.2778,-115.288,3,26,1
+19xa1-nlNQXRZFBTQkGecg,"Choice Dental",Southeast,"9850 S Maryland Pkwy, Ste 3","Las Vegas",NV,89183,36.0108,-115.134,3.5,12,1
+19xjIA46tzyEJK0WaZ6SnQ,"Las Vegas Ob/Gyn Associates",Summerlin,"653 N Town Cetner Dr, Ste 204","Las Vegas",NV,89144,36.1808,-115.315,3,5,0
+19YocUr8tYqPGNr7_K5xzg,"Vegas Brows",Southwest,,"Las Vegas",NV,89141,35.9706,-115.307,5,3,1
+1A8GiBCoh2Yh5Dbuh2YwBw,"Advanced Audiology Institute",Northwest,"9080 W Cheyenne Ave, Ste 110","Las Vegas",NV,89129,36.2193,-115.295,3.5,7,1
+1AdIZu9j2lTl8tUy2neDDQ,"St Thomas Aquinas Catholic Newman Community",University,"4765 Brussels Rd","Las Vegas",NV,89119,36.1034,-115.14,4.5,3,1
+1Agm_rkCY-HzL7vEUMWYYA,"Tuscano Condos","Spring Valley","7255 W Sunset Rd","Las Vegas",NV,89113,36.07,-115.25,3,9,1
+1aGNx-7cTXIeBCMVM8X0TQ,"Pizza Hut",Westside,"931 S Rainbow Blvd","Las Vegas",NV,89146,36.1607,-115.245,2.5,22,1
+1AGT5p22q_5LuQ5IuQspFg,"Richard L Litt , MD",Summerlin,"653 North Town Center Dr","Las Vegas",NV,89144,36.1806,-115.316,3,3,1
+1Ah5brQi5opIxgzyZHGnbw,"Kelley S John, MD",,"3150 N Tenaya Way, Ste 300, WellHealth Women's Specialty Care","Las Vegas",NV,89128,36.2168,-115.25,2.5,13,1
+1aj4TG0eFq6NaPBKk6bK7Q,"Jacques Cafe",Summerlin,"1910 Village Center Cir, Unit 1","Las Vegas",NV,89134,36.1933,-115.304,4,167,0
+1aj9YPKOcgScIr4qszWrRw,"bettie page shop","The Strip","The Shops At Miracle Mile Store H32","Las Vegas",NV,89109,36.1098,-115.17,4,3,0
+1AlkWurKaoagQ51Z99pfiA,"Juicy Couture","The Strip","3500 Las Vegas Blvd S","Las Vegas",NV,89109,36.1181,-115.175,4.5,10,0
+1aMxCG33wAoxjWoeRsl4BA,"Brioche by Guy Savoy","The Strip","3570 South Las Vegas Blvd","Las Vegas",NV,89109,36.1162,-115.175,2.5,28,1
+1APtA8NKOIVb4ECCg4tkpg,"Discount Tire Store - Las Vegas, NV","Spring Valley","7007 South Durango Dr","Las Vegas",NV,89113,36.0598,-115.279,4.5,43,1
+1AqVD3-FrblXl9h91T8VLQ,"Kelly O'Neil International",Downtown,,"Las Vegas",NV,,36.1699,-115.14,2.5,3,1
+1arQq0xjif1HKZanhcikBA,"Chuck Jones Experience","The Strip","Circus Circus Hotel and Casino, 2800 Las Vegas Blvd S","Las Vegas",NV,89109,36.1374,-115.162,2,8,0
+1asJ5XNpbQashKOwIaln5Q,"I Design 3D Nail Studio",Southwest,"7729 South Rainbow Blvd","Las Vegas",NV,89139,36.0416,-115.244,3.5,44,0
+1aSZn7e6D1EWLCqUFuQkRA,"Fit SOULutions",,"2651 Crimson Canyon Dr","Las Vegas",NV,89128,36.2082,-115.255,5,3,1
+1aVbXH_4uQCTQU7HfGmyow,"Brew Tea Bar",,"9480 S Eastern Ave, Ste 160","Las Vegas",NV,89123,36.0173,-115.117,5,111,1
+1avsYoUD1Vi8iKjPQfrNag,"Erica Lynn Makeup",,,"Las Vegas",NV,,36.175,-115.136,5,7,1
+1AWVAzd7N4vblgvz4ki1wQ,"Gabriel Jewelers",Southeast,"2390 E Serene Ave, Ste 450","Las Vegas",NV,89123,36.0207,-115.119,3.5,34,1
+1aXtGuHPrCxnOpbpdZa1hA,"Bikram Yoga Las Vegas",,"5031 Wagon Trail Ave, Ste 107","Las Vegas",NV,89118,36.0692,-115.209,4,85,1
+1AyaRLA83q_V9D3bYevRkQ,"InDaCut 2 Barbershop",Southeast,"9890 Maryland Pkwy, Ste 4","Las Vegas",NV,89183,36.0106,-115.135,3,34,0
+1aYKH2ea5_dg0bLznqnvQA,"LV Taco Catering",,,"Las Vegas",NV,89031,36.2608,-115.171,5,3,1
+1Az51UytyJbvF4EbEANt1g,"Press Start Gaming Center",University,"1550 E Tropicana Ave, Ste 7","Las Vegas",NV,89119,36.1014,-115.131,4.5,34,1
+1a_3voJO1EaxxoqOa5CvjA,"Video Game Repair",Southeast,"8690 S Maryland Pkwy","Las Vegas",NV,89123,36.0321,-115.136,2.5,3,1
+1B-SvTs4-JYxQwZLH4P5Kg,"Spring View Home Health Care",Eastside,"2950 E Flamingo Rd, Ste B","Las Vegas",NV,89120,36.1154,-115.111,2.5,3,1
+1B7oil1p-lkorF0ig5G54g,"The Coffee Bean & Tea Leaf",Southeast,"6599 Las Vegas Blvd S, Ste 8149","Las Vegas",NV,89119,36.0682,-115.177,3.5,78,1
+1bALsE6aZE23mGV2WPxN_g,"Capriotti's Sandwich Shop",,"4983 W Flamingo Rd, Ste D","Las Vegas",NV,89103,36.1149,-115.21,4,119,1
+1bdwB6hxMUnSKF8bCsmuZA,"Tea of Joy",Chinatown,"4240 Spring Mountain Rd, Ste 102","Las Vegas",NV,89102,36.1269,-115.197,4,207,1
+1bfG-RJrbTmPBPHXdTx8ww,"Nice Twice Hobbies & Sports",Westside,"3111 S Valley View Blvd, Ste G-103","Las Vegas",NV,89102,36.1309,-115.191,3,7,1
+1BmMabtdhKK9kJ1uUprrCw,"LV Auto Center",Chinatown,"4350 W Spring Mtn","Las Vegas",NV,89102,36.1264,-115.199,1.5,11,1
+1bnbhrY2Vp9HOTFF1Fn-hw,"Eye Care 4 Kids",,"6150 W Smoke Ranch Rd","Las Vegas",NV,89108,36.2033,-115.227,3.5,3,1
+1bNuhgErDlA0qgOI6gWdvw,"Mirage-Treasure Island Tram","The Strip","S Las Vegas Blvd","Las Vegas",NV,89109,36.1226,-115.173,5,29,1
+1BrIPwRhJHOp6yBwjoRtgg,"Pink Box Doughnuts",,"7531 W Lake Mead Blvd","Las Vegas",NV,89128,36.1956,-115.258,4.5,711,1
+1BtNZszIr8LvtPOhN0X4Mw,"Gold Mine Bar & Grill",Eastside,"3950 Koval Ln","Las Vegas",NV,89109,36.1179,-115.161,2.5,26,1
+1by4vPHb_WEv8z3Mp2DIYQ,"Halloween Town Pumpkin Patch",Westside,"510 S Rampart","Las Vegas",NV,89145,36.1665,-115.288,3.5,35,1
+1CA4nc3RW8MxRbgpXpcrtg,"Steve Madden",Downtown,"775 S Grand Central Pkwy","Las Vegas",NV,89106,36.1649,-115.161,3,4,1
+1cajJktxR-aVtGNV0k5FUw,HealthMarkets,Downtown,"2202 W Charleston Blvd, Ste 7","Las Vegas",NV,89102,36.1594,-115.172,5,3,1
+1CaM8eIvl41l4f3V-V-cAw,"Smooth Eats",Downtown,"124 S 6th St, Ste 160","Las Vegas",NV,89101,36.1679,-115.14,5,57,1
+1cfbdSIgqPqApuxNww51Og,"Q Bodyworks",Westside,"8751 W Charleston Blvd, Ste 190, Body Spa West","Las Vegas",NV,89117,36.1576,-115.286,5,3,1
+1cicW421wArHN6Q_xqy4lw,"Gypsy Beauty Lounge","Spring Valley","8680 W Warm Springs Rd, Ste 130","Las Vegas",NV,89148,36.0562,-115.281,4.5,26,1
+1cIJ1NplF-qYqbSfwgxAIg,"Stripped Esthetics",Anthem,"9975 S Eastern Ave, Ste 113","Las Vegas",NV,89183,36.0073,-115.115,5,30,1
+1ckqk-8HiwIt_AaniFFZMA,"Beauty Nail Art","Spring Valley","4960 S Fort Apache Rd, Ste 460","Las Vegas",NV,89148,36.0987,-115.295,5,7,1
+1CP8aJa8ILlfM5deroar0Q,Wingstop,,"5045 W Tropicana Ave","Las Vegas",NV,89103,36.1003,-115.21,3,135,1
+1CqoZukTwTX3uBANqqmNPg,"Royal Refrigeration Air Conditioning & Heating",,"5150 Arville St","Las Vegas",NV,89118,36.0961,-115.198,4,12,1
+1CR2ddUcjYYwRd5JLtiRrw,"Hard Rock Cafe","The Strip","3771 Las Vegas Boulevard South","Las Vegas",NV,89109,36.1042,-115.172,3.5,519,1
+1cS-Bf9O9l6va6Tt2biAGA,"Showready Landscape",Westside,,"Las Vegas",NV,89146,36.1356,-115.23,4,39,1
+1CTapYK3FHvpiJaQhOaaIw,"L & L Hawaiian Barbecue",Southeast,"2060 E Serene Ave, Ste 100","Las Vegas",NV,89123,36.0209,-115.125,3.5,92,1
+1CWMNSTRMejdSyXBG2chNg,"Fireside Restaurant & Tavern",Anthem,"1785 E Cactus Ave","Las Vegas",NV,89183,35.9995,-115.128,3.5,127,1
+1d-yIypEtk1wc2PTY8xAQg,"Bodyheat Tanning",Centennial,"8400 W Farm Rd, Ste 1","Las Vegas",NV,89131,36.2995,-115.279,2.5,14,1
+1d4OiPU75_KvXkgiBD35-g,Starbucks,"The Strip","3400 Las Vegas Blvd S","Las Vegas",NV,89109,36.1206,-115.177,2.5,41,1
+1d8W14H2HxVk4Ch2OnG_og,T-Mobile,"South Summerlin","11010 Lavender Hills Dr, Ste 140","Las Vegas",NV,89135,36.1457,-115.334,3.5,13,1
+1DaOuGsv6OtfRIdaHrsn9g,"The Mail Depot",,"2961 Industrial Rd","Las Vegas",NV,89109,36.1373,-115.169,5,6,1
+1DdUHeSL-J03RMHWSbTiHg,"NAPA Auto Parts - Genuine Parts Company",,"4675 C South Polaris Ave","Las Vegas",NV,89103,36.1048,-115.186,2.5,3,1
+1De44CbKmWw0hWI8FP6ZXg,"Evolution Auto Body",,"3859 S Valley View Blvd, Ste 27","Las Vegas",NV,89103,36.1211,-115.191,5,5,1
+1Df5WnLX3DqN6ymlhqznaQ,"Roy's Restaurant",Eastside,"620 E Flamingo Rd","Las Vegas",NV,89119,36.1152,-115.15,4.5,457,0
+1dFh7yxHwFzjscCQgDYv1g,"Salad Creations",,"6485 N Decatur Blvd, Ste 130","Las Vegas",NV,89131,36.2774,-115.207,3.5,5,0
+1DHPkjDwHBguDZo_HR_ymw,"Chengdu Laozao Hot Pot",Chinatown,"5740 Spring Mountain Rd","Las Vegas",NV,89146,36.1261,-115.22,3,10,1
+1DHxqJ_1T4YmBUn5jyO-BA,"Fear The Walking Dead Survival",Downtown,"425 Fremont St, Ste 150","Las Vegas",NV,89101,36.1691,-115.141,3,10,1
+1diuAK7FMn93WxlK-ndJhA,Bowlology,University,"4680 Maryland Pkwy, Ste 102","Las Vegas",NV,89119,36.1051,-115.137,3.5,47,1
+1DJNBnnrvdrHcuDgbGlmLQ,Walmart,Sunrise,"201 N Nellis Blvd","Las Vegas",NV,89110,36.1648,-115.063,1.5,40,1
+1dkAvL_lS10uB56X18uiog,"Jiffy Smog",Northwest,"3061 St Rose Pkwy","Las Vegas",NV,89130,36.2601,-115.246,2.5,22,1
+1dl7wV-zwqliz0xOrzLBUQ,"Universal Solar Direct of Las Vegas",,"4775 W Teco Ave, Ste 115","Las Vegas",NV,89118,36.0732,-115.207,4.5,11,1
+1DmKzgvvcthVwcBUj_nlJw,"Relaxing Solution Day Spa",Northwest,"7045 W Ann Rd, Ste 130","Las Vegas",NV,89130,36.263,-115.248,3,12,0
+1DP5vHxJzCDbgawv0WC3yA,"Rose. Rabbit. Lie","The Strip","3708 Las Vegas Blvd S","Las Vegas",NV,89109,36.1098,-115.177,4,739,1
+1DQW_PCzWH2mMz1m1LZLJw,"CBS Television City Store",Southeast,"Mgm Grand","Las Vegas",NV,89123,36.0198,-115.15,3.5,3,1
+1dstc7tiu64MKGk0-p-KQA,"Bed Bath & Beyond",Summerlin,"10950 W Charleston Blvd","Las Vegas",NV,89135,36.161,-115.335,3.5,39,1
+1dSyWh9XdBU58Cb5BRtHPg,"Rosemary A Nowins, MD",University,"1621 E Flamingo Rd, Ste 17B","Las Vegas",NV,89119,36.1141,-115.13,5,3,1
+1Dt2BLwHyRxjnnLnNBfibw,"Las Vegas Metropolitan Police Department",Southeast,"4860 Las Vegas Blvd S","Las Vegas",NV,89119,36.0845,-115.174,2.5,7,1
+1DuRQzhBWNbIQOZjOvw9KQ,"Lashes By Rose","Spring Valley","Scandals Salon & Spa, 4235 S Fort Apache Rd, Ste 100","Las Vegas",NV,89147,36.116,-115.277,5,3,0
+1e-WOHw3UsiFQF1OP8GzVA,LasVegasStudios,Westside,"3065 S Torrey Pines Dr","Las Vegas",NV,89146,36.1338,-115.235,5,3,1
+1e2ZRUm9lpX3vrmraRx-yQ,"Tacos Colima",,,"Las Vegas",NV,89032,36.3799,-114.888,4.5,3,1
+1e53DeAylBxkeFlhFJ4G7g,"ALEX AND ANI Miracle Mile","The Strip","3663 Las Vegas Blvd S","Las Vegas",NV,89109,36.1098,-115.17,4.5,15,1
+1e8WNj6asZtE2X4HIAEFOA,"HVAC Connection",Northwest,,"Las Vegas",NV,89120,36.233,-115.247,5,30,1
+1E9Ewt8cQ1SmaSMo7Cm0Yg,"Seamingly Straight",Summerlin,"161 Kennet Ct","Las Vegas",NV,89144,36.1732,-115.331,5,12,1
+1EeR3wxjoNBTd4tnC-ELUw,"Gemini Arcade Palace",Eastside,"4180 S Sandhill Rd, Ste B-3 & B-4","Las Vegas",NV,89121,36.1137,-115.092,4.5,30,0
+1Efl5K2DkHSEo-vYhgMM-A,"Funny's II",Northwest,"3550 N Rancho Dr","Las Vegas",NV,89130,36.224,-115.218,2.5,6,1
+1EGqfV6kg2dXZ3MCZS0Kog,"Mojave Air Conditioning",,,"Las Vegas",NV,89030,36.2145,-115.122,4.5,85,1
+1EIou6y4IZPDMbLBWJPpNA,"Seva Beauty",Centennial,"8060 W Tropical Pkwy","Las Vegas",NV,89149,36.2723,-115.269,4,5,1
+1EnACUiEn9RkK0YU5rvMfA,Volaris,Southeast,"5757 Wayne Newton Blvd","Las Vegas",NV,89119,36.0859,-115.131,1,4,1
+1End3eamvpqP331RGcheBA,VIPnVEGAS,,"4315 Dean Martin Dr, Ste 230","Las Vegas",NV,89103,36.111,-115.182,4.5,23,1
+1eOVLZKtcd19YIKIHqvbJQ,"Alterra Home Loans",Westside,"1300 S Jones Blvd","Las Vegas",NV,89146,36.1565,-115.224,3.5,3,1
+1EqiwKUWHER4ki_CiC3vvw,"The Sin City Shooter",Southeast,,"Las Vegas",NV,89119,36.0765,-115.153,5,6,1
+1EuqKW-JC-Fm3RSWRqKdrg,"Life Springs Christian Church",Southeast,"2075 E Warm Springs Rd","Las Vegas",NV,89119,36.0564,-115.124,5,5,1
+1eWShhnZqavKcKcA8noVOg,"Elite Carpet Care",Southeast,"8255 S Las Vegas Blvd, Ste 313","Las Vegas",NV,89123,36.0398,-115.176,4,4,1
+1eyfFwXY0NCS7SMXmgl_Dw,"Bertolini's Authentic Trattoria",Westside,"9500 W Sahara Ave","Las Vegas",NV,89117,36.145,-115.302,5,5,0
+1EyLD1m0xBP5Jxk9QiFavQ,"Dream Cars Las Vegas",,"3955 W Mesa Vista Ave, Ste 6","Las Vegas",NV,89118,36.0913,-115.192,4.5,14,1
+1F7SjxEmqhFmDfQgpTI8sA,"Paradise Nails & Spa","Spring Valley","9340 W Flamingo Rd","Las Vegas",NV,89147,36.116,-115.294,2.5,17,1
+1f9jrB7LDPZGS2AXW0o67A,"Club Azul",Downtown,"115 7th St","Las Vegas",NV,89101,36.169,-115.138,2.5,3,1
+1FAvxOUOGGyZoYNlAXACag,"Dal Toro Ristorante","The Strip","3325 S Las Vegas Blvd","Las Vegas",NV,89109,36.1243,-115.17,2.5,329,0
+1Fa_brd85F_-gXYP45GpsA,"Hotel California Restaurant and Cantina",Westside,"1050 S Rampart Blvd","Las Vegas",NV,89145,36.1608,-115.291,2.5,27,0
+1Fg-OXtRnmBn6OchuprR1A,"Air-Care Air Duct Cleaning",Southeast,"3868 E Post Rd","Las Vegas",NV,89120,36.0758,-115.09,3.5,3,1
+1fG7Xg4dLzcKIApzJiXtXw,"Tae Heung Gak",Chinatown,"6870 Spring Mountain Rd, Ste 10","Las Vegas",NV,89146,36.1268,-115.242,4,8,1
+1fIHVl8jMn2JxskGt1CcJw,"Photography by Ashley Marie","Spring Valley",,"Las Vegas",NV,89148,36.0612,-115.29,5,3,1
+1fK0bh0dI_Pz6-I8jorHQw,"Mystery Adventures",Downtown,"1100 E Sahara Ave, Ste 140","Las Vegas",NV,89104,36.1446,-115.14,4.5,43,0
+1fk1ZFBX0X2w_bN_sUws_w,"Courtesy Mazda",Centennial,"6401 Centennial Ctr","Las Vegas",NV,89149,36.2745,-115.27,1.5,7,0
+1FkUTet5GQ5mVwNLw_Ds4g,"Imbibe Tours",Eastside,"Southern Nevada Wine Country","Las Vegas",NV,89121,36.1147,-115.119,5,19,0
+1flKw3TnAJKvyZ_uAP1KKA,"Zombie Apocalypse Store",Chinatown,"3420 Spring Mountain Rd","Las Vegas",NV,89102,36.1267,-115.186,4,179,0
+1FVykIuYpyWgN86AAbpVoA,"Bead Haven",,"7664 W Lake Mead Blvd, Ste 111","Las Vegas",NV,89128,36.1805,-115.258,3,15,0
+1Fyg9JNUBzDoSc7rKWPFcA,"Phenix Salon Suites","Spring Valley","4001 S Buffalo Dr","Las Vegas",NV,89147,36.1164,-115.261,2.5,6,1
+1G0C1xuMONSIQS76LMjGyw,Cheetah's,,"2112 Western Ave","Las Vegas",NV,89102,36.1478,-115.166,2.5,70,1
+1g29d62cEojB-7mX7p8AzQ,"Kanji Steak and Sushi","Spring Valley","6125 S Fort Apache Rd, Ste 200","Las Vegas",NV,89148,36.0765,-115.299,4.5,82,0
+1g47zyA_utx8mpgmtLc6tg,"Teriyaki Madness","The Lakes","9151 W Sahara, Ste 104","Las Vegas",NV,89117,36.144,-115.297,3,21,1
+1GA01-VWTAkV72huVT409g,"Superior Center Auto Glass",Westside,"2695 S Decatur Blvd","Las Vegas",NV,89102,36.1413,-115.209,4,75,1
+1GcfpBx1WWcHn3j6QtyrxA,"C Bar","The Strip","2000 Las Vegas Blvd S","Las Vegas",NV,89104,36.1477,-115.156,3,19,1
+1GfQKGs-5w3SBkXb7C-I1A,"UnlockU Locksmith",,"4918 River Glen Dr, Ste 109","Las Vegas",NV,89103,36.1109,-115.209,3.5,3,0
+1gHrOMPMmqXxGMMkPOyE0Q,"Rising Sun Japanese Restaurant & Sushi Bar",Westside,"9410 W Sahara Ave","Las Vegas",NV,89117,36.1466,-115.301,3,13,0
