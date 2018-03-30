@@ -1,0 +1,25 @@
+---
+title: "Exploration"
+author: "Carlo Provinciali"
+date: "March 30, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+restaurants_by_cuisine <- read.csv("C:/Users/Carlo/Desktop/EDAV Project/number of restaurants by cuisine.csv")
+```
+
+```{r}
+library(tidyverse)
+
+r_by_city <- restaurants_by_cuisine %>% group_by(city, state) %>%
+                    summarize(number= sum(NumberOfRestaurants)) %>%
+                    filter(number > 100)
+
+View(r_by_city)
+```
+
