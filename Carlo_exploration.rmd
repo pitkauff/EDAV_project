@@ -18,8 +18,25 @@ library(tidyverse)
 
 r_by_city <- restaurants_by_cuisine %>% group_by(city, state) %>%
                     summarize(number= sum(NumberOfRestaurants)) %>%
-                    filter(number > 100)
+                    filter(number > 1000)
 
-View(r_by_city)
+ggplot(r_by_city, aes(x = city, y = number))+
+  geom_col()
+```
+
+```{r}
+top_cities <- c("Charlotte",
+                "Las Vegas",
+                "Mississauga",
+                "Montréal",
+                "Phoenix",
+                "Pittsburgh",
+                "Scottsdale",
+                "Toronto")
+
+tc <- restaurants_by_cuisine %>% filter(city %in% top_cities)
+
+ggplot(tc, aes(x = city, y = NumberOfRestaurants))+
+  geom_col(color = aes(category))
 ```
 
