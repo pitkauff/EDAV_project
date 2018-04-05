@@ -50,3 +50,15 @@ ggplot(toronto, aes(x = reorder(category, NumberOfRestaurants), y = NumberOfRest
   scale_y_continuous(breaks = seq(0, 650, 50))
 ```
 
+```{r}
+neighborhood <- restaurants.in.Toronto %>%
+                    group_by(neighborhood, category) %>%
+                    summarize(count =n())
+
+ggplot(neighborhood, aes(x = category, y = count))+
+  geom_col()+
+  coord_flip()+
+  facet_wrap(~neighborhood)
+```
+
+
