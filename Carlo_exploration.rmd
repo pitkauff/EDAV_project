@@ -36,7 +36,17 @@ top_cities <- c("Charlotte",
 
 tc <- restaurants_by_cuisine %>% filter(city %in% top_cities)
 
-ggplot(tc, aes(x = city, y = NumberOfRestaurants))+
-  geom_col(color = aes(category))
+#ggplot(tc, aes(x = city, y = NumberOfRestaurants))+
+#  geom_col(color = aes(category))
+```
+
+```{r}
+toronto <- restaurants_by_cuisine %>% filter(city == "Toronto")
+
+
+ggplot(toronto, aes(x = reorder(category, NumberOfRestaurants), y = NumberOfRestaurants)) +
+  geom_col()+
+  coord_flip()+
+  scale_y_continuous(breaks = seq(0, 650, 50))
 ```
 
