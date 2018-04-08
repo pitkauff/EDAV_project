@@ -44,3 +44,7 @@ Questions:
     d) Can do animated chart over time
 7) Distribution of Syrian restaurants vs. other cuisines: https://www.nytimes.com/2018/01/12/dining/toronto-syrian-food.html
 
+Added on 4/8:
+8) How are sentiment and rating correlated?
+9) How do Yelp Elites influence sentiment and ratings?
+
