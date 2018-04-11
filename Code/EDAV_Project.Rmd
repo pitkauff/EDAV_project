@@ -1,0 +1,185 @@
+---
+title: "EDAV_Project"
+author: "Pit Kauffmann"
+date: "3/30/2018"
+output: html_document
+---
+
+### Import necessary libraries:
+```{r message = FALSE, warning = FALSE}
+library(dplyr)
+library(ggplot2)
+library(ggmap)
+library(readr)
+library(zoo)
+```
+
+### Select city with highest cuisine diversity score
+```{r message = FALSE, warning = FALSE}
+setwd("~/Desktop/Columbia Files/Spring 2018/Exploratory Data Analysis/Project/EDAV_project-master/Data")
+data = read_csv("number of restaurants by cuisine.csv")
+data <- data %>% group_by(city, category) %>% summarise(count = sum(NumberOfRestaurants, na.rm = TRUE)) %>% mutate(perc = round(count/sum(count),4))
+
+gini <- function(x, na.rm = TRUE) {
+  index <- 1 - sum(x**2) 
+  return(index)
+}
+
+data <- data %>% group_by(city) %>% summarise(gini = gini(perc))
+data <- data[order(-data$gini),]
+head(data,10)
+```
+
+### Sentiment Progression over Time 
+```{r message = FALSE, warning = FALSE}
+setwd("~/Desktop/Columbia Files/Spring 2018/Exploratory Data Analysis/Project/EDAV_project-master")
+data = read_csv("reviews_in_Toronto.csv")
+most_rev <- data.frame(table(data$business_id)) 
+most_rev <- most_rev[order(-most_rev$Freq),]
+most_rev$Var1 <- as.character(most_rev$Var1)
+var <- most_rev$Var1[1]
+reviews <- subset(data, business_id == var)
+reviews <- reviews[order(as.Date(reviews$date, format="%Y-%m-%d")),]
+reviews$year <- as.numeric(format(as.Date(reviews$date, format="%Y-%m-%d"),"%Y"))
+reviews$month <- as.numeric(format(as.Date(reviews$date, format="%Y-%m-%d"),"%m"))
+reviews$elite <- as.factor(reviews$elite)
+levels(reviews$elite) <- c(0,1)
+reviews <- reviews[c("business_id", "date", "stars", "elite", "text_1", "year", "month")]
+reviews$date <- as.Date(reviews$date)
+
+# for (i in 2014:2017) {
+#   for (j in 1:12) {
+#     temp <- subset(reviews, reviews$date <= as.Date(paste(i,j,28, sep = "-"), format="%Y-%m-%d"))
+#     elite <- subset(temp, temp$elite == 1)
+#     ggplot(temp, aes(date, text_1)) + geom_line(color='grey') + scale_x_date(date_labels = ("%b-%Y"), limits =
+#       as.Date(c(reviews$date[1], reviews$date[nrow(reviews)]))) + xlab("Date") + ylab("Sentiment") + ylim(-1,1) +
+#       geom_point(data = elite, aes(date, text_1), color='darkblue', shape = 5) + ggtitle(paste(i, j, sep = "_")) 
+#     ggsave(filename = paste(i, j, ".png", sep = ""), width = 4, height = 4, dpi = 200)
+#   }
+# }
+
+# Stationary Sentiment Progression over Time
+elite <- subset(reviews, reviews$elite == 1)
+ggplot(reviews, aes(date, text_1)) + geom_line(color='grey') + scale_x_date(date_labels = ("%b-%Y"), limits =
+  as.Date(c(reviews$date[1], reviews$date[nrow(reviews)]))) + xlab("Date") + ylab("Sentiment") + ylim(-1,1) +
+  geom_point(data = elite, aes(date, text_1), color='darkblue', shape = 5, size = 0.5) + ggtitle("Sentiment over
+  Time")
+
+```
+
+### Sentiment Progression June - December 2017
+```{r message = FALSE, warning = FALSE}
+reviews_2017 <- subset(reviews, reviews$date > as.Date("2017-06-01"))
+
+# k <- 0
+# for (i in 6:12) {
+#   for (j in 1:28) {
+#     temp <- subset(reviews_2017, reviews_2017$date <= as.Date(paste(2017,i,j, sep = "-"), format="%Y-%m-%d"))
+#     elite <- subset(temp, temp$elite == 1)
+#     ggplot(temp, aes(date, text_1)) + geom_line(color = 'grey') + scale_x_date(date_labels = ("%b-%Y"), limits =
+#       as.Date(c(reviews_2017$date[1], reviews_2017$date[nrow(reviews_2017)]))) + xlab("Date") + ylab("Sentiment")
+#       + ylim(-1,1) + geom_point(data = elite, aes(date, text_1), color='darkblue', shape = 5) + ggtitle(paste(i,
+#       j, sep = "_")) 
+#     ggsave(filename = paste(k, ".png", sep = ""), width = 4, height = 4, dpi = 200)
+#     k <- k + 1
+#   }
+# }
+
+# Stationary Graph for Sentiment Progression June - December 2017
+elite <- subset(reviews_2017, reviews_2017$elite == 1)
+ggplot(reviews_2017, aes(date, text_1)) + geom_line(color = 'grey') + scale_x_date(date_labels = ("%b-%Y"),
+  limits = as.Date(c(reviews_2017$date[1], reviews_2017$date[nrow(reviews_2017)]))) + xlab("Date") +
+  ylab("Sentiment") + ylim(-1,1) + geom_point(data = elite, aes(date, text_1), color='darkblue', shape = 5, size
+  = 0.5) + ggtitle("Sentiment over the latest 6 months") 
+```
+
+
+### Average Sentiment by Rating
+```{r message = FALSE, warning = FALSE}
+avg_sent <- reviews %>% group_by(stars) %>% summarize(mean = mean(text_1, na.rm = TRUE))
+ggplot(avg_sent, aes(stars, mean)) + geom_col(color = "darkblue", fill = "darkblue") + xlab("Stars") +
+  ylab("Average Review Sentiment")
+```
+
+### Average Sentiment: Elite vs. Non-Elite
+```{r message = FALSE, warning = FALSE}
+elite_sent <- data %>% group_by(elite) %>% summarize(mean = mean(text_1, na.rm = TRUE))
+ggplot(elite_sent, aes(elite, mean)) + geom_col(color = "darkblue", fill = "darkblue", width = 0.5) + xlab("Elite") + ylab("Average Review Sentiment")
+```
+
+### Sentiment vs. 7-day WA Rating June - December 2017
+```{r message = FALSE, warning = FALSE}
+ma_rating <- as.data.frame(rollmeanr(reviews[,3],7,fill = NA)) 
+names(ma_rating) <- c("ma_stars")
+ma_rating <- cbind(reviews, ma_rating)
+ma_rating <- subset(ma_rating, ma_rating$date > as.Date("2017-06-01"))
+ma_rating$ma_stars[is.na(ma_rating$ma_stars)] <- mean(ma_rating$ma_stars)
+ma_rating$ma_stars <- ma_rating$ma_stars - 4
+
+# k <- 0
+# for (i in 6:12) {
+#   for (j in 1:28) {
+#     temp <- subset(ma_rating, ma_rating$date <= as.Date(paste(2017,i,j, sep = "-"), format="%Y-%m-%d"))
+#     elite <- subset(temp, temp$elite == 1)
+#     ggplot(temp, aes(date)) + geom_line(aes(y = text_1), color = 'darkblue') + geom_line(aes(y = ma_stars),
+#       color = "orange") + scale_x_date(date_labels = ("%b-%Y"),limits = as.Date(c(ma_rating$date[1],
+#       ma_rating$date[nrow(ma_rating)]))) + xlab("Date") + ylab("Sentiment") + ylim(-1,1) + ggtitle(paste(i,j, sep
+#       = "_"))                                     
+#     ggsave(filename = paste(k, ".png", sep = ""), width = 4, height = 4, dpi = 200)
+#     k <- k + 1
+#   }
+# }
+
+# Stationary Graph for Sentiment vs. 7-day WA Rating June - December 2017
+
+elite <- subset(ma_rating, ma_rating$elite == 1)
+ggplot(ma_rating, aes(date)) + geom_line(aes(y = text_1), color = 'darkblue') + geom_line(aes(y = ma_stars),
+  color = "orange") + scale_x_date(date_labels = ("%b-%Y"),limits = as.Date(c(ma_rating$date[1],
+  ma_rating$date[nrow(ma_rating)]))) + xlab("Date") + ylab("Sentiment") + ylim(-1,1) + ggtitle("Sentiment vs. MA Rating over the latest 6 months")
+
+```
+
+### Star Distribution for all Cuisine Types
+```{r message = FALSE, warning = FALSE, fig.width = 20, fig.height = 18}
+setwd("~/Desktop/Columbia Files/Spring 2018/Exploratory Data Analysis/Project/EDAV_project-master")
+restaurants <- read_csv("restaurants in Toronto.csv")
+all_ids <- restaurants[1]
+restaurants = restaurants[!duplicated(restaurants$id),]
+categories <- restaurants[c(1,13)]
+data <- data[-1]
+colnames(data)[1] <- "id"
+revs_cat <- plyr::join(data, restaurants, by = "id")
+revs_cat <- subset(revs_cat, !is.na(revs_cat$category))
+revs_cat$category <- as.factor(revs_cat$category)
+revs_cat$stars <- as.factor(revs_cat$stars)
+temp <- revs_cat %>% group_by(revs_cat$category, revs_cat$stars) %>% summarise(cnt = n()) %>%mutate(perc =
+  round(cnt/sum(cnt),4))
+stars_by_cat <- ggplot(data = temp, aes(temp$`revs_cat$stars`, perc)) + geom_col(fill = "darkblue", colour =
+  "black") + labs(y = "Cuisine Type", x = "Stars") + coord_flip()
+print(stars_by_cat + facet_wrap(~`revs_cat$category`, scales = "free") + ggtitle("Stars by Cuisine Type"))
+```
+
+### Star Distribution for Top 20 Cuisine Types
+```{r message = FALSE, warning = FALSE, fig.width = 10, fig.height = 8}
+setwd("~/Desktop/Columbia Files/Spring 2018/Exploratory Data Analysis/Project/EDAV_project-master")
+restaurants <- read_csv("restaurants in Toronto.csv")
+all_ids <- restaurants[1]
+restaurants = restaurants[!duplicated(restaurants$id),]
+categories <- restaurants[c(1,13)]
+data <- data[-1]
+colnames(data)[1] <- "id"
+revs_cat <- plyr::join(data, restaurants, by = "id")
+revs_cat <- subset(revs_cat, !is.na(revs_cat$category))
+revs_cat$category <- as.factor(revs_cat$category)
+revs_cat$stars <- as.factor(revs_cat$stars)
+top_20 <- revs_cat %>% group_by(revs_cat$category) %>% summarise(cnt = n())
+top_20 <- head(top_20[order(-top_20$cnt),], 20)[1]
+revs_cat <- revs_cat[revs_cat$category %in% top_20$`revs_cat$category`,]
+temp <- revs_cat %>% group_by(revs_cat$category, revs_cat$stars) %>% summarise(cnt = n()) %>%mutate(perc =
+  round(cnt/sum(cnt),4))
+stars_by_cat <- ggplot(data = temp, aes(temp$`revs_cat$stars`, perc)) + geom_col(fill = "darkblue", colour =
+  "black") + labs(y = "Cuisine Type", x = "Stars") + coord_flip()
+print(stars_by_cat + facet_wrap(~`revs_cat$category`, scales = "free") + ggtitle("Stars by Cuisine Type"))
+```
+
+
