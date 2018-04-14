@@ -59,8 +59,9 @@ by_category <- restaurants_in_Toronto %>% group_by(category) %>%
                 summarize(count = n()) %>%
                 arrange(desc(count))
 
-ggplot(by_category[1:40,], aes(reorder(category, count), count))+
+ggplot(by_category[1:50,], aes(reorder(category, count), count))+
   geom_col()+
+  scale_y_continuous(breaks = seq(0, 1200, 50))+
   coord_flip()+
   ggtitle("Categories of Restaurants in Toronto")
 
