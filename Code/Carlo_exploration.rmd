@@ -68,14 +68,70 @@ ggplot(by_category[1:50,], aes(reorder(category, count), count))+
 ```
 
 ```{r}
-neighborhood <- restaurants_in_Toronto %>%
-                    group_by(neighborhood, category) %>%
-                    summarize(count =n())
+categories = c('American (New)',
+		'American (Traditional)',
+		'Asian Fusion',
+		'Cajun/Creole',
+		'Canadian (New)',
+		'Cantonese',
+		'Caraibbean',
+		'Chinese',
+		'Cuban',
+		'Ethiopian',
+		'French',
+		'Greek',
+		'Halal',
+		'Indian',
+		'Indonesian',
+		'Italian',
+		'Japanese',
+		'Korean',
+		'Malaysian',
+		'Mexican',
+		'Middle Eastern',
+		'Pakistani',
+		'Peruvian',
+		'Singaporean',
+		'Syrian',
+		'Thai',
+		'Turkish',
+		'Vietnamese')
 
-ggplot(neighborhood, aes(x = neighborhood, y = count))+
-  geom_col()+
+```
+
+
+```{r}
+neighborhood <- restaurants_in_Toronto %>%
+                    filter(category %in% categories) %>%
+                    group_by(neighborhood) %>%
+                    summarize(count =n()) %>%
+                    arrange(desc(count))
+
+zipcode <- neighborhood <- restaurants_in_Toronto %>%
+                    filter(category %in% categories) %>%
+                    group_by(postal_code) %>%
+                    summarize(count =n()) %>%
+                    arrange(desc(count))
+```
+
+
+```{r}
+
+pop_neighborhood <- restaurants_in_Toronto %>%
+                    filter(category %in% categories) %>%
+                    group_by(neighborhood) %>%
+                    mutate(neigh_pop =n()) %>%
+                    filter(neigh_pop >=10) %>%
+                    ungroup() %>%
+                    filter(neigh_pop >= 70) %>%
+                    group_by(neighborhood, category) %>%
+                    summarize(count = n())
+
+ggplot(pop_neighborhood, aes(x = category, y = count))+
+  geom_col(aes(fill = category))+
   coord_flip()+
-  facet_wrap(~category)
+  facet_wrap(~neighborhood)
+
 ```
 
 
