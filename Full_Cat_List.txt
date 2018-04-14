@@ -1,0 +1,240 @@
+“Acai Bowls”
+Afghan
+African
+Alsatian
+"American (New)”
+"American (Traditional)”
+Arabian
+Argentine
+Armenian
+"Asian Fusion"
+Australian
+Austrian
+Bagels
+Baguettes
+Bakeries
+Bangladeshi
+Barbeque
+Bars
+Bavarian
+"Beach Bars"
+Beer
+"Beer Bar"
+"Beer Garden"
+"Beer Gardens"
+"Beer Hall"
+Belgian
+Bistros
+Brasseries
+Brazilian
+"Breakfast & Brunch"
+Brewpubs
+Buffets
+Bulgarian
+Burgers
+Burmese
+Cafes
+Cafeteria
+Cajun/Creole
+Cambodian
+"Canadian (New)"
+Cantonese
+Caribbean
+Caterers
+"Champagne Bars"
+"Cheese Shops"
+"Cheese Tasting Classes"
+Cheesesteaks
+"Chicken Shop"
+"Chicken Wings"
+Chinese
+"Chocolatiers & Shops"
+Churros
+Cideries
+"Cocktail Bars"
+"Coffee & Tea"
+Coffeeshops
+Colombian
+"Comfort Food"
+"Conveyor Belt Sushi"
+Creperies
+Cuban
+Cupcakes
+"Curry Sausage"
+"Custom Cakes"
+Czech
+Czech/Slovakian
+Delicatessen
+Delis
+Desserts
+"Dim Sum"
+Diners
+"Do-It-Yourself Food"
+Dominican
+Donuts
+"Eastern European"
+"Eastern German"
+Eatertainment
+Egyptian
+Empanadas
+Ethiopian
+"Ethnic Food"
+Falafel
+"Farmers Market"
+Farms
+"Fast Food"
+Filipino
+Fischbroetchen
+"Fish & Chips"
+Flatbread
+Fondue
+Food
+"Food Court"
+"Food Stands"
+"Food Trucks"
+French
+Friterie
+"Fruits & Veggies"
+"Game Meat"
+Gastropubs
+Gelato
+Georgian
+German
+Gluten-Free
+Greek
+Guamanian
+Hainan
+Haitian
+Hakka
+Halal
+Hawaiian
+"Herbs & Spices"
+Himalayan/Nepalese
+Honduran
+"Hong Kong Style Cafe"
+"Hookah Bars"
+"Hot Dogs"
+"Hot Pot"
+Hungarian
+Iberian
+"Ice Cream & Frozen Yogurt"
+"Imported Food"
+Indian
+Indonesian
+Irish
+"Irish Pub"
+"Island Pub"
+Italian
+Izakaya
+Japanese
+"Japanese Curry"
+"Juice Bars & Smoothies"
+Kebab
+Kombucha
+Korean
+Kosher
+Laotian
+Lebanese
+Limos
+"Live/Raw Food"
+"Local Fish Stores"
+"Local Flavor"
+Macarons
+Malaysian
+Mauritius
+"Meat Shops"
+Mediterranean
+Mexican
+"Middle Eastern"
+"Modern European"
+Mongolian
+Moroccan
+"Muay Thai"
+"Mulled Wine"
+"New Mexican Cuisine"
+Nicaraguan
+Noodles
+"Olive Oil"
+Oriental
+Pakistani
+Palatine
+"Pan Asian"
+"Parent Cafes"
+"Pasta Shops"
+"Patisserie/Cake Shop"
+Persian/Iranian
+Peruvian
+"Piano Bars"
+Pita
+Pizza
+Poke
+Polish
+"Pop-Up Restaurants"
+"Popcorn Shops"
+Portuguese
+Poutineries
+Pretzels
+"Pub Food"
+Pubs
+"Puerto Rican"
+Ramen
+Restaurants
+"Rotisserie Chicken"
+Russian
+Salad
+Salvadoran
+Sandwiches
+Scandinavian
+Schnitzel
+Scottish
+Seafood
+"Seafood Markets"
+Shanghainese
+Sicilian
+"Signature Cuisine"
+Singaporean
+Slovakian
+Smokehouse
+"Soul Food"
+Soup
+"South African"
+Southern
+Spanish
+"Specialty Food"
+"Sports Bars"
+"Sri Lankan"
+Steakhouses
+"Sugar Shacks"
+Sugaring
+"Sushi Bars"
+Swabian
+"Swiss Food"
+Syrian
+Szechuan
+Tacos
+Taiwanese
+"Tapas Bars"
+"Tapas/Small Plates"
+"Tea Rooms"
+Teppanyaki
+Tex-Mex
+Thai
+"Themed Cafes"
+"Tiki Bars"
+Tonkatsu
+"Traditional Norwegian"
+Trinidadian
+Turkish
+Tuscan
+Udon
+Ukrainian
+Uzbek
+Vegan
+Vegetarian
+Venezuelan
+Vietnamese
+Waffles
+"Whiskey Bars"
+"Wine Bars"
+Wok
+Wraps
