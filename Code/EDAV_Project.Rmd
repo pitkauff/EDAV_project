@@ -7,8 +7,7 @@ output: html_document
 
 ### Import necessary libraries:
 ```{r message = FALSE, warning = FALSE}
-library(dplyr)
-library(ggplot2)
+library(tidyverse)
 library(ggmap)
 library(readr)
 library(zoo)
@@ -33,7 +32,7 @@ head(data,10)
 ### Sentiment Progression over Time 
 ```{r message = FALSE, warning = FALSE}
 setwd("~/Desktop/Columbia Files/Spring 2018/Exploratory Data Analysis/Project/EDAV_project-master")
-data = read_csv("reviews_in_Toronto.csv")
+data = read_csv("sentiment_reviews_Toronto.csv")
 most_rev <- data.frame(table(data$business_id)) 
 most_rev <- most_rev[order(-most_rev$Freq),]
 most_rev$Var1 <- as.character(most_rev$Var1)

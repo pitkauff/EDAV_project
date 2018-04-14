@@ -38,4 +38,4 @@ sent = revs.apply(getSentScore)
 
 data = pd.concat([result, sent], axis = 1)
 
-data.to_csv("reviews_in_Toronto.csv", sep = ',', index = False, index_label = False)
+data.to_csv("sentiment_reviews_Toronto.csv", sep = ',', index = False, index_label = False)
