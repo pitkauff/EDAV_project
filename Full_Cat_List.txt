@@ -1,13 +1,13 @@
-“Acai Bowls”
+Acai Bowls
 Afghan
 African
 Alsatian
-"American (New)”
-"American (Traditional)”
+American (New)
+American (Traditional)
 Arabian
 Argentine
 Armenian
-"Asian Fusion"
+Asian Fusion
 Australian
 Austrian
 Bagels
@@ -17,17 +17,17 @@ Bangladeshi
 Barbeque
 Bars
 Bavarian
-"Beach Bars"
+Beach Bars
 Beer
-"Beer Bar"
-"Beer Garden"
-"Beer Gardens"
-"Beer Hall"
+Beer Bar
+Beer Garden
+Beer Gardens
+Beer Hall
 Belgian
 Bistros
 Brasseries
 Brazilian
-"Breakfast & Brunch"
+Breakfast & Brunch
 Brewpubs
 Buffets
 Bulgarian
@@ -37,65 +37,65 @@ Cafes
 Cafeteria
 Cajun/Creole
 Cambodian
-"Canadian (New)"
+Canadian (New)
 Cantonese
 Caribbean
 Caterers
-"Champagne Bars"
-"Cheese Shops"
-"Cheese Tasting Classes"
+Champagne Bars
+Cheese Shops
+Cheese Tasting Classes
 Cheesesteaks
-"Chicken Shop"
-"Chicken Wings"
+Chicken Shop
+Chicken Wings
 Chinese
-"Chocolatiers & Shops"
+Chocolatiers & Shops
 Churros
 Cideries
-"Cocktail Bars"
-"Coffee & Tea"
+Cocktail Bars
+Coffee & Tea
 Coffeeshops
 Colombian
-"Comfort Food"
-"Conveyor Belt Sushi"
+Comfort Food
+Conveyor Belt Sushi
 Creperies
 Cuban
 Cupcakes
-"Curry Sausage"
-"Custom Cakes"
+Curry Sausage
+Custom Cakes
 Czech
 Czech/Slovakian
 Delicatessen
 Delis
 Desserts
-"Dim Sum"
+Dim Sum
 Diners
-"Do-It-Yourself Food"
+Do-It-Yourself Food
 Dominican
 Donuts
-"Eastern European"
-"Eastern German"
+Eastern European
+Eastern German
 Eatertainment
 Egyptian
 Empanadas
 Ethiopian
-"Ethnic Food"
+Ethnic Food
 Falafel
-"Farmers Market"
+Farmers Market
 Farms
-"Fast Food"
+Fast Food
 Filipino
 Fischbroetchen
-"Fish & Chips"
+Fish & Chips
 Flatbread
 Fondue
 Food
-"Food Court"
-"Food Stands"
-"Food Trucks"
+Food Court
+Food Stands
+Food Trucks
 French
 Friterie
-"Fruits & Veggies"
-"Game Meat"
+Fruits & Veggies
+Game Meat
 Gastropubs
 Gelato
 Georgian
@@ -108,27 +108,27 @@ Haitian
 Hakka
 Halal
 Hawaiian
-"Herbs & Spices"
+Herbs & Spices
 Himalayan/Nepalese
 Honduran
-"Hong Kong Style Cafe"
-"Hookah Bars"
-"Hot Dogs"
-"Hot Pot"
+Hong Kong Style Cafe
+Hookah Bars
+Hot Dogs
+Hot Pot
 Hungarian
 Iberian
-"Ice Cream & Frozen Yogurt"
-"Imported Food"
+Ice Cream & Frozen Yogurt
+Imported Food
 Indian
 Indonesian
 Irish
-"Irish Pub"
-"Island Pub"
+Irish Pub
+Island Pub
 Italian
 Izakaya
 Japanese
-"Japanese Curry"
-"Juice Bars & Smoothies"
+Japanese Curry
+Juice Bars & Smoothies
 Kebab
 Kombucha
 Korean
@@ -136,50 +136,50 @@ Kosher
 Laotian
 Lebanese
 Limos
-"Live/Raw Food"
-"Local Fish Stores"
-"Local Flavor"
+Live/Raw Food
+Local Fish Stores
+Local Flavor
 Macarons
 Malaysian
 Mauritius
-"Meat Shops"
+Meat Shops
 Mediterranean
 Mexican
-"Middle Eastern"
-"Modern European"
+Middle Eastern
+Modern European
 Mongolian
 Moroccan
-"Muay Thai"
-"Mulled Wine"
-"New Mexican Cuisine"
+Muay Thai
+Mulled Wine
+New Mexican Cuisine
 Nicaraguan
 Noodles
-"Olive Oil"
+Olive Oil
 Oriental
 Pakistani
 Palatine
-"Pan Asian"
-"Parent Cafes"
-"Pasta Shops"
-"Patisserie/Cake Shop"
+Pan Asian
+Parent Cafes
+Pasta Shops
+Patisserie/Cake Shop
 Persian/Iranian
 Peruvian
-"Piano Bars"
+Piano Bars
 Pita
 Pizza
 Poke
 Polish
-"Pop-Up Restaurants"
-"Popcorn Shops"
+Pop-Up Restaurants
+Popcorn Shops
 Portuguese
 Poutineries
 Pretzels
-"Pub Food"
+Pub Food
 Pubs
-"Puerto Rican"
+Puerto Rican
 Ramen
 Restaurants
-"Rotisserie Chicken"
+Rotisserie Chicken
 Russian
 Salad
 Salvadoran
@@ -188,41 +188,41 @@ Scandinavian
 Schnitzel
 Scottish
 Seafood
-"Seafood Markets"
+Seafood Markets
 Shanghainese
 Sicilian
-"Signature Cuisine"
+Signature Cuisine
 Singaporean
 Slovakian
 Smokehouse
-"Soul Food"
+Soul Food
 Soup
-"South African"
+South African
 Southern
 Spanish
-"Specialty Food"
-"Sports Bars"
-"Sri Lankan"
+Specialty Food
+Sports Bars
+Sri Lankan
 Steakhouses
-"Sugar Shacks"
+Sugar Shacks
 Sugaring
-"Sushi Bars"
+Sushi Bars
 Swabian
-"Swiss Food"
+Swiss Food
 Syrian
 Szechuan
 Tacos
 Taiwanese
-"Tapas Bars"
-"Tapas/Small Plates"
-"Tea Rooms"
+Tapas Bars
+Tapas/Small Plates
+Tea Rooms
 Teppanyaki
 Tex-Mex
 Thai
-"Themed Cafes"
-"Tiki Bars"
+Themed Cafes
+Tiki Bars
 Tonkatsu
-"Traditional Norwegian"
+Traditional Norwegian
 Trinidadian
 Turkish
 Tuscan
@@ -234,7 +234,7 @@ Vegetarian
 Venezuelan
 Vietnamese
 Waffles
-"Whiskey Bars"
-"Wine Bars"
+Whiskey Bars
+Wine Bars
 Wok
 Wraps

@@ -10,7 +10,9 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ```{r}
-restaurants_by_cuisine <- read.csv("C:/Users/Carlo/Desktop/EDAV Project/number of restaurants by cuisine.csv")
+library(readr)
+
+restaurants_by_cuisine <- read_csv("~/Data/number of restaurants by cuisine.csv")
 ```
 
 ```{r}
@@ -51,14 +53,28 @@ ggplot(toronto, aes(x = reorder(category, NumberOfRestaurants), y = NumberOfRest
 ```
 
 ```{r}
-neighborhood <- restaurants.in.Toronto %>%
+restaurants_in_Toronto <- read_csv("restaurants in Toronto.csv")
+
+by_category <- restaurants_in_Toronto %>% group_by(category) %>%
+                summarize(count = n()) %>%
+                arrange(desc(count))
+
+ggplot(by_category[1:40,], aes(reorder(category, count), count))+
+  geom_col()+
+  coord_flip()+
+  ggtitle("Categories of Restaurants in Toronto")
+
+```
+
+```{r}
+neighborhood <- restaurants_in_Toronto %>%
                     group_by(neighborhood, category) %>%
                     summarize(count =n())
 
-ggplot(neighborhood, aes(x = category, y = count))+
+ggplot(neighborhood, aes(x = neighborhood, y = count))+
   geom_col()+
   coord_flip()+
-  facet_wrap(~neighborhood)
+  facet_wrap(~category)
 ```
 
 
