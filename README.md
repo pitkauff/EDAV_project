@@ -42,7 +42,7 @@ Questions:
 6) Case study of a restaurant: how did this restaurant get its 5-star reputation
     a) Does rating stay constant over time (each review has timestamp)?
     b) Did rating increase over time?
-    c) Were there any changes when an elite user commented?
+    c) Were there any changes when an elite user commented? Were there increased number of check-ins? Increased ratings?
     d) Can do animated chart over time
 7) Distribution of Syrian restaurants vs. other cuisines: https://www.nytimes.com/2018/01/12/dining/toronto-syrian-food.html
 
