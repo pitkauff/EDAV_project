@@ -45,6 +45,9 @@ Questions:
     c) Were there any changes when an elite user commented? Were there increased number of check-ins? Increased ratings?
     d) Can do animated chart over time
 7) Distribution of Syrian restaurants vs. other cuisines: https://www.nytimes.com/2018/01/12/dining/toronto-syrian-food.html
+8) Does a business with a high rating get more check-ins than a business with a low rating?
+9) If two businesses have the same rating, but one business has more reviews, does it get more check-ins?
+10) Restaurants with same number of reviews, one has a higher rating, does that restaurant get more check-ins?
 
 Added on 4/8:
 8) How are sentiment and rating correlated? \n
