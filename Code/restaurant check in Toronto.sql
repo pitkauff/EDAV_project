@@ -1,6 +1,6 @@
-SELECT c.id, c.business_id, c.`date`, c.`count`
+SELECT c.id, c.business_id, b.`name`, b.stars, b.review_count,  c.`date`, c.`count`
 from checkin c
-INNER JOIN (SELECT b1.id
+INNER JOIN (SELECT b1.*
 			FROM business b1
 			INNER JOIN category c1
 				ON c1.business_id = b1.id
