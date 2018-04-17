@@ -1,0 +1,126 @@
+<!DOCTYPE html>  
+  <html lang="en"><head>
+      <meta charset="utf-8">
+      <title>EDAV_Project</title>
+      <div id="map"></div>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaFdwG-lew5qRyDT7ZI6i0vbYdzsFSCRg&callback=initMap" type= "text/javascript"></script>
+      <script src="https://d3js.org/d3.v4.min.js">  </script>
+
+      <style>
+        text {
+          font-family: arial;
+          font-size: 12px;
+        }
+
+        .axis path,
+        .axis line {
+          fill: none;
+          stroke: slategray;
+          shape-rendering: crispEdges;
+        }
+
+        html, body, #map {
+          width: 400px;
+          height: 400px;
+          margin: 0;
+          padding: 0;
+        }
+      </style>
+
+    </head>
+    <body>
+      <script>
+      window.initMap = function() {
+        var el = document.querySelector('#map');
+        var google = window.google;
+
+        var parseDate = d3.timeParse("%Y-%m-%d");
+        var formatTime = d3.timeFormat("%b %e");
+
+        var margin = {left: 25, right: 25, top: 25, bottom: 25};
+
+        var width = 960 - margin.left - margin.right;
+        var height = 500 - margin.top - margin.bottom;
+
+        var xNudge = 50;
+        var yNudge = 20;
+
+        // Create drop-down menu
+        var option = ["Entertainment District", "Chinatown", "Downtown", "Fashion District", "Garden District", "Little Italy", "Harbord Village", "Church and Wellessey", "West Queen", "King West Village"];
+
+        var select = d3.select('body')
+          .append('select')
+          .attr('class','select')
+          .on('change',onchange)
+
+        var options = select
+          .selectAll('option')
+          .data(option).enter()
+          .append('option')
+          .text(function (d) { return d; });
+
+        d3.csv("Toronto_revs_area.csv", function(d){return{date: parseDate(d.date), elite: Number(d.elite), sentiment: Number(d.text_1)};}, function(data) {
+            dataset = data;
+
+            lat = 43.651250457754834;
+            long = -79.39216150853758;
+            // Create a Google maps object
+            var map = new google.maps.Map(d3.select("#map").node(), {
+              zoom: 13,
+              center: new google.maps.LatLng(lat, long),
+              mapTypeId: google.maps.MapTypeId.TERRAIN
+            })
+
+            var overlay = new google.maps.OverlayView();
+
+            overlay.onAdd = function() {
+              var layer = d3.select(this.getPanes()
+                .overlayLayer)
+                .append("div")
+                .attr("class", "stations");
+
+              overlay.draw = function() {
+                var projection = this.getProjection(),
+                    padding = 10;
+
+                var marker = layer.selectAll("svg")
+                    .data(d3.entries(data))
+                    .each(transform)
+                    .enter().append("svg")
+                    .each(transform)
+                    .attr("class", "marker");
+
+                // Add a circle
+                marker.append("circle")
+                    .attr("r", 4.5)
+                    .attr("cx", padding)
+                    .attr("cy", padding);
+
+                // Add a label
+                marker.append("text")
+                    .attr("x", padding + 7)
+                    .attr("y", padding)
+                    .attr("dy", ".31em")
+                    .text(function(d) { return d.name; });
+
+                function transform(d) {
+                  d = new google.maps.LatLng(d.latitude, d.longitude);
+                  d = projection.fromLatLngToDivPixel(d);
+                  return d3.select(this)
+                      .style("left", (d.x - padding) + "px")
+                      .style("top", (d.y - padding) + "px");
+                }
+              };
+            };
+          overlay.setMap(map);
+          });
+        }
+            d3.select("#option button").on("click", function(){
+        
+              
+              });
+      </script>
+
+    </body>
+
+</html>
