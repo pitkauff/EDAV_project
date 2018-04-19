@@ -1,0 +1,186 @@
+<!DOCTYPE html>  
+  <html lang="en"><head>
+      <meta charset="utf-8">
+      <title>EDAV_Project</title>
+      <script src="https://d3js.org/d3.v4.min.js">  </script>
+
+      <style>
+
+        html, body {
+          margin: 0;
+          padding: 0;
+          height: 100%;
+          width: 100%;
+        }
+
+        text {
+          font-family: arial;
+          font-size: 12px;
+        }
+
+        .axis path,
+        .axis line {
+          fill: none;
+          stroke: slategray;
+          shape-rendering: crispEdges;
+        }
+      </style>
+
+    </head>
+    <body>
+    <div id="option">
+        <button>  
+           Click Here to see Sentiment
+        </button>
+    </div>
+      <script>
+        var parseDate = d3.timeParse("%Y-%m-%d");
+        var formatTime = d3.timeFormat("%b %e");
+
+        var margin = {left: 25, right: 25, top: 25, bottom: 25};
+
+        var width = 960 - margin.left - margin.right;
+        var height = 500 - margin.top - margin.bottom;
+
+        var xNudge = 50;
+        var yNudge = 20;
+
+        d3.csv("Toronto_last_6_months.csv", function(d){return{date: parseDate(d.date), elite: Number(d.elite), sentiment: Number(d.sentiment)};}, function(data) {
+            dataset = data;
+            min = d3.min(dataset, function(d) { return d.sentiment; });
+            max = d3.max(dataset, function(d) { return d.sentiment; });
+            minDate = d3.min(dataset, function(d) {return d.date; });
+            maxDate = d3.max(dataset, function(d) {return d.date; });
+
+            var y = d3.scaleLinear()
+              .domain([min,max])
+              .range([height,0]);
+
+            var x = d3.scaleTime()
+              .domain([minDate, maxDate])
+              .range([0,width]);
+
+            var yAxis = d3.axisLeft(y);
+
+            var xAxis = d3.axisBottom(x);
+
+            var svg = d3.select("body")
+              .append("svg")
+              .attr("id","svg")
+              .attr("height",500)
+              .attr("width",960);
+
+            var chartGroup = svg.append("g")
+              .attr("class","chartGroup")
+              .attr("transform","translate("+xNudge+","+yNudge+")");
+
+            chartGroup.append("g")
+              .attr("class","axis y")
+              .call(yAxis);
+
+            chartGroup.append("g")
+              .attr("class","axis x")
+              .attr("transform","translate(0,"+319+")")
+              .call(xAxis
+                .tickFormat(d3.timeFormat("%b-%y")));
+
+            chartGroup.append("text")
+              .attr("transform", "rotate(-90)")
+              .attr("y", 0 - (margin.left*2))
+              .attr("x",0 - (height / 2))
+              .attr("dy", "1em")
+              .style("text-anchor", "middle")
+              .text("Seniment");     
+          
+            var line = d3.line()
+              .x(function(d) {return x(d.date); })
+              .y(function(d) {return y(d.sentiment); })
+              .curve(d3.curveCardinal);
+
+            d3.select("#option button").on("click", function(){
+
+              d3.selectAll("path.line").remove()
+              d3.selectAll("dot.circle").remove()
+               
+              var path = chartGroup.append("path")
+                .data(dataset)
+                .attr("class","line")
+                .attr("d",function(d){return line(dataset); })
+                .attr("stroke", "grey")
+                .attr("stroke-width", "2")
+                .attr("fill", "none");
+
+              var totalLength = path.node().getTotalLength();
+              var duration = 15000;
+
+              var temp = dataset.filter(function(d) { return d.elite == 1; })
+
+              var segments = [0];
+                for(var i = 1; i < temp.length; i++) {
+                    var tmp = chartGroup.append("path")
+                      .datum([temp[i-1], temp[i]])
+                      .attr("d", function(d){return line(temp); });
+                    segments.push((segments[i-1] + tmp.node().getTotalLength()));
+                    tmp.remove();
+                }
+
+              path
+                .attr("stroke-dasharray", totalLength + " " + totalLength)
+                .attr("stroke-dashoffset", totalLength)
+                .transition()
+                .duration(duration)
+                .ease(d3.easeLinear)
+                .attr("stroke-dashoffset", 0)
+
+              var col = d3.scaleLinear()
+              	.domain([min,max])
+              	.range(["yellow", "red"]);
+
+              var circ = chartGroup.selectAll("circle")
+                .data(temp)
+                .enter()
+                .append("circle")
+                .attr("cx",function (d) {return x(d.date);})
+                .attr("cy", function (d) {return y(d.sentiment);})
+                .attr("r", 3)
+                .attr("fill", function (d) {return col(d.sentiment);});
+
+              var lines = chartGroup.append("g")
+            	.selectAll("line")
+            	.data(temp);
+
+              lines.enter().append("line")
+            	.attr("x1", 0)
+            	.attr("y1", function(d) {return y(d3.min(temp, function(d) { return d.sentiment; }));})
+            	.attr("x2", innerWidth)
+            	.attr("y2", function(d) {return y(d3.min(temp, function(d) { return d.sentiment; }));})
+            	.style("stroke", function (d) {return col(d3.min(temp, function(d) { return d.sentiment; }));})
+            	.style("opacity", 0.02)
+            	.style("stroke-dasharray", ("3, 3"));
+
+              lines.enter().append("line")
+            	.attr("x1", 0)
+            	.attr("y1", function(d) {return y(d3.max(temp, function(d) { return d.sentiment; }));})
+            	.attr("x2", innerWidth)
+            	.attr("y2", function(d) {return y(d3.max(temp, function(d) { return d.sentiment; }));})
+            	.style("stroke", function (d) {return col(d3.max(temp, function(d) { return d.sentiment; }));})
+            	.style("opacity", 0.02)
+            	.style("stroke-dasharray", ("3, 3"));
+            	
+
+              //#circ
+              //  .transition()
+              //  .delay(function(d, i) {return y(d.sentiment);})
+              //  .ease(d3.easeLinear)
+              //  .attr("cx",function (d) {return x(d.date);})
+              //  .attr("cy", function (d) {return y(d.sentiment);})
+              //  .attr("r", 3)
+              //  .attr("fill", "blue")
+              //  .attr("stroke-width", 4);
+              });
+            });
+      </script>
+
+    </body>
+
+</html>
