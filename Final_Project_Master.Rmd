@@ -1,0 +1,70 @@
+---
+title: "Final_Project_Master"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+
+(Carlo)
+
+- Topic
+- Questions (.rmd file)
+- Contriutions by teammates
+- Yelp Dataset Challenge
+
+## Description of Data
+
+- Dataset structure
+- Challenges
+- Initial analysis
+- Relationship between tables
+- Type of variables
+
+## Analysis of Data Quality
+
+- How we narrowed it down?
+  - distribution of entries by city
+  - focus on restaurants
+  - ambiguous/meaningless categories (could also discuss under next question)
+  
+- What were the problems with the data?
+  - null values on neighborhood
+  - mispelled city names
+  - multiple cuisines per restaurant
+
+
+## Main Analysis (Exploratory Data Analysis)
+
+- Which areas are most diverse?
+- How are the restaurants distributed across neighborhoods?
+- What is the distribution of different cuisines in Toronto?
+- How does sentiment differ for good and bad reviews?
+- What is the impact of yelp elite reviews on overall review sentiment (for a popular restaurant?
+- What is the distribution of the ratings by cuisine?
+- What is the distribution of sentiment by cuisine?
+- What is the distribution of number of check-ins by cuisine?
+- What is the relationship between ratings, sentiment, and number of checkins (parallel coordinate plot)?
+
+
+## Executive Summary (Presentation-style)
+
+- Toronto is most diverse
+- review sentiment is volatile
+  - yelp elite review sentiment is somewhat "less"" volatile
+- sentiment is correlated with rating
+
+## Interactive Component
+
+- shiny neighborhood map
+- sentiment over time D3
+  command: python -m http.server 8888
+  will get a link, copy paste into browser and navigate to where you downloaded file
+  make sure data file (Toronto last six months file)
+
+## Conclusion
+
+- graphs here, graphs there, graphs everywhere!
