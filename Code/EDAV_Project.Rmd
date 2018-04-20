@@ -1,0 +1,276 @@
+---
+title: "EDAV_Project"
+author: "Pit Kauffmann"
+date: "3/30/2018"
+output: html_document
+---
+
+### Import necessary libraries:
+```{r message = FALSE, warning = FALSE}
+library(dplyr)
+library(ggplot2)
+library(ggmap)
+library(readr)
+library(zoo)
+library(wordcloud)
+library(GGally)
+```
+
+### Select city with highest cuisine diversity score
+```{r message = FALSE, warning = FALSE}
+setwd("~/Desktop/Columbia Files/Spring 2018/Exploratory Data Analysis/Project/Data")
+num_cuisines = read_csv("number of restaurants by cuisine.csv")
+num_cuisines <- num_cuisines %>% group_by(city, category) %>% summarise(count = sum(NumberOfRestaurants, na.rm = TRUE)) %>% mutate(perc = round(count/sum(count),4))
+
+gini <- function(x, na.rm = TRUE) {
+  index <- 1 - sum(x**2)
+  return(index)
+}
+
+num_cuisines <- num_cuisines %>% group_by(city) %>% summarise(gini = gini(perc))
+num_cuisines <- num_cuisines[order(-num_cuisines$gini),]
+head(num_cuisines,10)
+```
+
+### Sentiment Progression over Time 
+```{r message = FALSE, warning = FALSE}
+setwd("~/Desktop/Columbia Files/Spring 2018/Exploratory Data Analysis/Project/Data")
+#a <- read_csv("Toronto_revs_coord.csv")
+toronto = read_csv("reviews_in_Toronto.csv")
+most_rev <- data.frame(table(toronto$business_id)) 
+most_rev <- most_rev[order(-most_rev$Freq),]
+most_rev$Var1 <- as.character(most_rev$Var1)
+var <- most_rev$Var1[1]
+reviews <- subset(toronto, business_id == var)
+reviews <- reviews[order(as.Date(reviews$date, format="%Y-%m-%d")),]
+reviews$year <- as.numeric(format(as.Date(reviews$date, format="%Y-%m-%d"),"%Y"))
+reviews$month <- as.numeric(format(as.Date(reviews$date, format="%Y-%m-%d"),"%m"))
+reviews$elite <- as.factor(reviews$elite)
+levels(reviews$elite) <- c(0,1)
+reviews <- reviews[c("business_id", "date", "stars", "elite", "text_1", "year", "month")]
+reviews$date <- as.Date(reviews$date)
+
+
+# for (i in 2014:2017) {
+#   for (j in 1:12) {
+#     temp <- subset(reviews, reviews$date <= as.Date(paste(i,j,28, sep = "-"), format="%Y-%m-%d"))
+#     elite <- subset(temp, temp$elite == 1)
+#     ggplot(temp, aes(date, text_1)) + geom_line(color='grey') + scale_x_date(date_labels = ("%b-%Y"), limits =
+#       as.Date(c(reviews$date[1], reviews$date[nrow(reviews)]))) + xlab("Date") + ylab("Sentiment") + ylim(-1,1) +
+#       geom_point(data = elite, aes(date, text_1), color='darkblue', shape = 5) + ggtitle(paste(i, j, sep = "_")) 
+#     ggsave(filename = paste(i, j, ".png", sep = ""), width = 4, height = 4, dpi = 200)
+#   }
+# }
+
+# Stationary Sentiment Progression over Time
+elite <- subset(reviews, reviews$elite == 1)
+ggplot(reviews, aes(date, text_1)) + geom_line(color='grey') + scale_x_date(date_labels =
+  ("%b-%Y"), limits = as.Date(c(reviews$date[1], reviews$date[nrow(reviews)]))) + xlab("Date") +
+  ylab("Sentiment") + ylim(-1,1) + geom_point(data = elite, aes(date, text_1), color='darkblue',
+  shape = 5, size = 0.5) + ggtitle("Sentiment over Time")
+
+```
+
+```{r message = FALSE, warning = FALSE}
+reviews_2017 <- subset(reviews, reviews$date > as.Date("2017-06-01"))
+temp <- reviews_2017[c(2,4,5)]
+names(temp)[3] <- c("sentiment")
+temp$sentiment <- as.numeric(temp$sentiment)
+write.csv(temp, "Toronto_last_6_months.csv", row.names=FALSE, col.names = TRUE)
+
+setwd("~/Desktop/Columbia Files/Spring 2018/Exploratory Data Analysis/Project/Data")
+restaurants <- read_csv("restaurants in Toronto.csv")
+toronto <- toronto[-1]
+colnames(toronto)[1] <- "id"
+rest <- restaurants[!duplicated(restaurants$id),]
+df <- plyr::join(toronto, rest, by = "id")
+df <- subset(df, !is.na(df$longitude))
+write.csv(df, "Toronto_revs_coord.csv", row.names=FALSE, col.names = TRUE)
+setwd("~/Desktop/Columbia Files/Spring 2018/Exploratory Data Analysis/Project/Data")
+
+#a <- read_csv("Toronto_revs_area.csv")
+#lon_range <- extendrange(a$longitude)
+#lat_range <- extendrange(a$latitude)
+#b <- calc_zoom(lon_range, lat_range)
+```
+
+### Sentiment Progression June - December 2017
+```{r message = FALSE, warning = FALSE}
+reviews_2017 <- subset(reviews, reviews$date > as.Date("2017-06-01"))
+
+# k <- 0
+# for (i in 6:12) {
+#   for (j in 1:28) {
+#     temp <- subset(reviews_2017, reviews_2017$date <= as.Date(paste(2017,i,j, sep = "-"), format="%Y-%m-%d"))
+#     elite <- subset(temp, temp$elite == 1)
+#     ggplot(temp, aes(date, text_1)) + geom_line(color = 'grey') + scale_x_date(date_labels = ("%b-%Y"), limits =
+#       as.Date(c(reviews_2017$date[1], reviews_2017$date[nrow(reviews_2017)]))) + xlab("Date") + ylab("Sentiment")
+#       + ylim(-1,1) + geom_point(data = elite, aes(date, text_1), color='darkblue', shape = 5) + ggtitle(paste(i,
+#       j, sep = "_")) 
+#     ggsave(filename = paste(k, ".png", sep = ""), width = 4, height = 4, dpi = 200)
+#     k <- k + 1
+#   }
+# }
+
+# Stationary Graph for Sentiment Progression June - December 2017
+elite <- subset(reviews_2017, reviews_2017$elite == 1)
+ggplot(reviews_2017, aes(date, text_1)) + geom_line(color = 'grey') + scale_x_date(date_labels =
+  ("%b-%Y"), limits = as.Date(c(reviews_2017$date[1], reviews_2017$date[nrow(reviews_2017)]))) +
+  xlab("Date") + ylab("Sentiment") + ylim(-1,1) + geom_point(data = elite, aes(date, text_1),
+  color='darkblue', shape = 5, size = 0.5) + ggtitle("Sentiment over the latest 6 months") 
+```
+
+
+### Average Sentiment by Rating
+```{r message = FALSE, warning = FALSE}
+avg_sent <- reviews %>% group_by(stars) %>% summarize(mean = mean(text_1, na.rm = TRUE))
+ggplot(avg_sent, aes(stars, mean)) + geom_col(color = "darkblue", fill = "darkblue") + xlab("Stars") +
+  ylab("Average Review Sentiment")
+```
+
+### Average Sentiment: Elite vs. Non-Elite
+```{r message = FALSE, warning = FALSE}
+elite_sent <- toronto %>% group_by(elite) %>% summarize(mean = mean(text_1, na.rm = TRUE))
+ggplot(elite_sent, aes(elite, mean)) + geom_col(color = "darkblue", fill = "darkblue", width = 0.5) + xlab("Elite") + ylab("Average Review Sentiment")
+```
+
+### Sentiment vs. 7-day WA Rating June - December 2017
+```{r message = FALSE, warning = FALSE}
+ma_rating <- as.data.frame(rollmeanr(reviews[,3],7,fill = NA)) 
+names(ma_rating) <- c("ma_stars")
+ma_rating <- cbind(reviews, ma_rating)
+ma_rating <- subset(ma_rating, ma_rating$date > as.Date("2017-06-01"))
+ma_rating$ma_stars[is.na(ma_rating$ma_stars)] <- mean(ma_rating$ma_stars, na.rm = TRUE)
+ma_rating$ma_stars <- (ma_rating$ma_stars - min(ma_rating$stars)) / (max(ma_rating$stars) - min(ma_rating$stars))
+ma_rating$text_1 <- (ma_rating$text_1 - min(ma_rating$text_1)) / (max(ma_rating$text_1) - min(ma_rating$text_1))
+# k <- 0
+# for (i in 6:12) {
+#   for (j in 1:28) {
+#     temp <- subset(ma_rating, ma_rating$date <= as.Date(paste(2017,i,j, sep = "-"), format="%Y-%m-%d"))
+#     elite <- subset(temp, temp$elite == 1)
+#     ggplot(temp, aes(date)) + geom_line(aes(y = text_1), color = 'darkblue') + geom_line(aes(y = ma_stars),
+#       color = "orange") + scale_x_date(date_labels = ("%b-%Y"),limits = as.Date(c(ma_rating$date[1],
+#       ma_rating$date[nrow(ma_rating)]))) + xlab("Date") + ylab("Sentiment") + ylim(-1,1) + ggtitle(paste(i,j, sep
+#       = "_"))                                     
+#     ggsave(filename = paste(k, ".png", sep = ""), width = 4, height = 4, dpi = 200)
+#     k <- k + 1
+#   }
+# }
+
+# Stationary Graph for Sentiment vs. 7-day WA Rating June - December 2017
+
+elite <- subset(ma_rating, ma_rating$elite == 1)
+ggplot(ma_rating, aes(date)) + geom_line(aes(y = text_1, color = 'Sentiment')) + geom_line(aes(y
+  = ma_stars, color = 'MA Rating')) + scale_x_date(date_labels = ("%b-%Y"),limits =
+  as.Date(c(ma_rating$date[1], ma_rating$date[nrow(ma_rating)]))) + xlab("Date") +
+  ylab("Sentiment") + ylim(0,1.5) + ggtitle("Sentiment vs. MA Rating over the latest 6 months") +
+  scale_colour_manual("", breaks = c("Sentiment","MA Rating"), values = c("Sentiment"="darkblue",
+  "MA Rating"="orange"))
+```
+
+### Star Distribution for all Cuisine Types
+```{r message = FALSE, warning = FALSE, fig.width = 20, fig.height = 18}
+setwd("~/Desktop/Columbia Files/Spring 2018/Exploratory Data Analysis/Project/Data")
+restaurants <- read_csv("restaurants in Toronto.csv")
+relevant_cats <- read.delim("Full_Cat_List.txt", header = TRUE)
+#all_ids <- restaurants[1]
+#restaurants = restaurants[!duplicated(restaurants$id),]
+restaurants <- restaurants[restaurants$category %in% relevant_cats$Category,]
+categories <- restaurants[c(1,13)]
+revs_cat <- plyr::join(toronto, restaurants, by = "id")
+revs_cat <- subset(revs_cat, !is.na(revs_cat$category))
+revs_cat$category <- as.factor(revs_cat$category)
+revs_cat$stars <- as.factor(revs_cat$stars)
+temp <- revs_cat %>% group_by(revs_cat$category, revs_cat$stars) %>% summarise(cnt = n()) %>%
+  mutate(perc = round(cnt/sum(cnt),4))
+#stars_by_cat <- ggplot(data = temp, aes(temp$`revs_cat$stars`, perc)) + geom_col(fill =
+#  "darkblue", colour = "black") + labs(y = "Cuisine Type", x = "Stars") + coord_flip()
+#print(stars_by_cat + facet_wrap(~`revs_cat$category`, scales = "free") + ggtitle("Stars by #Cuisine Type"))
+```
+
+### Star Distribution for Top 20 Cuisine Types
+```{r message = FALSE, warning = FALSE, fig.width = 10, fig.height = 8}
+most_freq <- revs_cat %>% group_by(revs_cat$category) %>% summarise(cnt = n())
+top_20 <- head(most_freq[order(-most_freq$cnt),], 20)[1]
+subset <- revs_cat[revs_cat$category %in% top_20$`revs_cat$category`,]
+temp <- subset %>% group_by(subset$category, subset$stars) %>% summarise(cnt = n()) %>%mutate(perc =
+  round(cnt/sum(cnt),4))
+ggplot(data = temp, aes(temp$`subset$stars`, perc)) + geom_col(fill = "darkblue", colour =
+  "black") + labs(y = "Cuisine Type", x = "Stars") + coord_flip() +
+  facet_wrap(~`subset$category`, scales = "free") + ggtitle("Stars by Cuisine Type")
+```
+
+### Boxplot of top 20 cusines
+```{r message = FALSE, warning = FALSE, fig.width = 10, fig.height = 8}
+ggplot(subset, aes(category, text_1)) + geom_boxplot() + coord_flip() + labs(y = "Review Sentiment", x = "Cuisine Type")
+```
+
+### Boxplot of Top 5, Bottom 5, Middle 5
+```{r message = FALSE, warning = FALSE, fig.width = 10, fig.height = 8}
+top_5 <- head(most_freq[order(-most_freq$cnt),], 5)[1]
+top_5$indicator <- "Top_5"
+bottom_5 <- tail(most_freq[order(-most_freq$cnt),], 5)[1]
+bottom_5$indicator <- "Bottom_5"
+middle_5 <- most_freq[round(nrow(most_freq)/2,0):(round(nrow(most_freq)/2,0) + 4),][1]
+middle_5$indicator <- "Middle_5"
+sample <- rbind(bottom_5, top_5, middle_5)
+colnames(sample)[1] <- "category"
+subset <- subset(revs_cat, revs_cat$category %in% sample$category)
+subset <- plyr::join(subset, sample, by = "category")
+ggplot(subset, aes(category, text_1)) + geom_boxplot() + coord_flip() + labs(y = "Review Sentiment", x = "Cuisine Type") + facet_wrap(~indicator)
+```
+
+# Find cusisines with highest and lowest average ratings
+```{r message = FALSE, warning = FALSE, fig.width = 10, fig.height = 8}
+revs_cat$stars <- as.numeric(revs_cat$stars)
+revs_cat <- revs_cat[order(as.Date(revs_cat$date, format="%Y-%m-%d")),]
+revs_cat$ma_rating <- rollmeanr(revs_cat[,3],7,fill = NA)
+revs_cat$ma_rating[is.na(revs_cat$ma_rating)] <- mean(revs_cat$ma_rating, na.rm = TRUE)
+rating_by_cuisine <- revs_cat %>% group_by(revs_cat$category) %>% summarise(avg_rating = mean(ma_rating, na.rm = TRUE)) %>% arrange(desc(avg_rating))
+top_10 <- head(rating_by_cuisine, 10)[1]
+top_10$indicator <- "Top_10"
+bottom_10 <- tail(rating_by_cuisine, 10)[1]
+bottom_10$indicator <- "Bottom_10"
+sample <- rbind(bottom_10, top_10)
+subset <- subset(revs_cat, revs_cat$category %in% sample$`revs_cat$category`)
+colnames(sample)[1] <- "category"
+subset <- plyr::join(subset, sample, by = "category")
+
+ggplot(subset, aes(category, ma_rating)) + geom_boxplot() + coord_flip() + labs(y = "Average Review", x = "Cuisine Type") + facet_wrap(~indicator)
+```
+
+### Word clouds for good reviews (sentiment >= 0.5 stars) and bad reviews (sentiment <= -0.5)
+```{r message = FALSE, warning = FALSE}
+setwd("~/Desktop/Columbia Files/Spring 2018/Exploratory Data Analysis/Project/Data")
+good_revs <- read_csv("good_revs.csv")
+bad_revs <-read_csv("bad_revs.csv")
+set.seed(1234)
+wordcloud(words = good_revs$word, freq = good_revs$freq, min.freq = 300,
+          max.words=100, random.order=FALSE, rot.per=0.35, 
+          colors=brewer.pal(8, "Dark2"))
+wordcloud(words = bad_revs$word, freq = bad_revs$freq, min.freq = 5000,
+          max.words=100, random.order=FALSE, rot.per=0.35, 
+          colors=brewer.pal(8, "Dark2"))
+```
+
+```{r message = FALSE, warning = FALSE}
+setwd("~/Desktop/Columbia Files/Spring 2018/Exploratory Data Analysis/Project/Data")
+check_in <- read_csv("restaurants checkins Toronto.csv")
+check_in <- check_in %>% group_by(check_in$business_id) %>% summarise(avg = mean(count))
+colnames(check_in)[1] <- "id"
+colnames(toronto)[10] <- "sentiment"
+data_check_ins <- plyr::join(toronto, check_in, by = "id")
+data_check_ins <- subset(data_check_ins, !is.na(data_check_ins$avg))
+ma_rating <- as.data.frame(rollmeanr(data_check_ins[,3],7,fill = NA)) 
+names(ma_rating) <- c("ma_stars")
+data_check_ins <- cbind(data_check_ins, ma_rating)
+data_check_ins$ma_stars[is.na(data_check_ins$ma_stars)] <- mean(data_check_ins$ma_stars, na.rm = TRUE)
+data_check_ins$sentiment <- as.numeric(data_check_ins$sentiment)
+df1 <- data_check_ins %>% group_by(data_check_ins$id) %>% summarise(avg_checkin = mean(avg), avg_sent = mean(sentiment), avg_rating = mean(ma_stars)) 
+
+ggparcoord(df1, columns = 2:4, alphaLines = .1, scale = "uniminmax")
+```
+
+
+
+
