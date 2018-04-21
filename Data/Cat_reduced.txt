@@ -1,0 +1,59 @@
+Category
+"American (New)"
+"American (Traditional)"
+Argentine
+"Asian Fusion"
+Australian
+Bagels
+Bakeries
+Barbeque
+Bistros
+Brasseries
+"Breakfast & Brunch"
+Burgers
+Cafes
+"Canadian (New)"
+Cantonese
+Chinese
+"Comfort Food"
+Cuban
+Cupcakes
+Delicatessen
+Desserts
+"Dim Sum"
+Diners
+Empanadas
+Ethiopian
+"Ethnic Food"
+Falafel
+"Fast Food"
+French
+Gelato
+Gluten-Free
+Halal
+"Ice Cream & Frozen Yogurt"
+Indian
+"Irish Pub"
+Italian
+Japanese
+Mexican
+"Middle Eastern"
+Noodles
+Pita
+Pizza
+Poke
+Ramen
+Salad
+Sandwiches
+Scandinavian
+Seafood
+Soup
+Steakhouses
+"Sushi Bars"
+"Tapas Bars"
+Tex-Mex
+Thai
+Vegan
+Vegetarian
+Vietnamese
+Wraps
