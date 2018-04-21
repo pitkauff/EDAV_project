@@ -1,0 +1,78 @@
+---
+title: "Data Description"
+author: "Carlo Provinciali"
+date: "April 20, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(readr)
+library(tidyverse)
+```
+
+
+```{r}
+biz_city <- read_csv("C:/Users/Carlo/Desktop/EDAV Project/Data/businesses and reviews by city.csv")
+```
+###Description of Data:
+For this project, we decided to use the Yelp Open Dataset, which contains 5,200,000 reviews and information about 174,000 businesses across 11 different metropolitan areas. This dataset provides a number of attributes such as hours of a business, location, star rating of each individual review, and business categories. The data was downloaded in SQL format and imported into a local database for preprocessing. Here's a representation of the schema:
+![Yelp Dataset schema](https://s3-media3.fl.yelpcdn.com/assets/srv0/engineering_pages/f4456a01e74a/assets/img/dataset/yelp_dataset_schema.png)
+
+We decided to start our exploration by focusing on the business table. Particularly, we were interested in the distribution of businesses by location and category. Since the initial dataset contains several GBs worth of data, we figured we could find a way to subset if by business location and category to make it more manageable. 
+
+For this purpose, we plotted the distribution of businesses by city along with the number of reviews. We immediately noticed that the distribution of these two variables was not homogeneous across cities; rather a few cities had significantly more reviews and businesses than other (unsurprisingly, these two variables are strongly correlated with each other). 
+
+
+```{r, fig.height=10}
+ggplot(biz_city, aes(NumberOfReviews, reorder(city, NumberOfReviews)))+
+  geom_point()+
+  scale_x_continuous(breaks = seq(0, 10000000, 100000))+
+  ggtitle("Number of Reviews by City")+
+  ylab("city")
+  
+```
+
+```{r}
+ggplot(biz_city[1:10,], aes(NumberOfReviews, reorder(city, NumberOfReviews)))+
+  geom_point()+
+  scale_x_continuous(breaks = seq(0, 10000000, 100000))+
+  ggtitle("Number of Reviews by City (top 10)")+
+  ylab("city")
+```
+
+```{r, fig.height=10}
+ggplot(biz_city, aes(NumberOfBusinesses, reorder(city, NumberOfBusinesses)))+
+  geom_point()+
+  scale_x_continuous(breaks = seq(0, 30000, 2000))+
+  ggtitle("Number of Businesses by City")+
+  ylab("city")
+```
+```{r}
+ggplot(biz_city[1:10,], aes(NumberOfBusinesses, reorder(city, NumberOfBusinesses)))+
+  geom_point()+
+  scale_x_continuous(breaks = seq(0, 30000, 2000))+
+  ggtitle("Number of Businesses by City (Top 10)")+
+  ylab("city")
+```
+
+```{r}
+ggplot(biz_city, aes(NumberOfBusinesses, NumberOfReviews))+
+  geom_point(alpha = 0.5)+
+  scale_y_continuous(breaks = seq(0, 10000000, 100000))+
+  ggtitle("Number of Reviews vs Number of Business by city")
+```
+
+Unique Categories
+```{r}
+unique_categories <- read_csv("Data/unique categories.csv")
+View(unique_categories)
+```
+
+
+We decided to focus our analysis on one of the cities with the highest number of reviews and businesses. Las Vegas, Phoenix, Toronto, Scottsdale, and Charlotte seemed like good candidates since they were in the top 5 list for both reviews and businesses. 
+
+In order to further narrow down this list, we decide to look more closely at the distribution of categories for businesses. We found out the dataset has 1293 unique categories, and one business might be assigned to more than one categories as the data schema suggests. At this point, our group thought it would be interesting to focus on Restaurants, since this type of businesses seem to have the most review and are fairly popular in the dataset. More specifically, we wanted our final choice to have a good variety of different cuisines so we could potentially compare across category. In order to evaluate the diversity of ethnic cuisines in each cities, we hand-picked a few categories that we thought were the most appropriate to describe a specific regional cuisines (such as Italian, French, Japanese, etc) and compared the distribution of these categories across cities.
