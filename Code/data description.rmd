@@ -66,13 +66,9 @@ ggplot(biz_city, aes(NumberOfBusinesses, NumberOfReviews))+
   ggtitle("Number of Reviews vs Number of Business by city")
 ```
 
-Unique Categories
-```{r}
-unique_categories <- read_csv("Data/unique categories.csv")
-View(unique_categories)
-```
-
 
 We decided to focus our analysis on one of the cities with the highest number of reviews and businesses. Las Vegas, Phoenix, Toronto, Scottsdale, and Charlotte seemed like good candidates since they were in the top 5 list for both reviews and businesses. 
 
 In order to further narrow down this list, we decide to look more closely at the distribution of categories for businesses. We found out the dataset has 1293 unique categories, and one business might be assigned to more than one categories as the data schema suggests. At this point, our group thought it would be interesting to focus on Restaurants, since this type of businesses seem to have the most review and are fairly popular in the dataset. More specifically, we wanted our final choice to have a good variety of different cuisines so we could potentially compare across category. In order to evaluate the diversity of ethnic cuisines in each cities, we hand-picked a few categories that we thought were the most appropriate to describe a specific regional cuisines (such as Italian, French, Japanese, etc) and compared the distribution of these categories across cities.
+
+
