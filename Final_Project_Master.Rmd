@@ -7,6 +7,16 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+### Import necessary libraries:
+```{r message = FALSE, warning = FALSE}
+library(dplyr)
+library(ggplot2)
+library(ggmap)
+library(readr)
+library(zoo)
+library(wordcloud)
+```
+
 ## Introduction
 
 (Carlo)
@@ -36,6 +46,70 @@ knitr::opts_chunk$set(echo = TRUE)
   - mispelled city names
   - multiple cuisines per restaurant
 
+```{r message = FALSE, warning = FALSE}
+# read in file with number of restaurants in each city by cuisine
+# note: the SQL query for this file included only a particular set of cuisines
+restaurants_by_cuisine <- read_csv("~/EDAV_project/Data/number of restaurants by cuisine.csv")
+
+# concatenate city and state columns into one column called location
+restaurants_by_cuisine <- mutate(restaurants_by_cuisine, location=paste0(city,", ",state)) %>% subset(select=c(5,1:4))
+
+# get number of restaurants for each city
+r_by_city <- restaurants_by_cuisine %>% group_by(location) %>%
+                    summarize(number= sum(NumberOfRestaurants))
+
+r_by_city_filter <- r_by_city %>% filter(number > 1000)
+
+ggplot(r_by_city_filter, aes(x = reorder(location, number), y = number)) + geom_col() + coord_flip() + ggtitle("Number of Restaurants in Cities with >1000 Restaurants") + xlab("City") + ylab("Number of Restaurants")
+
+```
+
+```{r message = FALSE, warning = FALSE}
+# Calculated weighted gini index for each city (measure of both diversity and quantity of restaurants in a city)
+
+# compute percent of restaurants in each location and category
+num_cuisines <- restaurants_by_cuisine %>% group_by(location,category) %>% summarise(count = sum(NumberOfRestaurants, na.rm = TRUE)) %>% mutate(perc = round(count/sum(count),4))
+
+gini <- function(x, na.rm = TRUE) {
+  index <- 1 - sum(x**2) 
+  return(index)
+}
+
+# calculate gini index
+num_cuisines <- num_cuisines %>% group_by(location) %>% summarise(gini = gini(perc))
+
+num_cuisines <- num_cuisines[order(-num_cuisines$gini),]
+head(num_cuisines, 10)
+
+# calculate weighted gini index
+weighted_gini_city <- plyr::join(r_by_city, num_cuisines, by="location")
+weighted_gini_city <- mutate(weighted_gini_city, weighted_gini = gini*number/sum(number))
+
+weighted_gini_city <- weighted_gini_city[order(-weighted_gini_city$weighted_gini),]
+
+head(weighted_gini_city, 10)
+
+# get cities with top 10 weighted gini index
+weighted_gini_city_filter <- weighted_gini_city %>% top_n(10, weighted_gini)
+
+ggplot(weighted_gini_city_filter, aes(x = reorder(location, weighted_gini), y = weighted_gini)) + geom_col() + coord_flip() + ggtitle("Cities with Top 10 Weighted Gini Index") + xlab("City") + ylab("Weighted Gini Index")
+
+
+```
+
+```{r fig.height = 20, fig.width = 30 message = FALSE, warning = FALSE}
+# visualizing diversity of restaurants in cities with top 10 weighted gini index
+
+top_10_cities <- unique(weighted_gini_city_filter$location)
+
+r_by_city_cuisine <- filter(restaurants_by_cuisine, location %in% top_10_cities)
+
+#refactoring location columns
+r_by_city_cuisine$location <- factor(r_by_city_cuisine$location)
+
+ggplot(r_by_city_cuisine, aes(x=category, y=NumberOfRestaurants)) + geom_col() + facet_wrap(~location, scales="free_y", ncol=3) + theme(axis.text.x = element_text(angle=90, hjust=1)) + ggtitle("Cuisines by City") + xlab("City") + ylab("Number of Restaurants")
+
+```
 
 ## Main Analysis (Exploratory Data Analysis)
 
@@ -48,6 +122,9 @@ knitr::opts_chunk$set(echo = TRUE)
 - What is the distribution of sentiment by cuisine?
 - What is the distribution of number of check-ins by cuisine?
 - What is the relationship between ratings, sentiment, and number of checkins (parallel coordinate plot)?
+
+
+
 
 
 ## Executive Summary (Presentation-style)
