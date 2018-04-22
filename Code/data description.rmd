@@ -69,6 +69,63 @@ ggplot(biz_city, aes(NumberOfBusinesses, NumberOfReviews))+
 
 We decided to focus our analysis on one of the cities with the highest number of reviews and businesses. Las Vegas, Phoenix, Toronto, Scottsdale, and Charlotte seemed like good candidates since they were in the top 5 list for both reviews and businesses. 
 
-In order to further narrow down this list, we decide to look more closely at the distribution of categories for businesses. We found out the dataset has 1293 unique categories, and one business might be assigned to more than one categories as the data schema suggests. At this point, our group thought it would be interesting to focus on Restaurants, since this type of businesses seem to have the most review and are fairly popular in the dataset. More specifically, we wanted our final choice to have a good variety of different cuisines so we could potentially compare across category. In order to evaluate the diversity of ethnic cuisines in each cities, we hand-picked a few categories that we thought were the most appropriate to describe a specific regional cuisines (such as Italian, French, Japanese, etc) and compared the distribution of these categories across cities.
+In order to further narrow down this list, we decide to look more closely at the distribution of categories for businesses. We found out the dataset has 1293 unique categories, and one business might be assigned to more than one categories as the data schema suggests. At this point, our group thought it would be interesting to focus on Restaurants, since this type of businesses seem to have the most review and are fairly popular in the dataset. 
+
+```{r message = FALSE, warning = FALSE}
+# read in file with number of restaurants in each city by cuisine
+# note: the SQL query for this file included only a particular set of cuisines
+restaurants_by_cuisine <- read_csv("C:/Users/Carlo/Desktop/EDAV Project/Data/number of restaurants by cuisine.csv")
+
+# concatenate city and state columns into one column called location
+restaurants_by_cuisine <- mutate(restaurants_by_cuisine, location=paste0(city,", ",state)) %>% subset(select=c(5,1:4))
+
+# get number of restaurants for each city
+r_by_city <- restaurants_by_cuisine %>% group_by(location) %>%
+                    summarize(number= sum(NumberOfRestaurants))
+
+r_by_city_filter <- r_by_city %>% filter(number > 1000)
+
+ggplot(r_by_city_filter, aes(x = reorder(location, number), y = number)) + geom_col() + coord_flip() + ggtitle("Number of Restaurants in Cities with >1000 Restaurants") + xlab("City") + ylab("Number of Restaurants")
+
+```
+
+From the graph above, we though Toronto would be a good option since it has the highest number of restaurants. Although we focused on businesses with the "restaurant" category, after further inspecting the dataset we realized that the most restaurants had additional "category" tags that descibed the type of food or cuisine being served. We wanted to make sure that final choice to have a good variety of different cuisines so we could potentially compare across categories. For this reason, we decided to look at the Gini index of the categories other than "Restaurant" for the restaurants in each city. The Gini index would be higher for cities with a good mix of category labels and lower for cities were many restaurants share the same category.
+
+```{r}
+# Calculated weighted gini index for each city (measure of both diversity and quantity of restaurants in a city)
+
+# compute percent of restaurants in each location and category
+num_cuisines <- restaurants_by_cuisine %>% group_by(location,category) %>% summarise(count = sum(NumberOfRestaurants, na.rm = TRUE)) %>% mutate(perc = round(count/sum(count),4))
+
+gini <- function(x, na.rm = TRUE) {
+  index <- 1 - sum(x**2) 
+  return(index)
+}
+
+# calculate gini index
+num_cuisines <- num_cuisines %>% group_by(location) %>% summarise(gini = gini(perc))
+
+num_cuisines <- num_cuisines[order(-num_cuisines$gini),]
+head(num_cuisines, 10)
+```
+
+```{r}
+# calculate weighted gini index
+weighted_gini_city <- plyr::join(r_by_city, num_cuisines, by="location")
+weighted_gini_city <- mutate(weighted_gini_city, weighted_gini = gini*number/sum(number))
+
+weighted_gini_city <- weighted_gini_city[order(-weighted_gini_city$weighted_gini),]
+
+head(weighted_gini_city, 10)
+```
+
+```{r}
+# get cities with top 10 weighted gini index
+weighted_gini_city_filter <- weighted_gini_city %>% top_n(10, weighted_gini)
+
+ggplot(weighted_gini_city_filter, aes(x = reorder(location, weighted_gini), y = weighted_gini)) + geom_col() + coord_flip() + ggtitle("Cities with Top 10 Weighted Gini Index") + xlab("City") + ylab("Weighted Gini Index")
+```
 
 
+
+In order to evaluate the diversity of ethnic cuisines in each cities, we hand-picked a few categories that we thought were the most appropriate to describe a specific regional cuisines (such as Italian, French, Japanese, etc) and compared the distribution of these categories across cities.
