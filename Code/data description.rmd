@@ -6,7 +6,7 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
 ```
 
 ```{r}
@@ -127,5 +127,66 @@ ggplot(weighted_gini_city_filter, aes(x = reorder(location, weighted_gini), y = 
 ```
 
 
-
 In order to evaluate the diversity of ethnic cuisines in each cities, we hand-picked a few categories that we thought were the most appropriate to describe a specific regional cuisines (such as Italian, French, Japanese, etc) and compared the distribution of these categories across cities.
+
+```{r}
+#visualizing diversity of restaurants in cities with top 10 weighted gini index
+
+top_10_cities <- unique(weighted_gini_city_filter$location)
+
+r_by_city_cuisine <- filter(restaurants_by_cuisine, location %in% top_10_cities)
+
+#refactoring location columns
+r_by_city_cuisine$location <- factor(r_by_city_cuisine$location)
+
+ggplot(r_by_city_cuisine, aes(x=category, y=NumberOfRestaurants)) + geom_col() + facet_wrap(~location, scales="free_y", ncol=3) + theme(axis.text.x = element_text(angle=90, hjust=1)) + ggtitle("Cuisines by City") + xlab("City") + ylab("Number of Restaurants")
+```
+
+These graphs confirmed that Toronto had the best variety in terms of cuisines so we decided to focus on this city for our main analysis.
+
+##Problems with the data
+
+Once we decided to focus our analysis on restaurants in Toronto and created a subset of the restaurant dataset, we notice two main issues with out data:
+
+###Restaurants might have more than one category
+This made the creation of a business dataset that included category or cuisine information difficult as each business would be represented multiple times for each one of its categories. We came to the conclusion that this was acceptable in the cases we wanted to compare the distribution of different cuisines; after all, we had no way to tell which cuisine or category is predominant for each restaurant, and when grouping by a specific category we wanted all the respective restaurant to be represented. On the other hand, we decided to remove duplicate businesses when category was not taken into consideration.
+
+###Neighborhood information is missing
+
+
+```{r}
+library(extracat)
+
+# reading in restaurants in Toronto file
+restaurants_in_Toronto <- read_csv("C:/Users/Carlo/Desktop/EDAV Project/restaurants in Toronto.csv")
+
+# reading in cuisine categories from text file
+cuisine_cat <- read.delim("C:/Users/Carlo/Desktop/EDAV Project/Cat_List_cuisines_only.txt", header = TRUE)
+
+# subset restaurants dataset by categories in text file
+restaurants <- restaurants_in_Toronto %>% filter(category %in% cuisine_cat$Category)
+
+# finding 20 most common cuisines
+cuisine_counts <- restaurants %>% group_by(category) %>% summarise(count=n()) %>% arrange(-count) %>% top_n(20,count)
+
+mostcommon20_cuisines <- unique(cuisine_counts$category)
+
+# filtering out all cuisines except for 20 most common cuisines in Toronto for mapping and graphing
+cuisines_toronto <- restaurants %>% filter(category %in% mostcommon20_cuisines)
+
+cuisines_toronto_dedup <- cuisines_toronto[-13] %>% distinct()
+
+visna(cuisines_toronto_dedup)
+```
+
+We notice that around 20% of businesses in Toronto were missing the variable "neighborhood", as the graph above shows.
+
+```{r}
+library(ggmap)
+library(ggthemes)
+# mapping neighborhood NA values
+
+qmplot(longitude, latitude, data = cuisines_toronto_dedup, maptype = "toner-lite", color = ifelse(is.na(neighborhood), I("NA"), I("Not NA")), size=I(0.5), alpha=I(.5)) + ggtitle("Restaurants in Toronto")  + scale_color_colorblind() + theme(legend.title=element_blank())
+```
+
+Upon further inspection, we realized that the missing "neighborhood" values seem to be clustered in specific geographic location. Judging form the graph above, entire neighborhoods seem to be missing from the dataset. We concluded that the "neighborhood" variable was not reliable and we would need to rely on the latitude and longitude variables to represent the location of a business.
