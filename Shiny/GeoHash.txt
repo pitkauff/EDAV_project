@@ -1,0 +1,19 @@
+Code,Area
+dpz833,Entertainment District
+dpz839,Entertainment District
+dpz832,Entertainment District
+dpz838,Entertainment District
+dpz836,Chinatown
+dpz834,Chinatown
+dpz831,Fashion District
+dpz837,Downtown
+dpz83e,Downtown
+dpz83d,Downtown
+dpz83g,Garden District
+dpz82g,Little Italy
+dpz82f,Little Italy
+dpz82c,West Queen
+dpz82d,King West Village
+dpz83s,Church and Wellessey
+dpz83h,Harbord Village
+dpz835,Harbord Village
