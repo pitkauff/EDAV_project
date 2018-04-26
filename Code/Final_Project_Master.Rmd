@@ -31,7 +31,7 @@ library(extracat)
 
 ## Introduction
 
-For this project, we have focused our attention on the Yelp dataset, found [here](https://www.yelp.com/dataset "Yelp Dataset"). After careful consideration of multiple dataset, we concluded that certain ones, such as Citibike or the Million Songs dataset have been overly analyzed and dissected, thereby limiting the vlaue we could add. During our search for more low-key datasets, we eventually came across the Yelp dataset. We decided to dive deeper into the dataset in the hope of discovering interesting insights and patterns for several reasons:font-size:16pxjustify
+For this project, we have focused our attention on the Yelp dataset, found [here](https://www.yelp.com/dataset "Yelp Dataset"). After careful consideration of multiple dataset, we concluded that certain ones, such as Citibike or the Million Songs dataset have been overly analyzed and dissected, thereby limiting the vlaue we could add. During our search for more low-key datasets, we eventually came across the Yelp dataset. We decided to dive deeper into the dataset in the hope of discovering interesting insights and patterns for several reasons:
 
 * Given our experience, Yelp data is widely used (including by ourselves) 
 * Yelp data is very tangible and easily relatable by a majority of the population
@@ -56,7 +56,7 @@ Throughout the project, we divided up tasks as follows:
 | Nandini Malik     | Executive Summary Manager  |
 | Mrinalini Tavag   | Main Analysis Coordinator  |  
 | Pit Kauffmann     | Chief Animator             |  
-| Carlo Provincialo | Chief Data Engineer        |  
+| Carlo Provinciali | Chief Data Engineer        |  
 
 ## Data Description
 
@@ -396,7 +396,7 @@ qmplot(longitude, latitude, data = cuisines_toronto_high, maptype = "toner-lite"
 
 #### 6) Cuisine Diversity by Area
 
-A final geographic analysis that we wanted to perform is understand which areas of Toronto have the highest culinary diversity. As mentioned in the "Data Description" section, we sresulted to creating our own areas using Python's geaohash library. We then applied a methodology similar to that relating to our effort to indentify which city has the highest cuisine diversity. Namely, we calculated the Gini index for each area and subsequently, investogated which area would have the highest non-weighted index. The result is shown below
+A final geographic analysis that we wanted to perform is understand which areas of Toronto have the highest culinary diversity. As mentioned in the "Data Description" section, we resulted to creating our own areas using Python's geaohash library. We then applied a methodology similar to that relating to our effort to indentify which city has the highest cuisine diversity. Namely, we calculated the Gini index for each area and subsequently, investogated which area would have the highest non-weighted index. The result is shown below
  
 ```{r fig.height = 6, fig.width = 9, message = FALSE, warning = FALSE}
 
