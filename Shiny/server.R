@@ -13,39 +13,38 @@ library(stringr)
 library(rlang)
 library(shiny)
 library(shinydashboard)
-library(rsconnect)
-#library(parcoords)
+library(parcoords)
 
 Sys.setenv('MAPBOX_TOKEN' = 'pk.eyJ1IjoicGl0a2F1ZmYiLCJhIjoiY2pnNG10OWkxMG5jZjJ3cWQ2N2JlbnVhayJ9.ZS4VPpOc5iBycmkEkAVf-w')
-setwd("~/Desktop/Columbia Files/Spring 2018/Exploratory Data Analysis/Project/shiny/Data")
-data <- read_csv("Toronto_revs_area.csv")#read_csv("data/Toronto_revs_area.csv")#
+#setwd("~/Desktop/Columbia Files/Spring 2018/Exploratory Data Analysis/Project/shiny/Data")
+data <- read_csv("data/Toronto_revs_area.csv")#read_csv("Toronto_revs_area.csv")#
 colnames(data)[c(10, 19)] <- c("sentiment", "rating")
 data_1 <- data %>% dplyr::group_by(id) %>% mutate(sent = mean(sentiment)) %>% mutate(rat = mean(rating))
 df <- data_1[!duplicated(data_1$id),]
 
-setwd("~/Desktop/Columbia Files/Spring 2018/Exploratory Data Analysis/Project/shiny/Data")
-categories2 <- read.delim("Cat_reduced.txt", sep = ",")#read.delim("data/Cat_reduced.txt", sep = ",")#
+#setwd("~/Desktop/Columbia Files/Spring 2018/Exploratory Data Analysis/Project/shiny/Data")
+categories2 <- read.delim("data/Cat_reduced.txt", sep = ",")#read.delim("Cat_reduced.txt", sep = ",")#
 categories1 <- prepend(levels(categories2$Category), "All")
 
-setwd("~/Desktop/Columbia Files/Spring 2018/Exploratory Data Analysis/Project/shiny/Data")
-check_in <- read_csv("restaurants checkins Toronto.csv")#read_csv("data/restaurants checkins Toronto.csv") #
+#setwd("~/Desktop/Columbia Files/Spring 2018/Exploratory Data Analysis/Project/shiny/Data")
+check_in <- read_csv("data/restaurants checkins Toronto.csv")#read_csv("restaurants checkins Toronto.csv")#
 check_in_1 <- check_in %>% group_by(check_in$business_id) %>% summarise(avg = mean(count))
 colnames(check_in_1)[1] <- "id"
 data_check_ins <- plyr::join(data, check_in_1, by = "id")
 data_check_ins <- subset(data_check_ins, !is.na(data_check_ins$avg))
-ma_rating <- as.data.frame(rollmeanr(data_check_ins[,3],7,fill = NA)) 
-names(ma_rating) <- c("ma_stars")
-data_check_ins <- cbind(data_check_ins, ma_rating)
-data_check_ins$ma_stars[is.na(data_check_ins$ma_stars)] <- mean(data_check_ins$ma_stars, na.rm = TRUE)
+#ma_rating <- as.data.frame(rollmeanr(data_check_ins[,3],7,fill = NA)) 
+#names(ma_rating) <- c("ma_stars")
+#data_check_ins <- cbind(data_check_ins, ma_rating)
+#data_check_ins$ma_stars[is.na(data_check_ins$ma_stars)] <- mean(data_check_ins$ma_stars, na.rm = TRUE)
 data_check_ins$sentiment <- as.numeric(data_check_ins$sentiment)
 df1 <- data_check_ins %>% group_by(id, category, geohash) %>% 
-  summarise(avg_checkin = mean(avg), avg_sentiment = mean(sentiment), rolling_avg_rating = mean(ma_stars))
+  summarise(avg_checkin = mean(avg), avg_sentiment = mean(sentiment), rolling_avg_rating = mean(rating))
 colnames(df1)[c(1,2,3,4,5,6)] <- c("id", "category", "geohash", "Average Check-ins", "Average Sentiment", "Average Star Rating")
 
-setwd("~/Desktop/Columbia Files/Spring 2018/Exploratory Data Analysis/Project/shiny/Data")
-restaurants <- read_csv("restaurants in Toronto.csv")#read_csv("data/restaurants in Toronto.csv")#
-setwd("~/Desktop/Columbia Files/Spring 2018/Exploratory Data Analysis/Project/shiny/Data")
-toronto = read_csv("reviews_in_Toronto.csv")#read_csv("data/reviews_in_Toronto.csv")#
+#setwd("~/Desktop/Columbia Files/Spring 2018/Exploratory Data Analysis/Project/shiny/Data")
+restaurants <- read_csv("data/restaurants in Toronto.csv")#read_csv("restaurants in Toronto.csv")#
+#setwd("~/Desktop/Columbia Files/Spring 2018/Exploratory Data Analysis/Project/shiny/Data")
+toronto = read_csv("data/reviews_in_Toronto.csv")#read_csv("reviews_in_Toronto.csv")#
 toronto <- toronto[-1]
 colnames(toronto)[1] <- "id"
 restaurants <- restaurants[restaurants$category %in% categories2$Category,]
@@ -131,8 +130,7 @@ server <- function(input, output, session) {
       plot_mapbox(closeRests, x = ~longitude, y = ~latitude, mode = "markers", type = "scatter") %>%
         add_markers(
           color = ~stars, size = I(8), alpha = 0.7, hoveron = "text",
-          text = ~paste(paste("Name: ", name),
-                        paste("Cuisine: ", category), sep = "<br />")) %>%
+          text = ~paste(paste("Cuisine: ", category), sep = "<br />")) %>%
         colorbar(title = "Average Rating <br /> &nbsp;") %>%
         layout(mapbox = list(zoom = zo - 4,
                              center = list(lat = ~median(latitude),
@@ -168,8 +166,7 @@ server <- function(input, output, session) {
       )
       
       subset_1 <- subset_1 %>% group_by(day) %>% summarise(cnt = n())
-      #subset_1 <- closeRests[rownum,]
-      
+
       subset_1 <- subset_1 %>% mutate(weekday = forcats::fct_relevel(day, "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"))
       
       ggplot(subset_1, aes(weekday, cnt)) + 
@@ -179,7 +176,7 @@ server <- function(input, output, session) {
     }
   })
   
-  output$pcp <- renderPlotly({
+  output$pcp <- renderParcoords({
     
     if (input$area == "All" & input$cuisine1 == "All") {
       subset_2 <- reactive({df1
@@ -199,17 +196,17 @@ server <- function(input, output, session) {
       need(nrow(subset_2()) != 0, paste("Oops, it looks like there is no check-in data for", input$cuisine1, "restaurants in the", input$area, "area available. Please select a different Cuisine / Area combination"))
     )
     
-    #paralell_data = subset_2()[4:6]
-    #parcoords(parallel_data, 
-    #          rownames = F, 
-    #          brushMode = "1d-axes", 
-    #          reorderable = T, 
-    #          color = list(
-    #            colorBy = "Average Star Rating", 
-    #            colorScale = htmlwidgets::JS("d3.scale.category10()")))
+    paralell_data = subset_2()[4:6]
+    parcoords(paralell_data, 
+              rownames = F, 
+              brushMode = "1d-axes", 
+              reorderable = T, 
+              color = list(
+                colorBy = "Average Star Rating", 
+                colorScale = htmlwidgets::JS("d3.scale.category10()")))
     
-    ggparcoord(subset_2(), columns = 4:6, alphaLines = .1, scale = "uniminmax") + xlab("") + 
-      ylab("Standardized Value") + theme(axis.title.y = element_text(size = 8)) 
+    #ggparcoord(subset_2(), columns = 4:6, alphaLines = .1, scale = "uniminmax") + xlab("") + 
+    #  ylab("Standardized Value") + theme(axis.title.y = element_text(size = 8)) 
     
   })
   

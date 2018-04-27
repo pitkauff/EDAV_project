@@ -13,21 +13,20 @@ library(stringr)
 library(rlang)
 library(shiny)
 library(shinydashboard)
-library(rsconnect)
-  
+
 Sys.setenv('MAPBOX_TOKEN' = 'pk.eyJ1IjoicGl0a2F1ZmYiLCJhIjoiY2pnNG10OWkxMG5jZjJ3cWQ2N2JlbnVhayJ9.ZS4VPpOc5iBycmkEkAVf-w')
-setwd("~/Desktop/Columbia Files/Spring 2018/Exploratory Data Analysis/Project/shiny/Data")
-data <- read_csv("Toronto_revs_area.csv")#read_csv("data/Toronto_revs_area.csv")#
+#setwd("~/Desktop/Columbia Files/Spring 2018/Exploratory Data Analysis/Project/shiny/Data")
+data <- read_csv("data/Toronto_revs_area.csv")#read_csv("Toronto_revs_area.csv")#
 colnames(data)[10] <- "sentiment"
 colnames(data)[19] <- "rating"
 data <- data %>% group_by(id) %>% mutate(sent = mean(sentiment))
 stuff <- data[!duplicated(data$id),]
-setwd("~/Desktop/Columbia Files/Spring 2018/Exploratory Data Analysis/Project/shiny/Data")
-geo <- read.delim("GeoHash.txt", sep = ",")#read.delim("data/GeoHash.txt", sep = ",")#
+#setwd("~/Desktop/Columbia Files/Spring 2018/Exploratory Data Analysis/Project/shiny/Data")
+geo <- read.delim("data/GeoHash.txt", sep = ",")#read.delim("GeoHash.txt", sep = ",")#
 geo <- prepend(levels(geo$Area), "All")
 cats_1 <- as.data.frame(unique(stuff$category))
-setwd("~/Desktop/Columbia Files/Spring 2018/Exploratory Data Analysis/Project/shiny/Data")
-cats_2 <- read.delim("Cat_reduced.txt", sep = ",")#read.delim("data/Cat_reduced.txt", sep = ",")#
+#setwd("~/Desktop/Columbia Files/Spring 2018/Exploratory Data Analysis/Project/shiny/Data")
+cats_2 <- read.delim("data/Cat_reduced.txt", sep = ",")#read.delim("Cat_reduced.txt", sep = ",")#
 categories_2 <- sort(intersect(cats_1$`unique(stuff$category)`, cats_2$Category))
 categories_1 <- prepend(sort(categories_2), "All")
 
@@ -95,27 +94,27 @@ ui <- dashboardPage(skin = "yellow",
           h2("Welcome to the Toronto Restaurant Explorer", style = "font-weight: bold"),
           p(HTML(paste0('For this project, we have focused our attention on the Yelp dataset, found ',
                         a(href = 'https://www.yelp.com/dataset', 'here. '), 
-                        "After careful consideration of multiple dataset, we concluded that
-                        certain ones, such as Citibike or the Million Songs dataset have been
-                        overly analyzed and dissected, thereby limiting the vlaue we could add. During our 
-                        search for more low-key datasets, we eventually came across the Yelp dataset. We decided
-                        to dive deeper into the dataset in the hope of discovering interesting insights and patterns
-                        for several reasons:")), align = "justify"),
+                        "After careful consideration of multiple datasets, such as Citibike 
+                        or the Million Songs dataset, we decided to use this one because it had
+                        real-life, comprehensive data which is being used by Yelp for their 
+                        business. During our search for more low-key datasets, we eventually 
+                        came across the Yelp dataset. We decided to dive deeper into the dataset
+                        in the hope of discovering interesting insights and patterns for several
+                        reasons:")), align = "justify"),
           tags$ul(tags$li("Given our experience, Yelp data is widely used (including by ourselves)"),
-                  tags$li("Yelp data is very tangible and easily relatable by a majority of teh population"),
-                  tags$li("People always struggle to find good restaurants, so we can actualy add value"),
-                  tags$li("The dataset is relatively clean and structured"), 
-                  style = "font-size:16px"),
-          p("Due to the size of the full data available (over 1000 cities across the US and Canada), we 
-            decided to focus on a specific city, namely Toronto. We will go into further detail 
-            about why we chose Toronto a little later in the presentation. Some high-level 
-            questions we attempted to answer were as follows:", align = "justify"),
+                  tags$li("Yelp data is very tangible and easily relatable by a majority of the population"),
+                  tags$li("People always struggle to find good restaurants, so we can actually add value"),
+                  tags$li("The dataset is relatively clean and structured")),
+          p("Due to the size of the full data available (over 1000 cities across the US and 
+            Canada), we decided to focus on a specific city, namely Toronto. We will go into 
+            further detail about why we chose Toronto a little later in the presentation. 
+            Some high-level questions we attempted to answer were as follows:", align = "justify"),
           width = 10,
           tags$ul(tags$li("Where are the best restaurants of a particular cuisine located?"),
                   tags$li("Which cuisines do people like the most"),
                   tags$li("Which areas have the most diverse food profile?"),
                   tags$li("Does a business with a high number of check-ins have a higher average rating?"),
-                  tags$li("Which areas have the best restaurants"),
+                  tags$li("Which areas have the best restaurants?"),
                   tags$li("How are rating and review sentiment related?"),
                   tags$li("How do elite users affect rating and customer flow?"),
                   tags$li("How do check-ins vary over the course of the week?")),
@@ -727,7 +726,7 @@ ui <- dashboardPage(skin = "yellow",
             ),
             mainPanel(
             plotlyOutput("TorontoMap", width = 800, height = 350),
-            plotlyOutput("pcp", width = 800, height = 300)
+            parcoordsOutput("pcp", width = 800, height = 300)
             ),
             fluidRow(
             )
@@ -753,7 +752,6 @@ ui <- dashboardPage(skin = "yellow",
               ),
               mainPanel(
                 plotlyOutput("TorontoFind", width = 800, height = 350),
-                #verbatimTextOutput("plotClickOutput")
                 plotOutput("plotClickOutput", width = 800, height = 300)
               ),
               fluidRow(
@@ -778,11 +776,44 @@ ui <- dashboardPage(skin = "yellow",
               ),
               fluidRow(
               )
+      ),
+      
+      tabItem(tabName = "conclusion",
+              box(
+                h2("Conclusion", style = "font-weight: bold"),
+                br(),
+                p("Lessons learned and future opportunities:", 
+                  align = "justify"),
+                tags$ul(tags$li("Working with relational databases with tables that have a 
+                                1-to-many relationship is very difficult. We experienced that when
+                                dealing with the business \"category\" field, since businesses 
+                                were often assigned more than one category and was hard to 
+                                include this useful information in one dataset without creating 
+                                duplicates. Furthermore, the categories ranged from very generic
+                                e.g. \"Food\" to very specific e.g. \"cantonese\". We feel like 
+                                there would be a lot of additional opportunities for analysis 
+                                if the categories had a hierarchical or more defined structure."),
+                        br(),
+                        tags$li("We initially wanted to include the check-in table in our 
+                                analysis. This table is supposed to show the number of customers
+                                that are \"checking-in\" to a particular business at a given time 
+                                using the app. We thought this information would be useful to 
+                                analyze the popularity of certain restaurants over time, 
+                                especially in relationship to its rating and sentiment score. 
+                                Although, we soon realized the \"check-ins\" were pre-aggregated
+                                by hour and day of the week and had no information about the day
+                                of the year, so they were not useful for our time trend analysis
+                                of sentiment/ratings."),
+                        br(),
+                        tags$li("The dataset proved to have some limitations in terms of 
+                                completeness. The most obvious example was the \"neighborhood\" 
+                                field, which as we found out was often missing. Another thing 
+                                to consider is that this dataset will only include businesses 
+                                that are registered with Yelp; while we feel like most 
+                                restaurants are probably included, other the listings for 
+                                other business categories might not.")),
+            width = 10)
       )
-      
-      
     )
-    #actionButton(inputId ="Previous", label = icon("arrow-left"), style = "margin-top: 260px; margin-left: 0px;"),
-    #actionButton(inputId ="Next", label = icon("arrow-right"), style = "margin-top: 260px; margin-left: 0px;")
   )
 )
