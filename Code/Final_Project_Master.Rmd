@@ -1,0 +1,826 @@
+---
+title: "Exploring the Toronto Restaurant Scene"
+output: 
+  html_document:
+    toc: true
+    toc_depth: 4
+    toc_float: true
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r message = FALSE, warning = FALSE}
+# import necessary libraries
+library(tidyverse)
+library(dplyr)
+library(ggplot2)
+library(ggmap)
+library(readr)
+library(zoo)
+library(wordcloud)
+library(skimr)
+library(viridis)
+library(GGally)
+library(ggthemes)
+library(parcoords)
+library(extracat)
+```
+
+## Introduction
+
+For this project, we have focused our attention on the Yelp dataset, found [here](https://www.yelp.com/dataset "Yelp Dataset"). After careful consideration of multiple datasets, such as Citibike or the Million Songs dataset, we decided to use this one because it had real-life, comprehensive data which is being used by Yelp for their business. During our search for less analyzed datasets, we eventually came across the Yelp dataset. We decided to dive deeper into the dataset in the hope of discovering interesting insights and patterns for several reasons:
+
+* Given our experience, Yelp data is widely used (including by ourselves) 
+* Yelp data is very tangible and easily relatable to a majority of the population
+* People always struggle to find good restaurants, so we can actually add value
+* The dataset is relatively clean and structured
+
+Due to the size of the full data available (over 1000 cities across the US and Canada), we decided to focus on a specific city, namely Toronto. We will go into further detail about why we chose Toronto a little later in the presentation. Some high-level questions we attempted to answer were as follows:
+
+* Where are the best restaurants of a particular cuisine located?
+* Which cuisines do people like the most?
+* Which areas have the most diverse food profile?
+* Does a business with a high number of check-ins have a higher average rating?
+* Which areas have the best restaurants?
+* How are rating and review sentiment related?
+* How do elite users affect review sentiment?
+* How do check-ins vary over the course of the week?
+
+Throughout the project, we divided up tasks as follows:
+
+| Name              | Task                       | 
+|-------------------|----------------------------|
+| Nandini Malik     | Executive Summary Manager  |
+| Mrinalini Tavag   | Main Analysis Coordinator  |  
+| Pit Kauffmann     | Chief Animator             |  
+| Carlo Provinciali | Chief Data Engineer        |  
+
+## Data Description
+
+#### Data Collection Overview
+For this project, we decided to use the Yelp Open Dataset, which contains 5,200,000 reviews and information about 174,000 businesses across 11 different metropolitan areas. This dataset provides a number of attributes such as hours of a business, location, star rating of each individual review, and business categories. The data was downloaded in SQL format and imported into a local database for preprocessing. Here's a representation of the schema:
+![Yelp Dataset schema](https://s3-media3.fl.yelpcdn.com/assets/srv0/engineering_pages/f4456a01e74a/assets/img/dataset/yelp_dataset_schema.png)
+
+We decided to start our exploration by focusing on the business table. Particularly, we were interested in the distribution of businesses by location and category. Since the initial dataset contains several GBs worth of data, we figured we could find a way to subset it by business location and category to make it more manageable. 
+
+#### Data Overview: Part 1
+For this purpose, we plotted the distribution of businesses by city along with the number of reviews. We immediately noticed that the distribution of these two variables was not homogeneous across cities; a few cities had significantly more reviews and businesses than others (unsurprisingly, these two variables are strongly correlated with each other). 
+
+```{r message = FALSE, warning = FALSE}
+biz_city <- read_csv("~/EDAV_Project/Data/businesses and reviews by city.csv")
+```
+
+```{r, fig.height = 10}
+
+ggplot(biz_city, aes(NumberOfReviews, reorder(city, NumberOfReviews)))+
+  geom_point()+
+  scale_x_continuous(breaks = seq(0, 10000000, 100000))+
+  ggtitle("Number of Reviews by City")+
+  ylab("City")+
+  xlab("Number of Reviews")
+```
+
+```{r message = FALSE, warning = FALSE}
+
+ggplot(biz_city[1:10,], aes(NumberOfReviews, reorder(city, NumberOfReviews)))+
+  geom_point()+
+  scale_x_continuous(breaks = seq(0, 10000000, 100000))+
+  ggtitle("Number of Reviews by City (Top 10)")+
+  ylab("City")+
+  xlab("Number of Reviews")
+```
+
+```{r, fig.height = 10, message = FALSE, warning = FALSE}
+
+ggplot(biz_city, aes(NumberOfBusinesses, reorder(city, NumberOfBusinesses)))+
+  geom_point()+
+  scale_x_continuous(breaks = seq(0, 30000, 2000))+
+  ggtitle("Number of Businesses by City")+
+  ylab("City")+
+  xlab("Number of Businesses")
+```
+
+```{r message = FALSE, warning = FALSE}
+
+ggplot(biz_city[1:10,], aes(NumberOfBusinesses, reorder(city, NumberOfBusinesses)))+
+  geom_point()+
+  scale_x_continuous(breaks = seq(0, 30000, 2000))+
+  ggtitle("Number of Businesses by City (Top 10)")+
+  ylab("City")+
+  xlab("Number of Businesses")
+```
+
+#### Data Overview: Part 2
+
+```{r message = FALSE, warning = FALSE}
+
+ggplot(biz_city, aes(NumberOfBusinesses, NumberOfReviews))+
+  geom_point(alpha = 0.5)+
+  scale_y_continuous(breaks = seq(0, 10000000, 100000))+
+  ggtitle("Number of Reviews vs. Number of Businesses by City")+
+  xlab("Number of Businesses")+
+  ylab("Number of Reviews")
+```
+
+We decided to focus our analysis on one of the cities with the highest number of reviews and businesses. Las Vegas, Phoenix, Toronto, Scottsdale, and Charlotte seemed like good candidates since they were in the top 5 list for both reviews and businesses. 
+
+In order to further narrow down this list, we decide to look more closely at the distribution of categories for businesses. We found out the dataset has 1293 unique categories, and one business might be assigned to more than one category as the data schema suggests. At this point, our group thought it would be interesting to focus on Restaurants, since this type of business seemed to have the most reviews and is fairly popular in the dataset. 
+
+#### Data Overview: Part 3
+
+```{r message = FALSE, warning = FALSE}
+
+# read in file with number of restaurants in each city by cuisine
+# note: the SQL query for this file included only a particular set of cuisines
+restaurants_by_cuisine <- read_csv("~/EDAV_Project/Data/number of restaurants by cuisine.csv")
+
+# concatenate city and state columns into one column called location
+restaurants_by_cuisine <- mutate(restaurants_by_cuisine, location=paste0(city,", ",state)) %>%
+  subset(select=c(5,1:4))
+
+# get number of restaurants for each city
+r_by_city <- restaurants_by_cuisine %>% 
+  group_by(location) %>%
+  summarize(number= sum(NumberOfRestaurants))
+
+r_by_city_filter <- r_by_city %>% filter(number > 1000)
+
+ggplot(r_by_city_filter, aes(x = reorder(location, number), y = number)) + geom_col() + coord_flip() + ggtitle("Number of Restaurants in Cities with >1000 Restaurants") + xlab("City") + ylab("Number of Restaurants")
+```
+
+From the graph above, we though Toronto would be a good option since it has the highest number of restaurants. Although we focused on businesses with the "restaurant" category, after further inspecting the dataset we realized that the most restaurants had additional "category" tags that descibed the type of food or cuisine being served. We wanted to make sure that final choice to have a good variety of different cuisines so we could potentially compare across categories. 
+
+#### Data Overview: Part 4
+
+For this reason, we decided to look at the Gini index of the categories other than "Restaurant" for the restaurants in each city. The generic Gini Index is calculated as follows:
+
+$$Gini = 1 - \sum_{y \in Cuisine} p_y^2$$
+
+where $p_y$ is the fraction of all restaurants that belong to cuisine type y. In order to incorporate the size of the dataset for each city, we developed the weighted Gini Index shown in the table and graph below. That version of the Index was calculated by simply scaling the generic Index by the total number of restaurants in each city, which benfits cities with more distinct restaurants.
+
+The Gini index would hence, be higher for cities with a good mix of category labels and lower for cities where many restaurants share the same category.
+
+```{r message = FALSE, warning = FALSE}
+
+# Calculated weighted gini index for each city (measure of both diversity and quantity of restaurants in a city)
+
+# compute percent of restaurants in each location and category
+num_cuisines <- restaurants_by_cuisine %>% 
+  group_by(location,category) %>% 
+  summarise(count = sum(NumberOfRestaurants, na.rm = TRUE)) %>% 
+  mutate(perc = round(count/sum(count),4))
+
+gini <- function(x, na.rm = TRUE) {
+  index <- 1 - sum(x**2) 
+  return(index)
+}
+
+# calculate gini index
+num_cuisines <- num_cuisines %>% 
+  group_by(location) %>% 
+  summarise(gini = gini(perc))
+
+num_cuisines <- num_cuisines[order(-num_cuisines$gini),]
+head(num_cuisines, 10)
+```
+
+```{r message = FALSE, warning = FALSE}
+
+# calculate weighted gini index
+weighted_gini_city <- plyr::join(r_by_city, num_cuisines, by="location")
+weighted_gini_city <- mutate(weighted_gini_city, weighted_gini = gini*number/sum(number))
+
+weighted_gini_city <- weighted_gini_city[order(-weighted_gini_city$weighted_gini),]
+
+head(weighted_gini_city, 10)
+```
+
+```{r message = FALSE, warning = FALSE}
+
+# get cities with top 10 weighted gini index
+weighted_gini_city_filter <- weighted_gini_city %>% top_n(10, weighted_gini)
+
+ggplot(weighted_gini_city_filter, aes(x = reorder(location, weighted_gini), y = weighted_gini)) +
+  geom_col() + 
+  coord_flip() + 
+  ggtitle("Cities with Top 10 Weighted Gini Index") + 
+  xlab("City") + 
+  ylab("Weighted Gini Index")
+```
+
+#### Data Overview: Part 5
+
+In order to evaluate the diversity of ethnic cuisines in each cities, we hand-picked a few categories that we thought were the most appropriate to describe a specific regional cuisines (such as Italian, French, Japanese, etc) and compared the distribution of these categories across cities.
+
+```{r fig.height = 6, fig.width = 9, message = FALSE, warning = FALSE}
+#visualizing diversity of restaurants in cities with top 10 weighted gini index
+
+top_10_cities <- unique(weighted_gini_city_filter$location)
+
+r_by_city_cuisine <- filter(restaurants_by_cuisine, location %in% top_10_cities)
+
+#refactoring location columns
+r_by_city_cuisine$location <- factor(r_by_city_cuisine$location)
+
+ggplot(r_by_city_cuisine, aes(x=category, y=NumberOfRestaurants)) + 
+  geom_col() + 
+  facet_wrap(~location, scales="free_y", ncol=3) + 
+  theme(axis.text.x = element_text(angle = 90, hjust=1)) + 
+  ggtitle("Cuisines by City") + 
+  xlab("City") + 
+  ylab("Number of Restaurants")
+```
+
+These graphs confirmed that Toronto had the best variety in terms of cuisines so we decided to focus on this city for our main analysis.Once we decided to focus our analysis on restaurants in Toronto and created a subset of the restaurant dataset, we notice two main issues with out data.
+
+## Analysis of Data Quality
+
+#### Problem 1: Restaurants might have more than one category
+This made the creation of a business dataset that included category or cuisine information difficult as each business would be represented multiple times for each one of its categories. We came to the conclusion that this was acceptable in the cases we wanted to compare the distribution of different cuisines; after all, we had no way to tell which cuisine or category is predominant for each restaurant, and when grouping by a specific category we wanted all the respective restaurants to be represented. On the other hand, we decided to remove duplicate businesses when category was not taken into consideration.
+
+#### Problem 2: Neighborhood information is missing
+```{r message = FALSE, warning = FALSE}
+
+# reading in restaurants in Toronto file
+restaurants_in_Toronto <- read_csv("~/EDAV_Project/restaurants in Toronto.csv")
+
+# reading in cuisine categories from text file
+cuisine_cat <- read.delim("~/EDAV_Project/Data/Cat_List_cuisines_only.txt", header = TRUE)
+
+# subset restaurants dataset by categories in text file
+restaurants <- restaurants_in_Toronto %>% filter(category %in% cuisine_cat$Category)
+
+# finding 20 most common cuisines
+cuisine_counts <- restaurants %>% 
+  group_by(category) %>% 
+  summarise(count=n()) %>% 
+  arrange(-count) %>% 
+  top_n(20,count)
+
+mostcommon20_cuisines <- unique(cuisine_counts$category)
+
+# filtering out all cuisines except for 20 most common cuisines in Toronto for mapping and graphing
+cuisines_toronto <- restaurants %>% filter(category %in% mostcommon20_cuisines)
+
+cuisines_toronto_dedup <- cuisines_toronto[-13] %>% distinct()
+
+visna(cuisines_toronto_dedup)
+```
+
+We notice that around 20% of businesses in Toronto were missing the variable "neighborhood", as the graph above shows.
+
+```{r message = FALSE, warning = FALSE}
+
+# mapping neighborhood NA values
+
+qmplot(longitude, latitude, data = cuisines_toronto_dedup, maptype = "toner-lite", color = ifelse(is.na(neighborhood), I("NA"), I("Not NA")), size=I(0.5), alpha=I(.5)) +
+  ggtitle("Restaurants in Toronto")  + 
+  scale_color_colorblind() + 
+  theme(legend.title=element_blank())
+```
+
+Upon further inspection, we realized that the missing "neighborhood" values seem to be clustered in specific geographic location. Judging form the graph above, entire neighborhoods seem to be missing from the dataset. We concluded that the provided "neighborhood" variable was not reliable and we would need to rely on the latitude and longitude variables to represent the location of a business. However, since "neighborhood" is a simple way of clustering restaurants and simplify our analysis, we decided to create our own neighborhoods using the following method:
+
+* We manually selected certain areas in downtown Toronto and assigned them unique area codes using python's [geohash library](http://geohash.gofreerange.com/ "Python Geohash Description")  
+* We subsequentially mapped each restaurant to an area code and assigned it a "neighborhood name"
+* The code can be found [here](https://github.com/thegreatwarlo/EDAV_project/blob/master/Code/geo_hash.py "Python Geohash")
+
+## Main Analysis (Exploratory Data Analysis)
+
+Our exploratory data analysis of the Yelp Toronto restaurant dataset can be divided into two sections: 1) analysis of geographical distribution of restaurants and 2) analysis of review sentiment and its correlation with rating.
+
+### Geographical Distribution of Restaurants
+
+We started our analysis of Toronto restaurants by filtering out all restaurants except those categorized under the top 20 most common cuisines. An initial visualization of the geographical distribution of these restaurants showed that restaurants were most concentrated in the downtown area and became more sparsely distributed the further one moves away from the downtown area. 
+
+```{r message = FALSE, warning = FALSE}
+
+cuisines_toronto_dedup <- cuisines_toronto[-13] %>% distinct()
+
+qmplot(longitude, latitude, data = cuisines_toronto_dedup, maptype = "toner-lite", color = I("red"), size=I(0.5), alpha=I(.5)) + ggtitle("Restaurants in Toronto")
+```
+
+To fully understand the geographical distribution of restaurants around Toronto and the various factors that might affect it, we explored the other attributes of the restaurants available to us from the dataset:
+
+#### 1) Geographic Distribution of Restaurants in Toronto by Cuisine
+
+Most cuisines follow the same general pattern of being more concentrated in the downtown area and more dispersed outside of that area. However, the Chinese restaurant distribution is noticeable in that it has two separate areas of concentration, one in the downtown area and another a considerable distance to the northeast of the downtown area.
+
+```{r message = FALSE, warning = FALSE}
+
+qmplot(longitude, latitude, data = cuisines_toronto, maptype = "toner-lite", color=I("red"), size=I(0.05), alpha=I(0.5)) + ggtitle("Restaurants in Toronto by Cuisine") + facet_wrap(~category)
+```
+
+#### 2) Geographic Distribution of Restaurants in Toronto by Rating
+
+For the purposes of mapping, "Bad"" restaurants had a rating below 3 stars, and "Good"" restaurants had a rating greater than or equal to 3 stars. "Very Bad"" restaurants had less than 2 stars and "Very Good" restaurants had a 4-star rating or higher. There is no noticeable pattern in the distribution of restaurants by rating that departs from the general pattern of restaurant distribution.
+
+```{r message = FALSE, warning = FALSE}
+
+cuisines_toronto_rating_dedup <- cuisines_toronto_dedup %>% 
+  mutate(rating = cut(stars, breaks=c(0,2,3,4,5), labels=c("Very Bad","Bad","Good","Very Good")))
+
+qmplot(longitude, latitude, data = cuisines_toronto_rating_dedup, maptype = "toner-lite", color = I("red"), size=I(0.5), alpha=I(.5)) + ggtitle("Restaurants in Toronto by Rating") + facet_wrap(~rating)
+```
+
+#### 3) Geographic Distribution of Restaurants with "Good" and "Very Good" Rating by Cuisine
+
+There is no discernible departure from the general restaurant distribution by cuisine when only "Good" and "Very Good" restaurants were visualized.
+
+```{r message = FALSE, warning = FALSE}
+
+cuisines_toronto_rating <- cuisines_toronto %>% 
+  mutate(rating = cut(stars, breaks=c(0,2,3,4,5), labels=c("Very Bad","Bad","Good","Very Good")))
+
+cuisines_toronto_good <- cuisines_toronto_rating %>% 
+  filter(rating %in% c("Good","Very Good"))
+
+qmplot(longitude, latitude, data = cuisines_toronto_good, maptype = "toner-lite", color=I("red"), size=I(0.05), alpha=I(0.5)) + ggtitle('"Good" and "Very Good" Restaurants in Toronto by Cuisine') + facet_wrap(~category)
+```
+
+#### 4) Geographic Distribution of Restaurants in Toronto by Number of Check-ins
+
+In order to visualize this distribution, we had to join check-in data with restaurant data, and we decided to remove all the rows that had NA values in the check-in column. Less than 44 check-ins was considered "Low", and 44 check-ins or more was considered "High" for the purposes of these mappings. Less than 13 check-ins was considered "Very Low" and 137 check-ins or more was considered "Very High". The restaurant distributions by number of check-ins showed the same general pattern as all restaurants.  
+
+```{r message = FALSE, warning = FALSE}
+# reading in check-in data
+check_in <- read_csv("~/EDAV_project/Data/restaurants checkins Toronto.csv")
+
+check_in <- check_in %>% 
+  group_by(check_in$business_id) %>% 
+  summarise(n_checkins = sum(count, na.rm=TRUE))
+
+colnames(check_in)[1] <- "id"
+
+cuisines_toronto_check_ins_dedup <- plyr::join(cuisines_toronto_rating_dedup, check_in, by = "id")
+
+# checking for missing values
+skim(cuisines_toronto_check_ins_dedup$n_checkins)
+
+# remove restaurants where n_checkins is na
+cuisines_toronto_check_ins_dedup <- cuisines_toronto_check_ins_dedup[!is.na(cuisines_toronto_check_ins_dedup$n_checkins),]
+
+# using summary provided by skim to choose cutoff points for checkin categories
+skim(cuisines_toronto_check_ins_dedup$n_checkins)
+
+cuisines_toronto_check_ins_dedup <- cuisines_toronto_check_ins_dedup %>% mutate(checkin_cat = cut(n_checkins, breaks=c(-Inf,13,44,137,Inf), labels=c("Very Low","Low","High","Very High")))
+
+qmplot(longitude, latitude, data = cuisines_toronto_check_ins_dedup, maptype = "toner-lite", color = I("red"), size=I(0.5), alpha=I(.5)) + ggtitle("Restaurants in Toronto by Number of Check-ins") + facet_wrap(~checkin_cat)
+```
+
+#### 5) Geographic Distribution of Restaurants with "High" and "Very High" Number of Check-ins by cuisine
+
+Here, again, there is no discernible departure from the general restaurant distribution by cuisine when only restaurants with "High" or "Very High" number of check-ins were visualized.
+
+```{r message = FALSE, warning = FALSE}
+
+# joining checkin data with cuisines_toronto_rating
+cuisines_toronto_check_ins <- plyr::join(cuisines_toronto_rating, check_in, by = "id")
+
+# checking for missing values
+skim(cuisines_toronto_check_ins$n_checkins)
+
+# remove restaurants where n_checkins is na
+cuisines_toronto_check_ins <- cuisines_toronto_check_ins[!is.na(cuisines_toronto_check_ins$n_checkins),]
+
+cuisines_toronto_check_ins <- cuisines_toronto_check_ins %>% mutate(checkin_cat = cut(n_checkins, breaks=c(-Inf,5,30,110,Inf), labels=c("Very Low","Low","High","Very High"))) 
+
+cuisines_toronto_high <- cuisines_toronto_check_ins %>% 
+  filter(checkin_cat %in% c("High","Very High"))
+
+qmplot(longitude, latitude, data = cuisines_toronto_high, maptype = "toner-lite", color=I("red"), size=I(0.05), alpha=I(0.5)) + ggtitle('Restaurants in Toronto with "High" and "Very High" Number of Check-ins by Cuisine') + facet_wrap(~category)
+```
+
+#### 6) Cuisine Diversity by Area
+
+A final geographic analysis that we wanted to perform is understand which areas of Toronto have the highest culinary diversity. As mentioned in the "Data Description" section, we resulted to creating our own areas using Python's geaohash library. We then applied a methodology similar to that relating to our effort to indentify which city has the highest cuisine diversity. Namely, we calculated the Gini index for each area and subsequently, investogated which area would have the highest non-weighted index. The result is shown below
+ 
+```{r fig.height = 6, fig.width = 9, message = FALSE, warning = FALSE}
+
+# Get review data with geocoded area attached
+reviews_area <- read_csv("~/EDAV_Project/Data/Toronto_revs_area.csv")
+
+# Get cuisine frequencies within each area
+revs_freq <- reviews_area %>% 
+  group_by(geohash, category) %>% 
+  summarise(count = n()) %>% 
+  mutate(perc = round(count/sum(count),4))
+
+gini <- function(x, na.rm = TRUE) {
+  index <- 1 - sum(x**2)
+  return(index)
+}
+
+# Get the gini index for each area
+div_area <- revs_freq %>% 
+  group_by(geohash) %>% 
+  summarise(gini = gini(perc))
+
+coords <- reviews_area %>% 
+  group_by(geohash) %>% 
+  summarise(median_lat = median(latitude), median_lon = median(longitude)) 
+
+reviews_area <- plyr::join(div_area, coords, by = "geohash")
+
+ggplot(div_area, aes(reorder(geohash, gini), gini)) + 
+  geom_col(color = "darkblue", fill = "darkblue") + 
+  xlab("Area") + 
+  ylab("Cuisine Diversity Score") + 
+  coord_flip() + 
+  ggtitle("Culinary Diversity by Area")
+
+#ggsave(filename = "fig17.2.png", width = 4, height = 4, dpi = 200)
+```
+
+We can observe that all 10 areas are about equally diverse, with their Gini index ranging from 90% to 97%. However we can see that one area, namely the Garden District has a significantly lower diversity score (80%) than the remining areas. Further analysis would be require to identify what could be the reasons for this patterns.
+
+### Sentiment, rating, and check-ins
+
+Our next step was to go deeper into the analysis of the popularity of the restaurants in Toronto. We attempted to gauge the popularity of restaurants and cuisines using ratings, check-ins, and sentiment scores of reviews. We obtained a sentiment score for each review (a value between -1 and 1) using Python's [TextBlob library](http://textblob.readthedocs.io/en/dev/quickstart.html#sentiment-analysis "Python TextBlob") , and we used these values to get the average sentiment score for each restaurant. 
+
+#### Relationship between rating, number of check-ins and average sentiment
+
+First, we visualized the relationship between the average number of stars, the number of check ins and the average sentiment. The plot below shows a positive correlation between rating and average sentiment, but the number of check-ins tends to be low across all rating and sentiment levels. 
+
+```{r message = FALSE, warning = FALSE}
+
+# add sentiment and check-in data to restaurants dataset
+
+# adding in check-in data
+restaurants_full <- plyr::join(restaurants, check_in, by = "id")
+
+# reading in sentiment data
+sentiment_toronto <- read_csv("~/EDAV_project/Data/sentiment_reviews_Toronto.csv")
+
+# rename column name with sentiment value
+colnames(sentiment_toronto)[11] <- "sentiment"
+
+# get average sentiment for each restaurant
+mean_sentiment <- sentiment_toronto %>% 
+  group_by(business_id) %>% 
+  summarise(avg_sentiment = mean(sentiment))
+
+# add sentiment information to restaurants dataset
+colnames(mean_sentiment)[1] <- "id"
+restaurants_full <- plyr::join(restaurants_full, mean_sentiment, by = "id")
+
+restaurants_full_dedup <- restaurants_full[-13] %>% distinct()
+
+# remove outlier in n_checkins
+restaurants_full_dedup <- restaurants_full_dedup %>% subset(n_checkins<2500) 
+
+# remove na values in n_checkins and avg_sentiment
+restaurants_full_dedup <- restaurants_full_dedup[!is.na(restaurants_full_dedup$n_checkins),]
+restaurants_full_dedup <- restaurants_full_dedup[!is.na(restaurants_full_dedup$avg_sentiment),]
+
+parallel_data <- restaurants_full_dedup[,c(10,13,14)]
+
+colnames(parallel_data)[1] <- "Average Stars"
+colnames(parallel_data)[2] <- "Number of Check-ins"
+colnames(parallel_data)[3] <- "Average Sentiment"
+
+# parallel coordinate plot of rating, sentiment, and check-ins
+parcoords(parallel_data, 
+          rownames = F, 
+          brushMode = "1d-axes", 
+          reorderable = T, 
+          color = list(colorBy = "Average Stars", 
+                       colorScale = htmlwidgets::JS("d3.scale.category10()")))
+```
+
+
+In the following bar chart, we can clearly see a positive correlation between average sentiment scores and ratings:
+
+```{r message = FALSE, warning = FALSE}
+
+# read in dataset of all reviews for Toronto businesses, text_1 column is the sentiment value 
+# sentiment value calculated using python library
+toronto_reviews = read_csv("~/EDAV_project/Data/sentiment_reviews_Toronto.csv")
+
+# trim columns of review data frame
+toronto_reviews <- toronto_reviews[c("business_id", "date", "stars", "elite", "text_1")]
+
+avg_sent <- toronto_reviews %>% 
+  group_by(stars) %>% 
+  summarize(mean = mean(text_1, na.rm = TRUE))
+
+ggplot(avg_sent, aes(stars, mean)) + 
+  geom_col(color = "darkblue", fill = "darkblue") + 
+  xlab("Stars") +
+  ylab("Average Review Sentiment") + 
+  ggtitle("Average Review Sentiment by Rating Category")
+```
+
+Having established a strong correlation between sentiment and rating, we wanted to see sentiment and rating distributions for different cuisines. 
+
+We visualized the distribution of restaurants by ratings under each cuisine. For the purpose of this analysis, we restricted our analysis to the top 20 most frequent cuisines only. In general, the ratings distributions for all cuisines were left skewed, with peaks at either 4 or 5 stars. We saw that French, Mediterranean, Middle Eastern, and Tapas Bars were among the highly rated cuisines. 
+
+```{r message = FALSE, warning = FALSE}
+
+# read in restaurants in Toronto file as dataframe
+restaurants <- read_csv("~/EDAV_project/restaurants in Toronto.csv")
+
+# read in sentiment information
+toronto = read_csv("~/EDAV_project/Data/sentiment_reviews_Toronto.csv")
+
+# read in categories from text file
+relevant_cats <- read.delim("~/EDAV_project/Data/Cat_List_cuisines_only.txt", header = TRUE)
+
+# subset restaurants dataset by categories in text file
+restaurants <- restaurants[restaurants$category %in% relevant_cats$Category,]
+
+# obtain mapping of business ids and categories
+categories <- restaurants[c(1,13)]
+
+# remove user id from toronto sentiment dataset and rename "business id" column as "id"
+data <- toronto[-1]
+colnames(data)[1] <- "id"
+
+# join toronto sentiment dataset (without user id) with restaurants dataset which has rating and other info
+revs_cat <- plyr::join(data, restaurants, by = "id")
+
+# remove rows with missing values in category column
+revs_cat <- subset(revs_cat, !is.na(revs_cat$category))
+
+# refactor category and stars column
+revs_cat$category <- as.factor(revs_cat$category)
+revs_cat$stars <- as.factor(revs_cat$stars)
+
+# obtained counts by category and number of stars and percent for each star level within a category
+temp <- revs_cat %>% 
+  group_by(revs_cat$category, revs_cat$stars) %>% 
+  summarise(cnt = n()) %>%
+  mutate(perc = round(cnt/sum(cnt),4))
+
+most_freq <- revs_cat %>% 
+  group_by(revs_cat$category) %>% 
+  summarise(cnt = n())
+
+top_20 <- head(most_freq[order(-most_freq$cnt),], 20)[1]
+subset <- revs_cat[revs_cat$category %in% top_20$`revs_cat$category`,]
+
+temp <- subset %>% 
+  group_by(subset$category, subset$stars) %>% 
+  summarise(cnt = n()) %>%
+  mutate(perc = round(cnt/sum(cnt),4))
+
+# plotting top 20 cuisine types
+ggplot(data = temp, aes(temp$`subset$stars`, perc)) + 
+  geom_col(fill = "darkblue", colour = "black") + 
+  labs(y = "Cuisine Type", x = "Stars") + 
+  coord_flip() + 
+  facet_wrap(~`subset$category`, scales = "free") + 
+  ggtitle("Stars by Cuisine Type")
+```
+
+Below we visualized the distribution of review sentiment scores for each of the top 20 most frequent cuisines using boxplots. The review sentiment scores are generally centered at a sentiment score between 0.2 and 0.3 and show a similar spread for all cuisines. The sentiment scores for the French cuisine sentiment scores are more tightly distributed about its center (which is on the higher end of the 0.2-0.3 interval) than other cuisines.
+
+```{r message = FALSE, warning = FALSE, fig.width = 7, fig.height = 5}
+
+ggplot(subset, aes(category, text_1)) + 
+  geom_boxplot() + 
+  coord_flip() + 
+  labs(y = "Review Sentiment", x = "Cuisine Type") + 
+  ggtitle("Review Sentiment of Top 20 Cuisines")
+```
+
+We then took a closer at the actual reviews themselves and see what insights we can gain from them. In order to do so, we reverted to a traditional method, term frequency, to see which words would most appear in certain reviews. For this purpose, we defined two categories of reviews: those that have an average sentiment above 0.5 ("Good Reviews") and below -0.5 ("Bad Reviews"). We subsequently created a set of wordclouds to understand which words are most prevalent in each type of review and hence potentially predictive of the type of review. The result can be seen below
+
+```{r message = FALSE, warning = FALSE}
+
+setwd("~/EDAV_project/Data")
+good_revs <- read_csv("good_revs.csv")
+bad_revs <-read_csv("bad_revs.csv")
+set.seed(1234)
+
+wordcloud(words = good_revs$word, freq = good_revs$freq, min.freq = 300,
+          max.words=100, random.order=FALSE, rot.per=0.35, 
+          colors=brewer.pal(8, "Dark2"))
+
+wordcloud(words = bad_revs$word, freq = bad_revs$freq, min.freq = 5000,
+          max.words=100, random.order=FALSE, rot.per=0.35, 
+          colors=brewer.pal(8, "Dark2"))
+```
+
+As expected, good reviews include words such as "great", "excellent" and "awesome", while bad reviews contain more negative words, such as "worst", "terrible" and "disappointed". Althouth we expected a result akin to this, we did not predict such a strong polarization between reviews, especially given that "Bad Reviews" are extremely rare, as seen below:
+
+```{r message = FALSE, warning = FALSE}
+
+ggplot(toronto, aes(toronto$text_1)) + 
+  geom_histogram(aes(y = (..count..) / sum(..count..)), bins = 20, fill = "darkblue", color =
+  "black") + 
+  xlab("Average Review Sentiment") + 
+  ylab("Frequency") + 
+  ggtitle("Histogram of Review Sentiment")
+
+#ggsave(filename = "fig22.1.png", width = 4, height = 4, dpi = 200)
+```
+
+We finally took a look at elite users. Yelp elite users, akin to Piazza super users for this class, are particular Yelp members who post reviews often, check-in often and answer questions frequently. We wanted to see if maybe elite users tend to disporportionally post either good or bad reviews, compared to the average user. The picture below shows one such attempt, plotting teh average review sentiment for reviews posted by elite users vs. non-elite users
+
+```{r message = FALSE, warning = FALSE}
+
+elite_sent <- toronto %>% 
+  group_by(elite) %>% 
+  summarize(mean = mean(text_1, na.rm = TRUE))
+
+ggplot(elite_sent, aes(elite, mean)) +
+  geom_col(color = "darkblue", fill = "darkblue", width = 0.5) + 
+  xlab("Elite") + 
+  ylab("Average Review Sentiment") + 
+  ggtitle("Average Sentiment Scores of Reviews by Non-Elite Users vs. Elite Users")
+```
+
+We can see there is no discernable difference in the average review sentiment of elite users when compared to non-elite users. Our next task was to figure out, given that the elite reviews generally have the same sentiment as non-elite reviews, whether or not elite user reviews would have a subsequent effect on restaurant ratings. Specifically, we wanted to figure out whether a good review by an elite user would result in an increase in sentiment of subsequent reviews by non-elite users. In order to do so, we decided to create a case study, as shown next.
+
+#### Case Study: Pai Northern Thai Kitchen
+
+In order to investigate a poential relationship between elite reviews and subsequent review sentiment more closely, we decided to look more closely at business with the most reviews in the Toronto restaurant dataset (Pai Northern Thai Kitchen in Toronto's Entertainment District). We then plotted the progession of the restaurant's sentiment over the time horizon provided in the dataset, and highlighted and elite review, in order to see whether or not there was an effect. This can be seen in the graph to the right below.
+
+```{r message = FALSE, warning = FALSE}
+
+# read in dataset of all reviews for Toronto businesses, text_1 column is the sentiment value 
+# sentiment value calculated using python library
+toronto = read_csv("~/EDAV_project/Data/sentiment_reviews_Toronto.csv")
+
+# obtained number of reviews for each business id
+most_rev <- data.frame(table(toronto$business_id)) 
+
+# arranged business ids in decreasing order of number of reviews and converted business id column to character
+most_rev <- most_rev[order(-most_rev$Freq),]
+most_rev$Var1 <- as.character(most_rev$Var1)
+
+# obtained business id with greatest number of reviews
+var <- most_rev$Var1[1]
+
+# obtain all reviews for business id with greatest number of reviews and order by date
+reviews <- subset(toronto, business_id == var)
+reviews <- reviews[order(as.Date(reviews$date, format="%Y-%m-%d")),]
+
+# add year and month columns
+reviews$year <- as.numeric(format(as.Date(reviews$date, format="%Y-%m-%d"),"%Y"))
+reviews$month <- as.numeric(format(as.Date(reviews$date, format="%Y-%m-%d"),"%m"))
+
+# convert elite column to dummy variable
+reviews$elite <- as.factor(reviews$elite)
+levels(reviews$elite) <- c(0,1)
+
+# trim columns of review data frame
+reviews <- reviews[c("business_id", "date", "stars", "elite", "text_1", "year", "month")]
+reviews$date <- as.Date(reviews$date)
+```
+
+```{r message = FALSE, warning = FALSE}
+
+# Stationary Sentiment Progression over Time
+
+elite <- subset(reviews, reviews$elite == 1)
+ggplot(reviews, aes(date, text_1)) + 
+  geom_line(color='grey') + 
+  scale_x_date(date_labels = ("%b-%Y"), 
+  limits = as.Date(c(reviews$date[1], reviews$date[nrow(reviews)]))) + 
+  xlab("Date") + 
+  ylab("Sentiment") + 
+  ylim(-1,1) +
+  geom_point(data = elite, aes(date, text_1), color='darkblue', shape = 5, size = 0.5) +
+  ggtitle("Sentiment over Time (3.5 Year Period)")
+```
+
+We noticed that the data was too clustered, with too many elite reviews in a short time period, in order to get a good sense of a potential relationship. We solved this issue, by plotting the same sentiment, but this time only over the last 6-months, instead of the full 3.5 years. The resulting graph is depicted the below.
+
+```{r message = FALSE, warning = FALSE}
+
+reviews_2017 <- subset(reviews, reviews$date > as.Date("2017-06-01"))
+
+# Stationary Graph for Sentiment Progression June - December 2017
+elite <- subset(reviews_2017, reviews_2017$elite == 1)
+ggplot(reviews_2017, aes(date, text_1)) + 
+  geom_line(color = 'grey') + 
+  scale_x_date(date_labels = ("%b-%Y"),
+  limits = as.Date(c(reviews_2017$date[1], reviews_2017$date[nrow(reviews_2017)]))) +
+  xlab("Date") +
+  ylab("Sentiment") + 
+  ylim(-1,1) + 
+  geom_point(data = elite, aes(date, text_1), color='darkblue', shape = 5, size = 0.5) + 
+  ggtitle("Sentiment Progression from June to December 2017") 
+```
+
+We can make a couple observations here:
+
+* The sentiment of elite reviews tends to hover in the 0.1 to 0.4 area (note that it is positive the vast majority of the time)
+* We can see that a surprisingly large amount of elite reviews happen to have a sentiment that is near (or equal to) either the best or the worst average review sentiment of that given day
+* We can further note that there are a non-trivial set of instances in which sentiment rises after a poor elite review and drops after a good elite review, such as the large drop around November 2017
+* Further data and analysis would be required in order to identify potential causes of such strange patterns
+
+## Executive Summary
+
+The Yelp open dataset that we chose to work with provides information on about 170,000 business across 11 metropolitan areas. We narrowed down our analysis to the city with the highest diversity. To find what city was the most diverse, we used some statistical approaches and visualised the distribution of the restaurants by cuisines in the cities.
+
+We saw that Toronto was the most diverse out of all other cities.
+
+```{r fig.height = 6, fig.width = 9, message = FALSE, warning = FALSE}
+
+#visualizing diversity of restaurants in cities with top 10 weighted gini index
+
+ggplot(r_by_city_cuisine, aes(x=category, y = NumberOfRestaurants)) + 
+  geom_col() + 
+  facet_wrap(~location, scales="free_y", ncol=3) + 
+  theme(axis.text.x = element_text(angle=90, hjust=1)) + 
+  ggtitle("Cuisines by City") + 
+  xlab("City") + 
+  ylab("Number of Restaurants")
+```
+
+Based on this finding, we decided to narrow down our focus to Toronto. Delving into Toronto, we analysed the geographical distribution of restaurants around the city and saw that most of the restaurants were centered around the Downtown/Entertainment District area. In all other parts of the city, we noticed that the restaurants were more or less uniformly distributed.
+
+```{r message = FALSE, warning = FALSE}
+
+qmplot(longitude, latitude, data = cuisines_toronto_dedup, maptype = "toner-lite", color = I("red"), size=I(0.5), alpha=I(.5)) + 
+  ggtitle("Restaurants in Toronto")
+```
+
+Our next point of focus was analysing the popularity of the restaurants around Toronto through their reviews and ratings. We obtained a sentiment score (between -1 and 1) for each review that measured how positive or negative the review was.
+
+We analyzed the distributions of the sentiment scores of the restaurants under each category (cuisine). Through the following boxplots, we can see that there wasn???t much of a difference in the distribution of sentiment scores across all cuisines - so the average sentiment towards all cuisines was more or less the same.
+
+```{r message = FALSE, warning = FALSE, fig.width = 7, fig.height = 5}
+
+ggplot(subset, aes(category, text_1)) + 
+  geom_boxplot() + 
+  coord_flip() + 
+  labs(y = "Review Sentiment", x = "Cuisine Type") + 
+  ggtitle("Review Sentiment of Top 20 Cuisines")
+```
+
+Next, we wanted to check if there was any relationship between the overall sentiment towards restaurants and their star ratings. 
+
+In the following bar chart, we can clearly see a relationship between the two - as the star rating increases, the average sentiment score also increases.
+
+```{r message = FALSE, warning = FALSE}
+
+avg_sent <- toronto_reviews %>% 
+  group_by(stars) %>% 
+  summarize(mean = mean(text_1, na.rm = TRUE))
+
+ggplot(avg_sent, aes(stars, mean)) + 
+  geom_col(color = "darkblue", fill = "darkblue") + 
+  xlab("Stars") +
+  ylab("Average Review Sentiment") + 
+  ggtitle("Average Review Sentiment by Rating Category")
+```
+
+Finally, we saw the distribution of words in the "good" and the "bad" reviews. We made the following word clouds, which clearly show  that words like "great", "excellent" and "delicious" were very common in the "good" reviews, whereas words like "worst", "bad" and "terrible" were very common in the "bad" reviews. 
+
+```{r message = FALSE, warning = FALSE}
+
+setwd("~/EDAV_project/Data")
+good_revs <- read_csv("good_revs.csv")
+bad_revs <-read_csv("bad_revs.csv")
+set.seed(1234)
+
+layout(matrix(c(1, 2), nrow = 2), heights = c(1, 4))
+par(mar=rep(0, 4))
+plot.new()
+text(x = 0.5, y = 0.5, "Wordcloud for \"Good Reviews\"", font = 2)
+
+wordcloud(words = good_revs$word, freq = good_revs$freq, min.freq = 300,
+          max.words=100, random.order=FALSE, rot.per=0.35, 
+          colors = brewer.pal(8, "Dark2"), main = "Title")
+
+layout(matrix(c(1, 2), nrow = 2), heights = c(1, 4))
+par(mar=rep(0, 4))
+plot.new()
+text(x = 0.5, y = 0.5, "Wordcloud for \"Bad Reviews\"", font = 2)
+
+wordcloud(words = bad_revs$word, freq = bad_revs$freq, min.freq = 5000,
+          max.words=100, random.order=FALSE, rot.per=0.35, 
+          colors = brewer.pal(8, "Dark2"), main = "Title")
+```
+
+
+## Interactive Component
+
+Please visit the interactive component of our fully integrated [Shiny App](https://edav-yelp.shinyapps.io/shiny/ "Shiny App")
+
+## Conclusion
+
+The Yelp dataset had both strengths and limitations. Its limitations included the following:
+
+* Working with relational databases with tables that have a 1-to-many relationship is very difficult. We experienced that when dealing with the business “category” field, since businesses were often assigned more than one category and was hard to include this useful information in one dataset without creating duplicates. Furthermore, the categories ranged from very generic e.g. “Food” to very specific e.g. “cantonese”. We feel like there would be a lot of additional opportunities for analysis if the categories had a hierarchical or more defined structure.
+* We initially wanted to include the check-in table in our analysis. This table is supposed to show the number of customers that are “checking-in” to a particular business at a given time using the app. We thought this information would be useful to analyze the popularity of certain restaurants over time, especially in relationship to its rating and sentiment score. Although, we soon realized the “check-ins” were pre-aggregated by hour and day of the week and had no information about the day of the year, so they were not useful for our time trend analysis of sentiment/ratings.
+* The dataset proved to have some limitations in terms of completeness. The most obvious example was the “neighborhood” field, which as we found out was often missing. Another thing to consider is that this dataset will only include businesses that are registered with Yelp; all restaurants may not necessarily be registered with Yelp. However, the restaurants category is probably the most complete business category on Yelp, given that the app is most popularly used to look up restaurants. 
+
+Despite some of the problems with the Yelp data, it had some definite advantages that allowed us to answer some interesting questions:
+
+* The data was great for viewing the geographical distribution of restaurants as the longitude and latitude information for each business was complete. Though the Yelp dataset may not allow for visualizing the distribution of all restaurants in Toronto, since not all restaurants are registered with Yelp, it is useful for visualizing the geographical locations of the restaurants that are registered with Yelp.
+* The review and rating data for each restaurant allowed us to obtain a measure of its quality and popularity, which opened up the door to some interesting exploratory analyses. 
+
+Answering the questions that motivated the analysis of Yelp data inspired some new lines of inquiry, which we would have liked to pursue given more time. Some ideas include
+
+* Looking at Michelin guide ratings of restaurants and common features of reviews of those restaurants,
+* Looking at the correlation between restaurant health grades, ratings, review sentiment, and location, and
+* Asking whether people are more likely to take pictures of a highly rated restaurant by using picture data from Yelp (a separate dataset).
+
