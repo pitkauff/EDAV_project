@@ -1,5 +1,11 @@
 # Welcome to the Toronto Restaurant Explorer
 
+This project was part of STAT 5702 - Exploratory Data Analysis and Visualization at Columbia.
+
+**Project Purpose**
+
+
+
 ### Navigation Instructions
 
 * To view the full-scale interactive verison, please visit our [Shiny App](https://edav-yelp.shinyapps.io/shiny/)
