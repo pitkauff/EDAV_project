@@ -2,11 +2,11 @@
 
 This project was part of STAT 5702 - Exploratory Data Analysis and Visualization at Columbia.
 
-**Project Purpose**
+**Problem Statement**
 
+We were tasked with conducting extensive pre-modeling data analysis and visualizations using primarily R and / or D3. We chose to perform analysis on a subset of the Yelp dataset, by focusing on Toronto.
 
-
-### Navigation Instructions
+**Navigation Instructions**
 
 * To view the full-scale interactive verison, please visit our [Shiny App](https://edav-yelp.shinyapps.io/shiny/)
 * To view the code for the interactive portion of the project, please view the [Shiny Ui](https://github.com/thegreatwarlo/EDAV_project/tree/master/Shiny/ui.R) and [Shiny Server](https://github.com/thegreatwarlo/EDAV_project/tree/master/Shiny/server.R) files
