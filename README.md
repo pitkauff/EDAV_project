@@ -1,6 +1,6 @@
 # Welcome to the Toronto Restaurant Explorer
 
-This project was part of STAT 5702 - Exploratory Data Analysis and Visualization at Columbia.
+This project was part of STATGR 5702 - Exploratory Data Analysis and Visualization at Columbia.
 
 **Problem Statement**
 
